@@ -14,6 +14,8 @@ module.exports = {
     },
     colors: {
       tangerine: '#F45001',
+      navy:'#243163',
+      darknavy:'#030C37'
    
     },
   },
