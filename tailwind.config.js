@@ -12,6 +12,10 @@ module.exports = {
         gramatika: ['Gramatika', 'sans-serif'],
         rockinsoda: ['Rockinsoda', 'serif'],
     },
+    colors: {
+      tangerine: '#F45001',
+   
+    },
   },
   },
   plugins: [],
