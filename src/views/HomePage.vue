@@ -32,32 +32,32 @@
        </div>
      
        <!----------------- second section--------------->
-       <div class="mt-16 ml-40 ">
-        <p class="font-rockinsoda text-navy text-6xl">IGNITING AND INSPIRING</p>
-        <p class="font-rockinsoda text-navy text-6xl">INNOVATION</p>
+       <div class="mt-16 ml-12 ">
+        <p class="font-rockinsoda text-navy text-7xl">IGNITING AND INSPIRING</p>
+        <p class="font-rockinsoda text-navy text-7xl">INNOVATION</p>
        </div>
 
-       <div class="ml-40 flex mt-8 gap-4 ">
+       <div class="ml-12 flex mt-8 gap-4">
         <!-- Left side with image and text -->
-        <div class="flex-1 ">
-          <img src="../assets/students.jpg" class="h-auto w-full">
-          <p class="font-gramatica mt-8 text-darknavy">
+        <div class="flex-2">
+          <img src="../assets/students.jpg" class="w-full h-auto object-cover">
+          <p class="font-gramatica mt-8 text-darknavy text-xl">
             We believe in empowering innovators solving some of the dire
           </p>
-          <p class="font-gramatica text-darknavy">
+          <p class="font-gramatica text-darknavy text-xl">
             challenges in the Rwandan community and abroad
           </p>
-          <button class="mr-8 mt-6 p-2 px-8 font-gramatika text-sm bg-tangerine text-white font-semibold">
+          <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold">
             Learn more
           </button>
         </div>
         
         <!-- Right side with vertically stacked images -->
         <div class="flex-1 space-y-4">
-          <div>
+          <div class="mr-10">
             <img src="../assets/speaker.png" class="h-60 w-96 object-cover">
           </div>
-          <div>
+          <div class="mr-10">
             <img src="../assets/audience.jpg" class="h-60 w-96 object-cover">
           </div>
         </div>
