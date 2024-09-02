@@ -1,3 +1,97 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
+/* Regular */
+@font-face {
+    font-family: 'Gramatika';
+    src: url('@/fonts/Gramatika/Gramatika-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Italic */
+  @font-face {
+    font-family: 'Gramatika';
+    src: url('@/fonts/Gramatika/Gramatika-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  /* Light */
+  @font-face {
+    font-family: 'Gramatika';
+    src: url('@/fonts/Gramatika/Gramatika-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* Light Italic */
+  @font-face {
+    font-family: 'Gramatika';
+    src: url('@/fonts/Gramatika/Gramatika-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  /* Medium */
+  @font-face {
+    font-family: 'Gramatika';
+    src: url('@/fonts/Gramatika/Gramatika-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  /* Medium Italic */
+  @font-face {
+    font-family: 'Gramatika';
+    src: url('@/fonts/Gramatika/Gramatika-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  /* Bold */
+  @font-face {
+    font-family: 'Gramatika';
+    src: url('@/fonts/Gramatika/Gramatika-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Bold Italic */
+  @font-face {
+    font-family: 'Gramatika';
+    src: url('@/fonts/Gramatika/Gramatika-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  /* Black */
+  @font-face {
+    font-family: 'Gramatika';
+    src: url('@/fonts/Gramatika/Gramatika-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  /* Black Italic */
+  @font-face {
+    font-family: 'Gramatika';
+    src: url('@/fonts/Gramatika/Gramatika-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Rockinsoda';
+    src: url('/src/fonts/Rockinsoda/Rockinsoda.woff2') format('woff2'),
+         url('/src/fonts/Rockinsoda/Rockinsoda.woff') format('woff'),
+         url('/src/fonts/Rockinsoda/Rockinsoda.ttf') format('truetype'),
+         url('/src/fonts/Rockinsoda/Rockinsoda.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Tailwind CSS base, components, and utilities */
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
