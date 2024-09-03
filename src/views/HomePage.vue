@@ -96,13 +96,32 @@
         </div>
 
       </div>
+      <div class=" ">
+       
+    
 
-      <div class="relative text-white p-8 mt-20">
-        <img src="../assets/notched.svg" alt="" class="w-full">
-        <img src="../assets/Vector 6.png" class="absolute top-0 left-0 w-1/3 h-auto left-[-25%]">
+        <div class="absolute  text-white p-8 mt-20">
+          <img src="../assets/notched.svg" alt="" class="w-full">
+          <img src="../assets/Vector 6.png" class="absolute top-0 mt-24 left-0 w-1/3 h-auto left-[57%]">
+        </div>
+
+        <div class="absolute mt-72 ml-12 p-8 text-left">
+          <h2 class="text-6xl text-white font-rockinsoda mb-4">Pitch Your Idea for </h2>
+          <h2 class="text-6xl text-white font-rockinsoda mb-4">Funding</h2>
+
+          <p class="text-lg mb-1 text-white text-xl font-gramatika">
+            The largest in-person technology event in Rwanda </p>
+           <p class="text-lg mb-1 text-white text-xl font-gramatika">designed to ignite & inspire innovation, Hanga</p> 
+            <p class="text-lg mb-6 text-white text-xl font-gramatika">Pitchfest is returning for its fourth edition.</p>
+          
+          <button class="bg-tangerine text-white  py-2 px-6  hover:bg-orange-500">
+            Learn more
+          </button>
+        </div>
+
       </div>
 
-   
+     
 </div>
 </template>
 
