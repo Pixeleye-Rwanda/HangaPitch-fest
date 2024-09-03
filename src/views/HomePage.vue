@@ -255,6 +255,41 @@
         <div class="mt-24 flex items-center justify-center">
           <img src="../assets/Frame 320.png" >
         </div>
+
+         <!---------section 12------->
+         <div class=" h-[400px]  "> 
+          <div class="absolute w-full left-0 right-0 mt-20">
+            <img src="../assets/footersvg.svg" alt="" class="w-full h-auto block">
+            <img src="../assets/hanga elements_illustration 2.svg" class="absolute top-0 mt-24 left-[57%] w-1/3 h-auto">
+          </div>
+          
+          
+    
+          <div class="absolute mt-44 ml-12 p-8 text-left">
+            <h2 class="text-6xl text-white font-rockinsoda mb-4">NEVER MISS</h2>
+            <h2 class="text-6xl text-white font-rockinsoda mb-4">A HIGHLIGHT FROM HANGA</h2>
+            <p class="text-lg mb-1 text-white text-xl font-gramatika">
+              Get the latest trends from Hanga and beyond with our weekly
+            </p>
+            <p class="text-lg mb-1 text-white text-xl font-gramatika">
+              roundup.
+            </p>
+           
+            <div class=" -ml-6 p-4 rounded flex">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="bg-blue-900 text-gray-400 placeholder-gray-500 focus:outline-none px-4 py-2 rounded-l w-full"
+              />
+              <button class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-r">
+                &gt;
+              </button>
+            </div>
+            
+          </div>
+        </div>
+         
+        
     </div>
   </template>
  
