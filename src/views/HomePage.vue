@@ -250,6 +250,11 @@
         </div>
 
        </div>
+
+        <!-----section 11------>
+        <div class="mt-24 flex items-center justify-center">
+          <img src="../assets/Frame 320.png" >
+        </div>
     </div>
   </template>
  
