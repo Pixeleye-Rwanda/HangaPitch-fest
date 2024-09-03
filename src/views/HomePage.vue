@@ -186,11 +186,73 @@
         </div>
 
         <!---------------- section nine ----------->
+        <div class="">
+          <div class="mt-24 ml-12 space-x-2">
+            <h1 class="font-rockinsoda text-5xl text-navy ml-2">2023</h1>
+           <h1 class="font-rockinsoda text-5xl text-navy">NOTABLE SPEAKERS</h1>
+          </div>
+          <div class="flex ml-12 space-x-4 mt-20">
+            <div class="h-[600px] w-[420px] flex-shrink-0 -mt-2">
+              <img src="../assets/Kagame.jpg" class="w-full h-full object-cover">
+            </div>
+            <div class="h-[582px] w-[420px] flex-shrink-0">
+              <img src="../assets/ingabire.jpg" class="w-full h-full object-cover">
+            </div>
+            <div class="h-[582px] w-[320px] flex-shrink-0">
+              <img src="../assets/ceo.jpg" class="w-full h-full object-cover">
+            </div>
+          </div>
+          
+        </div>
 
+       <!--------- section 10 -------->
+       <div class=" ml-8">
+        <div class="mt-24">
+          <h1 class=" ml-4 font-rockinsoda text-5xl text-navy ">HANGA ON INSTAGRAM</h1>
+        </div>
 
+        <div class="flex space-x-2 ml-4 mt-12">
+          <div class=" flex-shrink-0 space-y-2">
+          <div class="h-[400px] w-[350px]">
+            <img src="../assets/insta1.jpg" class="w-full h-full object-cover">
+          </div>
+          <div class="h-[200px] w-[350px] ">
+            <img src="../assets/insta2.jpg" class="w-full h-full object-cover" >
+          </div>
+        </div>
+
+          <div class=" flex-shrink-0 space-y-2">
+            <div class="h-[300px] w-[250px]">
+              <img src="../assets/insta4.jpg" class="w-full h-full object-cover" >
+            </div>
+            <div class="h-[200px] w-[250px]">
+              <img src="../assets/insta5.jpg" class="w-full h-full object-cover">
+            </div>
+          </div>
+         
+          <div class="flex-shrink-0 space-y-2">
+            <div class="h-[300px] w-[250px] ">
+              <img src="../assets/mrspeaker.jpg" class="w-full h-full object-cover">
+            </div>
+            <div class="h-[290px] w-[250px] ">
+              <img src="../assets/bghome.jpg" class="w-full h-full object-cover">
+            </div>
+          </div>
+         
+          <div class="flex-shrink-0 space-y-2">
+            <div class="h-[300px] w-[250px] ">
+              <img src="../assets/insta3.jpg" class="w-full h-full object-cover">
+            </div>
+            <div class="h-[270px] w-[250px] ">
+              <img src="../assets/vr.jpg" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+
+       </div>
     </div>
   </template>
-
+ 
   <script>
   import NavBar from '@/components/Navbar.vue';
   export default {
