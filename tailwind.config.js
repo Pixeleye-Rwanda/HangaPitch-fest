@@ -15,10 +15,16 @@ module.exports = {
     colors: {
       tangerine: '#F45001',
       navy:'#243163',
-      darknavy:'#030C37'
+      darknavy:'#030C37',
+      lightblue:'#9198B1'
    
     },
+    clipPath: {
+      'custom': 'polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%)', // adjust this to match the shape in your design
+    }
   },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-clip-path'),
+  ],
 }

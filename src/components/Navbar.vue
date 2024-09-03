@@ -9,9 +9,14 @@
             <li class="text-white font-gramatika font-semibold " >Our Network</li>
             <li class="text-white font-gramatika font-semibold ">Pitch at Hanga</li>
             <li class="text-white font-gramatika  font-semibold ">Initiatives</li>
+            <li class="text-white font-gramatika  font-semibold ">Timeline</li>
+            <button class="   px-4 font-gramatika text-white border hover:black">
+                EN
+             </button>
+
         </ul>
 
-        <button class="mr-24 p-2 px-4 font-gramatika bg-white text-black  font-semibold hover:bg-tangerine hover:text-white">
+        <button class="mr-24 p-2 px-6 font-gramatika bg-white text-black  font-semibold hover:bg-tangerine hover:text-white">
             Apply Now
          </button>
           

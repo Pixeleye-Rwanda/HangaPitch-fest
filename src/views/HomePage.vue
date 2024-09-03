@@ -48,7 +48,7 @@
             challenges in the Rwandan community and abroad
           </p>
           <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold">
-            Learn more
+            Learn 
           </button>
         </div>
         
@@ -62,8 +62,46 @@
           </div>
         </div>
       </div>
-      
-    
+
+      <div class=" flex mt-28 space-x-80 ml-12">
+        <div class="space-y-8">
+       <img src="../assets/Component 1.png">
+       <hr class="border-t border-gray-300">
+       <div class="-space-y-2">
+        <p class="font-rockinsoda text-7xl text-navy">130+</p>
+        <p class="text-lightblue font-gramatika">Startups</p>
+       </div>
+       
+        </div>
+
+        <div class="space-y-8">
+         <img src="../assets/Component 1 (2).png" class="ml-12" >
+         <hr class="border-t border-gray-300">
+         <div class="-space-y-2">
+          <p class="font-rockinsoda text-7xl text-navy">10,000+</p>
+          <p class="text-lightblue font-gramatika">Attendees</p>
+         </div>
+         
+         
+        </div>
+
+        <div class="space-y-8">
+        <img src="../assets/Component 1 (1).png " class="ml-12"  >
+        <hr class="border-t border-gray-300 mr-32">
+         <div class="-space-y-2">
+        <p class="font-rockinsoda text-7xl text-navy mr-32">RWF600M</p>
+        <p class="text-lightblue font-gramatika">Invested in tech startups</p>
+         </div>
+        
+        </div>
+
+      </div>
+
+      <div class="relative text-white p-8 mt-20">
+        <img src="../assets/notched.svg" alt="" class="w-full">
+        <img src="../assets/Vector 6.png" class="absolute top-0 left-0 w-1/3 h-auto left-[-25%]">
+      </div>
+
    
 </div>
 </template>
@@ -78,3 +116,10 @@ export default {
     }
 }
 </script>
+
+
+<style scoped>
+
+</style>
+
+
