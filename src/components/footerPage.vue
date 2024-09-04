@@ -1,20 +1,20 @@
 <template>
-    <footer class="bg-darknavy text-white py-8">
+    <footer class="bg-darknavy text-white py-8 h-[350px]">
         <div class="container mx-auto px-4">
           <!-- Top Section -->
-          <div class="flex justify-between items-center border-b border-gray-700 pb-4 mb-4">
+          <div class="flex justify-between items-center border-b border-gray-700 pb-4 mt-24 mb-4">
             <nav class="flex space-x-4 text-sm">
-              <a href="#" class="hover:underline font-gramatika">HangaPitchFest</a>
+              <a href="#" class="hover:underline font-gramatika text-lg">HangaPitchFest</a>
               <span>/</span>
-              <a href="#" class="hover:underline font-gramatika">Hanga Hubs</a>
+              <a href="#" class="hover:underline font-gramatika text-lg">Hanga Hubs</a>
               <span>/</span>
-              <a href="#" class="hover:underline font-gramatika">Hanga SRH</a>
+              <a href="#" class="hover:underline font-gramatika text-lg">Hanga SRH</a>
             </nav>
             <nav class="flex space-x-4 text-sm">
-              <a href="#" class="hover:underline font-gramatika">Blog</a>
-              <a href="#" class="hover:underline font-gramatika">Contact Us</a>
-              <a href="#" class="hover:underline font-gramatika ">FAQ</a>
-              <a href="#" class="hover:underline font-gramatika ">News</a>
+              <a href="#" class="hover:underline font-gramatika text-lg">Blog</a>
+              <a href="#" class="hover:underline font-gramatika text-lg ">Contact Us</a>
+              <a href="#" class="hover:underline font-gramatika text-lg ">FAQ</a>
+              <a href="#" class="hover:underline font-gramatika text-lg ">News</a>
             </nav>
             <div class="flex space-x-4">
               <a href="#" class="hover:text-gray-400">
@@ -34,7 +34,7 @@
       
           <!-- Bottom Section -->
           <div class="text-center text-xs text-gray-400 mt-4 font-gramatika">
-            <p class="font-gramatika">&copy; 2024 Hanga PitchFest. All Rights Reserved.</p>
+            <p class="font-gramatika text-lg">&copy; 2024 Hanga PitchFest. All Rights Reserved.</p>
           </div>
         </div>
       </footer>
