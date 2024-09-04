@@ -16,6 +16,7 @@ module.exports = {
       tangerine: '#F45001',
       navy:'#243163',
       darknavy:'#030C37',
+      ftcolor:'#343E75',
       lightblue:'#9198B1'
    
     },

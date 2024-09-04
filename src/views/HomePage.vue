@@ -339,21 +339,66 @@
                     <div class="relative h-[582px] w-[400px] flex-shrink-0">
                       <img src="../assets/Kagame.jpg" class="w-full h-full object-cover">
                       <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
-                      <p class="text-4xl font-rockinsoda text-white absolute top-3/4 text-center left-16">Paul Kagame</p>
-                    </div>
+                      <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+                        <div class="space-y-4 ">
+                          <div class=" mt-80">
+                            <p class="">
+                              Paul Kagame
+                            </p>
+                          </div>
+  
+                          <div class="">
+                            <p class="text-white font-gramatika text-xl ml-2"> President of the</p>
+                            <p class="text-white font-gramatika text-xl"> Republic of Rwanda </p>
+                          </div>
+                        </div> 
+
+                      </div>                
+                       </div>
                     
                     
                     <div class="relative h-[582px] w-[400px] flex-shrink-0">
                       <img src="../assets/ingabire.jpg" class="w-full h-full object-cover">
                       <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.02) 0%, rgba(1, 9, 48, 0.15) 50%, rgba(1, 9, 48, 0.9) 100%);"></div>
-                      <p class="text-4xl font-rockinsoda text-white absolute top-3/4 text-center left-16">Paula Ingabire</p>
+                      <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+                        <div class="space-y-4 ">
+                          <div class=" mt-80">
+                            <p class="">
+                              Paula Ingabire 
+                            </p>
+                          </div>
+  
+                          <div class="">
+                            <p class="text-white font-gramatika text-xl"> Minister of MINICT and </p>
+                            <p class="text-white font-gramatika text-xl"> Innovation</p>
+                          </div>
+                        </div> 
+
+                      </div>        
+                             
                     </div>
                     
                     
                     <div class="relative h-[582px] w-[400px] flex-shrink-0">
                       <img src="../assets/ceo.jpg" class="w-full h-full object-cover">
-                      <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 50%, rgba(1, 9, 28, 0.8) 100%);"></div>
-                      <p class="text-4xl font-rockinsoda text-white absolute top-3/4 text-center left-16">Francis Gatare</p>
+                      <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
+                      <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+                        <div class="space-y-4 ">
+                          <div class=" mt-80">
+                            <p class="">
+                              Francis Gatare
+                            </p>
+                          </div>
+  
+                          <div class="">
+                            <p class="text-white font-gramatika text-xl ml-2"> CEO of Rwanda</p>
+                            <p class="text-white font-gramatika text-xl"> Development Board</p>
+                          </div>
+                        </div> 
+
+                      </div>
+
+                      
                     </div>
                     
                     
@@ -435,7 +480,7 @@
                         <input
                           type="email"
                           placeholder="Your email address"
-                          class="bg-blue-900 text-gray-400 placeholder-gray-500 focus:outline-none px-4 py-2 rounded-l w-full"
+                          class="bg-ftcolor text-gray-400 placeholder-gray-500 focus:outline-none px-12 py-2 rounded-l w-[300px]"
                         />
                         <button class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-r">
                           &gt;
