@@ -336,27 +336,26 @@
                   <h1 class="font-rockinsoda text-5xl text-navy">NOTABLE SPEAKERS</h1>
                   </div>
                   <div class="flex ml-12  mt-20">
-                    <div class="relative h-[582px] w-[400px] flex-shrink-0 ">
+                    <div class="relative h-[582px] w-[400px] flex-shrink-0">
                       <img src="../assets/Kagame.jpg" class="w-full h-full object-cover">
-                      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);"></div>
-                      <p class="text-4xl font-rockinsoda text-white absolute top-3/4 text-center  left-16 ">Paul Kagame</p>
-
+                      <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
+                      <p class="text-4xl font-rockinsoda text-white absolute top-3/4 text-center left-16">Paul Kagame</p>
                     </div>
+                    
                     
                     <div class="relative h-[582px] w-[400px] flex-shrink-0">
                       <img src="../assets/ingabire.jpg" class="w-full h-full object-cover">
-                      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);"></div>
-                      <p class="text-4xl font-rockinsoda text-white absolute top-3/4 text-center  left-16 ">Paula Ingabire </p>
-
+                      <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.02) 0%, rgba(1, 9, 48, 0.15) 50%, rgba(1, 9, 48, 0.9) 100%);"></div>
+                      <p class="text-4xl font-rockinsoda text-white absolute top-3/4 text-center left-16">Paula Ingabire</p>
                     </div>
+                    
                     
                     <div class="relative h-[582px] w-[400px] flex-shrink-0">
                       <img src="../assets/ceo.jpg" class="w-full h-full object-cover">
-
-                      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 28, 3) 0%, rgba(1, 9, 28, 0.7) 30%, rgba(1, 9, 48, 0.2) 70%);"></div>
-                      <p class="text-4xl font-rockinsoda text-white absolute top-3/4 text-center  left-16 ">Francis Gatare</p>
-
+                      <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 50%, rgba(1, 9, 28, 0.8) 100%);"></div>
+                      <p class="text-4xl font-rockinsoda text-white absolute top-3/4 text-center left-16">Francis Gatare</p>
                     </div>
+                    
                     
                     
                   </div>
