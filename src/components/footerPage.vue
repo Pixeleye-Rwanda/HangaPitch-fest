@@ -4,7 +4,7 @@
         <!-- Top Section -->
         <div class="flex justify-between items-center border-b border-gray-700 pb-4 mt-10 mb-4">
           <div class="">
-          <nav class="flex space-x-4 text-sm">
+          <nav class="flex space-x-6 text-sm">
          
             <a href="#" class="hover:underline font-gramatika text-lg">HangaPitchFest</a>
             <span class="font-gramatika">/</span>
@@ -13,7 +13,7 @@
             <a href="#" class="hover:underline font-gramatika text-lg">Hanga SRH</a>
           </nav>
   <!-- Right Links -->
-    <nav class="flex space-x-4 text-sm mt-10">
+    <nav class="flex space-x-8 text-sm mt-10">
       <a href="#" class="hover:underline font-gramatika text-lg">Blog</a>
       <a href="#" class="hover:underline font-gramatika text-lg">Contact Us</a>
       <a href="#" class="hover:underline font-gramatika text-lg">FAQ</a>

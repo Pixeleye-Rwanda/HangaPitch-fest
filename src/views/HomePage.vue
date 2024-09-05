@@ -349,7 +349,7 @@
   
                           <div class="">
                             <p class="text-white font-gramatika text-xl ml-2"> President of the</p>
-                            <p class="text-white font-gramatika text-xl"> Republic of Rwanda </p>
+                            <p class="text-white font-gramatika text-xl text-center"> Republic of Rwanda </p>
                           </div>
                         </div> 
 
@@ -370,7 +370,7 @@
   
                           <div class="">
                             <p class="text-white font-gramatika text-xl"> Minister of MINICT and </p>
-                            <p class="text-white font-gramatika text-xl"> Innovation</p>
+                            <p class="text-white font-gramatika text-xl text-center"> Innovation</p>
                           </div>
                         </div> 
 
@@ -391,8 +391,8 @@
                           </div>
   
                           <div class="">
-                            <p class="text-white font-gramatika text-xl ml-2"> CEO of Rwanda</p>
-                            <p class="text-white font-gramatika text-xl"> Development Board</p>
+                            <p class="text-white font-gramatika text-xl text-center "> CEO of Rwanda</p>
+                            <p class="text-white font-gramatika text-xl text-center"> Development Board</p>
                           </div>
                         </div> 
 
