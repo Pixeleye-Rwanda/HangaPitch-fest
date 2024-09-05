@@ -76,7 +76,7 @@
                 </div>
 
                 <div class="space-y-8">
-                  <img src="../assets/Component 1 (2).png"  class="ml-8">
+                  <img src="../assets/Component 1 (1).png"  class="ml-8">
                   <hr class="border-t border-gray-300">
                   <div class="-space-y-2">
                     <p class="font-rockinsoda text-7xl text-navy">10,000+</p>
@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="space-y-8">
-                  <img src="../assets/Component 1 (1).png" class="ml-16">
+                  <img src="../assets/Component 1 (2).png" class="ml-16">
                   <hr class="border-t border-gray-300">
                   <div class="-space-y-2">
                     <p class="font-rockinsoda text-7xl text-navy">RWF600M</p>
@@ -470,7 +470,7 @@
                       <img src="../assets/hanga elements_illustration 2.svg" class="absolute top-0 mt-24 left-[57%] w-1/3 h-auto">
                     </div>
                     
-                    <div class="absolute mt-44 ml-12 p-8 text-left">
+                    <div class="absolute mt-44 ml-2 p-8 text-left">
                       <h2 class="text-6xl text-white font-rockinsoda mb-4">NEVER MISS</h2>
                       <h2 class="text-6xl text-white font-rockinsoda mb-4">A HIGHLIGHT FROM HANGA</h2>
                       <p class="text-lg mb-1 text-white text-xl font-gramatika">
