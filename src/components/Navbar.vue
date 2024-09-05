@@ -2,10 +2,16 @@
    <div class=" mt-8 ml-12 ">
     <div class="flex  ">
         <div class="">
-           <img src="../assets/logo.svg" alt="logo">
+          <ul>
+           <router-link to="/">
+            <img src="../assets/logo.svg" alt="logo">
+           </router-link>
+          </ul>
         </div>
         <ul class=" flex  mx-auto items-center space-x-6  ">
-            <li class="text-white  font-gramatika font-semibold " >About us</li>
+            <li class="text-white  font-gramatika font-semibold " >
+              <router-link to="/about-us"> About Us</router-link>
+            </li>
             <li class="text-white font-gramatika font-semibold " >Our Network</li>
             <li class="text-white font-gramatika font-semibold ">Pitch at Hanga</li>
            
@@ -46,9 +52,9 @@
 
 
 
-          
+ 
     </div>
-  
+
    </div> 
 
 </template>
