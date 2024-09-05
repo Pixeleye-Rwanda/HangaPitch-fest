@@ -20,7 +20,8 @@
                     Apply Now
                   </button>
                   <button class="p-2 px-4 font-gramatika border px-8 text-white font-semibold hover:bg-tangerine hover:text-black">
-                    Impact video
+                    Impact video <i class="fa fa-play-circle" aria-hidden="true"></i>
+
                   </button>
                 </div>
                 <img src="../assets/gvticons.svg" class="mt-12">
@@ -46,7 +47,8 @@
                     challenges in the Rwandan community and abroad
                   </p>
                   <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold">
-                    Learn more 
+                    Learn more  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+
                   </button>
                 </div>
 
@@ -112,7 +114,8 @@
                       Pitchfest is returning for its fourth edition.
                     </p>
                     <button class="bg-tangerine text-white py-2 px-6 hover:bg-orange-500">
-                      Learn more
+                      Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+
                     </button>
                   </div>
                 </div>
@@ -278,7 +281,8 @@
                     <p class="font-gramatika text-xl mt-4 text-lightblue">Get updates on the latest stories  within Rwanda’s </p>
                     <p class="font-gramatika text-xl text-lightblue ">flourishing tech innovation ecosystem. </p>
                     <button class="bg-tangerine float-right -mt-12 mr-10 text-white py-2 px-6 hover:bg-orange-500">
-                    read more
+                    read more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+
                     </button>
 
                   </div>
@@ -483,7 +487,9 @@
                           class="bg-ftcolor text-gray-400 placeholder-gray-500 focus:outline-none px-12 py-2 rounded-l w-[300px]"
                         />
                         <button class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-r">
-                          &gt;
+                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+
+
                         </button>
                       </div>
                       
