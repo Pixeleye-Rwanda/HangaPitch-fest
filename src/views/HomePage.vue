@@ -19,7 +19,7 @@
                   <button class="mr-8 p-2 px-4 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
                     Apply Now
                   </button>
-                  <button class="p-2 px-4 font-gramatika border px-8 text-white font-semibold hover:bg-tangerine hover:text-black">
+                  <button class="p-2 px-4 font-gramatika border text-white font-semibold hover:bg-tangerine hover:text-black">
                     Impact video <i class="fa fa-play-circle" aria-hidden="true"></i>
 
                   </button>
@@ -65,7 +65,7 @@
               </div>
 
               <!-- Third section -->
-              <div class="ml-20 flex mt-28 space-x-60">
+              <div class="ml-2 flex items-center justify-center mt-28 space-x-60">
                 <div class="space-y-8">
                   <img src="../assets/Component 1.png" class="">
                   <hr class="border-t border-gray-300">
@@ -114,7 +114,7 @@
                       Pitchfest is returning for its fourth edition.
                     </p>
                     <button class="bg-tangerine text-white py-2 px-6 hover:bg-orange-500">
-                      Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      Learn more <i class="fa fa-chevron-right h-2 w-2" aria-hidden="true"></i>
 
                     </button>
                   </div>

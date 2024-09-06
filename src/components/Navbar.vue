@@ -1,10 +1,10 @@
 <template>
    <div class=" mt-8 ml-12 ">
-    <div class="flex  ">
+    <div class="flex ">
         <div class="">
           <ul>
            <router-link to="/">
-            <img src="../assets/logo.svg" alt="logo">
+            <img src="../assets/logo.svg" class="mt-2">
            </router-link>
           </ul>
         </div>
