@@ -123,7 +123,7 @@
 
                   </div>
                 </div>
-          <!-- texxxxxxt hwewewe -->
+
                 <div class="absolute mt-72 ml-12 p-8 text-left">
                  <div class="relative">
 
@@ -175,7 +175,6 @@
           
               <!-- Scrollable Videos Section -->
               <div class="relative mt-12 overflow-hidden">
-                <!-- Left Scroll Button -->
              
                 <!-- Videos Wrapper--->
                 <div ref="videoWrapper" class="flex space-x-8 overflow-x-auto overflow-x-hidden scroll-smooth">
@@ -255,7 +254,113 @@
             </div>
 
              <!-- section 9 --->
-          
+          <div class="mt-12 ml-12">
+            <div>
+              <h1 class="font-rockinsoda text-navy text-5xl">EVENT GALLERY</h1>
+            </div>
+            <div class="">
+            <div class="mt-8 flex">
+             <div class=" flex-shrink-0 h-[215px]">
+              <img src="../assets/1.jpg" class="w-full h-full">
+             </div>
+             <div class=" flex-shrink-0 h-[215px]">
+              <img src="../assets/2.jpg" class="w-full h-full">
+             </div>
+             <div class=" flex-shrink-0 h-[215px]">
+              <img src="../assets/3.jpg" class="w-full h-full">
+             </div>
+             <div class=" flex-shrink-0 h-[215px]">
+              <img src="../assets/4.jpg" class="w-full h-full">
+             </div>
+             <div class=" flex-shrink-0 h-[215px]">
+              <img src="../assets/5.jpg" class="w-full h-full">
+             </div>
+            
+            </div>
+            <div class=" flex">
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/6.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/7.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/8.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/9.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/10.jpg" class="w-full h-full">
+              </div>
+             
+             </div>
+
+             <div class=" flex">
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/11.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/12.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/13.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/14.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/15.jpg" class="w-full h-full">
+              </div>
+             
+             </div>
+             
+             <div class=" flex">
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/17.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/18.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/19.png" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/20.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/21.jpg" class="w-full h-full">
+              </div>
+             
+             </div>
+
+             <div class=" flex">
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/22.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/23.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/24.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/14.jpg" class="w-full h-full">
+              </div>
+              <div class=" flex-shrink-0 h-[215px]">
+               <img src="../assets/26.jpg" class="w-full h-full">
+              </div>
+                 
+            
+
+             </div>
+              
+             <div class="items-center justify-center flex p">
+              <button class="font-gramatika text-black text-md 
+              bg-white p-2 rounded-md py-2 px-4 shadow-md absolute ">follow us on instagram </button>
+            </div>
+            </div>
+          </div>
 
         
     </div>
