@@ -19,7 +19,9 @@ module.exports = {
       ftcolor:'#343E75',
       lightblue:'#9198B1',
        abtcolor:'#02092994',
-       lineColor:' #243B9E'
+       lineColor:' #243B9E',
+       blck: '#404040'
+
 
 
    

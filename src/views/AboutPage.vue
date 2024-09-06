@@ -155,7 +155,7 @@
                   <img src="../assets/coat.svg" class="border border-tangerine p-10 px-28">
                 </div>
                 <div class="">
-                  <img src="../assets/flag.svg" class="border border-tangerine p-10 px-28">
+                  <img src="../assets/flag.svg" class="border border-tangerine  p-10 px-28">
                 </div>
                 <div class="">
                   <img src="../assets/undp.svg" class="border border-tangerine p-10 px-28">
@@ -164,6 +164,97 @@
                   
               
             </div>
+
+
+            <!-- section 8------ -->
+            <div class="ml-12 mt-24">
+              <div>
+                <h1 class="font-rockinsoda text-navy text-5xl">EVENT HIGHLIGHTS</h1>
+                <p class="font-gramatika text-navy text-xl mt-4">Watch our past thrilling events highlights</p>
+              </div>
+          
+              <!-- Scrollable Videos Section -->
+              <div class="relative mt-12 overflow-hidden">
+                <!-- Left Scroll Button -->
+             
+                <!-- Videos Wrapper--->
+                <div ref="videoWrapper" class="flex space-x-8 overflow-x-auto overflow-x-hidden scroll-smooth">
+                  <!-- First Video Block -->
+                  <div class="flex-shrink-0 flex flex-col space-y-4 w-[600px] h-[600px]">
+                    <div class="relative w-full h-full">
+                      <iframe
+                        class="absolute top-0 left-0 w-full h-full object-cover"
+                        src="https://www.youtube.com/embed/fTGd2cavRys"
+                        title="'Loopa' is the Winner of Hanga Pitchfest 2023 || Awarded by President Kagame"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <div class="space-y-2">
+                      <p class="font-rockinsoda text-black text-5xl">Hanga 2023</p>
+                      <p class="font-rockinsoda text-black text-3xl">Oct 23</p>
+                    </div>
+                  </div>
+          
+                  <!-- Second Video Block -->
+                  <div class="flex-shrink-0 flex flex-col space-y-4 w-[600px] h-[600px]">
+                    <div class="relative w-full h-full">
+                      <iframe
+                        class="absolute top-0 left-0 w-full h-full object-cover"
+                        src="https://www.youtube.com/embed/C9PCtKYnOus"
+                        title="'Loopa' is the Winner of Hanga Pitchfest 2023 || Awarded by President Kagame"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <div class="space-y-2">
+                      <p class="font-rockinsoda text-black text-5xl">Hanga 2022</p>
+                      <p class="font-rockinsoda text-black text-3xl">Oct 22</p>
+                    </div>
+                  </div>
+          
+                  <!-- Third Video Block -->
+                  <div class="flex-shrink-0 flex flex-col space-y-4 w-[600px] h-[600px]">
+                    <div class="relative w-full h-full">
+                      <iframe
+                        class="absolute top-0 left-0 w-full h-full object-cover"
+                        src="https://www.youtube.com/embed/CngbrG36R2I"
+                        title="'Loopa' is the Winner of Hanga Pitchfest 2023 || Awarded by President Kagame"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <div class="space-y-2">
+                      <p class="font-rockinsoda text-black text-5xl">Hanga 2021</p>
+                      <p class="font-rockinsoda text-black text-3xl">Oct 21</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Scroll Buttons -->
+                 <div class="float-right space-x-2 mr-8">
+                <button @click="scrollLeft" 
+                        class=" top-1/2 right-0 transform -translate-y-1/2 z-10 border-2  rounded-full p-4 bg-white text-navy focus:outline-none hover:bg-navy hover:text-white transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                </button>
+                
+                  <button @click="scrollRight" 
+                  class=" top-1/2 left-0 transform -translate-y-1/2 z-10 border-2  rounded-full p-4 bg-white text-navy focus:outline-none hover:bg-navy hover:text-white transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+          </button>
+        </div>
+  
+              </div>
+            </div>
+
+             <!-- section 9 --->
           
 
         
@@ -177,6 +268,18 @@ export default{
     name:"AboutUs",
     components:{
             Navbar
-        }
+        },
+
+        methods: {
+    scrollLeft() {
+      this.$refs.videoWrapper.scrollBy({ left: -500, behavior: 'smooth' });
+    },
+    scrollRight() {
+      this.$refs.videoWrapper.scrollBy({ left: 500, behavior: 'smooth' });
+    }
+  }
+
 }
+
+
 </script>
