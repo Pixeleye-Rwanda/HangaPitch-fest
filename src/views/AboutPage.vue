@@ -97,8 +97,8 @@
 
                   <div class="absolute top-0 mt-56 left-0 w-1/3 h-auto left-[50%]">
                     <div class="space-y-4 text-justify ">
-                      <p class="font-gramatika text-6xl ">Rwf 600 M</p>
-                      <p class="font-gramatika text-lg">In investments</p>
+                      <p class="font-gramatika text-7xl font-bold ">Rwf 600 M</p>
+                      <p class="font-gramatika text-lg font-normal ">In investments</p>
                     </div>
                     <hr class="w-[500px] border-lineColor mt-8 mb-8 ">
 
@@ -147,82 +147,22 @@
 
             <!-- section 7 -->
             <div class="ml-12 mt-72">
-              <h1 class="font-rockinsoda text-navy text-5xl   "> WHERE LEADERS INSPIRE </h1>
-              <h1 class="font-rockinsoda text-navy text-5xl   ">YOUR NEXT BIG LEAP</h1>
+              <h1 class="font-rockinsoda text-navy text-5xl   "> HANGA IS </h1>
+              <h1 class="font-rockinsoda text-navy text-5xl   ">ORGANIZED BY </h1>
 
-                <div class=" flex  gap-4 mb-60  mt-20"> 
-              
-                  <div class="flex-1 space-y-4 ">
-                    <div class="relative h-[320px]">
-                      <img src="../assets/mrspeaker.jpg" class="h-full w-full object-cover">
-                      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-                        <div class="-space-y-10 mt-36">
-                          <span class="font-rockinsoda text-tangerine text-5xl ml-2  ">"</span>
-                          <p class="text-white text-sm font-gramatika  p-4 text-justify text-center">
-                          Hanga Pitchfest 
-                          a two-fold approach. We are nurturing the rich talents and innovation of our young people,
-                          while recognizing the contributions of talented 
-                          innovators to socio-economic development of our country and the world</p>
-      
-                        </div>
-                      
-                        <div class="flex space-x-2 ml-2 ">
-                          <hr class="w-[50px] border-2 mt-2 ">
-                          <p class="font-rockinsoda text-white text-xl">Francis Gatare</p> 
-                        </div>
-                        
-                        
-    
-                      </div>
-                    </div>
-                    <div class="relative h-[320px]">
-                      <img src="../assets/whiteman.jpg" class="h-full w-full object-cover">
-                      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-                        <div class="-space-y-10 mt-36">
-                          <span class="font-rockinsoda text-tangerine text-5xl ml-2  ">"</span>
-                          <p class="text-white text-sm font-gramatika  p-4 text-justify text-center">
-                            “There have been, in my opinion, too much talking. We need to act now, 
-                            but I believe especially it is very 
-                            important to invest in young people here. The time is now.</p>
-      
-                        </div>
-                      
-                        <div class="flex space-x-2 ml-2 ">
-                          <hr class="w-[50px] border-2 mt-2 ">
-                          <p class="font-rockinsoda text-white text-xl">Flemming besenbacher</p> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="relative flex-2 mr-10 h-[655px]">
-                    <img src="../assets/paula.jpg" class="w-full h-full object-cover">
-                    <div class="relative inset-0">
-                      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-                        <!-- Content of the overlay will be positioned here -->
-                        <div class="absolute bottom-0 inset-x-0 p-4">
-                          <div class="-space-y-10">
-                            <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
-                            <p class="text-white text-lg font-gramatika p-4 text-justify text-center">
-                              Today is a celebration of talent, ambitions and the boundless opportunities 
-                              that arise when passion, creativity, determination and
-                              the resolve to be self-reliant converge to push the boundaries of innovation.
-                            </p>
-                          </div>
-                          
-                          <div class="flex space-x-2 ml-2">
-                            <hr class="w-[50px] border-2 mt-2">
-                            <p class="font-rockinsoda text-white text-xl">Paula Ingabire</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                  
-    
-                  
+               <div class="flex mt-16 ">
+                <div class=" ">
+                  <img src="../assets/coat.svg" class="border border-tangerine p-10 px-28">
                 </div>
+                <div class="">
+                  <img src="../assets/flag.svg" class="border border-tangerine p-10 px-28">
+                </div>
+                <div class="">
+                  <img src="../assets/undp.svg" class="border border-tangerine p-10 px-28">
+                </div>
+               </div>
+                  
+              
             </div>
           
 
