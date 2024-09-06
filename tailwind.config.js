@@ -18,7 +18,10 @@ module.exports = {
       darknavy:'#030C37',
       ftcolor:'#343E75',
       lightblue:'#9198B1',
-       abtcolor:'#02092994'
+       abtcolor:'#02092994',
+       lineColor:' #243B9E'
+
+
    
     },
     clipPath: {
