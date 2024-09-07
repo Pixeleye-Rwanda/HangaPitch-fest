@@ -151,14 +151,14 @@
               <h1 class="font-rockinsoda text-navy text-5xl   ">ORGANIZED BY </h1>
 
                <div class="flex mt-16 ">
-                <div class=" ">
-                  <img src="../assets/coat.svg" class="border border-tangerine p-10 px-28">
+                <div class="flex-shrink-0 h-[230px] ">
+                  <img src="../assets/coat.svg" class="w-full h-full object-cover border border-tangerine p-10 px-28">
                 </div>
-                <div class="">
-                  <img src="../assets/flag.svg" class="border border-tangerine  p-10 px-28">
+                <div class="flex-shrink-0 h-[230px]">
+                  <img src="../assets/flag.svg" class=" w-full h-full object-cover border border-tangerine  p-10 px-28">
                 </div>
-                <div class="">
-                  <img src="../assets/undp.svg" class="border border-tangerine p-10 px-28">
+                <div class="flex-shrink-0 h-[230px]">
+                  <img src="../assets/undp.svg" class="w-full h-full object-cover border border-tangerine p-10 px-28">
                 </div>
                </div>
                   
