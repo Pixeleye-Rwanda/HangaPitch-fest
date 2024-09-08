@@ -1,106 +1,80 @@
 <template>
-  <div class=" mt-8 ml-12 ">
-   <div class="flex">
-       <div class="">
-         <ul>
-          <router-link to="/">
-           <img src="../assets/logo.svg" class="mt-2">
-          </router-link>
-         </ul>
-       </div>
-       <ul class=" flex  mx-auto items-center space-x-6  ">
-           <li class="text-white  font-gramatika font-semibold  underline-animation " >
-             <router-link to="/about-us"> About Us</router-link>
-           </li>
-           <li class="text-white font-gramatika font-semibold underline-animation " >Our Network</li>
-           <li class="text-white font-gramatika font-semibold underline-animation ">Pitch at Hanga</li>
-          
-           <div class="flex">
-               <button class="text-white font-gramatika  font-semibold  ">Initiatives</button>
-               <svg class="-mr-1 ml-2 h-5 w-5 text-white  " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                 </svg>
-           </div>
-           <li class="text-white font-gramatika  font-semibold  underline-animation ">Timeline</li>
-           
-       </ul>
+  <footer class="bg-darknavy text-white py-12 h-[320px]">
+    <div class="container mx-auto px-4 ">
+      <!-- Top Section -->
+      <div class="flex justify-between items-center border-b border-gray-700 pb-4 mt-10 mb-4">
+        <div class="">
+        <nav class="flex space-x-6 text-sm">
+       
+          <a href="#" class="hover:underline font-gramatika text-lg">HangaPitchFest</a>
+          <span class="font-gramatika">/</span>
+          <a href="#" class="hover:underline font-gramatika text-lg">Hanga Hubs</a>
+          <span class="font-gramatika">/</span>
+          <a href="#" class="hover:underline font-gramatika text-lg">Hanga SRH</a>
+        </nav>
+<!-- Right Links -->
+  <nav class="flex space-x-8 text-sm mt-10">
+    <a href="#" class="hover:underline font-gramatika text-lg">Blog</a>
+    <a href="#" class="hover:underline font-gramatika text-lg">Contact Us</a>
+    <a href="#" class="hover:underline font-gramatika text-lg">FAQ</a>
+    <a href="#" class="hover:underline font-gramatika text-lg">News</a>
+  </nav>
+  </div>
+        <!-- Social Icons (Centered above the line) -->
+        <div class="flex space-x-2 mt-16 mr-12">
+          <!-- Facebook Icon -->
+          <a href="#" class="text-white hover:text-gray-400">
+            <a href="#" class="text-white hover:text-gray-400">
+              <img src="../assets/facebook.svg" class="h-10 w-10">
+              </a>
+          </a>
 
-       <button class="mr-4  p-2 px-6 font-gramatika bg-white text-black  font-semibold hover:bg-tangerine hover:text-white">
-           Apply Now
-        </button>
+          <!-- LinkedIn Icon -->
+          <a href="#" class="text-white hover:text-gray-400">
+          <img src="../assets/linked in.svg" class="h-10 w-10">
+          </a>
 
-        <div class="relative inline-block mr-24 text-left">
-           <button id="dropdownButton"  @click="toggleDropdown"
+          <!-- Instagram Icon -->
+          <a href="#" class="text-white hover:text-gray-400">
+            <a href="#" class="text-white hover:text-gray-400">
+              <img src="../assets/insta.svg" class="h-10 w-10">
+              </a>
+          </a>
 
-            class="p-2 px-4 border font-gramatika  text-white font-gramatika font-semibold hover:bg-tangerine hover:text-white">
-             <div class="flex">
-               <p> EN</p>
-               <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                 </svg>
-             </div>
-           
-           </button>
-         
-           <ul v-show="isDropdownVisible" class="absolute mt-2 w-30 shadow-lg bg-white ring-1 ring-black ring-opacity-5 ">
-             <li>
-               <a href="#" class="block px-4 py-2 text-sm text-gramatika text-gray-700 hover:bg-gray-100">Kinyarwanda</a>
-             </li>
-             <li>
-               <a href="#" class="block px-4 py-2 text-sm text-gramatika text-gray-700 hover:bg-gray-100">French</a>
-             </li>
-           </ul>
-         </div>
-         
+          <!-- YouTube Icon -->
+          <a href="#" class="text-white hover:text-gray-400">
+            <a href="#" class="text-white hover:text-gray-400">
+              <img src="../assets/youtube.svg" class="h-10 w-10">
+              </a>
+          </a>
 
+          <!-- X (Twitter) Icon -->
+          <a href="#" class="text-white hover:text-gray-400">
+            <a href="#" class="text-white hover:text-gray-400">
+              <img src="../assets/x.svg" class="h-10 w-10">
+              </a>
+          </a>
+        </div>
 
+      
+      </div>
 
-
-   </div>
-
-  </div> 
-
+      <!-- Bottom Section -->
+      <div class="mt-4 p-8 text-xs text-gray-400 font-gramatika -ml-8">
+        <p class="font-gramatika text-lg">&copy; 2024 Hanga PitchFest. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>
 export default {
-   name:"NavBar",
-   data(){
-     return{
-       
-       isDropdownVisible:false
-     }
-   },
-
-   methods:{
-     toggleDropdown(){
-       this.isDropdownVisible = !this.isDropdownVisible
-     }
-   }
-}
-
-
-
+  name: 'FooterPage',
+};
 </script>
 
 <style>
- .underline-animation {
-   position: relative;
-   overflow: hidden;
- }
-
- .underline-animation::before {
-   content: "";
-   position: absolute;
-   width: 100%;
-   height: 2px;
-   bottom: 0;
-   left: -100%;
-   background-color: white;
-   transition: left 0.3s ease;
- }
-
- .underline-animation:hover::before {
-   left: 0;
- }
+.bg-darknavy {
+  background-color: #010930;
+}
 </style>
