@@ -25,7 +25,7 @@
 
         </button>
       </div>
-      <img src="../assets/gvticons.svg" class="mt-12">
+      <img src="../assets/gvticons.svg"  class="mt-12  ">
     </div>
 
     <!-- First section -->

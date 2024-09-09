@@ -35,7 +35,7 @@
       </div>
 
               <!-- second section -->
-              <div class="ml-12 flex mt-20 gap-4">
+              <div class="ml-12 flex mt-24 gap-4">
                   <div class="flex-2">
                     <div class=" relative h-[500px] flex-shrink-0 zoom-in" ref="leftContent">
                       <img src="../assets/speaker1.jpg" class="w-full h-full object-cover">
@@ -68,7 +68,7 @@
                 </div>
 
                 <!-- third section -->
-                <div class="ml-2 flex items-center justify-center mt-32 space-x-44">
+                <div class="ml-2 flex items-center justify-center mt-36 space-x-44">
                   <div class="space-y-8 fade-in w-[40vh]"  ref="item1">
                     <img src="../assets/1line.png">
                     <hr class="border-t border-gray-300">
@@ -112,6 +112,44 @@
                   
                 </div>
 
+                <!--fourth section -->
+                <div class="">
+                  <div class="font-rockinsoda text-navy text-6xl mt-20 ml-12 ">
+                    <p>FEATURED STARTUPS</p>
+                  </div>
+
+                  <div class="flex flex-col space-y-4 md:flex-row md:space-x-4">
+                    <!-- Year Dropdown -->
+                    <select v-model="selectedYear" class="w-full md:w-1/4 border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      <option value="">All Years</option>
+                      <option value="2022">2023</option>
+                      <option value="2023">2022</option>
+                      <option value="2022">2021</option>
+                      
+                    </select>
+                  
+                    <!-- Category Dropdown -->
+                    <select v-model="selectedCategory" class="w-full md:w-1/4 border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      <option value="">All Categories</option>
+                      <option value="Fintech">Travel</option>
+                      <option value="Education">Education</option>
+                      <option value="Agriculture">Agriculture</option>
+                      <option value="Health">Health</option>
+                    </select>
+                  </div>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+                    <div v-for="startup in filteredStartups" :key="startup.name" class="border p-4 rounded-lg shadow-md">
+                      <img :src="startup.logo" alt="Logo" class="w-full h-16 object-contain mb-4" />
+                      <h3 class="text-lg font-bold">{{ startup.name }}</h3>
+                      <p class="text-sm text-gray-500">{{ startup.category }}</p>
+                      <p class="text-sm text-gray-400">{{ startup.year }}</p>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+
 
             
       </div>
@@ -128,6 +166,39 @@
           Navbar
       },
 
+      data(){
+      
+        return{
+          startups:[
+            { name: 'Afia Pharma', category: 'Health', year: 2021, logo: require('../assets/2021/Afia.svg') },
+            { name: 'E-shuri', category: 'Education', year: 2021, logo: require('../assets/2021/e-shuri.png') },
+            { name: 'Bafana', category: 'Entertainment', year: 2022, logo: require('../assets/2022/bafana.png') },
+            { name: 'Mulika Farms', category: 'Agriculture', year: 2022, logo: require('../assets/2022/mulika.png') },
+            { name: 'Tuza Ride', category: 'Travel', year: 2023, logo: require('../assets/2023/tuza.png') },
+            { name: 'Smart Class', category: 'Education', year: 2022, logo: require('../assets/2022/smart.png') },
+
+
+            
+          ],
+          selectedYear:'',
+          selectedCategory:''
+        };
+        
+      },
+      
+        computed:{
+        
+           filteredStartups() {
+           return this.startups.filter(startup => {
+           const yearMatch = !this.selectedYear || startup.year == this.selectedYear;
+           const categoryMatch = !this.selectedCategory || startup.category == this.selectedCategory;
+          return yearMatch && categoryMatch;
+        });
+      }
+        
+
+      },
+
 
     mounted() {
       const observer = new IntersectionObserver((entries) => {
@@ -136,8 +207,7 @@
             entry.target.classList.add('slide-up-visible');
             entry.target.classList.add('zoom-in-visible');
             entry.target.classList.add('fade-in-visible');
-            entry.target.classList.add('fade-in-visible-animation');
-            entry.target.classList.add('slide-up-visible-animation');
+      
 
 
 
