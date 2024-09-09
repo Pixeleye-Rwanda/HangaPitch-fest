@@ -1,7 +1,7 @@
 <template>
     <div class="overflow-hidden">
         <div class="h-screen">
-            <div class="relative h-[650px] flex-shrink-0">
+            <div class="relative h-[670px] flex-shrink-0 ">
               <img src="../assets/aboutus.jpg" alt="" class="h-full w-full object-cover">
               <div class="absolute inset-0 bg-abtcolor"></div>
               <Navbar  class="absolute top-0 left-0 w-full"/>
