@@ -14,10 +14,10 @@
             </div>
             <div class="absolute top-3/4 ml-12">
               <div class="">
-              <p class="font-gramatika text-white text-lg">Our mission is to discover and nurture Rwanda's most </p>
+                  
+           <p class="font-gramatika text-white text-lg">Our mission is to discover and nurture Rwanda's most </p>
               <p class="font-gramatika text-white text-lg"> innovative tech-enabled startups</p>
-                
-              </div>
+               </div>
             </div>
   
           </div>

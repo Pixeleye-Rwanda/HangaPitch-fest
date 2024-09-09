@@ -1,5 +1,6 @@
 import HomePage from "@/views/HomePage.vue";
 import AboutUs from "@/views/AboutPage.vue";
+import OurNetwork from "./views/OurNetwork.vue";
 
 import { createRouter,createWebHistory } from "vue-router";
 
@@ -15,6 +16,11 @@ const routes=[
         name:"AboutUs",
         component:AboutUs,
         path:"/about-us"
+    },
+    {
+        name:"OurNetwork",
+        component:OurNetwork,
+        path:'/network'
     }
 
 ]

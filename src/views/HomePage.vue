@@ -11,6 +11,7 @@
           <p>TECHNOLOGY EVENT IN</p>
           <p>Rwanda</p>
         </div>
+        
       </div>
     </div>
 

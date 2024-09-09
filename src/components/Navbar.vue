@@ -23,7 +23,7 @@
 
         <ul class="mt-16 space-y-4">
           <li><router-link to="/about-us" class="text-white block hover:text-gray-300" @click="toggleMenu">About Us</router-link></li>
-          <li><router-link to="/our-network" class="text-white block hover:text-gray-300" @click="toggleMenu">Our Network</router-link></li>
+          <li><router-link to="/network" class="text-white block hover:text-gray-300" @click="toggleMenu">Our Network</router-link></li>
           <li><router-link to="/pitch-at-hanga" class="text-white block hover:text-gray-300" @click="toggleMenu">Pitch at Hanga</router-link></li>
           <li><router-link to="/timeline" class="text-white block hover:text-gray-300" @click="toggleMenu">Timeline</router-link></li>
           <li><button class="text-white font-semibold">Initiatives</button></li>
@@ -55,7 +55,8 @@
         <li class="text-white font-gramatika font-semibold underline-animation">
           <router-link to="/about-us">About Us</router-link>
         </li>
-        <li class="text-white font-gramatika font-semibold underline-animation">Our Network</li>
+        <li class="text-white font-gramatika font-semibold underline-animation">
+          <router-link to="/network">Our Network</router-link>  </li> 
         <li class="text-white font-gramatika font-semibold underline-animation">Pitch at Hanga</li>
         <div class="flex items-center">
           <button class="text-white font-gramatika font-semibold">Initiatives</button>
