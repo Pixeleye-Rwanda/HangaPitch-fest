@@ -113,38 +113,77 @@
                 </div>
 
                 <!--fourth section -->
-                <div class="">
-                  <div class="font-rockinsoda text-navy text-6xl mt-20 ml-12 ">
+                <div class="ml-12">
+                  <div class="font-rockinsoda text-navy text-6xl mt-2  ">
                     <p>FEATURED STARTUPS</p>
                   </div>
 
-                  <div class="flex flex-col space-y-4 md:flex-row md:space-x-4">
-                    <!-- Year Dropdown -->
-                    <select v-model="selectedYear" class="w-full md:w-1/4 border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                      <option value="">All Years</option>
-                      <option value="2022">2023</option>
-                      <option value="2023">2022</option>
-                      <option value="2022">2021</option>
-                      
-                    </select>
+                  <div class="flex flex-col mt-12 space-y-2  md:flex-row md:space-x-4">
+                    <!-- Category Buttons -->
+                    <div class="flex space-x-4">
+                      <label>
+                        <input type="radio" name="category" value="Fintech" class="hidden" v-model="selectedCategory" />
+                        <span :class="['inline-block px-4 py-2 border border-lightTangerine text-navy  hover:bg-tangerine hover:text-white', selectedCategory === 'Fintech' ? 'bg-tangerine text-white' : 'border-tangerine  text-navy']">
+                          FINTECH
+                        </span>
+                      </label>
+                      <label>
+                        <input type="radio" name="category" value="Education" class="hidden" v-model="selectedCategory" />
+                        <span :class="['inline-block px-4 py-2 border border-lightTangerine text-navy  hover:bg-tangerine hover:text-white', selectedCategory === 'Education' ? 'bg-tangerine text-white' : 'border-tangerine  text-navy']">
+                          EDUCATION
+                        </span>
+                      </label>
+                      <label>
+                        <input type="radio" name="category" value="Transportation" class="hidden" v-model="selectedCategory" />
+                        <span :class="['inline-block px-4 py-2 border border-lightTangerine text-navy  hover:bg-tangerine hover:text-white', selectedCategory === 'Transportation' ? 'bg-tangerine text-white' : 'border-tangerine  text-navy']">
+                          TRANSPORTATION
+                        </span>
+                      </label>
+                      <label>
+                        <input type="radio" name="category" value="Health" class="hidden" v-model="selectedCategory" />
+                        <span :class="['inline-block px-4 py-2 border border-lightTangerine text-navy  hover:bg-tangerine hover:text-white', selectedCategory === 'Health' ? 'bg-tangerine text-white' : 'border-tangerine  text-navy']">
+                          HEALTH
+                        </span>
+                      </label>
+                      <label>
+                        <input type="radio" name="category" value="Agriculture" class="hidden" v-model="selectedCategory" />
+                        <span :class="['inline-block px-4 py-2 border border-lightTangerine text-navy  hover:bg-tangerine hover:text-white', selectedCategory === 'Agriculture' ? 'bg-tangerine text-white' : 'border-tangerine  text-navy']">
+                          AGRICULTURE
+                        </span>
+                      </label>
+                      <label>
+                        <input type="radio" name="category" value="Other" class="hidden" v-model="selectedCategory" />
+                        <span class="inline-block px-4 py-2 border border-lightTangerine text-navy  hover:bg-tangerine  hover:text-white cursor-pointer">
+                          OTHER
+                        </span>
+                      </label>
+                    </div>
                   
-                    <!-- Category Dropdown -->
-                    <select v-model="selectedCategory" class="w-full md:w-1/4 border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                      <option value="">All Categories</option>
-                      <option value="Fintech">Travel</option>
-                      <option value="Education">Education</option>
-                      <option value="Agriculture">Agriculture</option>
-                      <option value="Health">Health</option>
+                    <!-- Year Dropdown -9-->
+                     <div class=" ">
+
+                    <select v-model="selectedYear" class=" ml-72 w-30 bg-white ring-1 ring-lightTangerine outline-none p-2 px-4">
+                      <option value="2023">2023</option>
+                      <option value="2022">2022</option>
+                      <option value="2021">2021</option>
                     </select>
                   </div>
+                  </div>
+                  
 
-                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
-                    <div v-for="startup in filteredStartups" :key="startup.name" class="border p-4 rounded-lg shadow-md">
-                      <img :src="startup.logo" alt="Logo" class="w-full h-16 object-contain mb-4" />
-                      <h3 class="text-lg font-bold">{{ startup.name }}</h3>
-                      <p class="text-sm text-gray-500">{{ startup.category }}</p>
-                      <p class="text-sm text-gray-400">{{ startup.year }}</p>
-                    </div>
+                  <div class="grid grid-cols-1  mr-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  mt-6">
+                    <ul v-for="startup in filteredStartups" :key="startup.name" class=" border border-lightTangerine  p-4  h-[28vh]  ">
+                      
+                      <li>
+                        <router-link to="/description">
+                      <img :src="startup.logo" alt="Logo" class="w-full h-20 mt-4 object-contain mb-4" />
+                     
+                      <h3 class="text-lg text-center  font-gramatika text-navy text-lg mt-4">{{ startup.name }}</h3>
+                    </router-link>
+                     </li>
+
+                  </ul>
+
                   </div>
                   
                   
@@ -173,14 +212,14 @@
             { name: 'Afia Pharma', category: 'Health', year: 2021, logo: require('../assets/2021/Afia.svg') },
             { name: 'E-shuri', category: 'Education', year: 2021, logo: require('../assets/2021/e-shuri.png') },
             { name: 'Bafana', category: 'Entertainment', year: 2022, logo: require('../assets/2022/bafana.png') },
-            { name: 'Mulika Farms', category: 'Agriculture', year: 2022, logo: require('../assets/2022/mulika.png') },
+            { name: 'Mulika Farms', category: 'Agriculture', year: 2022, logo: require('../assets/2022/mulika.svg') },
             { name: 'Tuza Ride', category: 'Travel', year: 2023, logo: require('../assets/2023/tuza.png') },
             { name: 'Smart Class', category: 'Education', year: 2022, logo: require('../assets/2022/smart.png') },
 
 
             
           ],
-          selectedYear:'',
+          selectedYear:'2023',
           selectedCategory:''
         };
         
@@ -192,6 +231,7 @@
            return this.startups.filter(startup => {
            const yearMatch = !this.selectedYear || startup.year == this.selectedYear;
            const categoryMatch = !this.selectedCategory || startup.category == this.selectedCategory;
+           
           return yearMatch && categoryMatch;
         });
       }

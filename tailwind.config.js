@@ -20,18 +20,17 @@ module.exports = {
       lightblue:'#9198B1',
        abtcolor:'#02092994',
        lineColor:' #243B9E',
-       blck: '#404040'
+       blck: '#404040',
+       lightTangerine: '#FFD2BC',
+       descColor:' #444F7E',
+       linkColor: '#1F2A5B'
 
 
 
    
     },
-    clipPath: {
-      'custom': 'polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%)', // adjust this to match the shape in your design
-    }
+   
   },
   },
-  plugins: [
-    require('tailwind-clip-path'),
-  ],
+  
 }
