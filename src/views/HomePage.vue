@@ -29,7 +29,7 @@
     </div>
 
     <!-- First section -->
-    <div class="mt-16 ml-12">
+    <div class="mt-32 ml-12">
       <p class="font-rockinsoda text-navy text-7xl">IGNITING AND INSPIRING</p>
       <p class="font-rockinsoda text-navy text-7xl">INNOVATION</p>
     </div>
@@ -293,7 +293,7 @@
 
         </div>
         
-        <div class="flex space-x-6 ml-12 mr-12">
+        <div class="flex space-x-6 ml-12  mr-12">
           <div class="relative h-[500px] w-[600px] flex-shrink-0">
             <img src="../assets/stad.jpg" class="w-full h-full object-cover">
             <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
@@ -345,81 +345,32 @@
           <h1 class="font-rockinsoda text-5xl text-navy ml-2">2023</h1>
         <h1 class="font-rockinsoda text-5xl text-navy">NOTABLE SPEAKERS</h1>
         </div>
-        <div class="flex ml-12  mt-20">
-          <div class="relative h-[582px] w-[400px] flex-shrink-0">
-            <img src="../assets/Kagame.jpg" class="w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
-            <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-              <div class="space-y-4 ">
-                <div class=" mt-80">
-                  <p class="">
-                    Paul Kagame
-                  </p>
+        <div class="relative overflow-x-hidden mt-24" style="height: 582px;">
+          <div class="flex animate-scroll absolute" :style="{ width: `${individuals.length * 800}px` }">
+            <template v-for="(_, loopIndex) in 2">
+              <div v-for="(individual, index) in individuals" :key="`${loopIndex}-${index}`" class="relative h-[582px] w-[400px] flex-shrink-0">
+                <img :src="individual.image" class="w-full h-full object-cover">
+                <div class="absolute inset-0" :style="{ background: individual.gradient }"></div>
+                <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+                  <div class="space-y-4">
+                    <div class="mt-80">
+                      <p class="text-center">{{ individual.name }}</p>
+                    </div>
+                    <div>
+                      <p class="text-white font-gramatika text-xl text-center" v-html="individual.title"></p>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="">
-                  <p class="text-white font-gramatika text-xl ml-2"> President of the</p>
-                  <p class="text-white font-gramatika text-xl text-center"> Republic of Rwanda </p>
-                </div>
-              </div> 
-
-            </div>                
-             </div>
-          
-          
-          <div class="relative h-[582px] w-[400px] flex-shrink-0">
-            <img src="../assets/ingabire.jpg" class="w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.02) 0%, rgba(1, 9, 48, 0.15) 50%, rgba(1, 9, 48, 0.9) 100%);"></div>
-            <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-              <div class="space-y-4 ">
-                <div class=" mt-80">
-                  <p class="">
-                    Paula Ingabire 
-                  </p>
-                </div>
-
-                <div class="">
-                  <p class="text-white font-gramatika text-xl"> Minister of MINICT and </p>
-                  <p class="text-white font-gramatika text-xl text-center"> Innovation</p>
-                </div>
-              </div> 
-
-            </div>        
-                   
+              </div>
+            </template>
           </div>
-          
-          
-          <div class="relative h-[582px] w-[400px] flex-shrink-0">
-            <img src="../assets/ceo.jpg" class="w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
-            <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-              <div class="space-y-4 ">
-                <div class=" mt-80">
-                  <p class="">
-                    Francis Gatare
-                  </p>
-                </div>
-
-                <div class="">
-                  <p class="text-white font-gramatika text-xl text-center "> CEO of Rwanda</p>
-                  <p class="text-white font-gramatika text-xl text-center"> Development Board</p>
-                </div>
-              </div> 
-
-            </div>
-
-            
-          </div>
-          
-          
-          
         </div>
         
       </div>
 
     <!--------- section 10 -------->
     <div class=" ml-8">
-      <div class="mt-24">
+      <div class="mt-32">
         <h1 class=" ml-4 font-rockinsoda text-5xl text-navy ">HANGA ON INSTAGRAM</h1>
       </div>
 
@@ -470,7 +421,7 @@
 
       <div class="relative">
         <!---------section 12------->
-        <div class="h-[400px] relative z-10 -mb-48"> 
+        <div class="h-[400px] relative z-10 -mb-48  "> 
           <div class="absolute w-full left-0 right-0 mt-20">
             <img src="../assets/footersvg.svg" alt="" class="w-full h-auto block">
             <img src="../assets/hanga elements_illustration 2.svg" class="absolute top-0 mt-24 left-[57%] w-1/3 h-auto">
@@ -564,6 +515,31 @@ export default {
 
     
 
+  },
+
+  data() {
+    return {
+      individuals: [
+        {
+          name: 'Paul Kagame',
+          title: 'President of the<br>Republic of Rwanda',
+          image: require('@/assets/Kagame.jpg'),
+          gradient: 'linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%)'
+        },
+        {
+          name: 'Paula Ingabire',
+          title: 'Minister of MINICT and<br>Innovation',
+          image: require('@/assets/ingabire.jpg'),
+          gradient: 'linear-gradient(to bottom, rgba(1, 9, 48, 0.02) 0%, rgba(1, 9, 48, 0.15) 50%, rgba(1, 9, 48, 0.9) 100%)'
+        },
+        {
+          name: 'Francis Gatare',
+          title: 'CEO of Rwanda<br>Development Board',
+          image: require('@/assets/ceo.jpg'),
+          gradient: 'linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%)'
+        }
+      ]
+    };
   }
 }
 
@@ -661,6 +637,19 @@ export default {
 
   .hover-image:hover .hover-overlay {
     opacity: 1;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
   }
 </style>
 
