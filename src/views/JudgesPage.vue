@@ -14,305 +14,48 @@
     </div>
   </div>
 
-  <!-- 2023 judges -->
-   
-
-   
-  <div class="ml-12 mt-32 flex space-x-2">
-    <p class="font-gramatika text-lg">Judges</p>
-    <hr class="w-[20px] border border-black mt-4 ">
-    <p class="font-gramatika text-lg" >2023</p>
-   </div>
-
-    <div class="flex ml-12  mt-10">
-      <div class="relative h-[582px] w-[400px] flex-shrink-0">
-        <img src="../assets/alice.jpg" class="w-full h-full object-cover">
-        <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
-        <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-          <div class="space-y-4 ">
-            <div class=" mt-80">
-              <p class="text-center">
-                Alice Nkulikiyinka
-              </p>
-            </div>
-
-            <div class="">
-              <p class="text-white font-gramatika text-xl text-center"> Country director </p>
-              <p class="text-white font-gramatika text-xl text-center"> BPN Rwanda</p>
-            </div>
-          </div> 
-
-        </div>                
-         </div>
-      
-      
-      <div class="relative h-[582px] w-[400px] flex-shrink-0">
-        <img src="../assets/conard.jpg" class="w-full h-full object-cover">
-        <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.02) 0%, rgba(1, 9, 48, 0.15) 50%, rgba(1, 9, 48, 0.9) 100%);"></div>
-        <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-          <div class="space-y-4 ">
-            <div class=" mt-80">
-              <p class="text-center">
-                Conard Tucker  
-              </p>
-            </div>
-
-            <div class="">
-              <p class="text-white font-gramatika text-center text-xl"> Director </p>
-              <p class="text-white font-gramatika text-xl text-center"> CMU-Africa</p>
-            </div>
-          </div> 
-
-        </div>        
-               
-      </div>
-      
-      
-      <div class="relative h-[582px] w-[400px] flex-shrink-0">
-        <img src="../assets/eleni.jpg" class="w-full h-full object-cover">
-        <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
-        <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-          <div class="space-y-4 ">
-            <div class=" mt-80">
-              <p class="text-center">
-                ELENI GABRE-MADHIN
-              </p>
-            </div>
-
-            <div class="">
-              <p class="text-white font-gramatika text-xl text-center ">Chief Innovation Officer</p>
-              <p class="text-white font-gramatika text-xl text-center">UNDP Regional Bureau for Africa </p>
-            </div>
-          </div> 
-
-        </div>
-
-        
-      </div>
-
-      <div class="relative h-[582px] w-[400px] flex-shrink-0">
-        <img src="../assets/eleni.jpg" class="w-full h-full object-cover">
-        <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
-        <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-          <div class="space-y-4 ">
-            <div class=" mt-80">
-              <p class="text-center">
-                NICOLE DAVIS
-              </p>
-            </div>
-
-            <div class="">
-              <p class="text-white font-gramatika text-xl text-center ">World Bank Ltd</p>
-              <p class="text-white font-gramatika text-xl text-center">Partner</p>
-            </div>
-          </div> 
-
-        </div>
-
-        
-      </div>
-      
-      
-      
-    </div>
-
-    <!-- 2022 judges  -->
-    <div class="ml-12 mt-32 flex space-x-2">
-      <p class="font-gramatika text-lg">Judges</p>
-      <hr class="w-[20px] border border-black mt-4 ">
-      <p class="font-gramatika text-lg" >2022</p>
-     </div>
-  
-      <div class="flex ml-12  mt-10">
-        <div class="relative h-[582px] w-[400px] flex-shrink-0">
-          <img src="../assets/obina.jpg" class="w-full h-full object-cover">
-          <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
-          <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-            <div class="space-y-4 ">
-              <div class=" mt-80">
-                <p class="text-center">
-                  OBINNA UKUANI 
-                </p>
-              </div>
-  
-              <div class="">
-                <p class="text-white font-gramatika text-xl text-center">Chief Digital Officer </p>
-                <p class="text-white font-gramatika text-xl text-center">Bank of Kigali Plc</p>
-              </div>
-            </div> 
-  
-          </div>                
-           </div>
-        
-        
-        <div class="relative h-[582px] w-[400px] flex-shrink-0">
-          <img src="../assets/hortense.jpg" class="w-full h-full object-cover">
-          <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.02) 0%, rgba(1, 9, 48, 0.15) 50%, rgba(1, 9, 48, 0.9) 100%);"></div>
-          <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-            <div class="space-y-4 ">
-              <div class=" mt-80">
-                <p class="text-center">
-                  HORTENSE MUDENGE 
-                </p>
-              </div>
-  
-              <div class="">
-                <p class="text-white font-gramatika text-center text-xl"> Chief Operations Officer </p>
-                <p class="text-white font-gramatika text-xl text-center"> Rwanda Finance Ltd</p>
-              </div>
-            </div> 
-  
-          </div>        
-                 
-        </div>
-        
-        
-        <div class="relative h-[582px] w-[400px] flex-shrink-0">
-          <img src="../assets/eric.jpg" class="w-full h-full object-cover">
-          <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
-          <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-            <div class="space-y-4 ">
-              <div class=" mt-80">
-                <p class="text-center">
-                  ERIC KACOU
-                </p>
-              </div>
-  
-              <div class="">
-                <p class="text-white font-gramatika text-xl text-center ">Ceo & Co-founder </p>
-                <p class="text-white font-gramatika text-xl text-center">ESPartners </p>
-              </div>
-            </div> 
-  
-          </div>
-  
-          
-        </div>
-  
-        <div class="relative h-[582px] w-[400px] flex-shrink-0">
-          <img src="../assets/alice.jpg" class="w-full h-full object-cover">
-          <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
-          <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-            <div class="space-y-4 ">
-              <div class=" mt-80">
-                <p class="text-center">
-                  Alice Nkulikiyinka
-                </p>
-              </div>
-  
-              <div class="">
-                <p class="text-white font-gramatika text-xl text-center"> Country director </p>
-                <p class="text-white font-gramatika text-xl text-center"> BPN Rwanda</p>
-              </div>
-            </div> 
-  
-          </div>                
-           </div>
-        
-        
-        
-      </div>
-
-      <!-- 2021 judges -->
+  <!-- infinity scroll section -->
+  <div>
+    <div v-for="(year, index) in years" :key="index" class="mb-16">
       <div class="ml-12 mt-32 flex space-x-2">
         <p class="font-gramatika text-lg">Judges</p>
-        <hr class="w-[20px] border border-black mt-4 ">
-        <p class="font-gramatika text-lg" >2021</p>
-       </div>
-    
-        <div class="flex ml-12  mt-10">
-          <div class="relative h-[582px] w-[400px] flex-shrink-0">
-            <img src="../assets/clarisse.jpg" class="w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
-            <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-              <div class="space-y-4 ">
-                <div class=" mt-80">
-                  <p class="text-center">
-                    CLARISSE IRIBAGIZA 
-                  </p>
+        <hr class="w-[20px] border border-black mt-4">
+        <p class="font-gramatika text-lg">{{ year }}</p>
+      </div>
+      
+      <div class="relative overflow-x-hidden mt-20" style="height: 582px;">
+        <div class="flex animate-scroll absolute" :style="{ width: `${judges[year].length * 700}px` }">
+          <template v-for="(_, loopIndex) in 2">
+            <div v-for="(judge, judgeIndex) in judges[year]" :key="`${loopIndex}-${judgeIndex}`" class="w-[400px] flex-shrink-0">
+              <div class="relative h-[582px] w-[400px]">
+                <img :src="judge.image" class="w-full h-full object-cover">
+                <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
+                <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+                  <div class="space-y-4">
+                    <div class="mt-80">
+                      <p class="text-center">{{ judge.name }}</p>
+                    </div>
+                    <div>
+                      <p class="text-white font-gramatika text-xl text-center">{{ judge.title }}</p>
+                      <p class="text-white font-gramatika text-xl text-center">{{ judge.organization }}</p>
+                    </div>
+                  </div>
                 </div>
-    
-                <div class="">
-                  <p class="text-white font-gramatika text-xl text-center">Chief Executive Officer </p>
-                  <p class="text-white font-gramatika text-xl text-center">Hehe</p>
-                </div>
-              </div> 
-    
-            </div>                
-             </div>
-          
-          
-          <div class="relative h-[582px] w-[400px] flex-shrink-0">
-            <img src="../assets/sena.jpg" class="w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.02) 0%, rgba(1, 9, 48, 0.15) 50%, rgba(1, 9, 48, 0.9) 100%);"></div>
-            <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-              <div class="space-y-4 ">
-                <div class=" mt-80">
-                  <p class="text-center">
-                    PRO SENAIT FISSEHA 
-                  </p>
-                </div>
-    
-                <div class="">
-                  <p class="text-white font-gramatika text-center text-xl"> Director of Global Programs</p>
-                    
-                  <p class="text-white font-gramatika text-xl text-center"> The Susan Thompson Buffett Foundation </p>
-                </div>
-              </div> 
-    
-            </div>        
-                   
-          </div>
-          
-          
-          <div class="relative h-[582px] w-[400px] flex-shrink-0">
-            <img src="../assets/Ron.jpg" class="w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
-            <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-              <div class="space-y-4 ">
-                <div class=" mt-80">
-                  <p class="text-center">
-                    RON FISHER 
-                  </p>
-                </div>
-    
-                <div class="">
-                  <p class="text-white font-gramatika text-xl text-center "> Director, Strategic Product Growth </p>
-                  <p class="text-white font-gramatika text-xl text-center"> Mindbody  </p>
-                </div>
-              </div> 
-    
+              </div>
             </div>
-    
-            
-          </div>
-          <div class="relative h-[582px] w-[400px] flex-shrink-0">
-            <img src="../assets/eric.jpg" class="w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
-            <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-              <div class="space-y-4 ">
-                <div class=" mt-80">
-                  <p class="text-center">
-                    ERIC KACOU
-                  </p>
-                </div>
-    
-                <div class="">
-                  <p class="text-white font-gramatika text-xl text-center ">Ceo & Co-founder </p>
-                  <p class="text-white font-gramatika text-xl text-center">ESPartners </p>
-                </div>
-              </div> 
-    
-            </div>
-    
-            
-          </div>
-          
-          
-          
+          </template>
         </div>
+      </div>
+    </div>
+  </div>
+
   
-    
+
+  <!-- next section -->
+   
+
+   
+  
   
 
 </template>
@@ -320,6 +63,48 @@
 
 <script>
 export default{
-    name:'JudgesPage'
-}
+    name:'JudgesPage',
+
+    data() {
+    return {
+      years: ['2023', '2022', '2021'],
+      judges: {
+        '2023': [
+          { name: 'Alice Nkulikiyinka', title: 'Country director', organization: 'BPN Rwanda', image: require('@/assets/alice.jpg') },
+          { name: 'Conard Tucker', title: 'Director', organization: 'CMU-Africa', image: require('@/assets/conard.jpg') },
+          { name: 'ELENI GABRE-MADHIN', title: 'Chief Innovation Officer', organization: 'UNDP Regional Bureau for Africa', image: require('@/assets/eleni.jpg') },
+          { name: 'NICOLE DAVIS', title: 'Partner', organization: 'World Bank Ltd', image: require('@/assets/nicole.jpg') },
+        ],
+        '2022': [
+          { name: 'OBINNA UKUANI', title: 'Chief Digital Officer', organization: 'Bank of Kigali Plc', image: require('@/assets/obina.jpg' )},
+          { name: 'HORTENSE MUDENGE', title: 'Chief Operations Officer', organization: 'Rwanda Finance Ltd', image: require('@/assets/hortense.jpg') },
+          { name: 'ERIC KACOU', title: 'CEO & Co-founder', organization: 'ESPartners', image: require('@/assets/eric.jpg') },
+          { name: 'Alice Nkulikiyinka', title: 'Country director', organization: 'BPN Rwanda', image: require('@/assets/alice.jpg') },
+        ],
+        '2021': [
+          { name: 'CLARISSE IRIBAGIZA', title: 'Chief Executive Officer', organization: 'Hehe', image: require('@/assets/clarisse.jpg') },
+          { name: 'PRO SENAIT FISSEHA', title: 'Director of Global Programs', organization: 'The Susan Thompson Buffett Foundation', image: require('@/assets/sena.jpg') },
+          { name: 'RON FISHER', title: 'Director, Strategic Product Growth', organization: 'Mindbody', image: require('@/assets/Ron.jpg') },
+          { name: 'ERIC KACOU', title: 'CEO & Co-founder', organization: 'ESPartners', image: require('@/assets/eric.jpg' )},
+        ]
+      }
+    };
+  }
+};
 </script>
+
+<style scoped>
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+</style>
+
