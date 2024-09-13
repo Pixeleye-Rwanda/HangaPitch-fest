@@ -28,7 +28,7 @@
 
         <ul class="flex space-x-16 ml-auto mt-4 mr-12">
           <li class="font-gramatika text-white text-lg cursor-pointer" 
-          :class="{'underline underline-offset-4 ': currentSection === 'startups'}"
+          :class="{'underline underline-offset-4 ': currentSection === 'startups'& currentComponent === 'StartupsPage',}"
 
           @click="setContent('startups')">
             Startups

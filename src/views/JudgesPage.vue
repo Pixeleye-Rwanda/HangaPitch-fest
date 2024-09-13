@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <!-- second option -->
+  <!-- 2023 judges -->
    
 
    
@@ -115,6 +115,203 @@
       
       
     </div>
+
+    <!-- 2022 judges  -->
+    <div class="ml-12 mt-32 flex space-x-2">
+      <p class="font-gramatika text-lg">Judges</p>
+      <hr class="w-[20px] border border-black mt-4 ">
+      <p class="font-gramatika text-lg" >2022</p>
+     </div>
+  
+      <div class="flex ml-12  mt-10">
+        <div class="relative h-[582px] w-[400px] flex-shrink-0">
+          <img src="../assets/obina.jpg" class="w-full h-full object-cover">
+          <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
+          <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+            <div class="space-y-4 ">
+              <div class=" mt-80">
+                <p class="text-center">
+                  OBINNA UKUANI 
+                </p>
+              </div>
+  
+              <div class="">
+                <p class="text-white font-gramatika text-xl text-center">Chief Digital Officer </p>
+                <p class="text-white font-gramatika text-xl text-center">Bank of Kigali Plc</p>
+              </div>
+            </div> 
+  
+          </div>                
+           </div>
+        
+        
+        <div class="relative h-[582px] w-[400px] flex-shrink-0">
+          <img src="../assets/hortense.jpg" class="w-full h-full object-cover">
+          <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.02) 0%, rgba(1, 9, 48, 0.15) 50%, rgba(1, 9, 48, 0.9) 100%);"></div>
+          <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+            <div class="space-y-4 ">
+              <div class=" mt-80">
+                <p class="text-center">
+                  HORTENSE MUDENGE 
+                </p>
+              </div>
+  
+              <div class="">
+                <p class="text-white font-gramatika text-center text-xl"> Chief Operations Officer </p>
+                <p class="text-white font-gramatika text-xl text-center"> Rwanda Finance Ltd</p>
+              </div>
+            </div> 
+  
+          </div>        
+                 
+        </div>
+        
+        
+        <div class="relative h-[582px] w-[400px] flex-shrink-0">
+          <img src="../assets/eric.jpg" class="w-full h-full object-cover">
+          <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
+          <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+            <div class="space-y-4 ">
+              <div class=" mt-80">
+                <p class="text-center">
+                  ERIC KACOU
+                </p>
+              </div>
+  
+              <div class="">
+                <p class="text-white font-gramatika text-xl text-center ">Ceo & Co-founder </p>
+                <p class="text-white font-gramatika text-xl text-center">ESPartners </p>
+              </div>
+            </div> 
+  
+          </div>
+  
+          
+        </div>
+  
+        <div class="relative h-[582px] w-[400px] flex-shrink-0">
+          <img src="../assets/alice.jpg" class="w-full h-full object-cover">
+          <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
+          <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+            <div class="space-y-4 ">
+              <div class=" mt-80">
+                <p class="text-center">
+                  Alice Nkulikiyinka
+                </p>
+              </div>
+  
+              <div class="">
+                <p class="text-white font-gramatika text-xl text-center"> Country director </p>
+                <p class="text-white font-gramatika text-xl text-center"> BPN Rwanda</p>
+              </div>
+            </div> 
+  
+          </div>                
+           </div>
+        
+        
+        
+      </div>
+
+      <!-- 2021 judges -->
+      <div class="ml-12 mt-32 flex space-x-2">
+        <p class="font-gramatika text-lg">Judges</p>
+        <hr class="w-[20px] border border-black mt-4 ">
+        <p class="font-gramatika text-lg" >2021</p>
+       </div>
+    
+        <div class="flex ml-12  mt-10">
+          <div class="relative h-[582px] w-[400px] flex-shrink-0">
+            <img src="../assets/clarisse.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
+            <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+              <div class="space-y-4 ">
+                <div class=" mt-80">
+                  <p class="text-center">
+                    CLARISSE IRIBAGIZA 
+                  </p>
+                </div>
+    
+                <div class="">
+                  <p class="text-white font-gramatika text-xl text-center">Chief Executive Officer </p>
+                  <p class="text-white font-gramatika text-xl text-center">Hehe</p>
+                </div>
+              </div> 
+    
+            </div>                
+             </div>
+          
+          
+          <div class="relative h-[582px] w-[400px] flex-shrink-0">
+            <img src="../assets/sena.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.02) 0%, rgba(1, 9, 48, 0.15) 50%, rgba(1, 9, 48, 0.9) 100%);"></div>
+            <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+              <div class="space-y-4 ">
+                <div class=" mt-80">
+                  <p class="text-center">
+                    PRO SENAIT FISSEHA 
+                  </p>
+                </div>
+    
+                <div class="">
+                  <p class="text-white font-gramatika text-center text-xl"> Director of Global Programs</p>
+                    
+                  <p class="text-white font-gramatika text-xl text-center"> The Susan Thompson Buffett Foundation </p>
+                </div>
+              </div> 
+    
+            </div>        
+                   
+          </div>
+          
+          
+          <div class="relative h-[582px] w-[400px] flex-shrink-0">
+            <img src="../assets/Ron.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
+            <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+              <div class="space-y-4 ">
+                <div class=" mt-80">
+                  <p class="text-center">
+                    RON FISHER 
+                  </p>
+                </div>
+    
+                <div class="">
+                  <p class="text-white font-gramatika text-xl text-center "> Director, Strategic Product Growth </p>
+                  <p class="text-white font-gramatika text-xl text-center"> Mindbody  </p>
+                </div>
+              </div> 
+    
+            </div>
+    
+            
+          </div>
+          <div class="relative h-[582px] w-[400px] flex-shrink-0">
+            <img src="../assets/eric.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
+            <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+              <div class="space-y-4 ">
+                <div class=" mt-80">
+                  <p class="text-center">
+                    ERIC KACOU
+                  </p>
+                </div>
+    
+                <div class="">
+                  <p class="text-white font-gramatika text-xl text-center ">Ceo & Co-founder </p>
+                  <p class="text-white font-gramatika text-xl text-center">ESPartners </p>
+                </div>
+              </div> 
+    
+            </div>
+    
+            
+          </div>
+          
+          
+          
+        </div>
+  
     
   
 
