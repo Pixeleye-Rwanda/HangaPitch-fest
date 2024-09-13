@@ -29,6 +29,12 @@ module.exports = {
 
    
     },
+    backgroundImage: {
+      'startups': "url('@/assets/speaker1.jpg')",
+      'judges': "url('@/assets/speaker1.jpg')",
+      'partners':"url('@/assets/networkbg.jpg')",
+
+    }
    
   },
   },

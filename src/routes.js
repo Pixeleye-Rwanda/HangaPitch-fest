@@ -2,6 +2,9 @@ import HomePage from "@/views/HomePage.vue";
 import AboutUs from "@/views/AboutPage.vue";
 import OurNetwork from "./views/OurNetwork.vue";
 import DescPage from "./views/DescPage.vue";
+import StartupsPage from "./views/startupsPage.vue";
+import PartnersPage from "./views/PartnersPage.vue";
+import JudgesPage from "./views/JudgesPage.vue";
 
 import { createRouter,createWebHistory } from "vue-router";
 
@@ -27,6 +30,23 @@ const routes=[
       name:"DescPage"  ,
       component:DescPage,
       path:'/description'
+    },
+
+    {
+        name:"Startups",
+        component:StartupsPage,
+        path:'/startups'
+    },
+
+    {
+        name:'Judges',
+        component:JudgesPage,
+        path:'/judges'
+    },
+    {
+        name:'Partners',
+        component:PartnersPage,
+        path:'/partners'
     }
 
 
