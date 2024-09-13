@@ -52,6 +52,58 @@
   
 
   <!-- next section -->
+
+  <div class="ml-12 mt-32">
+    
+
+    <div class=" mt-12 ml-16 overflow-hidden">
+
+        <div ref="videoWrapper" class="flex space-x-8 overflow-x-auto overflow-x-hidden scroll-smooth">
+
+        <!-- First text Block -->
+        <div class="flex-shrink-0 flex flex-col space-y-2 w-[600px] h-[600px]">
+            <div class="relative  flex w-full h-full">
+
+        <div class="mt-24">
+            <span class="font-rockinsoda text-tangerine text-7xl ml-2  ">"</span>
+            <p class="text-navy text-2xl font-gramatika font-bold w-[60vh] -mt-8 p-4 text-justify text-center">
+           With funding from Hanga, I was able to launch for our first international market.</p>
+
+            <div class="flex space-x-2 ml-2 ">
+                <hr class=" w-[50px] border-2 mt-2 border-navy ">
+                <p class="font-rockinsoda text-navy text-2xl ">THERESA, DOPE INITIATIVES</p> 
+            </div>
+        </div>
+        <div class="flex-shrink-0 h-[500px]">
+            <img src="../assets/dope.jpg"  class="w-full object-cover ">
+        </div>
+        </div>
+        </div>
+            
+    
+
+        </div>
+
+        <!-- Scroll Buttons -->
+        <div class="float-left space-x-2  -mt-24 mr-12">
+        <button @click="scrollLeft" 
+                class=" top-1/2 right-0 transform -translate-y-1/2 z-10 border-2  rounded-full p-4 bg-white text-navy focus:outline-none hover:bg-navy hover:text-white transition">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+        </button>
+        
+        <button @click="scrollRight" 
+        class=" top-1/2 left-0 transform -translate-y-1/2 z-10 border-2  rounded-full p-4 bg-white text-navy focus:outline-none hover:bg-navy hover:text-white transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+        </button>
+        </div>
+
+    </div>
+    </div>
+    
    
 
    
