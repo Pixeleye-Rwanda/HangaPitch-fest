@@ -10,10 +10,12 @@
         <div class="font-rockinsoda absolute text-white text-6xl top-96 ml-12">
           <p>{{ currentTitleLine1 }}</p>
           <p>{{ currentTitleLine2 }}</p>
-          <div class="">
-             <p>{{headline}}</p>
-          </div>
+          
         </div>
+
+        <div class="-mt-32 w-[70vh] ml-12 text-white font-gramatika absolute text-lg">
+          <p>{{headline}}</p>
+       </div>
       </div>
     </div>
 
@@ -25,13 +27,22 @@
         </div>
 
         <ul class="flex space-x-16 ml-auto mt-4 mr-12">
-          <li class="font-gramatika text-white text-lg cursor-pointer" @click="setContent('startups')">
+          <li class="font-gramatika text-white text-lg cursor-pointer" 
+          :class="{'underline underline-offset-4 ': currentSection === 'startups'}"
+
+          @click="setContent('startups')">
             Startups
           </li>
-          <li class="font-gramatika text-white text-lg cursor-pointer" @click="setContent('judges')">
+          <li class="font-gramatika text-white text-lg cursor-pointer" 
+          :class="{'underline underline-offset-4 ': currentSection === 'judges'}"
+
+          @click="setContent('judges')">
             Judges
           </li>
-          <li class="font-gramatika text-white text-lg cursor-pointer" @click="setContent('partners')">
+          <li class="font-gramatika text-white text-lg cursor-pointer"
+          :class="{'underline underline-offset-4 ': currentSection === 'partners'}"
+
+           @click="setContent('partners')">
             Partners
           </li>
         </ul>
@@ -94,8 +105,8 @@ export default {
   },
   data() {
     return {
-      currentComponent: 'StartupsPage', // Default to Startups
-      currentBgImage: require('@/assets/networkbg.jpg'), // Default image
+      currentComponent: 'StartupsPage', 
+      currentBgImage: require('@/assets/networkbg.jpg'), 
       currentTitleLine1: 'STARTUPS',
       currentTitleLine2: 'FUNDED BY HANGA',
       headline:''
@@ -103,6 +114,7 @@ export default {
   },
   methods: {
     setContent(section) {
+      this.currentSection = section; 
 
       if (section === 'startups') {
         this.currentComponent = 'StartupsPage';
