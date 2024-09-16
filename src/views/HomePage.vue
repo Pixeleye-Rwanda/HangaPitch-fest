@@ -9,7 +9,7 @@
         <div class="font-rockinsoda absolute text-white text-6xl top-56 ml-12 slide-up" ref="text">
           <p>THE LARGEST IN-PERSON</p>
           <p>TECHNOLOGY EVENT IN</p>
-          <p>Rwanda</p>
+          <p>RWANDA</p>
         </div>
         
       </div>
@@ -339,7 +339,7 @@
 
       </div>
 
-      <!---------------- section nine ----------->
+      <!--------- section nine ---------->
       <div class="">
         <div class="mt-24 ml-12 space-x-2">
           <h1 class="font-rockinsoda text-5xl text-navy ml-2">2023</h1>
@@ -512,8 +512,6 @@ export default {
     observer.observe(this.$refs.img2);
 
 
-
-    
 
   },
 

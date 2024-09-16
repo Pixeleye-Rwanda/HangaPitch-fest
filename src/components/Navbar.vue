@@ -57,7 +57,8 @@
         </li>
         <li class="text-white font-gramatika font-semibold underline-animation">
           <router-link to="/network">Our Network</router-link>  </li> 
-        <li class="text-white font-gramatika font-semibold underline-animation">Pitch at Hanga</li>
+        <li class="text-white font-gramatika font-semibold underline-animation">
+          <router-link to="/pitch"> Pitch at Hanga </router-link> </li>
         <div class="flex items-center">
           <button class="text-white font-gramatika font-semibold">Initiatives</button>
           <svg class="-mr-1 ml-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

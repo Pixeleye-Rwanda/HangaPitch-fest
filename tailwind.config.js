@@ -23,7 +23,9 @@ module.exports = {
        blck: '#404040',
        lightTangerine: '#FFD2BC',
        descColor:' #444F7E',
-       linkColor: '#1F2A5B'
+       linkColor: '#1F2A5B',
+       darkGray: '#404040'
+
 
 
 

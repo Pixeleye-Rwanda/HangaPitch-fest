@@ -404,9 +404,6 @@
                     entry.target.classList.add('zoom-in-visible');
                     entry.target.classList.add('fade-in-visible');
                 
-
-
-
                     }
                 })
                 });

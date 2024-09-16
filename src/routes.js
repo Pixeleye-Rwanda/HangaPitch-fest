@@ -5,6 +5,7 @@ import DescPage from "./views/DescPage.vue";
 import StartupsPage from "./views/startupsPage.vue";
 import PartnersPage from "./views/PartnersPage.vue";
 import JudgesPage from "./views/JudgesPage.vue";
+import PitchHanga from "./views/PitchHanga.vue";
 
 import { createRouter,createWebHistory } from "vue-router";
 
@@ -47,6 +48,12 @@ const routes=[
         name:'Partners',
         component:PartnersPage,
         path:'/partners'
+    },
+    
+    {
+        name:'PitchHanga',
+        component:PitchHanga,
+        path:'/pitch'
     }
 
 
