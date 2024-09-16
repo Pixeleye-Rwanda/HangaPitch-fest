@@ -345,9 +345,9 @@
           <h1 class="font-rockinsoda text-5xl text-navy ml-2">2023</h1>
         <h1 class="font-rockinsoda text-5xl text-navy">NOTABLE SPEAKERS</h1>
         </div>
-        <div class="relative overflow-x-hidden mt-24" style="height: 582px;">
+        <div class="relative overflow-x-hidden mt-24 ml-12" style="height: 582px;">
           <div class="flex animate-scroll absolute" :style="{ width: `${individuals.length * 800}px` }">
-            <template v-for="(_, loopIndex) in 2">
+            <template v-for="(_, loopIndex) in 1">
               <div v-for="(individual, index) in individuals" :key="`${loopIndex}-${index}`" class="relative h-[582px] w-[400px] flex-shrink-0">
                 <img :src="individual.image" class="w-full h-full object-cover">
                 <div class="absolute inset-0" :style="{ background: individual.gradient }"></div>
@@ -647,10 +647,7 @@ export default {
       transform: translateX(-50%);
     }
   }
-  
-  .animate-scroll {
-    animation: scroll 30s linear infinite;
-  }
+
 </style>
 
 
