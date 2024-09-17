@@ -50,12 +50,14 @@
 
             <div class="  absolute flex ml-12  space-x-12 mt-16">
               <div class="w-[350px] h-[40vh] space-y-4">
-                <p class="font-rockinsoda text-4xl text-navy"> Create Acount</p>
-                <p class="font-gramatika text-lg  text-darkGray"> Sign up on Hanga by clicking on the 
+                <img src="../assets/one.svg" class="absolute -mt-28 h-13 w-13">
+                <p class="font-rockinsoda text-5xl text-navy"> Create Acount</p>
+                <p class="font-gramatika text-xl  text-darkGray"> Sign up on Hanga by clicking on the 
                   <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" class="text-tangerine ">
                     official link to registration</a></p>
               </div>
               <div class="w-[350px] h-[40vh] space-y-4">
+                <img src="../assets/two.svg" class="absolute -mt-28 h-13 w-13">
                 <p class="font-rockinsoda text-4xl text-navy"> Validate Email</p>
                 <p class="font-gramatika text-lg text-darkGray">Check your email inbox for a message from Hanga Pitchfest.
                   Open the email and click on the validation link provided</p>
@@ -63,6 +65,7 @@
               </div>
               <div class="space-y-8 ">
               <div class="w-[350px]  h-[40vh] mr-12">
+                <img src="../assets/three.svg" class="absolute -mt-28 h-13 w-13">
 
                 <p class="font-rockinsoda text-4xl text-navy"> Fill Form</p>
                 <p class="font-gramatika text-lg text-darkGray">Log in to your Hanga Pitchfest account.
@@ -71,7 +74,9 @@
               
               </div>
               <div class="w-[350px] h-[40vh]  ">
-                <p class="font-rockinsoda text-4xl text-navy mt-32"> submit Project</p>
+                <img src="../assets/four.svg" class="absolute -mt-32 h-13 w-13">
+
+                <p class="font-rockinsoda text-4xl text-navy mt-28"> submit Project</p>
                 <p class="font-gramatika text-lg text-darkGray">Review your application form to ensure all information is accurate and complete.
                   Once you're satisfied with the application, click the "Submit" button.</p>
 
@@ -81,7 +86,7 @@
             
             </div>
             <div class="ml-12 ">
-              <img src="../assets/Subtract .svg" class="mb-72 mt-32">
+              <img src="../assets/Subtract .svg" class="mb-72 mt-48">
            </div>
 
            </div>
