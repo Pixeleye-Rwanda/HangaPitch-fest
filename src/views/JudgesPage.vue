@@ -220,7 +220,8 @@
           <p class="font-gramatika text-lg" >2021</p>
          </div>
       
-          <div class="flex ml-12  mt-10">
+                 
+             <div class="flex ml-12  mt-10">
             <div class="relative h-[582px] w-[400px] flex-shrink-0">
               <img src="../assets/clarisse.jpg" class="w-full h-full object-cover">
               <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
@@ -237,9 +238,8 @@
                     <p class="text-white font-gramatika text-xl text-center">Hehe</p>
                   </div>
                 </div> 
-      
-              </div>                
-               </div>
+              </div> 
+              </div>       
             
             
             <div class="relative h-[582px] w-[400px] flex-shrink-0">
