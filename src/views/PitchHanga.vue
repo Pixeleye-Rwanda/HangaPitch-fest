@@ -65,7 +65,7 @@
               </div>
               <div class="space-y-8 ">
               <div class="w-[350px]  h-[40vh] mr-12 space-y-4">
-                <img src="../assets/three.svg" class="absolute -mt-28 h-13 w-13">
+                <img src="../assets/three.svg" class="absolute -mt-32 h-13 w-13">
 
                 <p class="font-rockinsoda text-5xl text-navy"> Fill Form</p>
                 <p class="font-gramatika text-xl text-darkGray">Log in to your Hanga Pitchfest account.
@@ -110,31 +110,70 @@
             </div>
 
 
-          <div class="flex  mt-16">
-            <div v-for="winner in filteredWinners" :key="winner.name" class="relative h-[582px] w-[400px] flex-shrink-0  " :class="winner.class ">
-              <img :src="winner.image" class="w-full h-full object-contain">
-              <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
-              <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
-                <div class="space-y-4 ">
-                  <div class=" mt-80">
-                    <p class="text-center">
-                      {{winner.startup}}
-                    </p>
-                  </div>
-      
-                  <div class="">
-                    <p class="text-white font-gramatika text-xl text-center">{{ winner.name }} </p>
-                  </div>
-                </div> 
-      
-              </div>                
-               </div>
-          </div>
+            <div class="flex  mt-16 mb-10">
+              <div v-for="winner in filteredWinners" :key="winner.name" class="relative h-[582px] w-[400px] flex-shrink-0  " :class="winner.class ">
+                <img :src="winner.image" class="w-full h-full object-contain">
+                <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
+                <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+                  <div class="space-y-4 ">
+                    <div class=" mt-80">
+                      <p class="text-center">
+                        {{winner.startup}}
+                      </p>
+                    </div>
+        
+                    <div class="">
+                      <p class="text-white font-gramatika text-xl text-center">{{ winner.name }} </p>
+                    </div>
+                  </div> 
+        
+                </div>                
+                </div>
+            </div>
 
 
             </div>
 
-          
+          <!-- next section -->
+
+          <div class="relative h-[600px] mb-48"> 
+            <div class="absolute text-white p-8 mt-20">
+            <img src="../assets/notched.svg" alt="" class="w-full">
+            </div>
+    
+            <div class="absolute    mt-44 ml-12 p-8 text-left">
+            <div class="slide-up space-y-8" ref="texty">
+
+                <h2 class="text-2xl text-white font-rockinsoda ">HANGA HALL OF FAME </h2>
+
+                <div class="flex space-x-16">
+                  <img src="../assets/2023/loopa.svg" class="w-23h-23">
+                  <img src="../assets/2023/hova.svg" class="w-22 h-22">
+                  <img src="../assets/2022/umurava.svg" class="w-23 h-20">
+                  <img src="../assets/2023/medixr.svg" alt="">
+                  <img src="../assets/2023/dope.svg" alt="">
+                </div>
+                  <hr class="border-lineColor border-t-2" >
+                <div class="flex space-x-32">
+                  <img src="../assets/2022/lifesten.svg" class="w-20 h-20">
+                  <img src="../assets/2022/paying-tone.svg" class="w-20 h-20">
+                  <img src="../assets/2022/school-nest.svg" class="w-30 h-30">
+                  <img src="../assets/2022/huza.svg" class="w-20 h-20">
+                  <img src="../assets/2022/mukika.svg" class="w-20 h-20">
+                </div>
+                <hr  class="border-lineColor border-t-2 " >
+                <div class="flex space-x-32">
+                  <img src="../assets/2021/afroduino.svg" alt="">
+                  <img src="../assets/2021/second-life-storage.svg" alt="">
+                  <img src="../assets/2021/bag.svg" alt="">
+                  <img src="../assets/2021/karisimbi.svg"  alt="">
+                  <img src="../assets/2021/hova 2.png">
+                </div>
+
+            </div>
+                
+        </div>
+        </div>
             
         
       </div>
@@ -190,9 +229,45 @@
                 
             },
 
+            mounted() {
+                const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-up-visible');
+                    entry.target.classList.add('zoom-in-visible');
+                    entry.target.classList.add('fade-in-visible');
+                
+                    }
+                })
+                });
+
+                // Observe all elements with the zoom-in class
+                const elements = this.$refs;
+                for (let key in elements) {
+                if (elements[key]) {
+                    observer.observe(elements[key]);
+                }
+                }
+         
+            }
+
             
           
 
   }
   </script>
+
+  <style>
+  .slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+.slide-up-visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+  </style>
 
