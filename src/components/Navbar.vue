@@ -46,7 +46,7 @@
     </transition>
 
     <!-- Navbar for Larger Screens -->
-    <div class="hidden md:flex items-center p-4 bg-transparent mt-6">
+    <div  class="hidden md:flex items-center p-4 bg-transparent mt-6" >
       <router-link to="/" class="mx-auto">
         <img src="../assets/logo.svg" class="h-8 md:h-10" alt="Logo">
       </router-link>
@@ -59,12 +59,23 @@
           <router-link to="/network">Our Network</router-link>  </li> 
         <li class="text-white font-gramatika font-semibold underline-animation">
           <router-link to="/pitch"> Pitch at Hanga </router-link> </li>
-        <div class="flex items-center">
-          <button class="text-white font-gramatika font-semibold">Initiatives</button>
-          <svg class="-mr-1 ml-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
+
+
+        <div class=" relative flex items-center">
+          <button id="dropdownInit"  @click="toogleDropdownInit"  class="text-white font-gramatika font-semibold">
+
+            Initiative <i class="fa fa-chevron-down" aria-hidden="true"></i>
+
+          </button>
+          
+
+          <div v-show="isDropdownInitVisible" class="absolute flex  shadow-lg bg-white ">
+             
+          </div>
+
         </div>
+
+
         <li class="text-white font-gramatika font-semibold underline-animation">Timeline</li>
       </ul>
 
@@ -96,17 +107,25 @@ export default {
   data() {
     return {
       isDropdownVisible: false,
-      isMenuOpen: false
+      isMenuOpen: false,
+      isDropdownInitVisible:false
     };
   },
   methods: {
     toggleDropdown() {
       this.isDropdownVisible = !this.isDropdownVisible;
     },
+
+    toogleDropdownInit(){
+      this.isDropdownInitVisible =! this.isDropdownInitVisible;
+    },
+
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     }
-  }
+  },
+
+
 }
 </script>
 
