@@ -27,10 +27,9 @@ module.exports = {
        darkGray: '#404040'
 
 
-
-
    
     },
+  
     backgroundImage: {
       'startups': "url('@/assets/speaker1.jpg')",
       'judges': "url('@/assets/speaker1.jpg')",

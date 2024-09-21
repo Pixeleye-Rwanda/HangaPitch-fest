@@ -1,94 +1,100 @@
 <template>
   <div class="overflow-x-hidden">
     <div class="min-h-screen">
-      <div class="relative h-screen max-h-[670px]">
+      <div class="relative h-screen min-h-[400px] max-h-[670px] sm:max-h-[800px] lg:max-h-[900px] xl:max-h-[1000px]">
         <div class="absolute inset-0 bg-black opacity-30"></div>
-        <img src="../assets/bghome.jpg" alt="" class="h-full w-full object-cover">
+        <img src="../assets/bghome.jpg" alt="Background" class="h-full w-full object-cover">
+        
         <NavBar class="absolute top-0 left-0 w-full" />
-
-        <div class="font-rockinsoda absolute text-white text-4xl sm:text-5xl md:text-6xl top-1/3 left-4 sm:left-12 slide-up" ref="text">
+      
+        <div class="font-rockinsoda absolute text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-1/3 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:top-1/4 text-center sm:text-left" ref="text">
           <p>THE LARGEST IN-PERSON</p>
           <p>TECHNOLOGY EVENT IN</p>
           <p>RWANDA</p>
         </div>
       </div>
+      
+      
 
-      <div class="absolute top-2/3 left-4 sm:left-12">
-        <div class="flex flex-col sm:flex-row sm:space-x-4">
-          <button class="mb-4 sm:mb-0 p-2 px-4 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
+      <div class="absolute top-2/3 left-4 sm:left-12 lg:left-20  xl:left-26 ">
+        <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0">
+          <button class="p-3 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
             Apply Now
           </button>
-          <button class="p-2 px-4 font-gramatika border text-white font-semibold hover:bg-tangerine hover:text-black">
-            Impact video <i class="fa fa-play-circle" aria-hidden="true"></i>
+          <button class="p-3 px-6 font-gramatika border text-white font-semibold hover:bg-tangerine hover:text-black flex items-center space-x-2">
+            <span>Impact video</span>
+            <i class="fa fa-play-circle" aria-hidden="true"></i>
           </button>
         </div>
-        <img src="../assets/gvticons.svg" class="mt-12 max-w-full">
+        <img src="../assets/gvticons.svg" class="mt-8 max-w-full xl:mt-12" alt="Government Icons">
       </div>
+      
 
-      <!-- First section -->
-      <div class="mt-32 mx-4 sm:mx-12">
-        <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">IGNITING AND INSPIRING</p>
-        <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">INNOVATION</p>
-      </div>
+     
 
-      <!-- Second section -->
-      <div class="mx-4 sm:mx-12 flex flex-col md:flex-row mt-8 gap-4">
-        <div class="flex-2">
-          <div class="h-[300px] sm:h-[400px] md:h-[500px] flex-shrink-0 zoom-in" ref="leftContent">
-            <img src="../assets/students.jpg" class="w-full h-full object-cover">
-          </div>
-    
-          <p class="font-gramatika mt-8 text-darknavy text-lg sm:text-xl zoom-in" ref="text1">
-            We believe in empowering innovators solving some of the dire
-          </p>
-          <p class="font-gramatika text-darknavy text-lg sm:text-xl zoom-in" ref="text2">
-            challenges in the Rwandan community and abroad
-          </p>
-          <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold zoom-in button-hover" ref="button">
-            Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </button>
-        </div>
-    
-        <!-- Right side with vertically stacked images -->
-        <div class="flex-1 space-y-4 mt-8 md:mt-0">
-          <div class="h-[200px] sm:h-[250px] md:h-[300px] flex-shrink-0 zoom-in" ref="image1">
-            <img src="../assets/speaker.png" class="h-full w-full object-cover">
-          </div>
-          <div class="h-[200px] sm:h-[250px] md:h-[300px] flex-shrink-0 zoom-in" ref="image2">
-            <img src="../assets/audience.jpg" class="h-full w-full object-cover">
-          </div>
-        </div>
-      </div>
+      <div class="w-full bg-white">
 
-      <div class="flex flex-col sm:flex-row items-center justify-center mt-28 space-y-8 sm:space-y-0 sm:space-x-8 md:space-x-20 lg:space-x-60">
-        <div class="space-y-8 fade-in w-full sm:w-auto" ref="item1">
-          <img src="../assets/Component 1.png" class="mx-auto sm:mx-0">
-          <hr class="border-t border-gray-300">
-          <div class="-space-y-2">
-            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl text-navy text-center sm:text-left">130+</p>
-            <p class="text-lightblue font-gramatika text-center sm:text-left">Startups</p>
-          </div>
+        <div class="w-full px-4 sm:px-20 mt-32 ">
+          <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">IGNITING AND INSPIRING</p>
+          <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">INNOVATION</p>
         </div>
-    
-        <div class="space-y-8 fade-in w-full sm:w-auto" ref="item2">
-          <img src="../assets/Component 1 (1).png" class="mx-auto sm:mx-0">
-          <hr class="border-t border-gray-300">
-          <div class="-space-y-2">
-            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl text-navy text-center sm:text-left">10,000+</p>
-            <p class="text-lightblue font-gramatika text-center sm:text-left">Attendees</p>
+
+        <div class="flex flex-col md:flex-row lg:ml-16 sm:ml-0 mt-20">
+          <!-- Left Section with Main Image and Text -->
+          <div class="w-full md:w-2/3 mb-4 md:mb-0 px-4">
+            <img src="../assets/students.jpg" alt="Students" class="w-full h-auto rounded-lg shadow-md mb-4">
+            <p class="font-gramatika text-darknavy text-sm sm:text-base mb-4">
+              We believe in empowering innovators solving some of the dire challenges in the Rwandan community and abroad
+            </p>
+            <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold zoom-in button-hover" ref="button">
+              Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>          
           </div>
-        </div>
-    
-        <div class="space-y-8 fade-in w-full sm:w-auto" ref="item3">
-          <img src="../assets/Component 1 (2).png" class="mx-auto sm:mx-0">
-          <hr class="border-t border-gray-300">
-          <div class="-space-y-2">
-            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl text-navy text-center sm:text-left">RWF600M</p>
-            <p class="text-lightblue font-gramatika text-center sm:text-left">Invested in tech startups</p>
+      
+          <!-- Right Side with Vertically Stacked Images -->
+          <div class="w-full md:w-1/3 space-y-4 px-4 mr-6">
+            <img src="../assets/speaker.png" alt="Speaker" class="w-full h-auto rounded-lg shadow-md">
+            <img src="../assets/audience.jpg" alt="Audience" class="w-full h-auto rounded-lg shadow-md">
           </div>
         </div>
       </div>
-    
+      
+      
+
+      <div class="flex flex-wrap justify-center   lg:justify-between gap-y-12 gap-x-8 lg:gap-x-16 px-4 lg:px-20 mt-48">
+        <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item1">
+          <img src="../assets/Component 1.png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
+          <hr class="border-t border-gray-300  mx-auto lg:mx-0">
+          <div>
+            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-navy">130+</p>
+            <p class="text-lightblue font-gramatika text-xl sm:text-2xl">Startups</p>
+          </div>
+        </div>
+      
+        <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item2">
+          <img src="../assets/Component 1 (1).png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
+          <hr class="border-t border-gray-300  mx-auto lg:mx-0">
+          <div>
+            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-navy">10,000+</p>
+            <p class="text-lightblue font-gramatika text-xl sm:text-2xl">Attendees</p>
+          </div>
+        </div>
+      
+        <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item3">
+          <img src="../assets/Component 1 (2).png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
+          <hr class="border-t border-gray-300  mx-auto lg:mx-0">
+          <div>
+            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-navy">RWF600M</p>
+            <p class="text-lightblue font-gramatika text-xl sm:text-2xl">Invested in tech startups</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
       <!-- Fourth section -->
       <div class="relative h-[400px] sm:h-[500px] md:h-[600px] mt-20"> 
         <div class="absolute text-white p-4 sm:p-8 mt-10 sm:mt-20 w-full">
