@@ -12,289 +12,464 @@
           <p>TECHNOLOGY EVENT IN</p>
           <p>RWANDA</p>
         </div>
+
+
+        <div class="absolute top-2/3 left-4 sm:left-12 lg:left-20  xl:left-26 ">
+          <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0">
+            <button class="p-3 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
+              Apply Now
+            </button>
+            <button class="p-3 px-6 font-gramatika border text-white font-semibold hover:bg-tangerine hover:text-black flex items-center space-x-2">
+              <span>Impact video</span>
+              <i class="fa fa-play-circle" aria-hidden="true"></i>
+            </button>
+          </div>
+          <img src="../assets/gvticons.svg" class="mt-8 max-w-full xl:mt-12" alt="Government Icons">
+        </div>
       </div>
       
       
 
-      <div class="absolute top-2/3 left-4 sm:left-12 lg:left-20  xl:left-26 ">
-        <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0">
-          <button class="p-3 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
-            Apply Now
-          </button>
-          <button class="p-3 px-6 font-gramatika border text-white font-semibold hover:bg-tangerine hover:text-black flex items-center space-x-2">
-            <span>Impact video</span>
-            <i class="fa fa-play-circle" aria-hidden="true"></i>
-          </button>
-        </div>
-        <img src="../assets/gvticons.svg" class="mt-8 max-w-full xl:mt-12" alt="Government Icons">
-      </div>
+   
       
 
-      <!-- First section -->
-      <div class="mt-32 mx-4 sm:mx-12">
-        <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">IGNITING AND INSPIRING</p>
-        <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">INNOVATION</p>
-      </div>
+     
 
-      <!-- Second section -->
-      <div class="mx-4 sm:mx-12 flex flex-col md:flex-row mt-8 gap-4">
-        <!-- Left Section with Main Image and Text -->
-        <div class="flex-2">
-          <!-- Main Image with Larger Aspect Ratio -->
-          <div class="aspect-w-16 aspect-h-9 md:aspect-w-16 md:aspect-h-7 zoom-in" ref="leftContent">
-            <img src="../assets/students.jpg" class="w-full h-full object-cover">
+      <div class="w-full bg-white lg:ml-16 sm:ml-0  ">
+
+        <div class="w-full px-4  mt-32 ">
+          <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">IGNITING AND INSPIRING</p>
+          <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">INNOVATION</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row mt-20">
+          <!-- Left Section with Main Image and Text -->
+          <div class="w-full md:w-2/3 mb-4 md:mb-0 px-4">
+            <img src="../assets/students.jpg" alt="Students" class="w-full h-auto  zoom-in" ref="leftContent">
+            <p class="font-gramatika mt-8 text-darknavy text-lg sm:text-xl zoom-in" ref="text1">
+              We believe in empowering innovators solving some of the dire
+            </p>
+            <p class="font-gramatika text-darknavy text-lg sm:text-xl zoom-in" ref="text2">
+              challenges in the Rwandan community and abroad
+            </p>
+            <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold zoom-in button-hover" ref="button">
+              Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>          
           </div>
       
-          <!-- Text Section -->
-          <p class="font-gramatika mt-8 text-darknavy text-lg sm:text-xl zoom-in" ref="text1">
-            We believe in empowering innovators solving some of the dire
-          </p>
-          <p class="font-gramatika text-darknavy text-lg sm:text-xl zoom-in" ref="text2">
-            challenges in the Rwandan community and abroad
-          </p>
-          <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold zoom-in button-hover" ref="button">
-            Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </button>
-        </div>
-      
-        <!-- Right Side with Vertically Stacked Images -->
-        <div class="flex-1 space-y-4 mt-8 md:mt-0">
-          <!-- First Stacked Image with Fixed Heights for Small and Large Screens -->
-          <div class="h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[300px] zoom-in" ref="image1">
-            <img src="../assets/speaker.png" class="w-full h-full object-cover">
-          </div>
-        
-          <!-- Second Stacked Image with Fixed Heights for Small and Large Screens -->
-          <div class="h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[300px] zoom-in" ref="image2">
-            <img src="../assets/audience.jpg" class="w-full h-full object-cover">
+          <!-- Right Side with Vertically Stacked Images -->
+          <div class="w-full md:w-1/3 space-y-4 px-4 lg:mr-28 sm:mr-0">
+            <img src="../assets/speaker.png" alt="Speaker" class="w-full h-auto zoom-in" ref="image1">
+            <img src="../assets/audience.jpg" alt="Audience" class="w-full h-auto zoom-in" ref="image2">
           </div>
         </div>
-        
       </div>
-      
       
       
 
-      <div class="flex flex-col sm:flex-row items-center justify-center mt-28 space-y-8 sm:space-y-0 sm:space-x-8 md:space-x-20 lg:space-x-60">
-        <div class="space-y-8 fade-in w-full sm:w-auto" ref="item1">
-          <img src="../assets/Component 1.png" class="mx-auto sm:mx-0">
-          <hr class="border-t border-gray-300">
-          <div class="-space-y-2">
-            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl text-navy text-center sm:text-left">130+</p>
-            <p class="text-lightblue font-gramatika text-center sm:text-left">Startups</p>
+      <div class="flex flex-wrap justify-center  lg:mr-4 sm:mr-0 lg:justify-between gap-y-12 gap-x-8 lg:gap-x-16 px-4 lg:px-20 mt-48">
+        <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item1">
+          <img src="../assets/Component 1.png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
+          <hr class="border-t border-gray-300  mx-auto lg:mx-0">
+          <div>
+            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-navy">130+</p>
+            <p class="text-lightblue font-gramatika text-xl sm:text-2xl">Startups</p>
           </div>
         </div>
-    
-        <div class="space-y-8 fade-in w-full sm:w-auto" ref="item2">
-          <img src="../assets/Component 1 (1).png" class="mx-auto sm:mx-0">
-          <hr class="border-t border-gray-300">
-          <div class="-space-y-2">
-            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl text-navy text-center sm:text-left">10,000+</p>
-            <p class="text-lightblue font-gramatika text-center sm:text-left">Attendees</p>
+      
+        <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item2">
+          <img src="../assets/Component 1 (1).png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
+          <hr class="border-t border-gray-300  mx-auto lg:mx-0">
+          <div>
+            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-navy">10,000+</p>
+            <p class="text-lightblue font-gramatika text-xl sm:text-2xl">Attendees</p>
           </div>
         </div>
-    
-        <div class="space-y-8 fade-in w-full sm:w-auto" ref="item3">
-          <img src="../assets/Component 1 (2).png" class="mx-auto sm:mx-0">
-          <hr class="border-t border-gray-300">
-          <div class="-space-y-2">
-            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl text-navy text-center sm:text-left">RWF600M</p>
-            <p class="text-lightblue font-gramatika text-center sm:text-left">Invested in tech startups</p>
+      
+        <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item3">
+          <img src="../assets/Component 1 (2).png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
+          <hr class="border-t border-gray-300  mx-auto lg:mx-0">
+          <div>
+            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-navy">RWF600M</p>
+            <p class="text-lightblue font-gramatika text-xl sm:text-2xl">Invested in tech startups</p>
           </div>
         </div>
       </div>
-    
+      
+      
+      
+      
+      
+      
       <!-- Fourth section -->
-      <div class="relative h-[400px] sm:h-[500px] md:h-[600px] mt-20"> 
-        <div class="absolute text-white p-4 sm:p-8 mt-10 sm:mt-20 w-full">
+      <div class="relative h-[600px]"> 
+        <div class="absolute text-white p-8 mt-20">
           <img src="../assets/notched.svg" alt="" class="w-full">
-          <img src="../assets/Vector 6.png" class="absolute top-0 mt-12 sm:mt-24 left-1/2 sm:left-[57%] w-1/2 sm:w-1/3 h-auto slide-up" ref="img2">
+          <img src="../assets/Vector 6.png" class="absolute top-0 mt-24 left-0 w-1/3 h-auto left-[57%] slide-up " ref="img2">
         </div>
-    
-        <div class="absolute mt-36 sm:mt-72 mx-4 sm:mx-12 p-4 sm:p-8 text-left">
+  
+        <div class="absolute mt-72 ml-12 p-8 text-left">
           <div class="slide-up" ref="texty">
-            <h2 class="text-4xl sm:text-5xl md:text-6xl text-white font-rockinsoda mb-4">Pitch Your Idea for</h2>
-            <h2 class="text-4xl sm:text-5xl md:text-6xl text-white font-rockinsoda mb-4">Funding</h2>
-          </div>
+        
+          <h2 class="text-6xl text-white font-rockinsoda mb-4">Pitch Your Idea for</h2>
+          <h2 class="text-6xl text-white font-rockinsoda mb-4">Funding</h2>
+        </div>
           <div class="slide-up" ref="texts">
-            <p class="text-base sm:text-lg md:text-xl mb-1 text-white font-gramatika">
-              The largest in-person technology event in Rwanda
-            </p>
-            <p class="text-base sm:text-lg md:text-xl mb-1 text-white font-gramatika">
-              designed to ignite & inspire innovation, Hanga
-            </p>
-            <p class="text-base sm:text-lg md:text-xl mb-6 text-white font-gramatika">
-              Pitchfest is returning for its fourth edition.
-            </p>
-          </div>
-    
-          <button class="bg-tangerine text-white py-2 px-6 hover:bg-orange-500 slide-up button-hover" ref="button3">
+
+          <p class="text-lg mb-1 text-white text-xl font-gramatika">
+            The largest in-person technology event in Rwanda
+          </p>
+          <p class="text-lg mb-1 text-white text-xl font-gramatika">
+            designed to ignite & inspire innovation, Hanga
+          </p>
+          <p class="text-lg mb-6 text-white text-xl font-gramatika">
+            Pitchfest is returning for its fourth edition.
+          </p>
+        </div>
+
+          <button class="bg-tangerine text-white py-2 px-6 hover:bg-orange-500 slide-up button-hover " ref="button3">
             Learn more <i class="fa fa-chevron-right h-2 w-2" aria-hidden="true"></i>
+
           </button>
         </div>
       </div>
-    
+  
       <!-- Fifth section -->
-      <div class="mx-4 sm:mx-12 mt-72">
-        <h1 class="font-rockinsoda text-navy text-4xl sm:text-5xl">WHERE LEADERS INSPIRE</h1>
-        <h1 class="font-rockinsoda text-navy text-4xl sm:text-5xl">YOUR NEXT BIG LEAP</h1>
-    
-        <div class="flex flex-col md:flex-row gap-4 mb-32 mt-20"> 
-          <div class="flex-1 space-y-4">
-            <div class="relative h-[320px]">
-              <img src="../assets/mrspeaker.jpg" class="h-full w-full object-cover">
-              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-                <div class="-space-y-10 mt-36">
-                  <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
-                  <p class="text-white text-sm font-gramatika p-4 text-justify text-center">
+      <div class="ml-12 mt-72">
+        <h1 class="font-rockinsoda text-navy text-5xl   "> WHERE LEADERS INSPIRE </h1>
+        <h1 class="font-rockinsoda text-navy text-5xl   ">YOUR NEXT BIG LEAP</h1>
+
+          <div class=" flex  gap-4 mb-60  mt-20"> 
+        
+            <div class="flex-1 space-y-4 ">
+              <div class="relative h-[320px]">
+                <img src="../assets/mrspeaker.jpg" class="h-full w-full object-cover">
+                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                  <div class="-space-y-10 mt-36">
+                    <span class="font-rockinsoda text-tangerine text-5xl ml-2  ">"</span>
+                    <p class="text-white text-sm font-gramatika  p-4 text-justify text-center">
                     Hanga Pitchfest 
                     a two-fold approach. We are nurturing the rich talents and innovation of our young people,
                     while recognizing the contributions of talented 
-                    innovators to socio-economic development of our country and the world
-                  </p>
+                    innovators to socio-economic development of our country and the world</p>
+
+                  </div>
+                
+                  <div class="flex space-x-2 ml-2 ">
+                    <hr class="w-[50px] border-2 mt-2 ">
+                    <p class="font-rockinsoda text-white text-xl">Francis Gatare</p> 
+                  </div>
+                  
+                  
+
                 </div>
-              
-                <div class="flex space-x-2 ml-2">
-                  <hr class="w-[50px] border-2 mt-2">
-                  <p class="font-rockinsoda text-white text-xl">Francis Gatare</p> 
+              </div>
+              <div class="relative h-[320px]">
+                <img src="../assets/whiteman.jpg" class="h-full w-full object-cover">
+                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                  <div class="-space-y-10 mt-36">
+                    <span class="font-rockinsoda text-tangerine text-5xl ml-2  ">"</span>
+                    <p class="text-white text-sm font-gramatika  p-4 text-justify text-center">
+                      “There have been, in my opinion, too much talking. We need to act now, 
+                      but I believe especially it is very 
+                      important to invest in young people here. The time is now.</p>
+
+                  </div>
+                
+                  <div class="flex space-x-2 ml-2 ">
+                    <hr class="w-[50px] border-2 mt-2 ">
+                    <p class="font-rockinsoda text-white text-xl">Flemming besenbacher</p> 
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="relative h-[320px]">
-              <img src="../assets/whiteman.jpg" class="h-full w-full object-cover">
-              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-                <div class="-space-y-10 mt-36">
-                  <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
-                  <p class="text-white text-sm font-gramatika p-4 text-justify text-center">
-                    "There have been, in my opinion, too much talking. We need to act now, 
-                    but I believe especially it is very 
-                    important to invest in young people here. The time is now.
-                  </p>
+            
+            <div class="relative flex-2 mr-10 h-[655px]">
+              <img src="../assets/paula.jpg" class="w-full h-full object-cover">
+              <div class="relative inset-0">
+                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                  <!-- Content of the overlay will be positioned here -->
+                  <div class="absolute bottom-0 inset-x-0 p-4">
+                    <div class="-space-y-10">
+                      <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
+                      <p class="text-white text-lg font-gramatika p-4 text-justify text-center">
+                        Today is a celebration of talent, ambitions and the boundless opportunities 
+                        that arise when passion, creativity, determination and
+                        the resolve to be self-reliant converge to push the boundaries of innovation.
+                      </p>
+                    </div>
+                    
+                    <div class="flex space-x-2 ml-2">
+                      <hr class="w-[50px] border-2 mt-2">
+                      <p class="font-rockinsoda text-white text-xl">Paula Ingabire</p>
+                    </div>
+                  </div>
                 </div>
+              </div>
               
-                <div class="flex space-x-2 ml-2">
-                  <hr class="w-[50px] border-2 mt-2">
-                  <p class="font-rockinsoda text-white text-xl">Flemming besenbacher</p> 
+            </div>
+            
+
+            
+          </div>
+      </div>
+    
+
+      <!---------- section six------------ -->
+      <div class="ml-12 flex space-x-8 -mt-24 mb-12">
+        <div class="mt-32">
+          <h1 class="font-rockinsoda text-4xl text-navy">CHECK OUR INITIATIVES</h1>
+          <p class="font-gramatika text-xl text-navy mt-2">Lorem Ipsum has been the industry's standard 
+            dummy </p>
+            <p class="front-gramatika text-xl text-navy ">text ever since the 1500s,
+              when an unknown printer</p>
+        </div>
+
+        <div class="space-x-4 flex">
+          <div class="relative h-[70vh] w-[25vw] flex-shrink-0">
+            <img src="../assets/hubs.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+              <div class="ml-8 mt-72">
+                <p class="text-white font-rockinsoda text-4xl">HANGA HUBS </p>
+                <div class=" mt-2">
+                  <p class="text-white font-gramatika">Addressing the obstacles & gaps  </p>
+                  <p class="text-white font-gramatika"> limiting early-stage startups.</p>
+                  <a href="" class="text-white font-gramatika underline ">learn more </a>
+                
                 </div>
+
               </div>
             </div>
           </div>
-          
-          <div class="relative flex-2 h-[655px] mt-4 md:mt-0">
-            <img src="../assets/paula.jpg" class="w-full h-full object-cover">
+          <div class="relative h-[70vh] w-[25vw] flex-shrink-0">
+            <img src="../assets/srs.jpg" class="w-full h-full object-cover">
             <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-              <div class="absolute bottom-0 inset-x-0 p-4">
-                <div class="-space-y-10">
-                  <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
-                  <p class="text-white text-base sm:text-lg font-gramatika p-4 text-justify text-center">
-                    Today is a celebration of talent, ambitions and the boundless opportunities 
-                    that arise when passion, creativity, determination and
-                    the resolve to be self-reliant converge to push the boundaries of innovation.
-                  </p>
-                </div>
+              <div class="ml-8 mt-72">
+                <p class="text-white font-rockinsoda text-4xl">HANGA SRC </p>
+                <div class=" mt-2">
+                  <p class="text-white font-gramatika">Revolutionizing Sexual and   </p>
+                  <p class="text-white font-gramatika"> Reproductive Health in Africa.</p>
+                  <a href="" class="text-white font-gramatika underline ">learn more </a>
                 
-                <div class="flex space-x-2 ml-2">
-                  <hr class="w-[50px] border-2 mt-2">
-                  <p class="font-rockinsoda text-white text-xl">Paula Ingabire</p>
                 </div>
+
               </div>
+
             </div>
           </div>
         </div>
+        
+        
+      
       </div>
-</div> 
 
-  <!-- Section ten -->
-  <div class="mx-4 sm:mx-8">
-    <div class="mt-10">
-      <h1 class="ml-4 font-rockinsoda text-3xl sm:text-4xl md:text-5xl text-navy">HANGA ON INSTAGRAM</h1>
-    </div>
+      <!--------section seven------->
+      <div class=" relative h-[650px] mt-24 mb-3">
 
-    <div class="flex flex-wrap justify-center gap-4 mt-12">
-      <div class="flex-shrink-0 space-y-2 w-full sm:w-auto">
-        <div class="h-[300px] sm:h-[400px] w-full sm:w-[350px]">
+        
+        <img src="../assets/Group .jpg" alt="" class="w-full h-full object-cover">
+
+        <div class=" absolute top-96 left-12 ">
+
+        <p class="font-rockinsoda text-white  text-5xl">DON'T MISS OUT </p>
+        
+        <div class="text-justify mt-4 flex space-x-96  ">
+          <div class="">
+          <p class="text-white font-gramatika text-xl">The largest in-person technology event in Rwanda </p>
+          <p class="text-white font-gramatika text-xl">designed to ignite & inspire innovation ,Hanga Pitch </p>
+          <p class="text-white font-gramatika text-xl"> Fest is returning for its fourth edition.</p>
+        </div>
+        <div class=" mt-12 ">
+          <button class=" float-rightmr-12 text-gramatika text-white border rounded-3xl  px-8 p-2 hover:bg-tangerine ">Apply now</button>
+        </div>
+        </div>
+
+      </div> 
+
+      </div>
+      
+      <!------ section eight ------->
+      <div class="space-y-12 mt-24">
+        <div class="ml-12">
+          <h1 class="font-rockinsoda text-5xl text-navy"> LATEST ON OUR BLOG</h1>
+          <p class="font-gramatika text-xl mt-4 text-lightblue">Get updates on the latest stories  within Rwanda’s </p>
+          <p class="font-gramatika text-xl text-lightblue ">flourishing tech innovation ecosystem. </p>
+          <button class="bg-tangerine float-right -mt-12 mr-10 text-white py-2 px-6 hover:bg-orange-500">
+          read more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+
+          </button>
+
+        </div>
+        
+        <div class="flex space-x-6 ml-12  mr-12">
+          <div class="relative h-[500px] w-[600px] flex-shrink-0">
+            <img src="../assets/stad.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+              <button class="text-black bg-white font-gramatika p-2 mt-8 ml-12 px-6">STARTUPS</button>
+
+                <div class="ml-12 mt-56">
+                <p class="text-white font-rockinsoda text-4xl">BK ARENA TO BE USED FOR  </p>
+                <p class="text-white font-rockinsoda text-4xl">HANGA 2024</p>
+                <div class=" mt-2">
+                  <p class="text-white font-gramatika">The largest in-person technology event in Rwanda </p>
+                  <p class="text-white font-gramatika"> designed to ignite & inspire innovation.</p>
+                  <p class="text-white font-rockinsoda mt-4">0ct 24 . Hanga team, Becky</p>
+                
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+          <div class="relative h-[500px] w-[600px] flex-shrink-0">
+            <img src="../assets/vr.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+              <button class="text-black bg-white font-gramatika p-2 mt-8 ml-12 px-6">STARTUPS</button>
+              <button class="text-black bg-white font-gramatika p-2 mt-8 ml-4 px-6">INVESTMENT</button>
+
+
+              <div class="ml-12 mt-56">
+              <p class="text-white font-rockinsoda text-4xl">BK ARENA TO BE USED FOR  </p>
+              <p class="text-white font-rockinsoda text-4xl">HANGA 2024</p>
+              <div class=" mt-2">
+                <p class="text-white font-gramatika">The largest in-person technology event in Rwanda </p>
+                <p class="text-white font-gramatika"> designed to ignite & inspire innovation.</p>
+                <p class="text-white font-rockinsoda mt-4">0ct 24 . Hanga team, Becky</p>
+              
+              </div>
+
+            </div>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      </div>
+
+      <!--------- section nine ---------->
+      <div class="">
+        <div class="mt-24 ml-12 space-x-2">
+          <h1 class="font-rockinsoda text-5xl text-navy ml-2">2023</h1>
+        <h1 class="font-rockinsoda text-5xl text-navy">NOTABLE SPEAKERS</h1>
+        </div>
+        <div class="relative overflow-x-hidden mt-24 ml-12" style="height: 582px;">
+          <div class="flex animate-scroll absolute" :style="{ width: `${individuals.length * 800}px` }">
+            <template v-for="(_, loopIndex) in 1">
+              <div v-for="(individual, index) in individuals" :key="`${loopIndex}-${index}`" class="relative h-[582px] w-[400px] flex-shrink-0">
+                <img :src="individual.image" class="w-full h-full object-cover">
+                <div class="absolute inset-0" :style="{ background: individual.gradient }"></div>
+                <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+                  <div class="space-y-4">
+                    <div class="mt-80">
+                      <p class="text-center">{{ individual.name }}</p>
+                    </div>
+                    <div>
+                      <p class="text-white font-gramatika text-xl text-center" v-html="individual.title"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+        
+      </div>
+
+    <!--------- section 10 -------->
+    <div class=" ml-8">
+      <div class="mt-32">
+        <h1 class=" ml-4 font-rockinsoda text-5xl text-navy ">HANGA ON INSTAGRAM</h1>
+      </div>
+
+      <div class="flex space-x-2 ml-4 mt-12">
+        <div class=" flex-shrink-0 space-y-2">
+        <div class="h-[400px] w-[350px]">
           <img src="../assets/insta1.jpg" class="w-full h-full object-cover">
         </div>
-        <div class="h-[150px] sm:h-[200px] w-full sm:w-[350px]">
+        <div class="h-[200px] w-[350px] ">
           <img src="../assets/insta2.jpg" class="w-full h-full object-cover" >
         </div>
       </div>
 
-      <div class="flex-shrink-0 space-y-2 w-full sm:w-auto">
-        <div class="h-[200px] sm:h-[300px] w-full sm:w-[250px]">
-          <img src="../assets/insta4.jpg" class="w-full h-full object-cover" >
+        <div class=" flex-shrink-0 space-y-2">
+          <div class="h-[300px] w-[250px]">
+            <img src="../assets/insta4.jpg" class="w-full h-full object-cover" >
+          </div>
+          <div class="h-[200px] w-[250px]">
+            <img src="../assets/insta5.jpg" class="w-full h-full object-cover">
+          </div>
         </div>
-        <div class="h-[150px] sm:h-[200px] w-full sm:w-[250px]">
-          <img src="../assets/insta5.jpg" class="w-full h-full object-cover">
-        </div>
-      </div>
-    
-      <div class="flex-shrink-0 space-y-2 w-full sm:w-auto">
-        <div class="h-[200px] sm:h-[300px] w-full sm:w-[250px]">
-          <img src="../assets/mrspeaker.jpg" class="w-full h-full object-cover">
-        </div>
-        <div class="h-[200px] sm:h-[290px] w-full sm:w-[250px]">
-          <img src="../assets/bghome.jpg" class="w-full h-full object-cover">
-        </div>
-      </div>
-    
-      <div class="flex-shrink-0 space-y-2 w-full sm:w-auto">
-        <div class="h-[200px] sm:h-[300px] w-full sm:w-[250px]">
-          <img src="../assets/insta3.jpg" class="w-full h-full object-cover">
-        </div>
-        <div class="h-[180px] sm:h-[270px] w-full sm:w-[250px]">
-          <img src="../assets/vr.jpg" class="w-full h-full object-cover">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section eleven -->
-  <div class="mt-24 flex items-center justify-center">
-    <img src="../assets/Frame 320.png" class="max-w-full h-auto">
-  </div>
-
-  <div class="relative">
-    <!---------section 12------->
-    <div class="h-[400px] relative z-10 -mb-48  "> 
-      <div class="absolute w-full left-0 right-0 mt-20">
-        <img src="../assets/footersvg.svg" alt="" class="w-full h-auto block">
-        <img src="../assets/hanga elements_illustration 2.svg" class="absolute top-0 mt-24 left-[57%] w-1/3 h-auto">
-      </div>
       
-      <div class="absolute mt-44 ml-2 p-8 text-left">
-        <h2 class="text-6xl text-white font-rockinsoda mb-4">NEVER MISS</h2>
-        <h2 class="text-6xl text-white font-rockinsoda mb-4">A HIGHLIGHT FROM HANGA</h2>
-        <p class="text-lg mb-1 text-white text-xl font-gramatika">
-          Get the latest trends from Hanga and beyond with our weekly
-        </p>
-        <p class="text-lg mb-1 text-white text-xl font-gramatika">
-          roundup.
-        </p>
-        
-        <div class=" -ml-6 p-4 rounded flex">
-          <input
-            type="email"
-            placeholder="Your email address"
-            class="bg-ftcolor text-gray-400 placeholder-gray-500 focus:outline-none px-12 py-2 rounded-l w-[300px]"
-          />
-          <button class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-r">
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        <div class="flex-shrink-0 space-y-2">
+          <div class="h-[300px] w-[250px] ">
+            <img src="../assets/mrspeaker.jpg" class="w-full h-full object-cover">
+          </div>
+          <div class="h-[290px] w-[250px] ">
+            <img src="../assets/bghome.jpg" class="w-full h-full object-cover">
+          </div>
+        </div>
+      
+        <div class="flex-shrink-0 space-y-2">
+          <div class="h-[300px] w-[250px] ">
+            <img src="../assets/insta3.jpg" class="w-full h-full object-cover">
+          </div>
+          <div class="h-[270px] w-[250px] ">
+            <img src="../assets/vr.jpg" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <!-----section 11------>
+      <div class="mt-24 flex items-center justify-center ">
+        <img src="../assets/Frame 320.png" >
+      </div>
+
+      <div class="relative">
+        <!---------section 12------->
+        <div class="h-[400px] relative z-10 -mb-48  "> 
+          <div class="absolute w-full left-0 right-0 mt-20">
+            <img src="../assets/footersvg.svg" alt="" class="w-full h-auto block">
+            <img src="../assets/hanga elements_illustration 2.svg" class="absolute top-0 mt-24 left-[57%] w-1/3 h-auto">
+          </div>
+          
+          <div class="absolute mt-44 ml-2 p-8 text-left">
+            <h2 class="text-6xl text-white font-rockinsoda mb-4">NEVER MISS</h2>
+            <h2 class="text-6xl text-white font-rockinsoda mb-4">A HIGHLIGHT FROM HANGA</h2>
+            <p class="text-lg mb-1 text-white text-xl font-gramatika">
+              Get the latest trends from Hanga and beyond with our weekly
+            </p>
+            <p class="text-lg mb-1 text-white text-xl font-gramatika">
+              roundup.
+            </p>
+            
+            <div class=" -ml-6 p-4 rounded flex">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="bg-ftcolor text-gray-400 placeholder-gray-500 focus:outline-none px-12 py-2 rounded-l w-[300px]"
+              />
+              <button class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-r">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
 
 
-          </button>
+              </button>
+            </div>
+            
+          </div>
         </div>
         
+        <!------section 13 (Footer)--------- -->
+        <div class="relative z-0 mt-[400px]">
+          <FooterPage/>
+        </div>
       </div>
     </div>
+  </div>
     
-    <!------section 13 (Footer)--------- -->
-    <div class="relative z-0 mt-[400px]">
-      <FooterPage/>
-    </div>
-  </div>
   
-  </div>
 </template>
 
 <script>
@@ -377,132 +552,105 @@ export default {
 
 </script>
 
-
 <style>
-.slide-up {
-  transform: translateY(20px);
-  opacity: 0;
-  transition: all 2s ease-in-out;
-}
-
-.slide-up-visible {
-  transform: translateY(0);
-  opacity: 1;
-}
-.zoom-in {
-  transform: scale(0.95);
-  opacity: 0;
-  transition: transform 1s ease-in-out, opacity 0.90s ease-in-out;
-}
-
-.zoom-in-visible {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.button-hover {
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.button-hover:hover {
-  transform: scale(1.05); 
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.fade-in-visible {
-  opacity: 1;
-}
-
-.fade-in:nth-child(1) {
-  transition-delay: 0.3s;
-}
-
-.fade-in:nth-child(2) {
-  transition-delay: 0.6s;
-}
-
-.fade-in:nth-child(3) {
-  transition-delay: 0.9s;
-}
-
-.fade-in-animation {
-  opacity: 0;
-  transition: opacity 1.2s ease-in-out;
-}
-
-.fade-in-visible-animation {
-  opacity: 1;
-}
-
-.slide-up-animation {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
-
-.slide-up-visible-animation {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.hover-image {
-  position: relative;
-  overflow: hidden;
-}
-
-.hover-image img {
-  transition: transform 0.5s ease;
-}
-
-.hover-image:hover img {
-  transform: scale(1.05);
-}
-
-.hover-overlay {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.hover-image:hover .hover-overlay {
-  opacity: 1;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
+  .slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 2s ease-in-out;
   }
-  100% {
-    transform: translateX(-50%);
+
+  .slide-up-visible {
+    transform: translateY(0);
+    opacity: 1;
   }
-}
+  .zoom-in {
+    transform: scale(0.95);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 0.90s ease-in-out;
+  }
 
+  .zoom-in-visible {
+    transform: scale(1);
+    opacity: 1;
+  }
 
-  @media (max-width: 640px) {
-    .slide-up,
-    .zoom-in,
-    .fade-in {
-      transform: none;
-      opacity: 1;
+  .button-hover {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .button-hover:hover {
+    transform: scale(1.05); 
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .fade-in-visible {
+    opacity: 1;
+  }
+
+  .fade-in:nth-child(1) {
+    transition-delay: 0.3s;
+  }
+
+  .fade-in:nth-child(2) {
+    transition-delay: 0.6s;
+  }
+
+  .fade-in:nth-child(3) {
+    transition-delay: 0.9s;
+  }
+
+  .fade-in-animation {
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+  }
+
+  .fade-in-visible-animation {
+    opacity: 1;
+  }
+
+  .slide-up-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+
+  .slide-up-visible-animation {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hover-image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hover-image img {
+    transition: transform 0.5s ease;
+  }
+
+  .hover-image:hover img {
+    transform: scale(1.05);
+  }
+
+  .hover-overlay {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .hover-image:hover .hover-overlay {
+    opacity: 1;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
     }
-  }
-
-  @media (min-width: 641px) and (max-width: 1024px) {
-    .slide-up,
-    .zoom-in,
-    .fade-in {
-      transition-duration: 1.5s;
-    }
-  }
-
-  @media (min-width: 1025px) {
-    .slide-up,
-    .zoom-in,
-    .fade-in {
-      transition-duration: 2s;
+    100% {
+      transform: translateX(-50%);
     }
   }
 </style>
