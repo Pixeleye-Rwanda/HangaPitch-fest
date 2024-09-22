@@ -24,7 +24,8 @@ module.exports = {
        lightTangerine: '#FFD2BC',
        descColor:' #444F7E',
        linkColor: '#1F2A5B',
-       darkGray: '#404040'
+       darkGray: '#404040',
+       newsClr:' #132060'
 
 
    

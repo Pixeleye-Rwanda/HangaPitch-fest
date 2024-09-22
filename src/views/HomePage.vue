@@ -138,7 +138,7 @@
         <h1 class="font-rockinsoda text-navy text-5xl   "> WHERE LEADERS INSPIRE </h1>
         <h1 class="font-rockinsoda text-navy text-5xl   ">YOUR NEXT BIG LEAP</h1>
 
-          <div class=" flex  gap-4 mb-60  mt-20"> 
+          <div class=" flex  gap-4 mb-20  mt-20"> 
         
             <div class="flex-1 space-y-4 ">
               <div class="relative h-[320px]">
@@ -215,67 +215,60 @@
     
 
       <!---------- section six------------ -->
-      <div class="ml-12 flex space-x-8 -mt-24 mb-12">
-        <div class="mt-32">
-          <h1 class="font-rockinsoda text-4xl text-navy">CHECK OUR INITIATIVES</h1>
-          <p class="font-gramatika text-xl text-navy mt-2">Lorem Ipsum has been the industry's standard 
-            dummy </p>
-            <p class="front-gramatika text-xl text-navy ">text ever since the 1500s,
-              when an unknown printer</p>
-        </div>
-
-        <div class="space-x-4 flex">
-          <div class="relative h-[70vh] w-[25vw] flex-shrink-0">
-            <img src="../assets/hubs.jpg" class="w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-              <div class="ml-8 mt-72">
-                <p class="text-white font-rockinsoda text-4xl">HANGA HUBS </p>
-                <div class=" mt-2">
-                  <p class="text-white font-gramatika">Addressing the obstacles & gaps  </p>
-                  <p class="text-white font-gramatika"> limiting early-stage startups.</p>
-                  <a href="" class="text-white font-gramatika underline ">learn more </a>
-                
+      <div class="px-4 sm:px-6 lg:px-12 py-12 lg:py-24">
+        <div class="flex flex-col lg:flex-row lg:space-x-8">
+          <div class="mb-8  mt-44 lg:mb-0 lg:w-1/3">
+            <h1 class="font-rockinsoda text-3xl sm:text-6xl text-navy">CHECK OUR INITIATIVES</h1>
+            <p class="font-gramatika text-lg sm:text-2xl text-navy mt-2">
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            </p>
+          </div>
+          
+          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 lg:w-2/3">
+            <div class="relative w-full sm:w-1/2 h-[50vh] sm:h-[85vh] lg:h-[85vh]">
+              <img src="../assets/hubs.jpg" class="w-full h-full object-cover">
+              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                <div class="absolute bottom-8 left-8">
+                  <p class="text-white font-rockinsoda text-4xl sm:text-5xl">HANGA HUBS</p>
+                  <div class="mt-2">
+                    <p class="text-white font-gramatika text-lg">Addressing the obstacles & gaps limiting early-stage startups.</p>
+                    <a href="" class="text-white font-gramatika underline">learn more</a>
+                  </div>
                 </div>
-
+              </div>
+            </div>
+            
+            <div class="relative w-full sm:w-1/2 h-[50vh] sm:h-[60vh] lg:h-[85vh]">
+              <img src="../assets/srs.jpg" class="w-full h-full object-cover">
+              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                <div class="absolute bottom-8 left-8">
+                  <p class="text-white font-rockinsoda text-3xl sm:text-5xl">HANGA SRC</p>
+                  <div class="mt-2">
+                    <p class="text-white font-gramatika">Revolutionizing Sexual and Reproductive Health in Africa.</p>
+                    
+                    <a href="" class="text-white font-gramatika underline">learn more</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="relative h-[70vh] w-[25vw] flex-shrink-0">
-            <img src="../assets/srs.jpg" class="w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-              <div class="ml-8 mt-72">
-                <p class="text-white font-rockinsoda text-4xl">HANGA SRC </p>
-                <div class=" mt-2">
-                  <p class="text-white font-gramatika">Revolutionizing Sexual and   </p>
-                  <p class="text-white font-gramatika"> Reproductive Health in Africa.</p>
-                  <a href="" class="text-white font-gramatika underline ">learn more </a>
-                
-                </div>
-
-              </div>
-
-            </div>
-          </div>
         </div>
-        
-        
-      
       </div>
 
       <!--------section seven------->
-      <div class="relative w-full mt-8 md:mt-16 lg:mt-24 mb-3">
-        <img src="../assets/Group .jpg" alt="" class="w-full h-48 md:h-80 lg:h-[700px] object-cover">
+      <div class="relative w-full mt-8 md:mt-16 lg:mt-8 mb-3">
+        <img src="../assets/Group .jpg" alt="" class="w-full h-[350px] md:h-80 lg:h-[800px] object-cover">
         <div class="absolute inset-0 flex flex-col mt-32 justify-center px-4 md:px-8 lg:px-12">
           <p class="font-rockinsoda text-white text-3xl md:text-4xl lg:text-7xl mb-4">DON'T MISS OUT</p>
           <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-8">
             <div class="w-full md:w-2/3 lg:w-3/4">
-              <p class="text-white font-gramatika text-base md:text-lg lg:text-xl">
+              <p class="text-white font-gramatika text-base md:text-lg lg:text-2xl">
                 The largest in-person technology event in Rwanda designed to ignite & inspire innovation, 
                 Hanga Pitch Fest is returning for its fourth edition
               </p>
             </div>
             <div class="w-full md:w-1/3 lg:w-1/4 flex justify-start md:justify-end">
-              <button class="font-gramatika mt-16 text-white  text-xl border rounded-full px-8 py-2 hover:bg-tangerine transition duration-300">
+              <button class="font-gramatika  text-white  text-xl border rounded-full px-8 py-2 hover:bg-tangerine transition duration-300">
                 Apply now
               </button>
             </div>
@@ -284,56 +277,52 @@
       </div>
       
       <!------ section eight ------->
-      <div class="space-y-12 mt-24">
-        <div class="ml-12">
-          <h1 class="font-rockinsoda text-5xl text-navy"> LATEST ON OUR BLOG</h1>
-          <p class="font-gramatika text-xl mt-4 text-lightblue">Get updates on the latest stories  within Rwanda’s </p>
-          <p class="font-gramatika text-xl text-lightblue ">flourishing tech innovation ecosystem. </p>
-          <button class="bg-tangerine float-right -mt-12 mr-10 text-white py-2 px-6 hover:bg-orange-500">
-          read more <i class="fa fa-chevron-right" aria-hidden="true"></i>
-
-          </button>
-
-        </div>
-        
-        <div class="flex space-x-6 ml-12  mr-12">
-          <div class="relative h-[500px] w-[600px] flex-shrink-0">
-            <img src="../assets/stad.jpg" class="w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-              <button class="text-black bg-white font-gramatika p-2 mt-8 ml-12 px-6">STARTUPS</button>
-
-                <div class="ml-12 mt-56">
-                <p class="text-white font-rockinsoda text-4xl">BK ARENA TO BE USED FOR  </p>
-                <p class="text-white font-rockinsoda text-4xl">HANGA 2024</p>
-                <div class=" mt-2">
-                  <p class="text-white font-gramatika">The largest in-person technology event in Rwanda </p>
-                  <p class="text-white font-gramatika"> designed to ignite & inspire innovation.</p>
-                  <p class="text-white font-rockinsoda mt-4">0ct 24 . Hanga team, Becky</p>
-                
-                </div>
-
-              </div>
-              
+      <div class="space-y-12 mt-32">
+        <div class="px-4 mb-20 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
+          <div class="relative">
+            <h1 class="font-rockinsoda text-3xl sm:text-4xl md:text-6xl text-navy mb-4">LATEST ON OUR BLOG</h1>
+            <div class="font-gramatika text-base sm:text-lg md:text-2xl text-lightblue mb-6 md:mb-0">
+              <p>Get updates on the latest stories within Rwanda's</p>
+              <p>flourishing tech innovation ecosystem.</p>
             </div>
+            <button class="bg-tangerine text-white text-xl mt-16 px-8 p-2 hover:bg-orange-500 transition duration-300 w-full sm:w-auto md:absolute md:top-0 md:right-0">
+              read more <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
+            </button>
           </div>
-          <div class="relative h-[500px] w-[600px] flex-shrink-0">
-            <img src="../assets/vr.jpg" class="w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-              <button class="text-black bg-white font-gramatika p-2 mt-8 ml-12 px-6">STARTUPS</button>
-              <button class="text-black bg-white font-gramatika p-2 mt-8 ml-4 px-6">INVESTMENT</button>
+        </div>
 
 
-              <div class="ml-12 mt-56">
-              <p class="text-white font-rockinsoda text-4xl">BK ARENA TO BE USED FOR  </p>
-              <p class="text-white font-rockinsoda text-4xl">HANGA 2024</p>
-              <div class=" mt-2">
-                <p class="text-white font-gramatika">The largest in-person technology event in Rwanda </p>
-                <p class="text-white font-gramatika"> designed to ignite & inspire innovation.</p>
-                <p class="text-white font-rockinsoda mt-4">0ct 24 . Hanga team, Becky</p>
-              
+        <div class="px-4 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
+          <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+            <!-- First Card -->
+            <div class="relative h-[400px] sm:h-[450px] md:h-[600px] w-full md:w-1/2 flex-shrink-0">
+              <img src="../assets/stad.jpg" class="w-full h-full object-cover">
+              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">                <div class="p-4 sm:p-6 md:p-8 h-full flex flex-col justify-between">
+                  <button class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 w-fit">STARTUPS</button>
+                  <div>
+                    <h2 class="text-white font-rockinsoda text-3xl sm:text-3xl md:text-4xl">BK ARENA TO BE USED FOR<br>HANGA 2024</h2>
+                    <p class="text-white font-gramatika text-md sm:text-base mt-2">The largest in-person technology event in Rwanda designed to ignite & inspire innovation.</p>
+                    <p class="text-white font-rockinsoda text-md sm:text-base mt-4">Oct 24 . Hanga team, Becky</p>
+                  </div>
+                </div>
               </div>
-
             </div>
+        
+            <!-- Second Card -->
+            <div class="relative h-[400px] sm:h-[450px] md:h-[600px] w-full md:w-1/2 flex-shrink-0">
+              <img src="../assets/vr.jpg" class="w-full h-full object-cover">
+              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">                <div class="p-4 sm:p-6 md:p-8 h-full flex flex-col justify-between">
+                  <div>
+                    <button class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 mr-2 mb-2 w-fit">STARTUPS</button>
+                    <button class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 sm:px-4 w-fit">INVESTMENT</button>
+                  </div>
+                  <div>
+                    <h2 class="text-white font-rockinsoda text-3xl sm:text-3xl md:text-4xl">BK ARENA TO BE USED FOR<br>HANGA 2024</h2>
+                    <p class="text-white font-gramatika text-md sm:text-base mt-2">The largest in-person technology event in Rwanda designed to ignite & inspire innovation.</p>
+                    <p class="text-white font-rockinsoda text-md sm:text-base mt-4">Oct 24 . Hanga team, Becky</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -372,49 +361,55 @@
       </div>
 
     <!--------- section 10 -------->
-    <div class=" ml-8">
-      <div class="mt-32">
-        <h1 class=" ml-4 font-rockinsoda text-5xl text-navy ">HANGA ON INSTAGRAM</h1>
+    <div class="ml-8 mr-8 sm:ml-8 sm:mr-8  lg:ml-12 lg:mr-12">
+      <div class="mt-16 sm:mt-24 lg:mt-32">
+        <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-5xl text-navy">
+          HANGA ON INSTAGRAM
+        </h1>
       </div>
-
-      <div class="flex space-x-2 ml-4 mt-12">
-        <div class=" flex-shrink-0 space-y-2">
-        <div class="h-[400px] w-[350px]">
-          <img src="../assets/insta1.jpg" class="w-full h-full object-cover">
-        </div>
-        <div class="h-[200px] w-[350px] ">
-          <img src="../assets/insta2.jpg" class="w-full h-full object-cover" >
+      <div class="mt-8 sm:mt-4">
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-2">
+          <!-- Column 1 -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
+            <div class="h-[400px] sm:h-[300px] lg:h-[400px]">
+              <img src="../assets/insta1.jpg" class="w-full h-full object-cover">
+            </div>
+            <div class="h-[200px] sm:h-[150px] lg:h-[200px]">
+              <img src="../assets/insta2.jpg" class="w-full h-full object-cover">
+            </div>
+          </div>
+          
+          <!-- Column 2 -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
+            <div class="h-[300px] sm:h-[225px] lg:h-[300px]">
+              <img src="../assets/insta4.jpg" class="w-full h-full object-cover">
+            </div>
+            <div class="h-[200px] sm:h-[150px] lg:h-[200px]">
+              <img src="../assets/insta5.jpg" class="w-full h-full object-cover">
+            </div>
+          </div>
+          
+          <!-- Column 3 -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
+            <div class="h-[300px] sm:h-[225px] lg:h-[300px]">
+              <img src="../assets/mrspeaker.jpg" class="w-full h-full object-cover">
+            </div>
+            <div class="h-[290px] sm:h-[220px] lg:h-[290px]">
+              <img src="../assets/bghome.jpg" class="w-full h-full object-cover">
+            </div>
+          </div>
+          
+          <!-- Column 4 -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
+            <div class="h-[300px] sm:h-[225px] lg:h-[300px]">
+              <img src="../assets/insta3.jpg" class="w-full h-full object-cover">
+            </div>
+            <div class="h-[270px] sm:h-[200px] lg:h-[270px]">
+              <img src="../assets/vr.jpg" class="w-full h-full object-cover">
+            </div>
+          </div>
         </div>
       </div>
-
-        <div class=" flex-shrink-0 space-y-2">
-          <div class="h-[300px] w-[250px]">
-            <img src="../assets/insta4.jpg" class="w-full h-full object-cover" >
-          </div>
-          <div class="h-[200px] w-[250px]">
-            <img src="../assets/insta5.jpg" class="w-full h-full object-cover">
-          </div>
-        </div>
-      
-        <div class="flex-shrink-0 space-y-2">
-          <div class="h-[300px] w-[250px] ">
-            <img src="../assets/mrspeaker.jpg" class="w-full h-full object-cover">
-          </div>
-          <div class="h-[290px] w-[250px] ">
-            <img src="../assets/bghome.jpg" class="w-full h-full object-cover">
-          </div>
-        </div>
-      
-        <div class="flex-shrink-0 space-y-2">
-          <div class="h-[300px] w-[250px] ">
-            <img src="../assets/insta3.jpg" class="w-full h-full object-cover">
-          </div>
-          <div class="h-[270px] w-[250px] ">
-            <img src="../assets/vr.jpg" class="w-full h-full object-cover">
-          </div>
-        </div>
-      </div>
-
     </div>
 
       <!-----section 11------>
@@ -422,47 +417,45 @@
         <img src="../assets/Frame 320.png" >
       </div>
 
-      <div class="relative">
-        <!---------section 12------->
-        <div class="h-[400px] relative z-10 -mb-48  "> 
-          <div class="absolute w-full left-0 right-0 mt-20">
-            <img src="../assets/footersvg.svg" alt="" class="w-full h-auto block">
-            <img src="../assets/hanga elements_illustration 2.svg" class="absolute top-0 mt-24 left-[57%] w-1/3 h-auto">
-          </div>
-          
-          <div class="absolute mt-44 ml-2 p-8 text-left">
-            <h2 class="text-6xl text-white font-rockinsoda mb-4">NEVER MISS</h2>
-            <h2 class="text-6xl text-white font-rockinsoda mb-4">A HIGHLIGHT FROM HANGA</h2>
-            <p class="text-lg mb-1 text-white text-xl font-gramatika">
-              Get the latest trends from Hanga and beyond with our weekly
-            </p>
-            <p class="text-lg mb-1 text-white text-xl font-gramatika">
-              roundup.
+      <div class="relative w-full bg-newsClr">
+        <!-- Newsletter signup section -->
+        <div class="  mt-32 px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
+          <div class="max-w-4xl">
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl text-white font-rockinsoda mb-2 sm:mb-4">NEVER MISS</h2>
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl text-white font-rockinsoda mb-6">A HIGHLIGHT FROM HANGA</h2>
+            <p class="text-lg sm:text-xl lg:text-2xl mb-8 text-white font-gramatika">
+              Get the latest trends from Hanga and beyond with our weekly roundup.
             </p>
             
-            <div class=" -ml-6 p-4 rounded flex">
+            <div class="flex w-full max-w-lg">
               <input
                 type="email"
                 placeholder="Your email address"
-                class="bg-ftcolor text-gray-400 placeholder-gray-500 focus:outline-none px-12 py-2 rounded-l w-[300px]"
+                class="flex-grow bg-navy-light text-white placeholder-gray-400 focus:outline-none px-4 py-3 rounded-l"
               />
-              <button class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-r">
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-
-
+              <button class="bg-tangerine hover:bg-orange-700 text-white px-6 py-3 rounded-r">
+                <i class="fas fa-chevron-right"></i>
               </button>
             </div>
-            
           </div>
         </div>
-        
-        <!------section 13 (Footer)--------- -->
-        <div class="relative z-0 mt-[400px]">
-          <FooterPage/>
+    
+        <!-- Background illustration -->
+        <div class="absolute right-32 bottom-32 w-1/2 h-1/2 pointer-events-none">
+          <img src="../assets/hanga elements_illustration 2.svg" alt="Hanga illustration" class="w-full h-full object-contain object-right-bottom">
         </div>
-      </div>
-      </div>
+
       
+
+      </div>
+    
+      <!-- Footer section -->
+      
+    
+
+      </div>
+
+      <FooterPage/>
   </div>
     
   
