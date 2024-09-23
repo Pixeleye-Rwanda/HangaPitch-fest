@@ -1,60 +1,71 @@
 <template>
-    <div class="overflow-hidden">
-        <div class="h-screen">
-            <div class="relative h-[670px] flex-shrink-0 ">
-              <img src="../assets/aboutus.jpg" alt="" class="h-full w-full object-cover">
-              <div class="absolute inset-0 bg-abtcolor"></div>
-              <Navbar  class="absolute top-0 left-0 w-full"/>
+    <div class="overflow-hidden sm:overflow-x-hidden">
+      <div class="min-h-screen">
 
-              <div class="font-rockinsoda absolute text-white text-6xl top-80 ml-12">
-                <p>LEADING INNOVATION</p>
-                <p>AT THE FOREFRONT</p>
-                
-              </div>
-            </div>
-            <div class="absolute top-3/4 ml-12">
-              <div class="">
-                  
-           <p class="font-gramatika text-white text-lg">Our mission is to discover and nurture Rwanda's most </p>
-              <p class="font-gramatika text-white text-lg"> innovative tech-enabled startups</p>
-               </div>
-            </div>
-  
+        <div class="relative h-screen min-h-[400px] max-h-[670px] sm:max-h-[800px] lg:max-h-[900px] xl:max-h-[1000px]">
+          <div class="absolute inset-0 bg-black opacity-30"></div>
+          <img src="../assets/aboutus.jpg" alt="Background" class="h-full w-full object-cover">
+          
+          <Navbar class="absolute top-0 left-0 w-full"/>
+        
+          <div class="font-rockinsoda absolute  text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-2/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left" ref="text">
+            <p>LEADING INNOVATION</p>
+              <p>AT THE FOREFRONT</p>
           </div>
 
+          <div class="absolute top-3/4   left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left">
+           
+                
+         <p class="font-gramatika text-white text-2xl">Our mission is to discover and nurture Rwanda's most </p>
+            <p class="font-gramatika text-white text-2xl"> innovative tech-enabled startups</p>
+             
+          </div>
+
+    
+    
+        </div>
+
           <!-- second section -->
-           <div class="ml-12 mt-12">
-            <p class="text-darknavy font-gramatika text-md  ">Empowerment is central to Hanga's mission, focusing on enabling </p>
-            <p class="text-darknavy font-gramatika text-md ">ndividuals and communities.</p>
-           </div>
+          <div class="ml-4 sm:ml-8 md:ml-12 lg:ml-12 xl:ml-20 mt-10 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20">
+            <p class="text-darknavy font-gramatika text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+              Empowerment is central to Hanga's mission, focusing on enabling
+            </p>
+            <p class="text-darknavy font-gramatika text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+              individuals and communities.
+            </p>
+          </div>
+          
 
            <!-- third section  -->
-            <div class="flex mt-20  space-x-80 ml-12">
-              <div class="space-y-4 mt-16">
-                  <p class="text-6xl font-rockinsoda text-navy">FUELING</p>
-                  <p class="text-6xl font-rockinsoda text-navy">INNOVATION</p>
-              </div>
-              <div class=" text-justify space-y-8 w-[600px] ">
-                   <p class="text-navy font-gramatika text-md">Hanga PitchFest offers a platform for tech-entrepreneurs to present 
-                    their groundbreaking work to a wide audience, including potential investors,
-                     technology company founders, and private sector business leaders. </p>
-
-                   <p class="text-navy font-gramatika text-md ">Selected startups have the opportunity to connect with Angel investors, 
-                    venture capitalists, and other key stakeholders who can provide
-                     the necessary funding and support to scale their businesses.</p>
-
-                   <p class="text-navy font-gramatika text-md"> Our all-day event includes innovators’ showcases, masterclasses for 
-                    entrepreneurs, live music performances, and a live pitching competition 
-                    for the top 5 startups.</p>
-              </div>
+           <div className="flex flex-col lg:mr-4 lg:ml-12 lg:flex-row sm:mt-12 lg:mt-24 w-full px-4 lg:px-8 xl:px-8 py-12  mx-auto">
+            <div className="lg:w-1/3 space-y-4 lg:mt-16 mb-8 lg:mb-0 lg:pr-8 self-start">
+              <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rockinsoda text-navy">FUELING</p>
+              <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rockinsoda text-navy">INNOVATION</p>
             </div>
+            <div className="lg:w-3/5 space-y-8 self-start">
+              <p className="text-navy text-justify font-gramatika text-sm md:text-base lg:text-lg xl:text-xl">
+                Hanga PitchFest offers a platform for tech-entrepreneurs to present 
+                their groundbreaking work to a wide audience, including potential investors, 
+                technology company founders, and private sector business leaders.
+              </p>
+              <p className="text-navy text-justify font-gramatika text-sm md:text-base lg:text-lg xl:text-xl">
+                Selected startups have the opportunity to connect with Angel investors, 
+                venture capitalists, and other key stakeholders who can provide 
+                the necessary funding and support to scale their businesses.
+              </p>
+              <p className="text-navy text-justify  font-gramatika text-sm md:text-base lg:text-lg xl:text-xl">
+                Our all-day event includes innovators' showcases, masterclasses for 
+                entrepreneurs, live music performances, and a live pitching competition 
+                for the top 5 startups.
+              </p>
+            </div>
+          </div>
 
             <!-- section four  -->
-             <div class=" relative h-[600px] flex-shrink-0 mt-20">
-              <img src="../assets/malik.jpg" class="w-full h-full object-cover ">
+            <div class="relative w-full flex-shrink-0 mt-20">
+              <img src="../assets/malik.jpg" class="w-full max-h-[700px] h-[50vh] sm:h-[100px] lg:h-[600px] object-cover">
               <div class="absolute inset-0 bg-abtcolor"></div>
-
-             </div>
+            </div>
 
              <!-- section five  -->
               <div class="ml-12 space-x-32 flex ">
@@ -362,47 +373,15 @@
             </div>
           </div>
 
-          <!-- section 10 -->
-          <div class="relative">
-            <!---------section 12------->
-            <div class="h-[400px] relative z-10 -mb-48"> 
-              <div class="absolute w-full left-0 right-0 mt-20">
-                <img src="../assets/footersvg.svg" alt="" class="w-full h-auto block">
-                <img src="../assets/hanga elements_illustration 2.svg" class="absolute top-0 mt-24 left-[57%] w-1/3 h-auto">
-              </div>
-              
-              <div class="absolute mt-44 ml-2 p-8 text-left">
-                <h2 class="text-6xl text-white font-rockinsoda mb-4">NEVER MISS</h2>
-                <h2 class="text-6xl text-white font-rockinsoda mb-4">A HIGHLIGHT FROM HANGA</h2>
-                <p class="text-lg mb-1 text-white text-xl font-gramatika">
-                  Get the latest trends from Hanga and beyond with our weekly
-                </p>
-                <p class="text-lg mb-1 text-white text-xl font-gramatika">
-                  roundup.
-                </p>
-                
-                <div class=" -ml-6 p-4 rounded flex">
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    class="bg-ftcolor text-gray-400 placeholder-gray-500 focus:outline-none px-12 py-2 rounded-l w-[300px]"
-                  />
-                  <a href="" class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-r">
-                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            <!-- Newsletter signup section -->
 
-
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-            
-            <!------section 13 (Footer)--------- -->
-            <div class="relative z-0 mt-[400px]">
-              <FooterPage/>
-            </div>
-          </div>
-
+      <NewsLetter/>
+    
+      <!-- Footer section -->
+      
+    
+      <FooterPage/>
+</div>
         
     </div>
 </template>
@@ -411,11 +390,13 @@
 <script>
 import Navbar from '@/components/Navbar.vue';
 import FooterPage from '@/components/footerPage.vue';
+import NewsLetter from '@/components/NewsLetter.vue';
 export default{
     name:"AboutUs",
     components:{
             Navbar,
-            FooterPage
+            FooterPage,
+            NewsLetter
         },
 
         methods: {

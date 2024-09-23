@@ -1,25 +1,19 @@
 <template>
   <div class="overflow-hidden">
-    <div class="h-screen">
-      <!-- Image Section with Overlay -->
-      <div class="relative h-screen min-h-[400px] max-h-[670px] sm:max-h-[800px] lg:max-h-[900px] xl:max-h-[1080px]">
-        <img src="../assets/pitchbg.jpg" class="h-full w-full object-cover" alt="Background">
-        <div class="absolute inset-0 bg-abtcolor"></div>
-        <NavBar class="absolute top-0 left-0 w-full" />
-  
-        <!-- Text Section -->
-        <div class="font-rockinsoda absolute text-white text-3xl md:text-6xl xl:7xl top-1/2 md:top-80 ml-4 md:ml-12 transform -translate-y-1/2 md:translate-y-0">
-          <p>READY TO PITCH YOUR</p>
-          <p>TECH-ENABLED IDEA?</p>
-        </div>
+    <div class="min-h-screen">
+
+    <div class="relative h-screen min-h-[400px] max-h-[670px] sm:max-h-[800px] lg:max-h-[900px] xl:max-h-[1000px]">
+      <div class="absolute inset-0 bg-black opacity-30"></div>
+      <img src="../assets/pitchbg.jpg" alt="Background" class="h-full w-full object-cover">
+      
+      <NavBar class="absolute top-0 left-0 w-full" />
+    
+      <div class="font-rockinsoda absolute  text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-2/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left" ref="text">
+        <p>READY TO PITCH YOUR</p>
+        <p>TECH-ENABLED IDEA?</p>
       </div>
-  
-      <!-- Button Section -->
-      <div class="absolute top-[65%] md:top-3/4 ml-4 md:ml-12">
-        <button class="mr-4 md:mr-8 p-2 px-6 md:px-8 lg:px-8 p-4 font-gramatika bg-white text-black hover:bg-tangerine hover:text-white button-hover">
-          Apply Now
-        </button>
-      </div>
+
+
     </div>
 
         <!-- next section -->
@@ -218,6 +212,7 @@
    <NewsLetter/>
     <FooterPage/>
     
+  </div>
   </div>
 </template>
 

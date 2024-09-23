@@ -134,7 +134,7 @@
       
       
       <!-- Fifth section -->
-      <div class="ml-12 mt-32 mr-12">
+      <div class="ml-4 mr-4 sm:ml-6  mt-32 ">
         <h1 class="font-rockinsoda text-navy text-6xl">WHERE LEADERS INSPIRE</h1>
         <h1 class="font-rockinsoda text-navy text-6xl">YOUR NEXT BIG LEAP</h1>
       
@@ -214,7 +214,7 @@
           </div>
           
           <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 lg:w-2/3">
-            <div class="relative w-full sm:w-1/2 h-[50vh] sm:h-[85vh] lg:h-[85vh]">
+            <div class="relative w-full sm:w-1/2 h-[50vh] sm:h-[60vh] lg:h-[85vh]">
               <img src="../assets/hubs.jpg" class="w-full h-full object-cover">
               <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
                 <div class="absolute bottom-8 left-8">
@@ -231,7 +231,7 @@
               <img src="../assets/srs.jpg" class="w-full h-full object-cover">
               <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
                 <div class="absolute bottom-8 left-8">
-                  <p class="text-white font-rockinsoda text-3xl sm:text-5xl">HANGA SRC</p>
+                  <p class="text-white font-rockinsoda text-3xl sm:text-5xl">HANGA SRH</p>
                   <div class="mt-2">
                     <p class="text-white font-gramatika">Revolutionizing Sexual and Reproductive Health in Africa.</p>
                     
@@ -322,7 +322,7 @@
 
       <!--------- section nine ---------->
       <div class="lg:-mb-10  ">
-        <div class="mt-24 ml-12 space-x-2">
+        <div class="mt-24 ml-8 space-x-2">
           <h1 class="font-rockinsoda text-6xl text-navy ">2023</h1>
         <h1 class="font-rockinsoda text-6xl text-navy">NOTABLE SPEAKERS</h1>
         </div>
@@ -335,7 +335,7 @@
                 <div class="absolute inset-0" :style="{ background: individual.gradient }"></div>
                 <div class="text-5xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
                   <div class="space-y-4">
-                    <div class="mt-80">
+                    <div class="mt-96">
                       <p class="text-center">{{ individual.name }}</p>
                     </div>
                     <div>
@@ -351,7 +351,7 @@
       </div>
 
     <!--------- section 10 -------->
-    <div class="ml-4 mr-8 sm:ml-8 sm:mr-8  lg:ml-12 lg:mr-12">
+    <div class="ml-4 mr-4 sm:ml-8 sm:mr-8  lg:ml-8 lg:mr-8">
       <div class="mt-16 sm:mt-24 lg:mt-32">
         <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-6xl text-navy">
           HANGA ON INSTAGRAM
