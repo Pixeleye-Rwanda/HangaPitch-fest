@@ -321,27 +321,28 @@
       </div>
 
       <!--------- section nine ---------->
-      <div class="">
+      <div class="lg:-mb-10  ">
         <div class="mt-24 ml-12 space-x-2">
-          <h1 class="font-rockinsoda text-6xl text-navy ml-2">2023</h1>
+          <h1 class="font-rockinsoda text-6xl text-navy ">2023</h1>
         <h1 class="font-rockinsoda text-6xl text-navy">NOTABLE SPEAKERS</h1>
         </div>
-        <div class="relative overflow-x-hidden mt-24 ml-12" style="height: 582px;">
+        <div class="relative overflow-hidden mt-16 ml-12" style="height: 800px;">
           <div class="flex animate-scroll absolute" :style="{ width: `${individuals.length * 800}px` }">
             <template v-for="(_, loopIndex) in 1">
-              <div v-for="(individual, index) in individuals" :key="`${loopIndex}-${index}`" class="relative h-[582px] w-[400px] flex-shrink-0">
+              <div v-for="(individual, index) in individuals" :key="`${loopIndex}-${index}`" 
+              class="relative h-[100vh] w-[80vh] flex-shrink-0">
                 <img :src="individual.image" class="w-full h-full object-cover">
                 <div class="absolute inset-0" :style="{ background: individual.gradient }"></div>
-                <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
+                <div class="text-5xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
                   <div class="space-y-4">
                     <div class="mt-80">
                       <p class="text-center">{{ individual.name }}</p>
                     </div>
                     <div>
-                      <p class="text-white font-gramatika text-xl text-center" v-html="individual.title"></p>
+                      <p class="text-white font-gramatika text-2xl text-center" v-html="individual.title"></p>
                     </div>
                   </div>
-                </div>
+                </div> 
               </div>
             </template>
           </div>
@@ -350,7 +351,7 @@
       </div>
 
     <!--------- section 10 -------->
-    <div class="ml-8 mr-8 sm:ml-8 sm:mr-8  lg:ml-12 lg:mr-12">
+    <div class="ml-4 mr-8 sm:ml-8 sm:mr-8  lg:ml-12 lg:mr-12">
       <div class="mt-16 sm:mt-24 lg:mt-32">
         <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-6xl text-navy">
           HANGA ON INSTAGRAM
