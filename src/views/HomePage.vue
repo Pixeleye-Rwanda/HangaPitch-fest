@@ -134,90 +134,79 @@
       
       
       <!-- Fifth section -->
-      <div class="ml-12 mt-72">
-        <h1 class="font-rockinsoda text-navy text-5xl   "> WHERE LEADERS INSPIRE </h1>
-        <h1 class="font-rockinsoda text-navy text-5xl   ">YOUR NEXT BIG LEAP</h1>
+      <div class="ml-12 mt-32 mr-12">
+        <h1 class="font-rockinsoda text-navy text-6xl">WHERE LEADERS INSPIRE</h1>
+        <h1 class="font-rockinsoda text-navy text-6xl">YOUR NEXT BIG LEAP</h1>
+      
+        <div class="flex flex-col lg:flex-row gap-6 mb-20 mt-20">
 
-          <div class=" flex  gap-4 mb-20  mt-20"> 
-        
-            <div class="flex-1 space-y-4 ">
-              <div class="relative h-[320px]">
-                <img src="../assets/mrspeaker.jpg" class="h-full w-full object-cover">
-                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-                  <div class="-space-y-10 mt-36">
-                    <span class="font-rockinsoda text-tangerine text-5xl ml-2  ">"</span>
-                    <p class="text-white text-sm font-gramatika  p-4 text-justify text-center">
-                    Hanga Pitchfest 
-                    a two-fold approach. We are nurturing the rich talents and innovation of our young people,
-                    while recognizing the contributions of talented 
-                    innovators to socio-economic development of our country and the world</p>
+          <div class="flex-1 md:w-1/2 lg:flex-[1.3] space-y-6"> 
+          
+            <div class="relative aspect-w-16 h-[60vh] aspect-h-10"> 
+              <img src="../assets/mrspeaker.jpg" class="w-full h-full object-cover">
+              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">         
+                   <div class="absolute bottom-0 inset-x-0 p-4 text-center">
+                  <p class="text-white text-lg text-justify  font-gramatika p-2">
+                    <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
 
-                  </div>
-                
-                  <div class="flex space-x-2 ml-2 ">
-                    <hr class="w-[50px] border-2 mt-2 ">
-                    <p class="font-rockinsoda text-white text-xl">Francis Gatare</p> 
-                  </div>
-                  
-                  
-
-                </div>
-              </div>
-              <div class="relative h-[320px]">
-                <img src="../assets/whiteman.jpg" class="h-full w-full object-cover">
-                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-                  <div class="-space-y-10 mt-36">
-                    <span class="font-rockinsoda text-tangerine text-5xl ml-2  ">"</span>
-                    <p class="text-white text-sm font-gramatika  p-4 text-justify text-center">
-                      “There have been, in my opinion, too much talking. We need to act now, 
-                      but I believe especially it is very 
-                      important to invest in young people here. The time is now.</p>
-
-                  </div>
-                
-                  <div class="flex space-x-2 ml-2 ">
-                    <hr class="w-[50px] border-2 mt-2 ">
-                    <p class="font-rockinsoda text-white text-xl">Flemming besenbacher</p> 
+                    Hanga Pitchfest a two-fold approach. We are nurturing the rich talents and innovation of our young people,
+                    while recognizing the contributions of talented innovators to socio-economic development.
+                  </p>
+                  <div class="flex space-x-2 ml-2">
+                    <hr class="w-[50px] border-2 mt-2">
+                    <p class="font-rockinsoda text-white text-2xl">Francis Gatare</p>
                   </div>
                 </div>
               </div>
             </div>
-            
-            <div class="relative flex-2 mr-10 h-[655px]">
-              <img src="../assets/paula.jpg" class="w-full h-full object-cover">
-              <div class="relative inset-0">
-                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-                  <!-- Content of the overlay will be positioned here -->
-                  <div class="absolute bottom-0 inset-x-0 p-4">
-                    <div class="-space-y-10">
-                      <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
-                      <p class="text-white text-lg font-gramatika p-4 text-justify text-center">
-                        Today is a celebration of talent, ambitions and the boundless opportunities 
-                        that arise when passion, creativity, determination and
-                        the resolve to be self-reliant converge to push the boundaries of innovation.
-                      </p>
-                    </div>
-                    
-                    <div class="flex space-x-2 ml-2">
-                      <hr class="w-[50px] border-2 mt-2">
-                      <p class="font-rockinsoda text-white text-xl">Paula Ingabire</p>
-                    </div>
+      
+            <!-- Second Image Block -->
+            <div class="relative aspect-w-16 h-[60vh] aspect-h-10"> <!-- Increase aspect ratio -->
+              <img src="../assets/whiteman.jpg" class="w-full h-full object-cover">
+              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">       
+                         <div class="absolute bottom-0 inset-x-0 p-4 ">
+                  <p class="text-white text-lg text-justify font-gramatika p-2">
+                    <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
+
+                    There have been, in my opinion, too much talking. We need to act now, 
+                    but I believe it is very important to invest in young people here. The time is now.”
+                  </p>
+                  <div class="flex space-x-2 ml-2">
+                    <hr class="w-[50px] border-2 mt-2">
+                    <p class="font-rockinsoda text-white text-2xl">Flemming Besenbacher</p>
                   </div>
                 </div>
               </div>
-              
             </div>
-            
-
-            
           </div>
+      
+          <!-- Right Column (Single Large Image) -->
+          <div class="relative md:w-full lg:w-3/4 flex-1 lg:flex-[2] aspect-w-16 aspect-h-10 lg:h-auto"> <!-- Increase flex size for this section -->
+            <img src="../assets/paula.jpg" class="w-full h-full min-h-[400px]  object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">       
+              <div class="absolute bottom-0 inset-x-0 p-4 text-center">
+                
+                <p class="text-white text-justify text-xl font-gramatika p-2">
+                  <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
+                  Today is a celebration of talent, ambitions and the boundless opportunities that arise 
+                  when passion, creativity, determination and the resolve to be self-reliant converge to push the boundaries of innovation.
+                </p>
+                <div class="flex space-x-2 ml-2">
+                  <hr class="w-[50px] border-2 mt-2">
+                  <p class="font-rockinsoda text-white text-2xl">Paula Ingabire</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      
     
 
       <!---------- section six------------ -->
-      <div class="px-4 sm:px-6 lg:px-12 py-12 lg:py-24">
+      <div class="px-4  ml-2 sm:px-6 lg:px-12 py-12 lg:py-24">
         <div class="flex flex-col lg:flex-row lg:space-x-8">
-          <div class="mb-8  mt-44 lg:mb-0 lg:w-1/3">
+          <div class="mb-8 lg:mt-44 sm:mt-20 lg:mb-0 lg:w-1/3">
             <h1 class="font-rockinsoda text-3xl sm:text-6xl text-navy">CHECK OUR INITIATIVES</h1>
             <p class="font-gramatika text-lg sm:text-2xl text-navy mt-2">
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
@@ -334,8 +323,8 @@
       <!--------- section nine ---------->
       <div class="">
         <div class="mt-24 ml-12 space-x-2">
-          <h1 class="font-rockinsoda text-5xl text-navy ml-2">2023</h1>
-        <h1 class="font-rockinsoda text-5xl text-navy">NOTABLE SPEAKERS</h1>
+          <h1 class="font-rockinsoda text-6xl text-navy ml-2">2023</h1>
+        <h1 class="font-rockinsoda text-6xl text-navy">NOTABLE SPEAKERS</h1>
         </div>
         <div class="relative overflow-x-hidden mt-24 ml-12" style="height: 582px;">
           <div class="flex animate-scroll absolute" :style="{ width: `${individuals.length * 800}px` }">
@@ -363,11 +352,11 @@
     <!--------- section 10 -------->
     <div class="ml-8 mr-8 sm:ml-8 sm:mr-8  lg:ml-12 lg:mr-12">
       <div class="mt-16 sm:mt-24 lg:mt-32">
-        <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-5xl text-navy">
+        <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-6xl text-navy">
           HANGA ON INSTAGRAM
         </h1>
       </div>
-      <div class="mt-8 sm:mt-4">
+      <div class="mt-8 sm:mt-12">
         <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-2">
           <!-- Column 1 -->
           <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
@@ -417,45 +406,17 @@
         <img src="../assets/Frame 320.png" >
       </div>
 
-      <div class="relative w-full bg-newsClr">
         <!-- Newsletter signup section -->
-        <div class="  mt-32 px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
-          <div class="max-w-4xl">
-            <h2 class="text-4xl sm:text-5xl lg:text-6xl text-white font-rockinsoda mb-2 sm:mb-4">NEVER MISS</h2>
-            <h2 class="text-4xl sm:text-5xl lg:text-6xl text-white font-rockinsoda mb-6">A HIGHLIGHT FROM HANGA</h2>
-            <p class="text-lg sm:text-xl lg:text-2xl mb-8 text-white font-gramatika">
-              Get the latest trends from Hanga and beyond with our weekly roundup.
-            </p>
-            
-            <div class="flex w-full max-w-lg">
-              <input
-                type="email"
-                placeholder="Your email address"
-                class="flex-grow bg-navy-light text-white placeholder-gray-400 focus:outline-none px-4 py-3 rounded-l"
-              />
-              <button class="bg-tangerine hover:bg-orange-700 text-white px-6 py-3 rounded-r">
-                <i class="fas fa-chevron-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Background illustration -->
-        <div class="absolute right-32 bottom-32 w-1/2 h-1/2 pointer-events-none">
-          <img src="../assets/hanga elements_illustration 2.svg" alt="Hanga illustration" class="w-full h-full object-contain object-right-bottom">
-        </div>
 
-      
-
-      </div>
+      <NewsLetter/>
     
       <!-- Footer section -->
       
     
+      <FooterPage/>
 
       </div>
 
-      <FooterPage/>
   </div>
     
   
@@ -464,11 +425,13 @@
 <script>
 import NavBar from '@/components/Navbar.vue';
 import FooterPage from '@/components/footerPage.vue';
+import NewsLetter from '@/components/NewsLetter.vue';
 export default {
   name: 'HomePage',
   components: {
     NavBar,
-    FooterPage
+    FooterPage,
+    NewsLetter
   },
 
   mounted() {

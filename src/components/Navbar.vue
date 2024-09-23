@@ -47,7 +47,7 @@
 
     <!-- Navbar for Larger Screens -->
     <div  class="hidden md:flex items-center p-4 bg-transparent mt-6" >
-      <router-link to="/" class="mx-auto">
+      <router-link to="/" class="ml-16">
         <img src="../assets/logo.svg" class="h-8 md:h-10" alt="Logo">
       </router-link>
 
