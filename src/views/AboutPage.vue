@@ -68,37 +68,37 @@
             </div>
 
              <!-- section five  -->
-              <div class="ml-12 space-x-32 flex ">
-                <div class=" ">
-                  <div class="space-y-2 mt-28">
-                  <p class="text-6xl font-rockinsoda text-navy">HEAR FROM OUR </p>
-                  <p class="text-6xl font-rockinsoda text-navy">SPONSORS</p>
+             <div class="ml-4 mr-4 xl:mt-4 2xl:-mt-12 mlg:mr-10 md:ml-12 flex flex-col md:flex-row lg:space-x-16 items-start justify-between">
+              <div class="flex-1  mt-12 xl:mt-2 2xl:mt-60 md:mt-8 max-w-full md:max-w-[50%]">
+                <div class="space-y-2  md:mt-28 ">
+                  <p class="text-4xl md:text-7xl font-rockinsoda text-navy">HEAR FROM OUR </p>
+                  <p class="text-4xl md:text-7xl font-rockinsoda text-navy">SPONSORS</p>
                 </div>
-
-                <div class="mt-8">
-                  <div class=" text-justify space-y-8 w-[600px] ">
-                    <p class="text-navy font-gramatika text-md">"We are delighted, as Jasiri, to be part of Hanga Pitchfest, 
-                       We believe in the power of entrepreneurship to transform our society and Hanga Pitchfest calls for action for
-                        those seeking to challenge the status quo and build solutions that will improve the lives of many." 
-                      - Aline Kabanda, East Africa Regional Director, Jasiri.</p>
- 
-                    <p class="text-navy font-gramatika text-md ">“We have always been partners with the government  on the journey of building
-                       a resilient knowledge based economy, and it is exciting that over the last 3 years Hanga Pitchfest has been shining light on innovators,
-                        we hope this stirs up more innovators
-                       as well as partners to build the digital economy we all are proud of.” - ICT Chamber</p>
- 
-                    <p class="text-navy font-gramatika text-md"> ”Partnership with Hanga PitchFest is a must, as it is the only way to support young upcoming entrepreneurs.
-                       Having an entrepreneurial mindset is the only way to solve problems worldwide. 
-                      This will help the youth to leave not a survival mentality, but to living, thriving, and building their country, continent, and the world at large!” - Choose Kigali</p>
-               </div>
+            
+                <div class="mt-10">
+                  <div class="text-justify space-y-12 w-full">
+                    <p class="text-navy font-gramatika text-lg md:text-md">
+                      "We are delighted, as Jasiri, to be part of Hanga Pitchfest. We believe in the power of entrepreneurship to transform our society, and Hanga Pitchfest calls for action for those seeking to challenge the status quo and build solutions that will improve the lives of many." 
+                      - Aline Kabanda, East Africa Regional Director, Jasiri.
+                    </p>
+            
+                    <p class="text-navy font-gramatika text-lg md:text-md">
+                      “We have always been partners with the government on the journey of building a resilient knowledge-based economy, and it is exciting that over the last 3 years Hanga Pitchfest has been shining a light on innovators. We hope this stirs up more innovators as well as partners to build the digital economy we all are proud of.” - ICT Chamber
+                    </p>
+            
+                    <p class="text-navy font-gramatika text-lg md:text-md">
+                      "Partnership with Hanga PitchFest is a must, as it is the only way to support young upcoming entrepreneurs. Having an entrepreneurial mindset is the only way to solve problems worldwide. This will help the youth to move from a survival mentality to thriving and building their country, continent, and the world at large!" - Choose Kigali
+                    </p>
+                  </div>
                 </div>
               </div>
-
-                <div class=" h-[500px] mt-32 flex-shrink-0">
-                  <img src="../assets/speakerP.jpg" class="w-full h-full object-cover ">
-                </div>
-
+            
+              <div class="flex-1 h-[300px] sm:mt-10 md:h-auto  md:mt-32 xl:mt-36 2xl:mt-52 max-w-full md:max-w-[50%]">
+                <img src="../assets/speakerP.jpg" class="w-full mt-10 h-full  object-cover">
               </div>
+            </div>
+            
+            
 
               <!-- section six  -->
 
