@@ -43,17 +43,17 @@
               <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rockinsoda text-navy">INNOVATION</p>
             </div>
             <div className="lg:w-3/5 space-y-8 self-start">
-              <p className="text-navy text-justify font-gramatika text-sm md:text-base lg:text-lg xl:text-xl">
+              <p className="text-navy text-justify font-gramatika text-sm md:text-base lg:text-xl 2xl:text-2xl">
                 Hanga PitchFest offers a platform for tech-entrepreneurs to present 
                 their groundbreaking work to a wide audience, including potential investors, 
                 technology company founders, and private sector business leaders.
               </p>
-              <p className="text-navy text-justify font-gramatika text-sm md:text-base lg:text-lg xl:text-xl">
+              <p className="text-navy text-justify font-gramatika text-sm md:text-base lg:text-xl 2xl:text-2xl">
                 Selected startups have the opportunity to connect with Angel investors, 
                 venture capitalists, and other key stakeholders who can provide 
                 the necessary funding and support to scale their businesses.
               </p>
-              <p className="text-navy text-justify  font-gramatika text-sm md:text-base lg:text-lg xl:text-xl">
+              <p className="text-navy text-justify  font-gramatika text-sm md:text-base lg:text-xl 2xl:text-2xl">
                 Our all-day event includes innovators' showcases, masterclasses for 
                 entrepreneurs, live music performances, and a live pitching competition 
                 for the top 5 startups.
@@ -101,80 +101,83 @@
             
 
               <!-- section six  -->
+              <div class="relative h-auto min-h-[600px]"> 
+                <div class="mt-24 sm:mt-32 bg-cover h-full" :style="{ backgroundImage: `url(${require('@/assets/notched.svg')})`}">
+                  <div class="flex flex-col-reverse lg:flex-row items-center lg:items-start lg:justify-between">
+                    <!-- Text Section -->
+                    <div class="space-y-8 sm:space-y-10 lg:space-y-16 mt-20 sm:mt-32 lg:mt-26 ml-4 sm:ml-8 md:ml-12 p-4 sm:p-6 md:p-8 w-full lg:w-9/12 text-left">
+                     
+                        <div class=" slide-up  h-[430px] w-[470px] flex-shrink-0" ref="texty">
+                    
+                          <p class="font-rockinsoda text-4xl ml-32 mt-10 absolute text-white ">FUELING INNOVATION</p>
+                      <img src="../assets/rwanda.svg" alt="" class="-mt-12 w-full h-full object-cover ">
+                      <img src="../assets/2021.svg "  class="absolute top-40 left-44 h-32 w-32">
 
-              <div class="relative h-[600px]"> 
-                <div class="absolute text-white p-8 mt-20 ">
-                  <img src="../assets/notched.svg" alt="" class="w-full">
-
-                  <div class="absolute top-0 mt-56 left-0 w-1/3 h-auto left-[50%]">
-                    <div class="space-y-4 text-justify ">
-                      <p class="font-gramatika text-7xl font-bold ">Rwf 600 M</p>
-                      <p class="font-gramatika text-lg font-normal ">In investments</p>
+  
+                    
+                      </div>
+                      <div class=" slide-up w-9/12" ref="texts">
+            
+                        <p class="text-lg sm:text-2xl md:text-3xl lg:text-2xl text-white font-gramatika">The largest in-person technology event in Rwanda designed to ignite & 
+                          inspire innovation.</p>
+                      </div>
+                 
                     </div>
-                    <hr class="w-[500px] border-lineColor mt-8 mb-8 ">
-
-                    <div class="flex space-x-16">
-
-                     <div class="text-justify space-y-4">
-                      <p class="font-gramatika text-6xl" >130+</p>
-                      <p>Startups</p>
-                     </div>
-
-                     <div class="text-justify space-y-4">
-                    <p class="font-gramatika  text-6xl" > 20+ </p>
-                    <p>Hanga SRH</p>
+                    <!-- Image Section -->
+                    <div class="text-white mt-40 p-4 sm:p-6 md:p-8  lg:justify-end lg:flex-shrink-0 w-full lg:w-auto lg:max-w-[50%] flex justify-center">
+                      <div class="absolute w-full left-0 w-1/3 h-auto left-[60%]">
+                        <div class="space-y-4 text-justify ">
+                          <p class="font-gramatika text-7xl font-bold ">Rwf 600 M</p>
+                          <p class="font-gramatika text-lg font-normal ">In investments</p>
+                        </div>
+                        <hr class="w-[500px] border-lineColor mt-8 mb-8 ">
+      
+                        <div class="flex space-x-16">
+      
+                         <div class="text-justify space-y-4">
+                          <p class="font-gramatika text-6xl" >130+</p>
+                          <p>Startups</p>
+                         </div>
+      
+                         <div class="text-justify space-y-4">
+                        <p class="font-gramatika  text-6xl" > 20+ </p>
+                        <p>Hanga SRH</p>
+                        </div>
+      
+                         <div class="text-justify space-y-4">
+                          <p class="font-gramatika text-6xl">190+</p>
+                          <p>Hanga hubs</p>
+      
+                         </div>
+                        </div>
+      
+                      </div>
                     </div>
-
-                     <div class="text-justify space-y-4">
-                      <p class="font-gramatika text-6xl">190+</p>
-                      <p>Hanga hubs</p>
-
-                     </div>
-                    </div>
-
                   </div>
                 </div>
-
-                <div class="absolute mt-72 ml-12 p-8 text-left">
-                 <div class="relative">
-
-                    <div class=" relative h-[350px] flex-shrink-0">
-                      
-                      <p class="font-rockinsoda text-3xl ml-24 text-white absolute">FUELING INNOVATION</p>
-                  <img src="../assets/rwanda.svg" alt="" class="-mt-12 w-full h-full object-cover ">
-                  <img src="../assets/2021.svg"  class="absolute top-24 left-32 h-32 w-32">
-                  
-                  
-                 </div>
-                 <div class=" ">
-                 <p class="font-gramatika text-white absolute top-24 left-16 text-md text-sm mt-72">The largest in-person technology event in Rwanda designed to ignite & 
-                  inspire innovation.</p>
-                  </div>
-                </div>
-                </div>
-                  
-             
               </div>
 
             <!-- section 7 -->
-            <div class="ml-12 mt-72">
-              <h1 class="font-rockinsoda text-navy text-5xl   "> HANGA IS </h1>
-              <h1 class="font-rockinsoda text-navy text-5xl   ">ORGANIZED BY </h1>
-
-               <div class="flex mt-16 ">
-                <div class="flex-shrink-0 h-[230px] ">
-                  <img src="../assets/coat.svg" class="w-full h-full object-cover border border-tangerine p-10 px-28">
+            <div class="mt-24 md:mt-36 pl-4 md:pl-12 pr-4 w-full">
+              <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">HANGA IS</h1>
+              <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">ORGANIZED BY</h1>
+            
+              <div class="flex flex-wrap mt-12 md:mt-16 w-full">
+                <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
+                  <img src="../assets/coat.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
                 </div>
-                <div class="flex-shrink-0 h-[230px]">
-                  <img src="../assets/flag.svg" class=" w-full h-full object-cover border border-tangerine  p-10 px-28">
+                <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
+                  <img src="../assets/flag.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
                 </div>
-                <div class="flex-shrink-0 h-[230px]">
-                  <img src="../assets/undp.svg" class="w-full h-full object-cover border border-tangerine p-10 px-28">
+                <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
+                  <img src="../assets/undp.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
                 </div>
-               </div>
-                  
-              
+              </div>
             </div>
+            
+            
+            
+            
 
 
             <!-- section 8------ -->
@@ -265,113 +268,109 @@
             </div>
 
              <!-- section 9 --->
-          <div class="mt-12 ml-12">
-            <div>
-              <h1 class="font-rockinsoda text-navy text-5xl">EVENT GALLERY</h1>
-            </div>
-            <div class="">
-            <div class="mt-8 flex">
-             <div class=" flex-shrink-0 h-[215px]">
-              <img src="../assets/1.jpg" class="w-full h-full">
-             </div>
-             <div class=" flex-shrink-0 h-[215px]">
-              <img src="../assets/2.jpg" class="w-full h-full">
-             </div>
-             <div class=" flex-shrink-0 h-[215px]">
-              <img src="../assets/3.jpg" class="w-full h-full">
-             </div>
-             <div class=" flex-shrink-0 h-[215px]">
-              <img src="../assets/4.jpg" class="w-full h-full">
-             </div>
-             <div class=" flex-shrink-0 h-[215px]">
-              <img src="../assets/5.jpg" class="w-full h-full">
-             </div>
+             <div class="mt-12  pl-4 md:pl-12 pr-8 w-full">
+              <div>
+                <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">EVENT GALLERY</h1>
+              </div>
+              <div class="mt-8 space-y-4 md:space-y-0">
+                <!-- First row of images -->
+                <div class="flex flex-wrap justify-start w-full">
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/1.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/2.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/3.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/4.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/5.jpg" class="w-full h-full object-cover">
+                  </div>
+                </div>
+                <!-- Second row of images -->
+                <div class="flex flex-wrap justify-start w-full">
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/6.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/7.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/8.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/9.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/10.jpg" class="w-full h-full object-cover">
+                  </div>
+                </div>
+                <!-- Third row of images -->
+                <div class="flex flex-wrap justify-start w-full">
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/11.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/12.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/13.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/14.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/15.jpg" class="w-full h-full object-cover">
+                  </div>
+                </div>
+                <!-- Fourth row of images -->
+                <div class="flex flex-wrap justify-start w-full">
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/17.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/18.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/19.png" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/20.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/21.jpg" class="w-full h-full object-cover">
+                  </div>
+                </div>
+                <!-- Fifth row of images -->
+                <div class="flex flex-wrap justify-start w-full">
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/22.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/23.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/24.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/14.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                    <img src="../assets/26.jpg" class="w-full h-full object-cover">
+                  </div>
+                </div>
             
+                <!-- Follow button -->
+                <div class="flex items-center justify-center mt-2">
+                  <button class="font-gramatika text-black text-md bg-white  absolute p-2 rounded-md py-2 px-4 shadow-md">Follow us on Instagram</button>
+                </div>
+              </div>
             </div>
-            <div class=" flex">
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/6.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/7.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/8.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/9.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/10.jpg" class="w-full h-full">
-              </div>
-             
-             </div>
-
-             <div class=" flex">
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/11.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/12.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/13.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/14.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/15.jpg" class="w-full h-full">
-              </div>
-             
-             </div>
-             
-             <div class=" flex">
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/17.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/18.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/19.png" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/20.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/21.jpg" class="w-full h-full">
-              </div>
-             
-             </div>
-
-             <div class=" flex">
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/22.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/23.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/24.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/14.jpg" class="w-full h-full">
-              </div>
-              <div class=" flex-shrink-0 h-[215px]">
-               <img src="../assets/26.jpg" class="w-full h-full">
-              </div>
-                 
             
-
-             </div>
-              
-             <div class="items-center justify-center flex p">
-              <button class="font-gramatika text-black text-md 
-              bg-white p-2 rounded-md py-2 px-4 shadow-md absolute ">Follow us on instagram </button>
-            </div>
-            </div>
-          </div>
 
             <!-- Newsletter signup section -->
 
@@ -406,9 +405,61 @@ export default{
     scrollRight() {
       this.$refs.videoWrapper.scrollBy({ left: 500, behavior: 'smooth' });
     }
-  }
+  },
+
+  mounted() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('slide-up-visible');
+          entry.target.classList.add('zoom-in-visible');
+          entry.target.classList.add('fade-in-visible');
+          entry.target.classList.add('fade-in-visible-animation');
+          entry.target.classList.add('slide-up-visible-animation');
+
+
+ 
+        }
+      });
+    });
+
+      
+    // Observe all elements with the zoom-in class
+    const elements = this.$refs;
+    for (let key in elements) {
+      if (elements[key]) {
+        observer.observe(elements[key]);
+      }
+    }
+  
+    // Observe both the text and button elements
+    observer.observe(this.$refs.text);
+    observer.observe(this.$refs.texty);
+
+
+
+
+  },
 
 }
 
 
 </script>
+
+<style>
+.slide-up {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+
+
+
+.button-hover {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-hover:hover {
+  transform: scale(1.05); 
+}
+</style>

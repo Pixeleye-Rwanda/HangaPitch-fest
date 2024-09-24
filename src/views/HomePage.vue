@@ -435,7 +435,7 @@ export default {
     NewsLetter
   },
 
-  mounted() {
+ mounted() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -446,7 +446,7 @@ export default {
           entry.target.classList.add('slide-up-visible-animation');
 
 
-
+ 
         }
       });
     });
