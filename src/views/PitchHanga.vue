@@ -44,51 +44,44 @@
 
 
         <!-- section 3 -->
-        
-         <div class=" relative"> 
+        <div class="container mx-auto px-4 lg:px-12 xl:max-w-none">
+          <div class="relative absolute  w-full pt-52 ">
+            <div class="flex flex-col absolute lg:flex-row lg:justify-between space-y-24 lg:space-y-0 lg:space-x-8">
 
-        <div class="  absolute flex ml-12  space-x-12 mt-16">
-          <div class="w-[350px] h-[40vh] space-y-4">
-            <img src="../assets/one.svg" class="absolute  -mt-24 h-16 w-16">
-            <p class="font-rockinsoda text-4xl text-navy"> Create Acount</p>
-            <p class="font-gramatika text-lg  text-darkGray"> Sign up on Hanga by clicking on the 
-              <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" class="text-tangerine ">
-                official link to registration</a></p>
-          </div>
-          <div class="w-[350px] h-[40vh] space-y-4">
-            <img src="../assets/two.svg" class="absolute - -mt-24 h-16 w-16">
-            <p class="font-rockinsoda text-4xl text-navy"> Validate Email</p>
-            <p class="font-gramatika text-lg text-darkGray">Check your email inbox for a message from Hanga Pitchfest.
-              Open the email and click on the validation link provided</p>
-          
-          </div>
-          <div class="space-y-8 ">
-          <div class="w-[350px]  h-[40vh] mr-12 space-y-4">
-            <img src="../assets/three.svg" class="absolute  -mt-28 h-16 w-16">
+              <div class="w-full absolute  lg:w-1/4 space-y-4 relative">
+                <img src="../assets/one.svg" class="absolute -top-16 left-0 h-16 w-16">
+                <p class="font-rockinsoda text-4xl text-navy pt-8">Create Account</p>
+                <p class="font-gramatika text-lg text-darkGray">Sign up on Hanga by clicking on the <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" class="text-tangerine">official link to registration</a></p>
+              </div>
+              <div class="w-full  lg:w-1/4 space-y-4 relative">
+                <img src="../assets/two.svg" class="absolute -top-16 left-0 h-16 w-16">
+                <p class="font-rockinsoda text-4xl text-navy pt-8">Validate Email</p>
+                <p class="font-gramatika text-lg text-darkGray">Check your email inbox for a message from Hanga Pitchfest. Open the email and click on the validation link provided</p>
+              </div>
+              <div class="w-full lg:w-2/5 space-y-24 lg:space-y-44">
+                <div class="w-full space-y-4 -mt-4 relative">
+                  <img src="../assets/three.svg" class="absolute -top-16  left-0 h-16 w-16">
+                  <div class="space-y-8 pt-8">
+                  <p class="font-rockinsoda text-4xl text-navy ">Fill Form</p>
+                  <p class="font-gramatika text-lg text-darkGray">Log in to your Hanga Pitchfest account. Complete the application form with accurate details about your startup and upload any required attachments</p>
+                </div>
 
-            <p class="font-rockinsoda text-4xl text-navy"> Fill Form</p>
-            <p class="font-gramatika text-lg text-darkGray">Log in to your Hanga Pitchfest account.
-              Complete the application form with accurate details about your startup and upload 
-              any required attachments</p>
-          
-          </div>
-          <div class="w-[350px] h-[40vh]  ">
-            <img src="../assets/four.svg" class="absolute -mt-28 h-16 w-16">
-              <div class="space-y-4">
-            <p class="font-rockinsoda text-4xl text-navy mt-24"> submit Project</p>
-            <p class="font-gramatika text-lg text-darkGray">Review your application form to ensure all information is accurate and complete.
-              Once you're satisfied with the application, click the "Submit" button.</p>
+                </div>
+                <div class="w-full  space-y-4 -mt-4 relative">
+                  <img src="../assets/four.svg" class="absolute -top-16 left-4 h-16 w-16">
+                  <div class="space-y-4  pt-8">
+                    <p class="font-rockinsoda text-4xl text-navy">Submit Project</p>
+                    <p class="font-gramatika text-lg text-darkGray">Review your application form to ensure all information is accurate and complete. Once you're satisfied with the application, click the "Submit" button.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden lg:block relative absolute -top-12 left-8 w-full">
+              <img src="../assets/Subtract .svg" class="w-full  h-auto">
             </div>
           </div>
         </div>
 
-        
-        </div>
-        <div class="ml-12 ">
-          <img src="../assets/Subtract .svg" class=" mt-48">
-       </div>
-
-       </div>
 
         <!-- section 4 -->
         <div class=" ">
