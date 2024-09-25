@@ -18,28 +18,29 @@
 
         <!-- next section -->
 
-    <div class="flex flex-col lg:flex-row mt-16 lg:mt-32 space-x-0 lg:space-x-48 ml-6 lg:ml-12">
-  <!-- Text Section -->
-  <div class="space-y-4 text-center lg:text-left">
-    <p class="text-3xl lg:text-5xl font-rockinsoda text-navy">THE LARGEST IN-PERSON</p>
-    <p class="text-3xl lg:text-5xl font-rockinsoda text-navy">TECHNOLOGY EVENT</p>
-    <p class="text-3xl lg:text-5xl font-rockinsoda text-navy">IN RWANDA</p>
-  </div>
-
-  <!-- Description and Button Section -->
-  <div class="text-justify space-y-6 w-full lg:w-[600px] mt-6 lg:mt-0">
-    <p class="text-base lg:text-xl font-gramatika text-navy">
-      Do you believe you've got what it takes? You are only 4 steps closer to being part of the most exciting tech event in Rwanda.
-      Make sure you have all the necessary documents and information ready to submit your application.
-    </p>
-    <div class="flex justify-center lg:justify-start">
-      <button class="mr-0 lg:mr-8 p-2 px-4 font-gramatika bg-tangerine text-white hover:bg-tangerine-dark transition-all" ref="button">
-        <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" class="mt-6">Apply Now</a>
-        <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
-      </button>
-    </div>
-  </div>
-</div>
+        <div class="flex flex-col lg:flex-row mt-12 lg:mt-20 px-6 w-full lg:space-x-10 ">
+          <!-- Text Section -->
+          <div class="lg:text-left  space-y-4 w-3/5">
+            <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">THE LARGEST IN-PERSON TECHNOLOGY EVENT IN RWANDA</p>
+      
+          </div>
+        
+          <!-- Description and Button Section -->
+          <div class="text-justify mt-4 lg:mt-0 space-y-8 w-full lg:w-10/12">
+            <p class="text-base lg:text-2xl font-gramatika text-navy">
+              Do you believe you've got what it takes? You are only 4 steps closer to being part of the most exciting tech event in Rwanda. Make sure you have all the necessary documents and information ready to submit your application.
+            </p>
+            <div class="flex  lg:justify-start">
+              <button class="p-2 px-4 font-gramatika bg-tangerine text-white hover:bg-tangerine-dark transition-all" ref="button">
+                <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" class="mt-6">Apply Now</a>
+                <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        
+        
 
 
         <!-- section 3 -->
@@ -133,79 +134,77 @@
         </div>
 
       <!-- next section -->
-
-      <div class="relative h-[600px] mb-48"> 
-        <div class="absolute text-white p-8 mt-20">
-        <img src="../assets/notched.svg" alt="" class="w-full">
-        </div>
-
-        <div class="absolute    mt-44 ml-12 p-8 text-left">
-        <div class="slide-up space-y-8" ref="texty">
-
-            <h2 class="text-2xl text-white font-rockinsoda ">HANGA HALL OF FAME </h2>
-
-            <div class="flex space-x-16">
-              <img src="../assets/2023/loopa.svg" class="w-23h-23">
-              <img src="../assets/2023/hova.svg" class="w-22 h-22">
-              <img src="../assets/2022/umurava.svg" class="w-23 h-20">
-              <img src="../assets/2023/medixr.svg" alt="">
-              <img src="../assets/2023/dope.svg" alt="">
-            </div>
-              <hr class="border-lineColor border-t-2" >
-            <div class="flex space-x-32">
-              <img src="../assets/2022/lifesten.svg" class="w-20 h-20">
-              <img src="../assets/2022/paying-tone.svg" class="w-20 h-20">
-              <img src="../assets/2022/school-nest.svg" class="w-30 h-30">
-              <img src="../assets/2022/huza.svg" class="w-20 h-20">
-              <img src="../assets/2022/mukika.svg" class="w-20 h-20">
-            </div>
-            <hr  class="border-lineColor border-t-2 " >
-            <div class="flex space-x-32">
-              <img src="../assets/2021/afroduino.svg" alt="">
-              <img src="../assets/2021/second-life-storage.svg" alt="">
-              <img src="../assets/2021/bag.svg" alt="">
-              <img src="../assets/2021/karisimbi.svg"  alt="">
-              <img src="../assets/2021/hova 2.png">
-            </div>
-
-        </div>
+      <div class="mt-24 sm:mt-32 bg-cover h-full" :style="{ backgroundImage: `url(${require('@/assets/notched.svg')})`}">
+        <div className="container mx-auto mb-20  px-4 py-8 md:py-16">
+          <h2 className="text-3xl md:text-4xl mt-10 text-white font-rockinsoda mb-8">HANGA HALL OF FAME</h2>
+          
+          <div class="slide-up space-y-8" ref="texty">
             
-    </div>
-    </div>
-
-    <!-- another section -->
-    <div class="ml-12 space-x-32 mt-54 flex mb-16 ">
-      <div class="mt-32 ">
-        <div class="space-y-2 mt-28">
-        <p class="text-5xl font-rockinsoda text-navy">CONNECT WITH LIKE-MINDED</p>
-        <p class="text-5xl font-rockinsoda text-navy">ENTREPRENEURS AT HANGA HUBs</p>
-      </div>
-
-      <div class="mt-8">
-        <div class=" text-justify space-y-8 w-[600px] ">
-          <p class="text-navy font-gramatika text-md">HANGA Hubs is an action funded by the European Commission
-             and it is implemented by RISA. It operates in MUHANGA, NYAGATARE, RUBAVU and RUSIZI. 
-             The action is part of the Rwanda Government’s and the European Union’s efforts to support the private sector development
-             and job creation in Rwanda through Innovation and Incubation hubs.</p>
-
-             <button class="mr-8 mt-10 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold zoom-in button-hover" ref="button">
-              Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </button>
-
-         
-     </div>
-      </div>
-    </div>
-
-      <div class=" relative h-[520px] mt-28 flex-shrink-0">
-        <img src="../assets/vr.jpg" class="w-full h-full object-cover ">
-        <div class="absolute inset-0" 
-        style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);">
+            <div className="space-y-10">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 items-center">
+                <img src="../assets/2023/loopa.svg" alt="Loopa" className=" w-[15vh] h-[15vh] lg:w-[20vh] lg:h-[20vh]" />
+                <img src="../assets/2023/hova.svg" alt="Hova" className=" w-[15vh] h-[15vh] lg:w-[20vh] lg:h-[20vh]" />
+                <img src="../assets/2022/umurava.svg" alt="Umurava" className="w-[20vh] h-[20vh] lg:w-[25vh] lg:h-[25vh]" />
+                <img src="../assets/2023/medixr.svg" alt="MedixR" className=" w-[20vh] h-[20vh] lg:w-[20vh] lg:h-[20vh]"/>
+                <img src="../assets/2023/dope.svg" alt="Dope" className="w-[15vh] h-[15vh] lg:w-[20vh] lg:h-[20vh]" />
+              </div>
+              <hr className="border-lineColor border-t-2" />
+            </div>
+            
+            <div className="space-y-10">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 items-center">
+                <img src="../assets/2022/lifesten.svg" alt="Lifesten" className="w-[15vh] h-[15vh] lg:w-[20vh] lg:h-[20v]" />
+                <img src="../assets/2022/paying-tone.svg" alt="Paying Tone" className="w-[15vh] h-[15vh]  lg:w-[20vh] lg:h-[20v]" />
+                <img src="../assets/2022/school-nest.svg" alt="School Nest" className="w-[15vh] h-[15vh] lg:w-[30vh] lg:h-[30v]" />
+                <img src="../assets/2022/huza.svg" alt="Huza" className="w-[15vh] h-[15vh] lg:w-[20vh] lg:h-[20v]" />
+                <img src="../assets/2022/mukika.svg" alt="Mukika" className="w-[15vh] h-[15vh] lg:w-[20vh] lg:h-[20v]" />
+              </div>
+              <hr className="border-lineColor border-t-2" />
+            </div>
+            
+            <div className="space-y-10">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-12 items-center">
+                <img src="../assets/2021/afroduino.svg" alt="Afroduino" cclassName=" w-[35vh] h-[35vh] lg:w-[45vh] lg:h-[45v]" />
+                <img src="../assets/2021/second-life-storage.svg" alt="Second Life Storage" className=" w-[25vh] h-[25vh] lg:w-[30vh] lg:h-[30v]" />
+                <img src="../assets/2021/bag.svg" alt="Bag" className="w-[12vh] h-[12vh] lg:w-[20vh] lg:h-[20v]"/>
+                <img src="../assets/2021/karisimbi.svg" alt="Karisimbi" className="w-[25vh] h-[25vh] lg:w-[30vh] lg:h-[30v]" />
+                <img src="../assets/2021/hova 2.png" alt="Hova 2" className="w-[15vh] h-[15vh] lg:w-[20vh] lg:h-[20vh]" />
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
+      
 
+
+   <!-- Responsive Section -->
+<div class="flex flex-col lg:flex-row mt-16 lg:mt-44  space-y-8 lg:space-y-0 lg:space-x-16 px-6 lg:px-12 w-full mb-16">
+  <!-- Text Section -->
+  <div class="w-full lg:w-1/2 mt-16 lg:mt-16 2xl:mt-72">
+    <div class="space-y-2">
+      <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">CONNECT WITH LIKE-MINDED</p>
+      <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">ENTREPRENEURS AT HANGA HUBs</p>
     </div>
+
+    <div class="mt-8 text-justify space-y-12">
+      <p class="text-navy font-gramatika text-lg lg:text-xl 2xl:text-2xl ">
+        HANGA Hubs is an action funded by the European Commission and it is implemented by RISA. It operates in MUHANGA, NYAGATARE, RUBAVU, and RUSIZI. The action is part of the Rwanda Government’s and the European Union’s efforts to support private sector development and job creation in Rwanda through Innovation and Incubation hubs.
+      </p>
+      <button class="mt-6 p-2 px-4 lg:px-8 font-gramatika bg-tangerine text-white font-semibold hover:bg-tangerine-dark transition-all" ref="button">
+        Learn more <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Image Section -->
+  <div class="flex-1  relative h-[30px] sm:mt-10 md:h-auto  md:mt-32 xl:mt-36  max-w-full md:max-w-[50%]">
+    <img src="../assets/vr.jpg" class="w-full h-full object-cover">
+    <div class="absolute inset-0" 
+      style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);">
+    </div>
+  </div>
+</div>
+
 
 
     <!-- next section -->

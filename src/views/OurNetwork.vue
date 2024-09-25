@@ -17,11 +17,10 @@
           <p>{{headline}}</p>
        </div>
       </div>
-    </div>
 
-    <!-- Navbar network page  -->
+        <!-- Navbar network page  -->
     <div class="h-[9vh] w-full bg-tangerine">
-      <div class="flex mt-4">
+      <div class="flex ">
         <div class="ml-12 text-xl">
           <h1 class="font-gramatika text-white mt-4">OUR NETWORK</h1>
         </div>
@@ -48,6 +47,10 @@
         </ul>
       </div>
     </div>
+
+    </div>
+
+  
 
     <!-- Dynamic Content Section -->
     <component :is="currentComponent" />
