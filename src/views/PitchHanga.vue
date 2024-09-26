@@ -67,9 +67,9 @@
                 </div>
 
                 </div>
-                <div class="w-full  space-y-4 -mt-4 relative">
+                <div class="w-full  space-y-4  relative">
                   <img src="../assets/four.svg" class="absolute -top-16 left-4 h-16 w-16">
-                  <div class="space-y-4  pt-8">
+                  <div class="space-y-4  pt-8 ">
                     <p class="font-rockinsoda text-4xl text-navy">Submit Project</p>
                     <p class="font-gramatika text-lg text-darkGray">Review your application form to ensure all information is accurate and complete. Once you're satisfied with the application, click the "Submit" button.</p>
                   </div>
