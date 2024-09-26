@@ -46,7 +46,7 @@
         <!-- section 3 -->
          
         <div class="container min-h-screen   mx-auto px-4 lg:px-12  xl:max-w-none">
-          <div class="relative absolute  w-full pt-32 lg:pt-52 ">
+          <div class="relative absolute  w-full pt-32 lg:pt-60 ">
             <div class="flex flex-col absolute lg:flex-row lg:justify-between space-y-24 lg:space-y-0 lg:space-x-8">
 
               <div class="w-full absolute  lg:w-1/4 space-y-4 relative">
@@ -86,7 +86,7 @@
 
         <!-- section 4 -->
       
-        <div class=" relative mt-96 lg:mt-60">
+        <div class=" relative mt-96 lg:mt-60 2xl:mt-24">
           <div class="">
             <p class="text-navy font-rockinsoda text-5xl ml-12  "> Past winners </p>
           </div>

@@ -1,81 +1,73 @@
     <template>
 
-        <div class="ml-12 flex mt-24 gap-4">
-            <div class="flex-2">
-            <div class=" relative h-[500px] flex-shrink-0 zoom-in" ref="leftContent">
-                <img src="../assets/speaker1.jpg" class="w-full h-full object-cover">
-                <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
+        <div class="w-full  -mt-48 lg:mt-32 lg:ml-8 sm:ml-0  ">
 
+    
+            <div class="flex flex-col md:flex-row mt-20">
+              <!-- Left Section with Main Image and Text -->
+              <div class="w-full md:w-2/3 mb-4 md:mb-0 px-4">
+                <img src="../assets/speaker1.jpg" alt="Students" class="w-full h-auto  zoom-in" ref="leftContent">
+                <p class="font-gramatika mt-8 text-darknavy text-lg sm:text-xl zoom-in" ref="text1">
+                    The largest in-person technology event in Rwanda designed to ignite &                  
+                    inspire innovation, Hanga Pitchfest is returning for its fourth edition.</p>               
+                <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold zoom-in button-hover" ref="button">
+                  Pitch at hanga <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>          
+              </div>
+          
+              <!-- Right Side with Vertically Stacked Images -->
+              <div class="w-full md:w-1/3 space-y-4 px-4 lg:mr-12 sm:mr-0">
+                <img src="../assets/speaker2.jpg" alt="Speaker" class="w-full h-auto zoom-in" ref="image1">
+                <img src="../assets/audience.jpg" alt="Audience" class="w-full h-auto zoom-in" ref="image2">
+              </div>
             </div>
-        
-            <p class="font-gramatika mt-8 text-darknavy text-xl zoom-in" ref="text1">
-                The largest in-person technology event in Rwanda designed to ignite &                  </p>
-            <p class="font-gramatika text-darknavy text-xl zoom-in" ref="text2">
-                inspire innovation, Hanga Pitchfest is returning for its fourth edition.                  </p>
-            <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold zoom-in button-hover" ref="button">
-                Pitch at Hanga <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </button>
-            </div>
-        
-            <!-- Right side with vertically stacked images -->
-            <div class="flex-1 space-y-4">
-            <div class=" relative mr-10 h-[300px] flex-shrink-0 zoom-in" ref="image1">
-                <img src="../assets/speaker2.jpg" class="h-full w-full object-cover">
-                <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
-
-            </div>
-            <div class=" relative mr-10 h-[300px] flex-shrink-0 zoom-in" ref="image2">
-                <img src="../assets/audience.jpg" class="h-full w-full object-cover">
-                <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
-
-            </div>
-            </div>
-        </div>
+          </div>
 
         <!-- third section -->
-        <div class="ml-2 flex items-center justify-center mt-36 space-x-44">
-            <div class="space-y-8 fade-in w-[40vh]"  ref="item1">
-            <img src="../assets/1line.png">
-            <hr class="border-t border-gray-300">
-            <div class="space-y-2">
-                <p class="font-rockinsoda text-5xl text-navy">GET FUNDING</p>
-
+        <div class="flex flex-wrap justify-center  lg:mr-4 sm:mr-0 lg:justify-between gap-y-20 gap-x-8 lg:gap-x-20  px-4 lg:px-10 mt-24 lg:mt-48">
+            <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item1">
+                <img src="../assets/1line.png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0" >
+                    <hr class="border-t border-gray-300">
+                    <div class="space-y-2">
+                        <p class="font-rockinsoda text-5xl text-navy">GET FUNDING</p>
+              
+                        
+                        <p class="text-lightblue  text-lg font-gramatika mt-4 text-justify">At Hanga, you will secure
+                        the essential funding you need
+                        to elevate your startup and turn your innovative ideas into reality.</p>
+                        
+              
+                    </div>
                 
-                <p class="text-lightblue font-gramatika mt-4 text-justify">At Hanga, you will secure
-                the essential funding you need
-                to elevate your startup and turn your innovative ideas into reality.</p>
+            </div>
+          
+            <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item2">
+                <img src="../assets/2line.png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0" >
+                <hr class="border-t border-gray-300">
+                <div class="space-y-2">
+                    <p class="font-rockinsoda text-5xl text-navy">NETWORK</p>
+                    
+                    <p class="text-lightblue text-lg font-gramatika mt-4">Join Hanga to network with industry giants, 
+                    potential investors, and like-minded entrepreneurs for collaboration and growth</p>
                 
-
+                </div>
             </div>
-            </div>
-        
-            <div class="space-y-8 fade-in w-[40vh]" ref="item2">
-            <img src="../assets/2line.png" >
-            <hr class="border-t border-gray-300">
-            <div class="space-y-2">
-                <p class="font-rockinsoda text-5xl text-navy">NETWORK</p>
+          
+            <div class="w-full sm:w-1/2 lg:w-1/3 fade-in space-y-4 text-center lg:text-left" ref="item3">
+                <img src="../assets/3line.png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0" >
+                <hr class="border-t border-gray-300">
+                <div class="space-y-2 ">
+                    <p class="font-rockinsoda text-5xl text-navy">ACCESS MENTORS</p>
+          
+                    
+                    <p class="text-lightblue text-lg font-gramatika">Tap into Hanga’s mentorship pool.
+                    Learn from the best to
+                    hone your business strategies and achieve lasting success.</p>
                 
-                <p class="text-lightblue font-gramatika mt-4">Join Hanga to network with industry giants, 
-                potential investors, and like-minded entrepreneurs for collaboration and growth</p>
-            
+                </div>
             </div>
-            </div>
-        
-            <div class="space-y-8 fade-in w-[45vh]" ref="item3">
-            <img src="../assets/3line.png" >
-            <hr class="border-t border-gray-300">
-            <div class="space-y-2">
-                <p class="font-rockinsoda text-5xl text-navy">ACCESS MENTORS</p>
-
-                
-                <p class="text-lightblue font-gramatika">Tap into Hanga’s mentorship pool.
-                Learn from the best to
-                hone your business strategies and achieve lasting success.</p>
-            
-            </div>
-            </div>
-            
-        </div>
+          </div>
+          
 
         <!--fourth section -->
         <div class="ml-12">

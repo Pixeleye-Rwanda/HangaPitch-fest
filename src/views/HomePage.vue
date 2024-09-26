@@ -364,14 +364,14 @@
             <div class="h-[400px] sm:h-[300px] lg:h-[400px]">
               <img src="../assets/insta1.jpg" class="w-full h-full object-cover">
             </div>
-            <div class="h-[200px] sm:h-[150px] lg:h-[200px]">
+            <div class="h-[300px] sm:h-[350px] lg:h-[300px]">
               <img src="../assets/insta2.jpg" class="w-full h-full object-cover">
             </div>
           </div>
           
           <!-- Column 2 -->
           <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
-            <div class="h-[300px] sm:h-[225px] lg:h-[300px]">
+            <div class="h-[400px] sm:h-[325px] lg:h-[400px]">
               <img src="../assets/insta4.jpg" class="w-full h-full object-cover">
             </div>
             <div class="h-[200px] sm:h-[150px] lg:h-[200px]">
@@ -381,10 +381,10 @@
           
           <!-- Column 3 -->
           <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
-            <div class="h-[300px] sm:h-[225px] lg:h-[300px]">
+            <div class="h-[400px] sm:h-[425px] lg:h-[400px]">
               <img src="../assets/mrspeaker.jpg" class="w-full h-full object-cover">
             </div>
-            <div class="h-[290px] sm:h-[220px] lg:h-[290px]">
+            <div class="h-[300px] sm:h-[350px] lg:h-[300px]">
               <img src="../assets/bghome.jpg" class="w-full h-full object-cover">
             </div>
           </div>
@@ -394,7 +394,7 @@
             <div class="h-[300px] sm:h-[225px] lg:h-[300px]">
               <img src="../assets/insta3.jpg" class="w-full h-full object-cover">
             </div>
-            <div class="h-[270px] sm:h-[200px] lg:h-[270px]">
+            <div class="h-[300px] sm:h-[250px] lg:h-[300px]">
               <img src="../assets/vr.jpg" class="w-full h-full object-cover">
             </div>
           </div>

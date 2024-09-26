@@ -1,25 +1,31 @@
 <template>
   <div class="overflow-hidden">
     <div class="h-screen relative">
-      <div class="relative h-[670px] flex-shrink-0">
-        <!-- Dynamically set the background image -->
-        <img :src="currentBgImage" alt="" class="h-full w-full object-cover">
-        <div class="absolute inset-0 bg-abtcolor"></div>
-        <Navbar class="absolute top-0 left-0 w-full" />
-
-        <div class="font-rockinsoda absolute text-white text-6xl top-96 ml-12">
+      <div class="relative h-screen min-h-[400px] max-h-[670px] sm:max-h-[800px] lg:max-h-[900px] xl:max-h-[1000px]">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <img :src="currentBgImage" alt="Background" class="h-full w-full object-cover">
+        
+        <Navbar class="absolute top-0 left-0 w-full"/>
+      
+        <div class="font-rockinsoda absolute  text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-2/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left" ref="text">
           <p>{{ currentTitleLine1 }}</p>
           <p>{{ currentTitleLine2 }}</p>
           
         </div>
 
-        <div class="-mt-32 w-[70vh] ml-12 text-white font-gramatika absolute text-lg">
+        <div class="absolute top-3/4  text-white left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left">
+         
+              
           <p>{{headline}}</p>
-       </div>
+           
+        </div>
+
+  
+  
       </div>
 
         <!-- Navbar network page  -->
-    <div class="h-[9vh] w-full bg-tangerine">
+    <div class="h-[9vh] w-full bg-tangerine ">
       <div class="flex ">
         <div class="ml-12 text-xl">
           <h1 class="font-gramatika text-white mt-4">OUR NETWORK</h1>
