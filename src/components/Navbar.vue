@@ -76,7 +76,8 @@
         </div>
 
 
-        <li class="text-white font-gramatika font-semibold underline-animation">Timeline</li>
+        <li class="text-white font-gramatika font-semibold underline-animation">
+          <router-link to="/timeline"> Timeline</router-link></li>
       </ul>
 
       <button class="mr-4 p-2 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">

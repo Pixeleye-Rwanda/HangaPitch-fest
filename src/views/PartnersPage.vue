@@ -11,7 +11,7 @@
     <!-- first section -->
     <div class="flex mt-28 space-x-36">
         <div class="space-y-8 fade-in" ref="item1">
-          <img src="../assets/Coat.svg">
+          <img src="../assets/coat.svg">
           <hr class="border-t border-gray-300">
           <div class="space-y-2 w-[300px]">
             <p class="font-rockinsoda text-5xl text-navy">MINICT</p>
