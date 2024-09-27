@@ -110,9 +110,10 @@
                     </div>
 
                 </div> 
-
+                 <div class="">
                 <NewsLetter />
                 <FooterPage />
+            </div>
             </div>
 
            
