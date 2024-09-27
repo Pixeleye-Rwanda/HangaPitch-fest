@@ -1,15 +1,13 @@
 <template>
-    <div class="relative">
-        <div class="w-full  h-full" style="background: linear-gradient(319.89deg, #030C37 5.13%, #22348A 99.13%);">
+    <div class="">
+        <div class="w-full h-full" style="background: linear-gradient(319.89deg, #030C37 5.13%, #22348A 99.13%);">
             <Navbar class="top-0 left-0 w-full" />
-
 
             <div class="space-y-72">
                 <!-- <div class="">
                     <h1 class="text-5xl font-rockinsoda absolute mt-96  text-white">ROAD TO HANGA 2024</h1>
                 </div> -->
-                <div>
-
+                <div class="">
 
                     <div class="ml-24 flex space-x-10">
 
