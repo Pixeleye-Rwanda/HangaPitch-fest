@@ -26,14 +26,7 @@
           </div>
           <img src="../assets/gvticons.svg" class="mt-8 max-w-full xl:mt-12" alt="Government Icons">
         </div>
-      </div>
-      
-      
-
-   
-      
-
-     
+      </div>  
 
       <div class="w-full bg-white lg:ml-16 sm:ml-0  ">
 
