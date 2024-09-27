@@ -1,12 +1,10 @@
 <template>
   <div class="w-full h-auto absolute" style="background-color: #FFF9F6;">
     <Navbar />
-
-
     <div
-      class="ml-4 mr-16 xl:mt-4 2xl:-mt-12 mlg:mr-10 md:ml-12 flex flex-col md:flex-row lg:space-x-16 items-start justify-between">
+      class="ml-8 mr-16 xl:mt-4 2xl:-mt-12 mlg:mr-10 md:ml-12 flex flex-col md:flex-row lg:space-x-16 items-start justify-between">
       <div class="flex-1 mt-12 xl:mt-2 2xl:mt-60 md:mt-8 max-w-full md:max-w-[50%]">
-        <div class="space-y-2  md:mt-28 ">
+        <div class="space-y-2 md:mt-12 ">
           <p class="text-4xl md:text-7xl font-rockinsoda text-navy">DON'T MISS OUT</p>
           <p class="text-gray-600 font-gramatika text-lg md:text-md">Be the first to know about
             #HangaPitchFest 2024
@@ -16,7 +14,7 @@
 
         <div class="mt-8">
           <div class="text-justify space-y-12 w-full">
-            <form class="w-full max-w-lg space-y-12">
+            <form class="w-full space-y-4">
               <div class="space-y-4">
                 <div class="flex items-center border-b border-gray-200 py-4">
                   <input
