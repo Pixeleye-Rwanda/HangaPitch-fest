@@ -51,10 +51,18 @@
                     </span>
                   </label>
                 </div>
-                <button class="p-2 px-8 font-gramatika bg-tangerine text-white font-semibold zoom-in button-hover"
+                <div class="">
+                  <div class=""></div>
+                  <div class="">
+                    <button class="font-gramatika shadow bg-tangerine focus:shadow-outline focus:outline-none text-white font-medium py-4 px-6 rounded" type="button">
+                      GET EARLY ACCESS
+                    </button>
+                  </div>
+                </div>
+                <!-- <button class="p-2 px-8 font-gramatika bg-tangerine text-white font-semibold zoom-in button-hover"
                   ref="button">
                   GET EARLY ACCESS
-                </button>
+                </button> -->
               </form>
             </div>
           </div>
