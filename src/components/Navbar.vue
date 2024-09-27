@@ -80,7 +80,7 @@
           <router-link to="/timeline"> Timeline</router-link></li>
       </ul>
 
-      <button class="mr-4 p-2 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
+      <button class="mr-4 p-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
         Apply Now
       </button>
 

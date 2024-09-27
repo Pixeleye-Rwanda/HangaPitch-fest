@@ -1,23 +1,117 @@
 <template>
     <div class="relative">
-        <div class="w-full  h-full" style="background: linear-gradient(319.89deg, #030C37 5.13%, #22348A 99.13%);" >
-            <Navbar class="absolute top-0 left-0 w-full"/>
+        <div class="w-full  h-full" style="background: linear-gradient(319.89deg, #030C37 5.13%, #22348A 99.13%);">
+            <Navbar class="top-0 left-0 w-full" />
 
 
             <div class="space-y-72">
-                <div class="flex  items-center justify-center  space-x-20 ">
+                <!-- <div class="">
                     <h1 class="text-5xl font-rockinsoda absolute mt-96  text-white">ROAD TO HANGA 2024</h1>
+                </div> -->
+                <div>
+
+
+                    <div class="ml-24 flex space-x-10">
+
+
+                        <div class="space-y-4">
+                            <p class="text-white text-gramatika font-medium">09 SEPT - 23 OCT</p>
+
+                            <div class="flex space-x-4">
+                                <img src="../assets/circle.svg" alt="">
+                                <img src="../assets/rectangle.svg" alt="">
+                            </div>
+                            <div class="bg-greenlime flex items-center pl-8 pr-20 py-4 rounded-md">
+                                <img src="../assets/srh-rocket.svg" alt="">
+                                <p class="text-navy text-md font-medium font-gramatika ">Application</p>
+                            </div>
+
+                        </div>
+
+                        <div class="space-y-4">
+                            <p class="text-white text-gramatika font-medium">09 SEPT - 23 OCT</p>
+
+                            <div class="flex space-x-4">
+                                <img src="../assets/circle.svg" alt="">
+                                <img src="../assets/rectangle.svg" alt="">
+                            </div>
+                            <div class="bg-greenlime flex items-center pl-8 pr-20 py-4 rounded-md">
+                                <img src="../assets/srh-rocket.svg" alt="">
+                                <p class="text-navy text-md font-medium font-gramatika ">Application</p>
+                            </div>
+
+                        </div>
+                        <div class="space-y-4">
+                            <p class="text-white text-gramatika font-medium">09 SEPT - 23 OCT</p>
+
+                            <div class="flex space-x-4">
+                                <img src="../assets/circle.svg" alt="">
+                                <img src="../assets/rectangle.svg" alt="">
+                            </div>
+                            <div class="bg-greenlime flex items-center pl-8 pr-20 py-4 rounded-md">
+                                <img src="../assets/srh-rocket.svg" alt="">
+                                <p class="text-navy text-md font-medium font-gramatika ">Application</p>
+                            </div>
+
+                        </div>
+                        <div class="space-y-4">
+                            <p class="text-white text-gramatika font-medium">09 SEPT - 23 OCT</p>
+
+                            <div class="flex space-x-4">
+                                <img src="../assets/circle.svg" alt="">
+                                <img src="../assets/rectangle.svg" alt="">
+                            </div>
+                            <div class="bg-greenlime flex items-center pl-8 pr-20 py-4 rounded-md">
+                                <img src="../assets/srh-rocket.svg" alt="">
+                                <p class="text-navy text-md font-medium font-gramatika ">Application</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" mr-28 flex justify-end">
+                        <img src="../assets/90-degree.svg">
+                    </div>
+                    <div class="flex space-x-6 mr-28 overflow-hidden justify-end">
+                        <div class="space-y-4">
+                            <p class="text-white text-gramatika font-medium">09 SEPT - 23 OCT</p>
+
+                            <div class="flex space-x-4">
+                                <img src="../assets/circle.svg" alt="">
+                                <img src="../assets/rectangle.svg" alt="">
+                            </div>
+                            <div class="bg-greenlime flex items-center pl-8 pr-20 py-4 rounded-md">
+                                <img src="../assets/srh-rocket.svg" alt="">
+                                <p class="text-navy text-md font-medium font-gramatika ">Application</p>
+                            </div>
+
+                        </div>
+                        <div class="space-y-4">
+                            <p class="text-white text-gramatika font-medium">09 SEPT - 23 OCT</p>
+
+                            <div class="flex space-x-4">
+                                <img src="../assets/circle.svg" alt="">
+                                <img src="../assets/rectangle.svg" alt="">
+                            </div>
+                            <div class="bg-greenlime flex items-center pl-8 pr-20 py-4 rounded-md">
+                                <img src="../assets/srh-rocket.svg" alt="">
+                                <p class="text-navy text-md font-medium font-gramatika ">Application</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
                 </div>
-                <div class="flex flex-shrink-0 h-[1200px] items-center mt-52 justify-center">
-                    <img src="../assets/steps.svg" class="w-full h-full">
-                </div>
+
+                <!-- <img src="../assets/steps.svg" class="w-full h-full"> -->
             </div>
-            
-            <NewsLetter/>
-            <FooterPage/>        
-            
         </div>
+
+        <NewsLetter />
+        <FooterPage />
+
     </div>
+
 
 
 </template>
@@ -26,9 +120,9 @@
 import Navbar from '@/components/Navbar.vue';
 import FooterPage from '@/components/footerPage.vue';
 import NewsLetter from '@/components/NewsLetter.vue';
-export default{
-    name:"TimelinePage",
-    components:{
+export default {
+    name: "TimelinePage",
+    components: {
         Navbar,
         FooterPage,
         NewsLetter
@@ -36,6 +130,4 @@ export default{
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
