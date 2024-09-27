@@ -1,18 +1,24 @@
 <template>
   <!-- first section -->
-  <div class="flex mt-20  space-x-80 ml-12">
-      <div class="space-y-4 mt-12">
-          <p class="text-6xl font-rockinsoda text-navy">FUELING</p>
-          <p class="text-6xl font-rockinsoda text-navy">INNOVATION</p>
-      </div>
-      <div class=" text-justify space-y-8 w-[600px] ">
-           <p class="text-navy font-gramatika text-md text-lg mt-12">Hanga Pitchfest brings the most influential experts together who help in selecting the best innovative ventures. These seasoned professionals provide invaluable insights and guidance,
-               ensuring that the most promising startups receive the recognition and support they deserve. </p>
-  
-          
-          
-      </div>
+  <div class="flex flex-col lg:flex-row mt-12 lg:mt-32 px-6 w-full lg:space-x-4 ">
+    <!-- Text Section -->
+    <div class="lg:text-left  space-y-4 w-3/5">
+      <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">FUELING</p>
+      <p class="text-3xl lg:text-6xl font-rockinsoda text-navy"> INNOVATION</p>
+
+
     </div>
+  
+    <!-- Description and Button Section -->
+    <div class="text-justify mt-4 lg:mt-0 space-y-8 w-full lg:w-10/12">
+      <p class="text-base lg:text-2xl font-gramatika text-navy">
+        Hanga Pitchfest brings the most influential experts together who help in selecting the best 
+        innovative ventures. These seasoned professionals provide invaluable insights and guidance,
+        ensuring that the most promising startups receive the recognition and support they deserve.
+      </p>
+     
+    </div>
+  </div>
   
     <!-- 2023 judges -->
      

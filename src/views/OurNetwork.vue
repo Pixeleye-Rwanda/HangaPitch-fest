@@ -20,18 +20,27 @@
            
         </div>
 
+        
+
   
   
       </div>
 
-        <!-- Navbar network page  -->
-    <div class="h-[9vh] w-full bg-tangerine ">
-      <div class="flex ">
-        <div class="ml-12 text-xl">
-          <h1 class="font-gramatika text-white mt-4">OUR NETWORK</h1>
+      
+      
+      
+      
+
+        <!-- Navbar network   -->
+    <div  ref="stickyDiv"
+    :class="[  'h-[9vh] bg-tangerine transition-all duration-800 ease-in-out w-full', isSticky ? 'fixed top-0 left-0 w-full z-50 shadow-md' : 'absolute'
+    ]">
+      <div class="flex  ">
+        <div class="ml-2 lg:ml-12 text-md lg:text-xl">
+          <h1 class="font-gramatika font-bold text-white mt-8 lg:mt-4 ">OUR NETWORK</h1>
         </div>
 
-        <ul class="flex space-x-16 ml-auto mt-4 mr-12">
+        <ul class="flex  flex-wrap gap-2 lg:gap-10 ml-auto mt-8 lg:mt-4  mr-4  lg:mr-12">
           <li class="font-gramatika text-white text-lg cursor-pointer" 
           :class="{'underline underline-offset-4 ': currentSection === 'startups'& currentComponent === 'StartupsPage',}"
 
@@ -59,7 +68,7 @@
   
 
     <!-- Dynamic Content Section -->
-    <component :is="currentComponent" />
+    <component :is="currentComponent" class="mt-[9vh]" />
 
     <NewsLetter/>
     <FooterPage />
@@ -90,10 +99,24 @@ export default {
       currentBgImage: require('@/assets/networkbg.jpg'), 
       currentTitleLine1: 'STARTUPS',
       currentTitleLine2: 'FUNDED BY HANGA',
-      headline:''
+      headline:'',
+      isSticky: false, 
+      originalOffsetTop: 0, 
     };
   },
+
+  mounted() {
+    this.originalOffsetTop = this.$refs.stickyDiv.getBoundingClientRect().top + window.scrollY;
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
   methods: {
+    handleScroll() {
+    
+      this.isSticky = window.scrollY > this.originalOffsetTop;
+    },
     setContent(section) {
       this.currentSection = section; 
 
@@ -122,3 +145,12 @@ export default {
   },
 };
 </script>
+<style>
+.fixed {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+.transition-all {
+  transition: all 0.30s ease-in-out;
+}
+</style>

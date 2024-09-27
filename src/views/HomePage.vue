@@ -28,12 +28,7 @@
         </div>
       </div>
       
-      
-
-   
-      
-
-     
+    
 
       <div class="w-full bg-white lg:ml-16 sm:ml-0  ">
 
@@ -95,15 +90,12 @@
           </div>
         </div>
       </div>
-      
-      
-      
-      
-      
+
+
       
       <!-- Fourth section -->
       <div class="relative h-auto min-h-[600px]"> 
-        <div class="mt-24 sm:mt-32 bg-cover h-full" :style="{ backgroundImage: `url(${require('@/assets/notched.svg')})`}">
+        <div class="mt-20 py-16  sm:mt-32 bg-cover h-full" :style="{ backgroundImage: `url(${require('@/assets/notched.svg')})`}">
           <div class="flex flex-col-reverse lg:flex-row items-center lg:items-start lg:justify-between">
             <!-- Text Section -->
             <div class="space-y-8 sm:space-y-10 lg:space-y-16 mt-20 sm:mt-32 lg:mt-26 ml-4 sm:ml-8 md:ml-12 p-4 sm:p-6 md:p-8 w-full lg:w-7/12 text-left">

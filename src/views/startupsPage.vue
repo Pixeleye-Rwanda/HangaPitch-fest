@@ -1,9 +1,9 @@
     <template>
-
-        <div class="w-full  -mt-48 lg:mt-32 lg:ml-8 sm:ml-0  ">
+  <div class="">
+        <div class="w-full mt-28 sm:ml-0  ">
 
     
-            <div class="flex flex-col md:flex-row mt-20">
+            <div class="flex flex-col md:flex-row ">
               <!-- Left Section with Main Image and Text -->
               <div class="w-full md:w-2/3 mb-4 md:mb-0 px-4">
                 <img src="../assets/speaker1.jpg" alt="Students" class="w-full h-auto  zoom-in" ref="leftContent">
@@ -21,6 +21,7 @@
                 <img src="../assets/audience.jpg" alt="Audience" class="w-full h-auto zoom-in" ref="image2">
               </div>
             </div>
+
           </div>
 
         <!-- third section -->
@@ -45,7 +46,7 @@
                 <img src="../assets/2line.png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0" >
                 <hr class="border-t border-gray-300">
                 <div class="space-y-2">
-                    <p class="font-rockinsoda text-5xl text-navy">NETWORK</p>
+                    <p class="font-rockinsoda text-5xl text-navy">MINICT</p>
                     
                     <p class="text-lightblue text-lg font-gramatika mt-4">Join Hanga to network with industry giants, 
                     potential investors, and like-minded entrepreneurs for collaboration and growth</p>
@@ -70,14 +71,14 @@
           
 
         <!--fourth section -->
-        <div class="ml-12">
-            <div class="font-rockinsoda text-navy text-6xl mt-32  ">
+        <div class=" sm:ml-2 lg:ml-12">
+            <div class=" font-rockinsoda text-navy text-5xl mt-32 text-center lg:text-left lg:text-6xl">
             <p>FEATURED STARTUPS</p>
             </div>
 
-            <div class="flex flex-col mt-12 space-y-2  md:flex-row md:space-x-4">
+            <div  class="flex flex-col mt-12  mr-12 space-y-2 lg:flex-row lg:justify-between">
             <!-- Category Buttons -->
-            <div class="flex space-x-4">
+            <div class="flex flex-wrap justify-center gap-4  sm:gap-4">
                 <label>
                 <input type="radio" name="category" value="Fintech" class="hidden" v-model="selectedCategory" />
                 <span :class="['inline-block px-4 py-2 border border-lightTangerine text-navy  hover:bg-tangerine hover:text-white', selectedCategory === 'Fintech' ? 'bg-tangerine text-white' : 'border-tangerine  text-navy']">
@@ -117,9 +118,9 @@
             </div>
             
             <!-- Year Dropdown -9-->
-            <div class=" ">
-
-            <select v-model="selectedYear" class=" ml-56 w-30 bg-white ring-1 ring-lightTangerine outline-none p-2 px-4">
+            
+             <div class="flex justify-center lg:ml-auto lg:justify-end">
+            <select v-model="selectedYear" class=" mt-4 lg:mt-0 w-30 max-w-xs bg-white ring-1 ring-lightTangerine outline-none p-2 px-4">
                 <option value="2023">2023</option>
                 <option value="2022">2022</option>
                 <option value="2021">2021</option>
@@ -128,7 +129,7 @@
             </div>
             
 
-            <div class="grid grid-cols-1  mr-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  mt-6 ">
+            <div class="grid grid-cols-2 mr-4 ml-4 lg:ml-0 lg:mr-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  mt-6 ">
             <ul v-for="startup in filteredStartups" :key="startup.name" class=" border border-lightTangerine  p-4  h-[28vh]  ">
                 <div class="flex items-center justify-center">
                 <li>
@@ -148,36 +149,44 @@
         </div>
 
         <!-- fith section -->
-        <div class="relative h-[600px]"> 
-            <div class="absolute text-white p-8 mt-20">
-            <img src="../assets/notched.svg" alt="" class="w-full">
+        <div class="relative h-auto min-h-[600px]"> 
+            <div class="mt-10 py-16 sm:mt-32 bg-cover h-full" :style="{ backgroundImage: `url(${require('@/assets/notched.svg')})`}">
+              <div class="flex flex-col-reverse lg:flex-row items-center lg:items-start lg:justify-between">
+                <!-- Text Section -->
+                <div class="space-y-8 sm:space-y-10 lg:space-y-16 mt-20 sm:mt-32 lg:mt-26 ml-4 sm:ml-8 md:ml-6 p-4 sm:p-6 md:p-8 w-full lg:w-7/12 text-left">
+                  <div class="slide-up" ref="texty">
+                    <h2 class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 3xl:text-8xl text-white font-rockinsoda mb-4">
+                        JOIN OUR STARTUP
+                    </h2>
+                    <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-7xl 3xl:text-8xl text-white font-rockinsoda mb-4">
+                        NETWORK
+                    </h2>
+                  </div>
+                  <div class="slide-up" ref="texts">
+                    <img src="../assets/Group 63.svg" class="mt-28 slide-up" ref="textis">
+                  </div>
+
+                </div>
+                <!-- Image Section -->
+                <div class="text-white mt-32 p-4 sm:p-6 md:p-8  lg:justify-end lg:flex-shrink-0 w-full lg:w-auto lg:max-w-[40%] flex justify-center">
+                    <div class="">
+                    <p class="text-2xl mb-1 w-[80vh] text-white text-2xl font-gramatika">
+                        The largest in-person technology event in Rwanda designed to ignite & inspire innovation.
+                        The largest in-person technology event in Rwanda designed to ignite & inspire innovation.
+                    </p>
+
+                    <button class="bg-tangerine text-white py-2 mt-12 px-6 hover:bg-orange-500 slide-up button-hover " ref="button3">
+                        Pitch at hanga <i class="fa fa-chevron-right h-2 w-2" aria-hidden="true"></i>
+                
+                    </button>
+                </div>
+                
+                </div>
+                
+              </div>
+              
             </div>
-    
-            <div class="absolute  flex space-x-52 mt-72 ml-12 p-8 text-left">
-            <div class="slide-up" ref="texty">
-
-                <h2 class="text-6xl text-white font-rockinsoda mb-4">JOIN OUR STARTUP</h2>
-                <h2 class="text-6xl text-white font-rockinsoda mb-4">NETWORK</h2>
-
-                <img src="../assets/Group 63.svg" class="mt-28 slide-up" ref="textis">
-            </div>
-                <div class="">
-            <div class="slide-up" ref="texts">
-
-            <p class="text-lg mb-1 w-[80vh] text-white text-2xl font-gramatika">
-                The largest in-person technology event in Rwanda designed to ignite & inspire innovation.
-                The largest in-person technology event in Rwanda designed to ignite & inspire innovation.
-            </p>
-        
-            </div>
-
-            <button class="bg-tangerine text-white py-2 mt-12 px-6 hover:bg-orange-500 slide-up button-hover " ref="button3">
-                Pitch at hanga <i class="fa fa-chevron-right h-2 w-2" aria-hidden="true"></i>
-
-            </button>
-            </div>
-        </div>
-        </div>
+          </div>
 
         <!-- section six -->
             <div class="ml-12 mt-72">
@@ -231,6 +240,7 @@
 
     </div>
     </div>
+</div>
     
 
     </template>
