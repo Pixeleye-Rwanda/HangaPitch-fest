@@ -23,12 +23,6 @@
         </button>
 
         <ul class="mt-16 space-y-4">
-<<<<<<< HEAD
-          <li><router-link to="/about-us" class="text-white block hover:text-gray-300" @click="toggleMenu">About Us</router-link></li>
-          <li><router-link to="/network" class="text-white block hover:text-gray-300" @click="toggleMenu">Our Network</router-link></li>
-          <li><router-link to="/pitch" class="text-white block hover:text-gray-300" @click="toggleMenu">Pitch at Hanga</router-link></li>
-          <li><router-link to="/timeline" class="text-white block hover:text-gray-300" @click="toggleMenu">Timeline</router-link></li>
-=======
           <li><router-link to="/about-us" class="text-white block hover:text-gray-300" @click="toggleMenu">About
               Us</router-link></li>
           <li><router-link to="/network" class="text-white block hover:text-gray-300" @click="toggleMenu">Our
@@ -37,7 +31,6 @@
               at Hanga</router-link></li>
           <li><router-link to="/timeline" class="text-white block hover:text-gray-300"
               @click="toggleMenu">Timeline</router-link></li>
->>>>>>> ft-timeline
           <li><button class="text-white font-semibold">Initiatives</button></li>
           <li>
             <button id="dropdownButton" @click="toggleDropdown" class="text-white font-semibold">

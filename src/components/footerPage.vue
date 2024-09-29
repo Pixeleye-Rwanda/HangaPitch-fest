@@ -1,11 +1,6 @@
 <template>
-<<<<<<< HEAD
-  <footer class="  bg-darknavy text-white py-12 min-h-[320px]">
-    <div class="  w-full px-4">
-=======
   <footer class="bg-darknavy text-white py-12 min-h-[320px]">
     <div class="w-full  px-4">
->>>>>>> ft-timeline
       <!-- Top Section -->
       <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-4 mt-10 mb-4">
         <div class="w-full md:w-auto mb-6 md:mb-0">
