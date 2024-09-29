@@ -3,7 +3,8 @@
     <!-- Burger Menu for Small Screens -->
     <div class="md:hidden flex items-center justify-between p-4 bg-tangerine fixed top-0 inset-x-0 z-50">
       <button @click="toggleMenu" class="text-white focus:outline-none">
-        <svg class="w-8 h-8 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" :class="{ 'rotate-45': isMenuOpen, 'rotate-0': !isMenuOpen }">
+        <svg class="w-8 h-8 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" :class="{ 'rotate-45': isMenuOpen, 'rotate-0': !isMenuOpen }">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
@@ -22,16 +23,28 @@
         </button>
 
         <ul class="mt-16 space-y-4">
+<<<<<<< HEAD
           <li><router-link to="/about-us" class="text-white block hover:text-gray-300" @click="toggleMenu">About Us</router-link></li>
           <li><router-link to="/network" class="text-white block hover:text-gray-300" @click="toggleMenu">Our Network</router-link></li>
           <li><router-link to="/pitch" class="text-white block hover:text-gray-300" @click="toggleMenu">Pitch at Hanga</router-link></li>
           <li><router-link to="/timeline" class="text-white block hover:text-gray-300" @click="toggleMenu">Timeline</router-link></li>
+=======
+          <li><router-link to="/about-us" class="text-white block hover:text-gray-300" @click="toggleMenu">About
+              Us</router-link></li>
+          <li><router-link to="/network" class="text-white block hover:text-gray-300" @click="toggleMenu">Our
+              Network</router-link></li>
+          <li><router-link to="/pitch-at-hanga" class="text-white block hover:text-gray-300" @click="toggleMenu">Pitch
+              at Hanga</router-link></li>
+          <li><router-link to="/timeline" class="text-white block hover:text-gray-300"
+              @click="toggleMenu">Timeline</router-link></li>
+>>>>>>> ft-timeline
           <li><button class="text-white font-semibold">Initiatives</button></li>
           <li>
             <button id="dropdownButton" @click="toggleDropdown" class="text-white font-semibold">
               <div class="flex items-center">
                 <p>EN</p>
-                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
               </div>
@@ -46,7 +59,7 @@
     </transition>
 
     <!-- Navbar for Larger Screens -->
-    <div  class="hidden md:flex items-center p-4 bg-transparent mt-6" >
+    <div class="hidden md:flex items-center p-4 bg-transparent mt-6">
       <router-link to="/" class="ml-16">
         <img src="../assets/logo.svg" class="h-8 md:h-10" alt="Logo">
       </router-link>
@@ -56,38 +69,45 @@
           <router-link to="/about-us">About Us</router-link>
         </li>
         <li class="text-white font-gramatika font-semibold underline-animation">
-          <router-link to="/network">Our Network</router-link>  </li> 
+          <router-link to="/network">Our Network</router-link>
+        </li>
         <li class="text-white font-gramatika font-semibold underline-animation">
-          <router-link to="/pitch"> Pitch at Hanga </router-link> </li>
+          <router-link to="/pitch"> Pitch at Hanga </router-link>
+        </li>
 
 
         <div class=" relative flex items-center">
-          <button id="dropdownInit"  @click="toogleDropdownInit"  class="text-white font-gramatika font-semibold">
+          <button id="dropdownInit" @click="toogleDropdownInit" class="text-white font-gramatika font-semibold">
 
             Initiative <i class="fa fa-chevron-down" aria-hidden="true"></i>
 
           </button>
-          
+
 
           <div v-show="isDropdownInitVisible" class="absolute flex  shadow-lg bg-white ">
-             
+
           </div>
 
         </div>
 
 
-        <li class="text-white font-gramatika font-semibold underline-animation">Timeline</li>
+        <li class="text-white font-gramatika font-semibold underline-animation">
+          <router-link to="/timeline"> Timeline</router-link>
+        </li>
       </ul>
 
-      <button class="mr-4 p-2 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
+      <button
+        class="mr-4 p-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
         Apply Now
       </button>
 
       <div class="relative inline-block mr-24 text-left">
-        <button id="dropdownButton" @click="toggleDropdown" class="p-2 px-4 border font-gramatika text-white font-semibold hover:bg-tangerine hover:text-white">
+        <button id="dropdownButton" @click="toggleDropdown"
+          class="p-2 px-4 border font-gramatika text-white font-semibold hover:bg-tangerine hover:text-white">
           <div class="flex items-center">
             <p>EN</p>
-            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </div>
@@ -108,7 +128,7 @@ export default {
     return {
       isDropdownVisible: false,
       isMenuOpen: false,
-      isDropdownInitVisible:false
+      isDropdownInitVisible: false
     };
   },
   methods: {
@@ -116,8 +136,8 @@ export default {
       this.isDropdownVisible = !this.isDropdownVisible;
     },
 
-    toogleDropdownInit(){
-      this.isDropdownInitVisible =! this.isDropdownInitVisible;
+    toogleDropdownInit() {
+      this.isDropdownInitVisible = !this.isDropdownInitVisible;
     },
 
     toggleMenu() {
@@ -138,11 +158,13 @@ export default {
   transform: rotate(0deg);
 }
 
-.slide-fade-enter-active, .slide-fade-leave-active {
+.slide-fade-enter-active,
+.slide-fade-leave-active {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.slide-fade-enter, .slide-fade-leave-to {
+.slide-fade-enter,
+.slide-fade-leave-to {
   transform: translateX(100%);
   opacity: 0;
 }

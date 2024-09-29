@@ -1,6 +1,6 @@
 <template>
   <!-- first section -->
-  <div class="flex flex-col lg:flex-row mt-12 lg:mt-32 px-6 w-full lg:space-x-4 ">
+  <div class="flex flex-col lg:flex-row  mt-24 lg:mt-12 lg:mt-32 px-6 w-full lg:space-x-4 ">
     <!-- Text Section -->
     <div class="lg:text-left  space-y-4 w-3/5">
       <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">FUELING</p>
@@ -320,57 +320,47 @@
 
             <!-- next section -->
 
-            <div class="ml-12 mt-32">
-    
-
-              <div class=" mt-12 ml-16 overflow-hidden">
-          
-                  <div ref="videoWrapper" class="flex space-x-8 overflow-x-auto overflow-x-hidden scroll-smooth">
-          
+            <div class="ml-4 md:ml-12 mt-12 md:mt-32">
+              <div class="mt-8 md:mt-12 md:ml-16 overflow-hidden">
+                <div ref="videoWrapper" class="flex space-x-4 md:space-x-8 overflow-x-auto scroll-smooth">
                   <!-- First text Block -->
-                  <div class="flex-shrink-0 flex flex-col space-y-2 w-[600px] h-[600px]">
-                      <div class="relative  flex w-full h-full">
-          
-                  <div class="mt-24">
-                      <span class="font-rockinsoda text-tangerine text-7xl ml-2  ">"</span>
-                      <p class="text-navy text-2xl font-gramatika font-bold w-[60vh] -mt-8 p-4 text-justify text-center">
-                     With funding from Hanga, I was able to launch for our first international market.</p>
-          
-                      <div class="flex space-x-2 ml-2 ">
-                          <hr class=" w-[50px] border-2 mt-2 border-navy ">
-                          <p class="font-rockinsoda text-navy text-2xl ">THERESA, DOPE INITIATIVES</p> 
+                  <div class="flex-shrink-0   flex  flex-col md:flex-row space-y-2 w-[300px] h-[400px] md:w-[600px] md:h-[600px]">
+                    <div class="relative flex flex-col md:flex-row w-full h-full">
+                      <div class="mt-8 md:mt-24">
+                        <span class="font-rockinsoda text-tangerine text-5xl md:text-7xl ml-2">"</span>
+                        <p class="text-navy text-lg md:text-2xl font-gramatika font-bold w-[40vh] md:w-[60vh] -mt-6 md:-mt-8 p-2 md:p-4 text-center">
+                          With funding from Hanga, I was able to launch for our first international market.
+                        </p>
+                        <div class="flex space-x-2 ml-2">
+                          <hr class="w-[30px] md:w-[50px] border-2 mt-2 border-navy">
+                          <p class="font-rockinsoda text-navy text-lg md:text-2xl">THERESA, DOPE INITIATIVES</p>
+                        </div>
                       </div>
+                      <div class="flex-shrink-0 h-[300px]  md:h-[500px]">
+                        <img src="../assets/dope.jpg" class="w-full h-full object-cover">
+                      </div>
+                    </div>
                   </div>
-                  <div class="flex-shrink-0 h-[500px]">
-                      <img src="../assets/dope.jpg"  class="w-full object-cover ">
-                  </div>
-                  </div>
-                  </div>
-                      
-              
-          
-                  </div>
-          
-                  <!-- Scroll Buttons -->
-                  <div class="float-left space-x-2  -mt-24 mr-12">
+                </div>
+            
+                <!-- Scroll Buttons -->
+                <div class="flex justify-between items-center -mt-12 md:-mt-24 space-x-2 pr-4 md:pr-12">
                   <button @click="scrollLeft" 
-                          class=" top-1/2 right-0 transform -translate-y-1/2 z-10 border-2  rounded-full p-4 bg-white text-navy focus:outline-none hover:bg-navy hover:text-white transition">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                          </svg>
+                          class="border-2 rounded-full p-3 md:p-4 bg-white text-navy focus:outline-none hover:bg-navy hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 md:w-6 md:h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
                   </button>
                   
                   <button @click="scrollRight" 
-                  class=" top-1/2 left-0 transform -translate-y-1/2 z-10 border-2  rounded-full p-4 bg-white text-navy focus:outline-none hover:bg-navy hover:text-white transition">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                          class="border-2 rounded-full p-3 md:p-4 bg-white text-navy focus:outline-none hover:bg-navy hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 md:w-6 md:h-6">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                  </svg>
+                    </svg>
                   </button>
-                  </div>
-          
+                </div>
               </div>
-              </div>
-              
+            </div>
              
     
       

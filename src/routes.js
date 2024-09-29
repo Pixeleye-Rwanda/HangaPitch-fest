@@ -6,6 +6,8 @@ import StartupsPage from "./views/startupsPage.vue";
 import PartnersPage from "./views/PartnersPage.vue";
 import JudgesPage from "./views/JudgesPage.vue";
 import PitchHanga from "./views/PitchHanga.vue";
+import TimelinePage from "./views/TimelinePage.vue";
+import ContactUsPage from "./views/ContactUsPage.vue"; 
 
 import { createRouter,createWebHistory } from "vue-router";
 
@@ -54,7 +56,20 @@ const routes=[
         name:'PitchHanga',
         component:PitchHanga,
         path:'/pitch'
+    },
+
+    {
+        name:'TimelinePage',
+        component:TimelinePage,
+        path:'/timeline'
+    },
+
+    {
+        name:'ContactUsPage',
+        component:ContactUsPage,
+        path:'/contact'
     }
+
 
 
 ]
