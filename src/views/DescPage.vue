@@ -39,7 +39,7 @@
           </div>
             <hr class="w-auto border-t-2 border-descColor">
             <div class="flex justify-between">
-            <p class=" font-gramatika text-gray-400  text-md ">Team Members</p>
+            <p class=" font-gramatika text-gray-400  text-md ">Team Members:</p>
             <p class="font-gramatika text-white  ">{{startup.team}}</p>
 
           </div>
