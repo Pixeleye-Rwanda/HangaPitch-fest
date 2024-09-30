@@ -216,7 +216,6 @@ export default{
                 },
 
                 mounted() {
-    // Set selected category and year from query parameters (if available)
     if (this.$route.query.category) {
       this.selectedCategory = this.$route.query.category;
     }
