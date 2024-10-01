@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-darknavy text-white py-12 min-h-[320px]">
-    <div class="container  px-4">
+    <div class="w-full  px-4">
       <!-- Top Section -->
       <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-4 mt-10 mb-4">
         <div class="w-full md:w-auto mb-6 md:mb-0">
@@ -14,7 +14,10 @@
           <!-- Right Links -->
           <nav class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-sm mt-4 md:mt-10">
             <a href="#" class="hover:underline font-gramatika text-lg">Blog</a>
-            <a href="#" class="hover:underline font-gramatika text-lg">Contact Us</a>
+            <router-link to="/contact">
+              <a href="#" class="hover:underline font-gramatika text-lg">Contact Us</a>
+            </router-link>
+            
             <a href="#" class="hover:underline font-gramatika text-lg">FAQ</a>
             <a href="#" class="hover:underline font-gramatika text-lg">News</a>
           </nav>

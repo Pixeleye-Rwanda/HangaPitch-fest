@@ -44,8 +44,9 @@
 
 
         <!-- section 3 -->
-        <div class="container mx-auto px-4 lg:px-12 xl:max-w-none">
-          <div class="relative absolute  w-full pt-52 ">
+         
+        <div class="container min-h-screen   mx-auto px-4 lg:px-12  xl:max-w-none">
+          <div class="relative absolute  w-full pt-32 lg:pt-60 ">
             <div class="flex flex-col absolute lg:flex-row lg:justify-between space-y-24 lg:space-y-0 lg:space-x-8">
 
               <div class="w-full absolute  lg:w-1/4 space-y-4 relative">
@@ -67,16 +68,16 @@
                 </div>
 
                 </div>
-                <div class="w-full  space-y-4  relative">
-                  <img src="../assets/four.svg" class="absolute -top-16 left-4 h-16 w-16">
-                  <div class="space-y-4  pt-8 ">
+                <div class="w-full  space-y-4 relative">
+                  <img src="../assets/four.svg" class="absolute -top-16 left-0 lg:-top-16 2xl:top-32 lg:left-12 h-16 w-16">
+                  <div class="space-y-4  pt-8 lg:pt-8  2xl:pt-52">
                     <p class="font-rockinsoda text-4xl text-navy">Submit Project</p>
                     <p class="font-gramatika text-lg text-darkGray">Review your application form to ensure all information is accurate and complete. Once you're satisfied with the application, click the "Submit" button.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="hidden lg:block relative absolute -top-12 left-8 w-full">
+            <div class="hidden lg:block relative  absolute -top-12 left-8 w-full">
               <img src="../assets/Subtract .svg" class="w-full  h-auto">
             </div>
           </div>
@@ -84,8 +85,9 @@
 
 
         <!-- section 4 -->
-        <div class=" ">
-          <div class="mt-96">
+      
+        <div class=" relative mt-96 lg:mt-60 2xl:mt-24">
+          <div class="">
             <p class="text-navy font-rockinsoda text-5xl ml-12  "> Past winners </p>
           </div>
            
@@ -124,7 +126,8 @@
         </div>
 
 
-        </div>
+      
+     
 
       <!-- next section -->
       <div class="mt-24 sm:mt-32 bg-cover h-full" :style="{ backgroundImage: `url(${require('@/assets/notched.svg')})`}">
@@ -204,6 +207,7 @@
    <NewsLetter/>
     <FooterPage/>
     
+  </div>
   </div>
   </div>
 </template>

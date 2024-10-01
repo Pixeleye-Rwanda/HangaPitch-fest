@@ -8,6 +8,7 @@ import JudgesPage from "./views/JudgesPage.vue";
 import PitchHanga from "./views/PitchHanga.vue";
 import TimelinePage from "./views/TimelinePage.vue";
 import ContactUsPage from "./views/ContactUsPage.vue"; 
+import FilteredStarups from "./components/FilteredStarups.vue";
 
 import { createRouter,createWebHistory } from "vue-router";
 
@@ -17,6 +18,11 @@ const routes=[
         name:"HomePage",
         component:HomePage,
         path:'/'
+    },
+    {
+        name:"FilteredStarups",
+        component:FilteredStarups,
+        path:'/all-startups'
     },
 
     {
@@ -32,7 +38,11 @@ const routes=[
     {
       name:"DescPage"  ,
       component:DescPage,
-      path:'/description'
+      path:'/startup/:name',
+      props:true
+
+      
+
     },
 
     {
@@ -74,7 +84,25 @@ const routes=[
 
 ]
 
-const router = createRouter({history:createWebHistory(),routes})
+
+
+const router = createRouter({history:createWebHistory(),routes,
+    scrollBehavior(to) { 
+        if (to.hash) {
+            return {
+                el: to.hash, 
+                behavior: 'auto',
+                top: 0 
+            };
+        }
+        return { left: 0, top: 0 }; 
+    }
+
+
+
+})
 export default router;
+
+  
 
 

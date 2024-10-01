@@ -268,99 +268,114 @@
             </div>
 
              <!-- section 9 --->
-             <div class="mt-12  pl-4 md:pl-12 pr-8 w-full">
+             <div class="mt-12  pl-4 md:pl-12 pr-4 w-full">
               <div>
                 <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">EVENT GALLERY</h1>
               </div>
               <div class="mt-8 space-y-4 md:space-y-0">
                 <!-- First row of images -->
                 <div class="flex flex-wrap justify-start w-full">
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2  md:w-1/5">
                     <img src="../assets/1.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/2.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/3.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/4.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px]  w-1/2  md:w-1/5">
                     <img src="../assets/5.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:hidden w-1/2 md:w-1/5">
+                    <img src="../assets/3.jpg" class="w-full h-full object-cover">
                   </div>
                 </div>
                 <!-- Second row of images -->
                 <div class="flex flex-wrap justify-start w-full">
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px]  w-1/2 md:w-1/5">
                     <img src="../assets/6.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/7.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/8.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/9.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/10.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:hidden w-1/2 md:w-1/5">
+                    <img src="../assets/8.jpg" class="w-full h-full object-cover">
                   </div>
                 </div>
                 <!-- Third row of images -->
                 <div class="flex flex-wrap justify-start w-full">
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/11.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/12.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/13.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/14.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/15.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:hidden w-1/2 md:w-1/5">
+                    <img src="../assets/12.jpg" class="w-full h-full object-cover">
                   </div>
                 </div>
                 <!-- Fourth row of images -->
                 <div class="flex flex-wrap justify-start w-full">
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/17.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/18.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/19.png" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/20.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/21.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px] md:hidden w-1/2 md:w-1/5">
+                    <img src="../assets/18.jpg" class="w-full h-full object-cover">
                   </div>
                 </div>
                 <!-- Fifth row of images -->
                 <div class="flex flex-wrap justify-start w-full">
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/22.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/23.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/24.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/14.jpg" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-[180px] md:h-[215px] w-full md:w-1/5">
+                  <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/26.jpg" class="w-full h-full object-cover">
+                  </div>
+                  <div class="h-[180px]  md:hidden  w-1/2 md:w-1/5">
+                    <img src="../assets/23.jpg" class="w-full h-full object-cover">
                   </div>
                 </div>
             
