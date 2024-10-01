@@ -51,7 +51,7 @@
             <img :src="startup.logo" class="h-60 w-60 -mt-20 object-contain ">
         </div>
         <div class="flex items-center justify-center ">
-        <a href="" class="font-gramatika text-white text-center border border-linkColor rounded-3xl p-2 px-4"> Visit website </a>
+        <a :href="startup.link" target="_blank" class="font-gramatika text-white text-center border border-linkColor rounded-3xl p-2 px-4"> Visit website </a>
          </div>
          </div>
       

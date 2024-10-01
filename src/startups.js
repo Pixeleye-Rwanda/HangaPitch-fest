@@ -9,7 +9,8 @@
              founded:'2002',
              contact:'info@mulika',
              team: 'Leo Karekezi , Herve Gihirwe' ,
-            category: 'Agriculture', year: 2022, logo: require('../src/assets/detLogo/mulika.png')
+            category: 'Agriculture', year: 2022, logo: require('../src/assets/detLogo/mulika.png'),
+            link:'https://mulika.co/'
          },
 
         { name: 'Shambapro',
@@ -18,6 +19,7 @@
           contact:'+250787397015',
           team:'Kelvin Odoobo',
           category: 'Agriculture',  year:2022 ,logo: require('../src/assets/detLogo/shambapro.png'),
+          link:'https://www.shambapro.com/'
 
          },
          { name: 'Umurava',
@@ -26,6 +28,9 @@
             contact:'vivens@umurava.africa',
             team:'Vivens Uwizeyimana',
             category: 'Digital Lending ',  year:2022 ,logo: require('../src/assets/detLogo/umurava.png'),
+            link:'https://umurava.africa/'
+           
+
   
         },
         { name: 'UrId Technologies',
@@ -34,6 +39,7 @@
             contact:'info@palmkash',
             team:'Emmanuel NKurunziza',
             category: 'Digital Payments',  year:2022 ,logo: require('../src/assets/2022/urid.svg'),
+             link:' https://palmkash.com/'
   
         },
         { name: 'Uplus Mutual',
@@ -42,6 +48,8 @@
             contact:'250787397015',
             team:'Edward Kirenga',
             category: 'Digital Lending, Savings and Collections',  year:2022 ,logo: require('../src/assets/detLogo/uplus.png'),
+            link:' https://uplus.rw/'
+
   
         },
         { name: 'Bafana',
@@ -50,6 +58,9 @@
             contact:'+250780348088',
             team:'Yves Mugenga ,Isaac Muraganwa',
             category: 'Finance',  year:2022 ,logo: require('../src/assets/detLogo/bafana.png'),
+            link:'https://bafana.io/'
+          
+
   
         },
         { name: 'Karisimbi',
@@ -58,6 +69,8 @@
             contact:'info@karisimbi.com',
             team:'Angelo C. Igitego',
             category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/karisimbi.png'),
+            link:'https://karisimbitech.rw/'
+
   
         },
         { name: 'Imali',
@@ -66,6 +79,8 @@
             contact:'+250782718957',
             team:'Patrick Hirwa',
             category: 'Finance',  year:2022 ,logo: require('../src/assets/detLogo/imali.png'),
+            link:'https://imalicloud.com/'
+
   
         },
         { name: 'Lifesten',
@@ -74,6 +89,8 @@
             contact:'+250790001248',
             team:'Peace Ndoli, Iraguha Stephen Ogweno',
             category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/lifesten.png'),
+            link:'https://lifestenhealth.com/'
+
   
         },
         { name: 'Vitaway',
@@ -82,6 +99,8 @@
             contact:'+250782718957',
             team:'Emmanuel Hakuzimana',
             category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/vitaway.png'),
+            link:'https://vitaway.org/'
+
   
         },
         { name: 'Laina',
@@ -90,6 +109,8 @@
             contact:'tonny.missokia@lainafinance.com',
             team:'Tony Missokia',
             category: 'Insurance, Digital Lending',  year:2022 ,logo: require('../src/assets/detLogo/laina.png'),
+            link:'https://lainafinance.co.tz/'
+
   
         },
         { name: 'Haraka Meds',
@@ -98,6 +119,8 @@
             contact:'info@haraka.com',
             team:'Karasira Aristide,Ishimwe Rene,Habimana Olivier',
             category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/haraka.png'),
+            link:'https://harakameds.com/'
+
   
         },
         { name: 'Huuza Quest ltd',
@@ -106,6 +129,7 @@
             contact:'+25078450632',
             team:'Marie Grace Iradukunda, Yuhi Joshua Kamugisha, Alfred Mambo Wanjau',
             category: 'Gaming',  year:2022 ,logo: require('../src/assets/detLogo/huuza.png'),
+             link:'https://www.linkedin.com/company/huuza-games/posts/?feedView=all'
   
         },
         { name: 'Paying Tone',
@@ -114,6 +138,9 @@
             contact:'ignace@payingtone.com',
             team:'Ignace Turatsinze',
             category: 'Digital Lending ',  year:2022 ,logo: require('../src/assets/detLogo/paytone.png'),
+            link:'https://payingtone.com/'
+            
+
   
         },
         { name: 'Viebeg',
@@ -122,6 +149,9 @@
             contact:'tobias@viebeg.com',
             team:'Tobias Reiter, Alex Musyoka',
             category: 'Digital Lending ',  year:2022 ,logo: require('../src/assets/detLogo/viebeg.png'),
+            link:'https://www.viebeg.com/'
+
+
   
         },
         { name: 'Mutware Educate',
@@ -130,6 +160,8 @@
             contact:'+250784885454',
             team:'Emmanuel Mutabazi',
             category: 'Education ',  year:2022 ,logo: require('../src/assets/detLogo/mutware.png'),
+              link:'https://mutwareducate.com/'
+             
   
         },
         { name: 'Kayko',
@@ -138,6 +170,7 @@
             contact:'crepin@kayko.rw',
             team:'Crepin Kayisire ,Kevin Kayisire',
             category: 'Software Development',  year:2022 ,logo: require('../src/assets/detLogo/kayko.png'),
+             link:' https://kayko.rw/'
   
         },
         { name: 'School Nest',
@@ -146,6 +179,7 @@
             contact:'+250788927033',
             team:'Karegeya Jean Marie Vianney',
             category: 'Education',  year:2022 ,logo: require('../src/assets/detLogo/school-nest.png'),
+             link:'https://schoolnest.io/'
   
         },
         { name: 'Health Edu',
@@ -154,6 +188,8 @@
             contact:'healthedultd@gmail.com',
             team:'Jean Damascene BIGIRIMANA ,Agnes Kubwimana',
             category: 'Health ',  year:2022 ,logo: require('../src/assets/detLogo/healthedu.png'),
+            link:'https://healthedu.rw/'
+
   
         },
         { name: 'Magis',
@@ -162,6 +198,9 @@
             contact:'+250787410498',
             team:'Nawal Uwase,Ndengera Uwizeyimana Alain Patrick',
             category: 'Manufacturing ',  year:2022 ,logo: require('../src/assets/detLogo/Magis.png'),
+            link:'http://www.magislet.rw/'
+           
+
   
         },
 
@@ -171,6 +210,8 @@
             contact:'+250783221432',
             team:'Eliane Habimana,Kenneth Nyamuniga,Jean Francois Nyamuniga,Simon Shumbusho',
             category: 'Real Estate ',  year:2022 ,logo: require('../src/assets/detLogo/msquare.png'),
+            link:' https://www.mysquaremeters.com/'
+
   
         },
 
@@ -180,11 +221,50 @@
             contact:'smartikigega@gmail.com',
             team:'Joselyne Nisingizwe',
             category: 'Agriculture ',  year:2022 ,logo: require('../src/assets/detLogo/ikigega.svg'),
+            link:'https://smartikigega.com/'
+
+  
+        },
+        { name: 'Hiq Africa',
+            description:'HiQ Africa offers an Enterprise Resource Planning (ERP) solution that provides 5 cloud-based services: smart inventory, payment integration, NoQ marketplace, stock financing, and market intelligence.\n\n Founded in 2022, the company has in-built decentralized market and data analytics models that facilitate access to capital and products to enable business growth. HiQ is helping increase data accessibility in the African FMCG market for companies to be able to customize their marketing efforts, optimize supply chains, and streamline operations. This is important because with the rise of machine learning and artificial intelligence, companies can use data to develop predictive models that can identify patterns and trends, allowing them to make more informed business decisions and access business financing. ',
+            founded:2022,
+            contact:'gabiro@hiq.africa',
+            team:'Romain Gabiro Gentil ,Ndoba Joshua Mwamba',
+            category: 'Digital Lending, Digital Payments',  year:2022 ,logo: require('../src/assets/detLogo/hiq.svg'),
+            link:'https://hiq.africa/'
+
   
         },
 
+        { name: 'Oazis Health',
+            description:'OAZIS Health employs digital technology striving to achieve SDG 3 "Digital Health and Well Being" OAZIS Health uses Artificial intelligence to automate healthcare services provision, alleviating human errors and lifting existing heavy workload on healthcare providers in Low and Middle Income countries. ',
+            founded:2020,
+            contact:'+250781958800',
+            team:'Dr. Eric MUGABO',
+            category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/oasis.svg'),
+            link:'https://oazis.rw/'
+           
 
-
+  
+        },
+        { name: 'Jo-Care',
+            description:'JoCare is a social enterprise focused on improving healthcare and inclusivity in Rwanda. They address mental health and adolescent sexual and reproductive health challenges through an innovative online platform offering information, services, and products. JoCare collaborates with partners like Save the Children Rwanda and UNFPA, using data-driven approaches to measure impact and empower women and youth. Their holistic approach, led by a team of medical professionals, aims to create positive change in Rwandas healthcare landscape.\n\n JoCare s innovative solution has made a significant impact on improving healthcare and inclusivity in Rwanda. By addressing mental health and adolescent sexual and reproductive health challenges through their online platform, they have provided access to critical information, services, and products. ',
+            founded:2020,
+            contact:'+250784579143',
+            team:'Jerome NSHIMIYIMANA',
+            category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/jocare.svg'),
+            link:' https://jocare.rw/'
+  
+        },
+        { name: 'IT Consortium Rwanda',
+            description:'IT Consortium Rwanda offers a payment solution called TransFlow. The TransFlow payment ecosystem is a payment platform that seeks to simplify and improve the efficiency of payments between customers, merchants, and channel providers. IT Consortium Rwanda has ambitious plans for growth and expansion. They are seeking investment to fuel their initiatives and drive their company forward.\n\nThey will allocate a significant portion of the investment towards research and development activities. This includes enhancing their existing products, developing new solutions, and staying at the forefront of technological advancements. They would also use a portion of the investment to attract top-tier professionals and provide them with comprehensive training programs to further strengthen their team.',
+            founded:2021,
+            contact:'muwase@itconsortiumltd.com',
+            team:'Uwase',
+            category: 'Digital Payments',  year:2022 ,logo: require('../src/assets/detLogo/consortium.svg'),
+            link:'https://itconsortiumgh.com/'
+  
+        },
 
       
 
