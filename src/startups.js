@@ -265,6 +265,87 @@
             link:'https://itconsortiumgh.com/'
   
         },
+        { name: 'My Kibo',
+            description:'MyKibo is an integrated solution that combines end-to-end procurement and trade financing, connecting global buyers with high-quality agricultural products from Africa while streamlining the supply chain and empowering farmers.',
+            founded:2021,
+            contact:'frank.muhire@mykibo.com',
+            team:'Frank Muhire',
+            category: 'Agriculture',  year:2022 ,logo: require('../src/assets/detLogo/mykibo.svg'),
+            link:'https://www.linkedin.com/company/mykibo/about'
+  
+        },
+        { name: 'My Kibo',
+            description:'MyKibo is an integrated solution that combines end-to-end procurement and trade financing, connecting global buyers with high-quality agricultural products from Africa while streamlining the supply chain and empowering farmers.',
+            founded:2021,
+            contact:'frank.muhire@mykibo.com',
+            team:'Frank Muhire',
+            category: 'Agriculture',  year:2022 ,logo: require('../src/assets/detLogo/mykibo.svg'),
+            link:'https://www.linkedin.com/company/mykibo/about'
+  
+        },
+        { name: 'Yagibaze',
+            description:'Yagibaze makes it easy for young people in Rwanda to get started online and gain valuable experience through comprehensive and affordable web hosting services, enriching courses, and a thriving freelance marketplace just to help create a knowledge-based economy.',
+            founded:2022,
+            contact:'patrick@yagibaze.rw',
+            team:'Patrick Ndahayo',
+            category: 'Education',  year:2022 ,logo: require('../src/assets/detLogo/yagibaze.svg'),
+            link:'https://www.linkedin.com/company/yagibaze/about/'
+
+        },
+        { name: 'Ihuza',
+            description:'Ihuza Innovations revolutionizes healthcare management by providing a comprehensive platform that seamlessly connects patients, medical professionals, and institutions for efficient medical records management, appointment scheduling, and health data sharing.',
+            founded:2020,
+            contact:'abeltony03@gmail.com',
+            team:'AbelTony Niyindagiye',
+            category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/ihuza.svg'),
+            link:'https://www.linkedin.com/company/ihuza/about/'
+
+        },
+        { name: 'Irebe Biotech',
+            description:'We are a medical manufacturing and research company. We are committed to boosting local manufacturing of medical products and always striving for medical breakthroughs which change people’s lives.',
+            founded:2021,
+            contact:'ericuzabakiriho@gmail.com',
+            team:'ERIC UZABAKIRIHO',
+            category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/irebe.svg'),
+            link:'https://irebebiotech.rw/'
+
+        },
+        { name: 'WAD Pharma',
+            description:'WAD Ltd is an online platform revolutionizing pharmaceutical access and distribution by seamlessly connecting wholesale and retail pharmacies, enabling retailers to conveniently restock from multiple wholesalers via our digital interface, eliminating the need for travel and conserving time and resources.',
+            founded:2023,
+            contact:'wadpharma2@gmail.com',
+            team:'Cates NSENGIYUMVA,Didier USANASE',
+            category: 'Health and Human services' ,logo: require('../src/assets/detLogo/wad.svg'),
+            link:'https://www.wadpharma.com/'
+
+        },
+        { name: 'Hova Ai',
+            description:'HOVA AI is a cutting-edge platform that provides real-time sales, inventory, and customer behavior data, as well as predictive analytics and recommendations, to assist African SMEs in making informed decisions and optimizing their operations.',
+            founded:2022,
+            contact:'marsanline@gmail.com',
+            team:'Cates NSENGIYUMVA,Didier USANASE',
+            category: 'Data Infrastructure and Analytics' ,logo: require('../src/assets/detLogo/hova.svg'),
+            link:'https://hova.ai/'
+
+        },
+        { name: 'Groupeya',
+            description:'We are GROUPEYA. We are bringing the future of mobility to Africa today. The big picture for us is a seamless smart transportation experience for Africans powered by innovation, technology, and eco-friendly infrastructure. We are delivering a transformational experience to drivers and commuters via a powerful platform that is driving sustainable growth and development across Africa.',
+            founded:2021,
+            contact:'fmugisha@groupeya.com',
+            team:'Frank MUGISHA',
+            category: 'Software Development' ,logo: require('../src/assets/detLogo/groupeya.svg'),
+            link:'https://groupeya.com/'
+
+        },
+        { name: 'Innova Hyper',
+            description:'InnovaHyper Technology is a green tech solutions company specializing in repurposing electronic waste to build eco-friendly construction machinery.We are pioneers in developing Sustainable Homegrown Tech solutions for climate resilient building and green Rwanda.',
+            founded:2020,
+            contact:'innovahypertech@gmail.com',
+            team:'IRANKUNDA Claude',
+            category: 'E-waste' ,logo: require('../src/assets/detLogo/innova.svg'),
+            link:'https://innovahyper.com/'
+
+        },
 
       
 

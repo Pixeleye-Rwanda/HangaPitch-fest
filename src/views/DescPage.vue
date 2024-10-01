@@ -9,7 +9,7 @@
             
             <router-link :to="{ path: '/network', hash: '#startupDiv', query: { category: $route.query.category, year: $route.query.year }
           }">
-          <div class="flex space-x-6 mt-20">
+          <div class="flex space-x-6 mt-16">
           <img src="../assets/Group 22.png" alt="">
             <a href="" @click="goBackToFilteredList" class="text-white font-gramatika mt-4">back to startups</a>
           </div>
@@ -46,7 +46,7 @@
         </div>
         </div>
 
-        <div class="space-y-8 ">
+        <div class="space-y-8 mt-32 ">
         <div class=" p-4 border border-descColor p-36 flex flex-shrink-0 h-[350px] ">
             <img :src="startup.logo" class="h-60 w-60 -mt-20 object-contain ">
         </div>
