@@ -140,6 +140,48 @@
             category: 'Software Development',  year:2022 ,logo: require('../src/assets/detLogo/kayko.png'),
   
         },
+        { name: 'School Nest',
+            description:'We automate school processes and we offer flexible learning to students. We are revolutionizing the education sector by digitizing different school activities. We are revolutionizing the education sector by digitizing different school activities.',
+            founded:2020,
+            contact:'+250788927033',
+            team:'Karegeya Jean Marie Vianney',
+            category: 'Education',  year:2022 ,logo: require('../src/assets/detLogo/school-nest.png'),
+  
+        },
+        { name: 'Health Edu',
+            description:'We are a capacity building company for healthcare professionals with a mission to empower them with updated information to cut-off medical errors and malpractice in health settings.\n\nBased on the need of healthcare professionals for a lack of capacity building plan; HealthEdu has initiated the project of continuous professional development courses where we started inviting the providers for planned weekend training.\n\n After realizing that many professionals are not able to attend because of long-distance travel ,Limited choice of training subjects, we created an E-Learning platform which is reliable and accessible anytime with a variety of courses based on the professional category.',
+            founded:2017,
+            contact:'healthedultd@gmail.com',
+            team:'Jean Damascene BIGIRIMANA ,Agnes Kubwimana',
+            category: 'Health ',  year:2022 ,logo: require('../src/assets/detLogo/healthedu.png'),
+  
+        },
+        { name: 'Magis',
+            description:'Providing affordability and accessibility of electronic devices, electrical solutions and other related services. Increasing exports and decreasing imports in electronic field while promoting the made in Rwanda campaign Creating employment solutions to many people in all possible demographics.',
+            founded:2017,
+            contact:'+250787410498',
+            team:'Nawal Uwase,Ndengera Uwizeyimana Alain Patrick',
+            category: 'Manufacturing ',  year:2022 ,logo: require('../src/assets/detLogo/Magis.png'),
+  
+        },
+
+        { name: 'MySquaremeters',
+            description:'Providing affordability and accessibility of electronic devices, electrical solutions and other related services. Increasing exports and decreasing imports in electronic field while promoting the made in Rwanda campaign Creating employment solutions to many people in all possible demographics.',
+            founded:2021,
+            contact:'+250783221432',
+            team:'Eliane Habimana,Kenneth Nyamuniga,Jean Francois Nyamuniga,Simon Shumbusho',
+            category: 'Real Estate ',  year:2022 ,logo: require('../src/assets/detLogo/msquare.png'),
+  
+        },
+
+        { name: 'Smart Ikigega',
+            description:'Smart Ikigega offers a platform that allows farmers to access harvesting insurance, quick loans, and receive payments for their harvest.\n\nFounded in 2020, the company is not only digitizing agriculture but also leveraging technology to link agriculture to other sectors. The company’s business model helps Rwandan farmers access finance,and insurance services, track their production digitally and link them to the pre-harvest market. Smart Ikigega’s mission is to promote digital inclusivity for farmers in the financial sector by conducting workshops around the country on how to use their systems.\n\nThe company is raising  $400,000 in equity which will be used to grow their market into 10 new Rwandan districts which have many farmers and expand to neighboring countries starting from Uganda and Burundi.',
+            founded:2020,
+            contact:'smartikigega@gmail.com',
+            team:'Joselyne Nisingizwe',
+            category: 'Agriculture ',  year:2022 ,logo: require('../src/assets/detLogo/ikigega.svg'),
+  
+        },
 
 
 

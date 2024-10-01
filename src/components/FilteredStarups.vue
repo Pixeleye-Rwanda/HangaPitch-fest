@@ -150,7 +150,7 @@ export default{
                     { name: 'Magis', category: 'Other', year: 2022, logo: require('../assets/2022/magis-let.svg') },
                     { name: 'Mulika Farms', category: 'Agriculture', year: 2022, logo: require('../assets/2022/mukika.svg') },
                     { name: 'Mutware Educate', category: 'Education', year: 2022, logo: require('../assets/2022/mutware-educate.svg') },
-                    { name: 'MySquare Kilometers', category: 'Other ', year: 2022, logo: require('../assets/2022/mysqm.svg') },
+                    { name: 'MySquaremeters', category: 'Other ', year: 2022, logo: require('../assets/2022/mysqm.svg') },
                     { name: 'Oazis Health', category: 'Health', year: 2022, logo: require('../assets/2022/oazis-health.svg') },
                     { name: 'Paying Tone', category: 'Fintech', year: 2022, logo: require('../assets/2022/paying-tone.svg') },
                     { name: 'School Nest', category: 'Education', year: 2022, logo: require('../assets/2022/school-nest.svg') },
