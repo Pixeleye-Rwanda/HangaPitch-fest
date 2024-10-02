@@ -47,7 +47,7 @@
         </div>
 
         <div class="space-y-8 ">
-        <div class=" p-4 border border-descColor p-32 flex flex-shrink-0 h-[350px] ">
+        <div class=" p-4 border border-descColor p-36 flex flex-shrink-0 h-[350px] ">
             <img :src="startup.logo" class="h-60 w-60  -mt-16 object-contain ">
         </div>
         <div class="flex items-center justify-center ">
