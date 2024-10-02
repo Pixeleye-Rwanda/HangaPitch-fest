@@ -44,9 +44,10 @@
       </div>
     </div>
 
-    <div class="relative w-full h-20">
-      <img src="../assets/patterns.svg" alt="" class="absolute bottom-0 left-0 w-full">
-    </div>
+    <div class="">
+      <NewsLetter />
+      <FooterPage />
+  </div>
   </div>
 
 
@@ -55,10 +56,14 @@
 
 <script>
 import Navbar from '@/components/Navbar.vue';
+import FooterPage from '@/components/footerPage.vue';
+import NewsLetter from '@/components/NewsLetter.vue';
 export default {
   name: "TimelinePage",
   components: {
-    Navbar
+    Navbar,
+    FooterPage,
+    NewsLetter
   }
 }
 

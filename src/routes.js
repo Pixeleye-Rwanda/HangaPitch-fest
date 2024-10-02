@@ -11,6 +11,7 @@ import ContactUsPage from "./views/ContactUsPage.vue";
 import FilteredStarups from "./components/FilteredStarups.vue";
 import WaitlistPage from "./views/WaitlistPage.vue";
 import WaitlistResultPage from "./views/WaitlistResultPage.vue";
+import NotFoundPage from "./views/NotFoundPage.vue";
 
 import { createRouter,createWebHistory } from "vue-router";
 
@@ -89,7 +90,15 @@ const routes=[
         name:'WaitlistResultPage',
         component:WaitlistResultPage,
         path:'/waitlist-result'
+    },
+    {
+        name:'NotFoundPage',
+        component:NotFoundPage,
+        path:'/404'
     }
+
+
+     
 
 
 
