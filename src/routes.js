@@ -9,6 +9,8 @@ import PitchHanga from "./views/PitchHanga.vue";
 import TimelinePage from "./views/TimelinePage.vue";
 import ContactUsPage from "./views/ContactUsPage.vue"; 
 import FilteredStarups from "./components/FilteredStarups.vue";
+import WaitlistPage from "./views/WaitlistPage.vue";
+import WaitlistResultPage from "./views/WaitlistResultPage.vue";
 
 import { createRouter,createWebHistory } from "vue-router";
 
@@ -39,9 +41,7 @@ const routes=[
       name:"DescPage"  ,
       component:DescPage,
       path:'/startup/:name',
-      props:true
-
-      
+      props:true     
 
     },
 
@@ -78,6 +78,17 @@ const routes=[
         name:'ContactUsPage',
         component:ContactUsPage,
         path:'/contact'
+    },
+
+    {
+        name:'WaitlistPage',
+        component:WaitlistPage,
+        path:'/waitlist'
+    },
+    {
+        name:'WaitlistResultPage',
+        component:WaitlistResultPage,
+        path:'/waitlist-result'
     }
 
 
