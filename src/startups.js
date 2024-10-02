@@ -3,13 +3,14 @@
 
        
 
-        // 2022 startups.................
+        //  startups descriptions.................
         { name: 'Mulika Farms',
             description:'At Mulika farms we are creating a direct and transparent channel for sourcing agricultural produce directly from the farmer to market traders.We strive \n\n to improve farmers living standards by shortening the supply chain so that every farmer receives a fair market value for their crops.We have registered over 3,000 farmers. \n\n Our farmers have a 13% higher income compared to those who have not begun working with us.We have 50 buyers in our portfolio. Our Market Buyers have been able to save an average of 11% compared to non-Mulika platform buyers.We have moved over 140 tons of produce totaling to about 62,000 USD in transactions in just over 9 months, mostly potatoes and livestock (pigs).',
              founded:'2002',
              contact:'info@mulika',
              team: 'Leo Karekezi , Herve Gihirwe' ,
-            category: 'Agriculture', year: 2022, logo: require('../src/assets/detLogo/mulika.png')
+            category: 'Agriculture', year: 2022, logo: require('../src/assets/detLogo/mulika.png'),
+            link:'https://mulika.co/'
          },
 
         { name: 'Shambapro',
@@ -18,6 +19,7 @@
           contact:'+250787397015',
           team:'Kelvin Odoobo',
           category: 'Agriculture',  year:2022 ,logo: require('../src/assets/detLogo/shambapro.png'),
+          link:'https://www.shambapro.com/'
 
          },
          { name: 'Umurava',
@@ -26,6 +28,9 @@
             contact:'vivens@umurava.africa',
             team:'Vivens Uwizeyimana',
             category: 'Digital Lending ',  year:2022 ,logo: require('../src/assets/detLogo/umurava.png'),
+            link:'https://umurava.africa/'
+           
+
   
         },
         { name: 'UrId Technologies',
@@ -34,6 +39,7 @@
             contact:'info@palmkash',
             team:'Emmanuel NKurunziza',
             category: 'Digital Payments',  year:2022 ,logo: require('../src/assets/2022/urid.svg'),
+             link:' https://palmkash.com/'
   
         },
         { name: 'Uplus Mutual',
@@ -42,6 +48,8 @@
             contact:'250787397015',
             team:'Edward Kirenga',
             category: 'Digital Lending, Savings and Collections',  year:2022 ,logo: require('../src/assets/detLogo/uplus.png'),
+            link:' https://uplus.rw/'
+
   
         },
         { name: 'Bafana',
@@ -50,6 +58,9 @@
             contact:'+250780348088',
             team:'Yves Mugenga ,Isaac Muraganwa',
             category: 'Finance',  year:2022 ,logo: require('../src/assets/detLogo/bafana.png'),
+            link:'https://bafana.io/'
+          
+
   
         },
         { name: 'Karisimbi',
@@ -58,6 +69,8 @@
             contact:'info@karisimbi.com',
             team:'Angelo C. Igitego',
             category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/karisimbi.png'),
+            link:'https://karisimbitech.rw/'
+
   
         },
         { name: 'Imali',
@@ -66,6 +79,8 @@
             contact:'+250782718957',
             team:'Patrick Hirwa',
             category: 'Finance',  year:2022 ,logo: require('../src/assets/detLogo/imali.png'),
+            link:'https://imalicloud.com/'
+
   
         },
         { name: 'Lifesten',
@@ -74,6 +89,8 @@
             contact:'+250790001248',
             team:'Peace Ndoli, Iraguha Stephen Ogweno',
             category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/lifesten.png'),
+            link:'https://lifestenhealth.com/'
+
   
         },
         { name: 'Vitaway',
@@ -82,6 +99,8 @@
             contact:'+250782718957',
             team:'Emmanuel Hakuzimana',
             category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/vitaway.png'),
+            link:'https://vitaway.org/'
+
   
         },
         { name: 'Laina',
@@ -90,6 +109,8 @@
             contact:'tonny.missokia@lainafinance.com',
             team:'Tony Missokia',
             category: 'Insurance, Digital Lending',  year:2022 ,logo: require('../src/assets/detLogo/laina.png'),
+            link:'https://lainafinance.co.tz/'
+
   
         },
         { name: 'Haraka Meds',
@@ -98,6 +119,8 @@
             contact:'info@haraka.com',
             team:'Karasira Aristide,Ishimwe Rene,Habimana Olivier',
             category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/haraka.png'),
+            link:'https://harakameds.com/'
+
   
         },
         { name: 'Huuza Quest ltd',
@@ -106,6 +129,7 @@
             contact:'+25078450632',
             team:'Marie Grace Iradukunda, Yuhi Joshua Kamugisha, Alfred Mambo Wanjau',
             category: 'Gaming',  year:2022 ,logo: require('../src/assets/detLogo/huuza.png'),
+             link:'https://www.linkedin.com/company/huuza-games/posts/?feedView=all'
   
         },
         { name: 'Paying Tone',
@@ -114,6 +138,9 @@
             contact:'ignace@payingtone.com',
             team:'Ignace Turatsinze',
             category: 'Digital Lending ',  year:2022 ,logo: require('../src/assets/detLogo/paytone.png'),
+            link:'https://payingtone.com/'
+            
+
   
         },
         { name: 'Viebeg',
@@ -122,6 +149,9 @@
             contact:'tobias@viebeg.com',
             team:'Tobias Reiter, Alex Musyoka',
             category: 'Digital Lending ',  year:2022 ,logo: require('../src/assets/detLogo/viebeg.png'),
+            link:'https://www.viebeg.com/'
+
+
   
         },
         { name: 'Mutware Educate',
@@ -130,6 +160,8 @@
             contact:'+250784885454',
             team:'Emmanuel Mutabazi',
             category: 'Education ',  year:2022 ,logo: require('../src/assets/detLogo/mutware.png'),
+              link:'https://mutwareducate.com/'
+             
   
         },
         { name: 'Kayko',
@@ -138,7 +170,483 @@
             contact:'crepin@kayko.rw',
             team:'Crepin Kayisire ,Kevin Kayisire',
             category: 'Software Development',  year:2022 ,logo: require('../src/assets/detLogo/kayko.png'),
+             link:' https://kayko.rw/'
   
+        },
+        { name: 'School Nest',
+            description:'We automate school processes and we offer flexible learning to students. We are revolutionizing the education sector by digitizing different school activities. We are revolutionizing the education sector by digitizing different school activities.',
+            founded:2020,
+            contact:'+250788927033',
+            team:'Karegeya Jean Marie Vianney',
+            category: 'Education',  year:2022 ,logo: require('../src/assets/detLogo/school-nest.png'),
+             link:'https://schoolnest.io/'
+  
+        },
+        { name: 'Health Edu',
+            description:'We are a capacity building company for healthcare professionals with a mission to empower them with updated information to cut-off medical errors and malpractice in health settings.\n\nBased on the need of healthcare professionals for a lack of capacity building plan; HealthEdu has initiated the project of continuous professional development courses where we started inviting the providers for planned weekend training.\n\n After realizing that many professionals are not able to attend because of long-distance travel ,Limited choice of training subjects, we created an E-Learning platform which is reliable and accessible anytime with a variety of courses based on the professional category.',
+            founded:2017,
+            contact:'healthedultd@gmail.com',
+            team:'Jean Damascene BIGIRIMANA ,Agnes Kubwimana',
+            category: 'Health ',  year:2022 ,logo: require('../src/assets/detLogo/healthedu.png'),
+            link:'https://healthedu.rw/'
+
+  
+        },
+        { name: 'Magis',
+            description:'Providing affordability and accessibility of electronic devices, electrical solutions and other related services. Increasing exports and decreasing imports in electronic field while promoting the made in Rwanda campaign Creating employment solutions to many people in all possible demographics.',
+            founded:2017,
+            contact:'+250787410498',
+            team:'Nawal Uwase,Ndengera Uwizeyimana Alain Patrick',
+            category: 'Manufacturing ',  year:2022 ,logo: require('../src/assets/detLogo/Magis.png'),
+            link:'http://www.magislet.rw/'
+           
+
+  
+        },
+
+        { name: 'MySquaremeters',
+            description:'Providing affordability and accessibility of electronic devices, electrical solutions and other related services. Increasing exports and decreasing imports in electronic field while promoting the made in Rwanda campaign Creating employment solutions to many people in all possible demographics.',
+            founded:2021,
+            contact:'+250783221432',
+            team:'Eliane Habimana,Kenneth Nyamuniga,Jean Francois Nyamuniga,Simon Shumbusho',
+            category: 'Real Estate ',  year:2022 ,logo: require('../src/assets/detLogo/msquare.png'),
+            link:' https://www.mysquaremeters.com/'
+
+  
+        },
+
+        { name: 'Smart Ikigega',
+            description:'Smart Ikigega offers a platform that allows farmers to access harvesting insurance, quick loans, and receive payments for their harvest.\n\nFounded in 2020, the company is not only digitizing agriculture but also leveraging technology to link agriculture to other sectors. The company’s business model helps Rwandan farmers access finance,and insurance services, track their production digitally and link them to the pre-harvest market. Smart Ikigega’s mission is to promote digital inclusivity for farmers in the financial sector by conducting workshops around the country on how to use their systems.\n\nThe company is raising  $400,000 in equity which will be used to grow their market into 10 new Rwandan districts which have many farmers and expand to neighboring countries starting from Uganda and Burundi.',
+            founded:2020,
+            contact:'smartikigega@gmail.com',
+            team:'Joselyne Nisingizwe',
+            category: 'Agriculture ',  year:2022 ,logo: require('../src/assets/detLogo/ikigega.svg'),
+            link:'https://smartikigega.com/'
+
+  
+        },
+        { name: 'Hiq Africa',
+            description:'HiQ Africa offers an Enterprise Resource Planning (ERP) solution that provides 5 cloud-based services: smart inventory, payment integration, NoQ marketplace, stock financing, and market intelligence.\n\n Founded in 2022, the company has in-built decentralized market and data analytics models that facilitate access to capital and products to enable business growth. HiQ is helping increase data accessibility in the African FMCG market for companies to be able to customize their marketing efforts, optimize supply chains, and streamline operations. This is important because with the rise of machine learning and artificial intelligence, companies can use data to develop predictive models that can identify patterns and trends, allowing them to make more informed business decisions and access business financing. ',
+            founded:2022,
+            contact:'gabiro@hiq.africa',
+            team:'Romain Gabiro Gentil ,Ndoba Joshua Mwamba',
+            category: 'Digital Lending, Digital Payments',  year:2022 ,logo: require('../src/assets/detLogo/hiq.svg'),
+            link:'https://hiq.africa/'
+
+  
+        },
+
+        { name: 'Oazis Health',
+            description:'OAZIS Health employs digital technology striving to achieve SDG 3 "Digital Health and Well Being" OAZIS Health uses Artificial intelligence to automate healthcare services provision, alleviating human errors and lifting existing heavy workload on healthcare providers in Low and Middle Income countries. ',
+            founded:2020,
+            contact:'+250781958800',
+            team:'Dr. Eric MUGABO',
+            category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/oasis.svg'),
+            link:'https://oazis.rw/'
+           
+
+  
+        },
+        { name: 'Jo-Care',
+            description:'JoCare is a social enterprise focused on improving healthcare and inclusivity in Rwanda. They address mental health and adolescent sexual and reproductive health challenges through an innovative online platform offering information, services, and products. JoCare collaborates with partners like Save the Children Rwanda and UNFPA, using data-driven approaches to measure impact and empower women and youth. Their holistic approach, led by a team of medical professionals, aims to create positive change in Rwandas healthcare landscape.\n\n JoCare s innovative solution has made a significant impact on improving healthcare and inclusivity in Rwanda. By addressing mental health and adolescent sexual and reproductive health challenges through their online platform, they have provided access to critical information, services, and products. ',
+            founded:2020,
+            contact:'+250784579143',
+            team:'Jerome NSHIMIYIMANA',
+            category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/jocare.svg'),
+            link:' https://jocare.rw/'
+  
+        },
+        { name: 'IT Consortium Rwanda',
+            description:'IT Consortium Rwanda offers a payment solution called TransFlow. The TransFlow payment ecosystem is a payment platform that seeks to simplify and improve the efficiency of payments between customers, merchants, and channel providers. IT Consortium Rwanda has ambitious plans for growth and expansion. They are seeking investment to fuel their initiatives and drive their company forward.\n\nThey will allocate a significant portion of the investment towards research and development activities. This includes enhancing their existing products, developing new solutions, and staying at the forefront of technological advancements. They would also use a portion of the investment to attract top-tier professionals and provide them with comprehensive training programs to further strengthen their team.',
+            founded:2021,
+            contact:'muwase@itconsortiumltd.com',
+            team:'Uwase',
+            category: 'Digital Payments',  year:2022 ,logo: require('../src/assets/detLogo/consortium.svg'),
+            link:'https://itconsortiumgh.com/'
+  
+        },
+        { name: 'My Kibo',
+            description:'MyKibo is an integrated solution that combines end-to-end procurement and trade financing, connecting global buyers with high-quality agricultural products from Africa while streamlining the supply chain and empowering farmers.',
+            founded:2021,
+            contact:'frank.muhire@mykibo.com',
+            team:'Frank Muhire',
+            category: 'Agriculture',  year:2022 ,logo: require('../src/assets/detLogo/mykibo.svg'),
+            link:'https://www.linkedin.com/company/mykibo/about'
+  
+        },
+        { name: 'My Kibo',
+            description:'MyKibo is an integrated solution that combines end-to-end procurement and trade financing, connecting global buyers with high-quality agricultural products from Africa while streamlining the supply chain and empowering farmers.',
+            founded:2021,
+            contact:'frank.muhire@mykibo.com',
+            team:'Frank Muhire',
+            category: 'Agriculture',  year:2022 ,logo: require('../src/assets/detLogo/mykibo.svg'),
+            link:'https://www.linkedin.com/company/mykibo/about'
+  
+        },
+        { name: 'Yagibaze',
+            description:'Yagibaze makes it easy for young people in Rwanda to get started online and gain valuable experience through comprehensive and affordable web hosting services, enriching courses, and a thriving freelance marketplace just to help create a knowledge-based economy.',
+            founded:2022,
+            contact:'patrick@yagibaze.rw',
+            team:'Patrick Ndahayo',
+            category: 'Education',  year:2022 ,logo: require('../src/assets/detLogo/yagibaze.svg'),
+            link:'https://www.linkedin.com/company/yagibaze/about/'
+
+        },
+        { name: 'Ihuza',
+            description:'Ihuza Innovations revolutionizes healthcare management by providing a comprehensive platform that seamlessly connects patients, medical professionals, and institutions for efficient medical records management, appointment scheduling, and health data sharing.',
+            founded:2020,
+            contact:'abeltony03@gmail.com',
+            team:'AbelTony Niyindagiye',
+            category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/ihuza.svg'),
+            link:'https://www.linkedin.com/company/ihuza/about/'
+
+        },
+        { name: 'Irebe Biotech',
+            description:'We are a medical manufacturing and research company. We are committed to boosting local manufacturing of medical products and always striving for medical breakthroughs which change people’s lives.',
+            founded:2021,
+            contact:'ericuzabakiriho@gmail.com',
+            team:'ERIC UZABAKIRIHO',
+            category: 'Health',  year:2022 ,logo: require('../src/assets/detLogo/irebe.svg'),
+            link:'https://irebebiotech.rw/'
+
+        },
+        { name: 'WAD Pharma',
+            description:'WAD Ltd is an online platform revolutionizing pharmaceutical access and distribution by seamlessly connecting wholesale and retail pharmacies, enabling retailers to conveniently restock from multiple wholesalers via our digital interface, eliminating the need for travel and conserving time and resources.',
+            founded:2023,
+            contact:'wadpharma2@gmail.com',
+            team:'Cates NSENGIYUMVA,Didier USANASE',
+            category: 'Health and Human services' ,logo: require('../src/assets/detLogo/wad.svg'),
+            link:'https://www.wadpharma.com/'
+
+        },
+        { name: 'Hova Ai',
+            description:'HOVA AI is a cutting-edge platform that provides real-time sales, inventory, and customer behavior data, as well as predictive analytics and recommendations, to assist African SMEs in making informed decisions and optimizing their operations.',
+            founded:2022,
+            contact:'marsanline@gmail.com',
+            team:'Cates NSENGIYUMVA,Didier USANASE',
+            category: 'Data Infrastructure and Analytics' ,logo: require('../src/assets/detLogo/hova.svg'),
+            link:'https://hova.ai/'
+
+        },
+        { name: 'Groupeya',
+            description:'We are GROUPEYA. We are bringing the future of mobility to Africa today. The big picture for us is a seamless smart transportation experience for Africans powered by innovation, technology, and eco-friendly infrastructure. We are delivering a transformational experience to drivers and commuters via a powerful platform that is driving sustainable growth and development across Africa.',
+            founded:2021,
+            contact:'fmugisha@groupeya.com',
+            team:'Frank MUGISHA',
+            category: 'Software Development' ,logo: require('../src/assets/detLogo/groupeya.svg'),
+            link:'https://groupeya.com/'
+
+        },
+        { name: 'Innova Hyper',
+            description:'InnovaHyper Technology is a green tech solutions company specializing in repurposing electronic waste to build eco-friendly construction machinery.We are pioneers in developing Sustainable Homegrown Tech solutions for climate resilient building and green Rwanda.',
+            founded:2020,
+            contact:'innovahypertech@gmail.com',
+            team:'IRANKUNDA Claude',
+            category: 'E-waste' ,logo: require('../src/assets/detLogo/innova.svg'),
+            link:'https://innovahyper.com/'
+
+        },
+        { name: 'Hinia',
+            description:'HiNia creates a safe and practical environment to help parents raise financially responsible children who are well-equipped to excel in the realm of personal finance.',
+            founded:2022,
+            contact:'nkurayijah@gmail.com',
+            team:'Jean Hubert, Nkurayija Ishimwe',
+            category: 'Finance' ,logo: require('../src/assets/detLogo/hinia.svg'),
+            link:'https://linktr.ee/hinia_app'
+
+        }, 
+        
+        {   name: 'Jenga Mo',
+            description:'Jenga Mo Ltd enable lower and middle income earners in Rwanda to own or rent decent homes by building quality and affordable houses that can be owned or rented affordably.',
+            founded:2022,
+            contact:'hello@jengamo.com',
+            team:'Bisa Hubert',
+            category: 'Construction and real estate',logo: require('../src/assets/detLogo/Jenga-mo.svg'),
+            link:'https://www.linkedin.com/company/jenga-mo/about/'
+
+        },
+
+        {   name: 'Payws ltd',
+            description:'My company PayWS Ltd provides a cross-border multicurrency wallet that helps travelers across African countries, move with their local currency and cash out locally in any African country via a WhatsApp chatbot at low fees.',
+            founded:2023,
+            contact:'akah@aftawallet.com',
+            team:'Harvey Akah',
+            category: 'Finance',logo: require('../src/assets/detLogo/PayWS-Ltd.svg'),
+            link:'https://www.f6s.com/company/payws-ltd#about'
+
+        },
+        {   name: 'Technika',
+            description:'Techinika company provides free and accessible technology education through an online platform while offering personalized training services to empower individuals and transform communities.',
+            founded:2023,
+            contact:'songachillethe1her@gmail.com',
+            team:'Cishahayo Songa Achille',
+            category: 'Education',logo: require('../src/assets/detLogo/technika.svg'),
+            link:'https://techinika.co.rw/'
+
+        },
+        {   name: 'Dropawave',
+            description:'Do not Drink and Drive, Dropawave is an app that users get and request a driver to get them to destination in their own vehicle when sipped alcohol.',
+            founded:2022,
+            contact:'serge@dropawave.com',
+            team:'Victor Ngabo',
+            category: 'Mobility and Logistics',logo: require('../src/assets/detLogo/Dropawave.svg'),
+            link:''
+
+        },
+        {   name: 'Tubimenye',
+            description:'Tubimenye Medi hub is an online hub that is founded by health care professionals with vision to promote high school students health though provision of essential health care,This is done by addressing issues with mental and reproductive health as well as other diseases through the use of smart classrooms and phones.',
+            founded:2022,
+            contact:'mutarambirwarenauvat@gmail.com',
+            team:'MUTARAMBIRWA Renauvat',
+            category: 'Health',logo: require('../src/assets/detLogo/tubimenye.svg'),
+            link:'https://tubimenye.rw/'
+
+        },
+        {   name: 'Yarn',
+            description:'The primary focus of Yarn Ltd is the development, manufacturing, and deployment of cutting-edge agricultural automation machines. These machines are designed to improve farming practices in Rwanda by automating tasks such as data collection, weed removal, and precise pesticide spraying.\n\n Our goal is to enhance agricultural efficiency and crop yields while promoting sustainable and technology-driven farming methods within the region.',
+            founded:2022,
+            contact:'yarnltd1@gmail.com',
+            team:'Nadine Usanase',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/Yarn-ltd.svg'),
+            link:''
+
+        },
+        {   name: 'Urungano',
+            description:'Urungano Initiative provides digitalised ,reliable and evidence-based sexual and reproductive health information and services to adolescents including those living with disabilities.',
+            founded:2022,
+            contact:'urunganoinitiative@gmail.com',
+            team:'NIYOYITA Bonaventure',
+            category: 'Health',logo: require('../src/assets/detLogo/Urungano-Initiative.svg'),
+            link:'https://urungano.rw/home/'
+
+        },
+
+        {   name: 'Tuzaride',
+            description:'TUZAride is an on demand personal driver hailing platform. Uniquely positioned to serve both business-to-business(B2B) and business-to-customer needs(B2C).',
+            founded:2023,
+            contact:'mary@tuzaride.com',
+            team:'Mary Bakamurera',
+            category: 'Mobility',logo: require('../src/assets/detLogo/tuzaride.svg'),
+            link:'https://www.tuzaride.com/'
+
+        },
+        {   name: 'Kaaz app',
+            description:'We connect low income professional skilled workers to potential clients',
+            founded:2022,
+            contact:'charl.mutabazi@gmail.com',
+            team:'Mutabazi Charles',
+            category: 'HR',logo: require('../src/assets/detLogo/Kaaz-app.svg'),
+            link:'https://play.google.com/store/apps/details?id=com.mootalabs.kaaz&hl=en_US&pli=1'
+
+        },
+        {   name: 'Bunga Bunga',
+            description:'We provide ploughing services with tractors and tractor operators.',
+            founded:2019,
+            contact:'gates.matthew@gmail.com',
+            team:'Mathew Gates',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/bungabunga.svg'),
+            link:'http://ubutaka.co/'
+
+        },
+        {   name: 'Smart Class',
+            description:'SmartClass Ltd company offers an e-learning platform that facilitates collaborative learning among high school students from various schools.',
+            founded:2022,
+            contact:'niyabdul18@gmail.com',
+            team:'Abdulrahman Niyonizeye',
+            category: 'Education',logo: require('../src/assets/detLogo/Smart-class.svg'),
+            link:'https://www.smartclass.rw/'
+
+        },
+        {   name: 'Iraady',
+            description:'Iraady Ltd is a platform that enables non-profits and social enterprises to access the latest technologies on a grant basis or exclusive discounts, hence enabling productivity and amplifying their impact while Transforming lives in society',
+            founded:2022,
+            contact:'irankundaadolphe@gmail.com',
+            team:'Irankunda Adolphe',
+            category: 'Social Impact',logo: require('../src/assets/detLogo/iraady.svg'),
+            link:'https://iraady.com/'
+
+        },
+        {   name: 'Bountiful Farmers',
+            description:'Bountiful Farmers is an Agritech company that produces Irish potato seeds using sand-ponic system in a screenhouse.',
+            founded:2022,
+            contact:'bountifulfarmers@gmail.com',
+            team:'Rugero Stanley,Uwase Christella',
+            category: 'Social Impact',logo: require('../src/assets/detLogo/bounty.svg'),
+            link:'https://www.linkedin.com/in/bountiful-farmers-13bbb8289/?originalSubdomain=rw'
+
+        },
+
+        {   name: 'Loopa',
+            description:'In a world where a looped food system is critical for the circular economy, Loopa is leveraging IoT technology to optimize the transformation of food waste and other agricultural byproducts into nutrients-rich organic fertilizer, with an end goal to help farmers transition from inorganic to organic fertilizer, affordably yet with more yield.',
+            founded:2023,
+            contact:'cynthia.umutoniwabo@jasirifellow.org',
+            team:'Cynthia Umutoniwabo',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/loopa.svg'),
+            link:'https://www.linkedin.com/company/loopafrica/about/'
+
+        },
+        {   name: 'Care Connect',
+            description:'Care Connect is a non-medical healthtech company with a digital platform dedicated to improving the healing process of patients by digitally linking skilled nurses with patients. It leverages technology to offer efficient caregiving services to in-patients and out-patients.',
+            founded:2022,
+            contact:'abajanet01@gmail.com',
+            team:'Abatesi Janet',
+            category: 'Health',logo: require('../src/assets/detLogo/care-connect.svg'),
+            link:'https://careconnect.rw/'
+
+        },
+        {   name: 'Mizero Care',
+            description:'Mizero Care Ltd connects individuals in need with mental health professionals to enhance a global tele-mental health quality service delivery to fight the stigmatization of mental health disorders and promote mental health literacy by leveraging technology.',
+            founded:2022,
+            contact:'presmizerocare@gmail.com',
+            team:'Irene Mizero',
+            category: 'Health',logo: require('../src/assets/detLogo/mizero.svg'),
+            link:'https://mizerocare.org/'
+
+        },
+
+        {   name: 'Agrithink Tank',
+            description:'Agrithink tank is addressing waste management and sustainable agricultural input by utilizing black soldier flies to create ONGERA Compost and IHAZE Feed supplement, supported by the IHURIRO Platform for waste collection and input distribution, ultimately enhancing agricultural productivity and improving farmers livelihoods.',
+            founded:2022,
+            contact:'karorerosylvestre5@gmail.com',
+            team:'Karorero Sylvestre',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/agrithink.svg'),
+            link:''
+
+        },
+        {   name: 'Kivu Health',
+            description:'We link patients with therapist.',
+            founded:2022,
+            contact:'ruhumjustin@gmail.com',
+            team:'Justin Ruhumuriza',
+            category: 'Health',logo: require('../src/assets/detLogo/Kivu-health.svg'),
+            link:''
+
+        },
+        {   name: 'Digital health line',
+            description:'Digital Healthline Solution (DHS) is a comprehensive digital platform that empowers individuals living with non-communicable diseases (NCDs) to manage their health effectively. We offer personalized treatment plans, medication reminders, teleconsultation with healthcare professionals.\n\n DHS aims to enhance medication adherence, provide remote medical guidance and patient engagement, ultimately improving health outcomes and quality of life.',
+            founded:2021,
+            contact:'vanmaceineza@gmail.com',
+            team:'Vainqueur INEZA HABYARIMANA',
+            category: 'Health',logo: require('../src/assets/detLogo/digitalhealth-line.svg'),
+            link:''
+
+        },
+        {   name: 'Farmoja',
+            description:'Farmoja uses IoT and embedded systems to help farmers collect real-time soil data such as soil moisture content and temperature, control irrigation systems, and apply precision farming.\n\n Farmoja leverages the data collected to provide recommendations and insights to farmers on the good practices they need to make in their farms to increase the quality and quantity of their crop yield.',
+            founded:2022,
+            contact:'bruce.mutangana@farmoja.rw',
+            team:'Bruce Mutangana' ,
+            category: 'Agriculture',logo: require('../src/assets/detLogo/digitalhealth-line.svg'),
+            link:'https://www.linkedin.com/company/farmoja/about/'
+
+        },
+        {   name: 'Abasare',
+            description:'Abasare App is a trusted on-demand driving solution. With Abasare App, you can easily connect with experienced and trained drivers who will drive your car safely and responsibly, taking you wherever you need to go.\n\n Say goodbye to worries, drunk driving and unnecessary accidents while providing job opportunities for drivers with valid permits. – our reliable drivers ensure your safety while you relax or focus on other tasks.',
+            founded:2022,
+            contact:'gustavemurenzi@gmail.com',
+            team:'Gustave Murenzi',
+            category: 'Transport',logo: require('../src/assets/detLogo/abasare.svg'),
+            link:'https://www.linkedin.com/in/abasare-11b7b0292/?originalSubdomain=rw'
+
+        },
+        {   name: 'Medixr',
+            description:'Through innovative VR technology, MediXR improves healthcare education by offering an immersive and interactive platform for medical training.',
+            founded:2022,
+            contact:'wendy.medixr@gmail.com',
+            team:'Wendy Ornella',
+            category: 'Health',logo: require('../src/assets/detLogo/medixr.svg'),
+            link:'https://www.medixr.org/'
+
+        },
+        {   name: 'Eazi plug',
+            description:'Eaziplug is a comprehensive city exploration platform integrated with a booking, ordering and payment system that seamlessly connects users with businesses(hotels, restaurants, gyms, spas, etc.), attractions, and events, enhancing the local experience for residents and tourists alike.',
+            founded:2022,
+            contact:'rosekalera@gmail.com',
+            team:'Rose Kalera',
+            category: 'Hospitality',logo: require('../src/assets/detLogo/eaziplug.svg'),
+            link:'https://www.eaziplug.io/'
+
+        },
+        {   name: 'Opina',
+            description:'Opina Ltd are an agricultural focused tech and investment company.',
+            founded:2019,
+            contact:'christianscaleup@gmail.com',
+            team:'Christian Rurangwa',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/Opina.svg'),
+            link:'https://www.eaziplug.io/'
+
+        },
+        {   name: 'Lin Idea',
+            description:'LinIdea makes it easy to collect, analyze, and visualize your data, so you can make informed decisions that lead to growth and profitability',
+            founded:2021,
+            contact:'+25078920777',
+            team:'Niyibizi Hirwa',
+            category: 'Fintech',logo: require('../src/assets/detLogo/linidea.svg'),
+            link:'https://www.linkedin.com/company/linidea/about/'
+
+        },
+        {   name: 'Kuza Africa',
+            description:'Kuza Africa is a design and garment production hub serving as an end-to-end solution for innovators in the fashion industry in Rwanda.',
+            founded:2022,
+            contact:'kuzafrica@gmail.com',
+            team:'Laurin Mungai',
+            category: 'Fashion',logo: require('../src/assets/detLogo/kuza.svg'),
+            link:'https://kuzafrica.com/'
+
+        },
+        {   name: 'Quarks Group',
+            description:'QUARKS GROUP Ltd is a Rwandan based software company that designs, develops and scales innovative mobile, web and desktop tech solutions that continuously propel its clients in the digital future.\n\nWe provide expedited payment gateway solutions tailored for developers in Rwanda, alongside user-friendly integration and comprehensive software development services.',
+            founded:2022,
+            contact:'irdestin2@gmail.com',
+            team:'Iraguha Destin',
+            category: 'Software Development',logo: require('../src/assets/detLogo/kuza.svg'),
+            link:'https://quarksgroup.rw/'
+
+        },
+        {   name: 'Quarks Group',
+            description:'QUARKS GROUP Ltd is a Rwandan based software company that designs, develops and scales innovative mobile, web and desktop tech solutions that continuously propel its clients in the digital future.\n\nWe provide expedited payment gateway solutions tailored for developers in Rwanda, alongside user-friendly integration and comprehensive software development services.',
+            founded:2022,
+            contact:'irdestin2@gmail.com',
+            team:'Iraguha Destin',
+            category: 'Software Development',logo: require('../src/assets/detLogo/kuza.svg'),
+            link:'https://quarksgroup.rw/'
+
+        },
+        {   name: 'Dope',
+            description:'Dope Initiatives educate on Sexual and reproductive health using a game-based online quiz',
+            founded:2023,
+            contact:'+250789294922',
+            team:'Gaelle Abi Gisubizo',
+            category: 'Health',logo: require('../src/assets/detLogo/dope.svg'),
+            link:'https://www.dopeinitiatives.rw/'
+
+        },
+        {   name: 'Tekafrica ltd',
+            description:'TEKAFRIKA is a cutting-edge IT company headquartered in Rwanda, is steadfast in its mission to revolutionize the tech landscape in Africa, with our hallmark creation, Fana. FOOTBALL, a dynamic fantasy football game, not only unites fervent sports enthusiasts but also stands as a catalyst for the advancement of African football, promising an immersive and exhilarating experience that will elevate the continents football ecosystem',
+            founded:2016,
+            contact:'yannvladimirbajeneza@gmail.com',
+            team:'Yann Vladimir Bajeneza',
+            category: 'Gaming, Sports and entertainment',logo: require('../src/assets/detLogo/fana.svg'),
+            link:'https://fana.football/'
+
+        },
+        {   name: 'Agrinet Rwanda Ltd',
+            description:'Our company, AGRINET RWANDA Ltd, specializes in developing and deploying agricultural drones for precision spraying of pesticides, insecticides, and liquid fertilizers, revolutionizing pest control and optimizing farming practices, it is also equipped with spectral cameras to enhance pest control, disease detection, and crop monitoring for large scale farms',
+            founded:'--',
+            contact:'dukespatient@gmail.com',
+            team:'DUKESHIMANA Patient',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/Agrinet.svg'),
+            link:'https://x.com/AgrinetRwanda'
+
+        },
+        {   name: 'Splendid More',
+            description:'Splendid and more is a 3D visualization firm that focuses on delivering virtual reality architectural experiences and 3D rendering services.Our team creates virtual property experiences. 3D, AR, and VR for faster off-the-plan sales. From 3D visualization to project marketing, and real estate development. Together, we create innovative solutions customized to each clients unique needs.\n\nWe utilize our vertically integrated ecosystem of services for seamless project, Timeline, and budget management. We create marketing collaterals and creative assets guided by our unique creative process and collective industry insights to ensure targeted audience capture and appeal.',
+            founded:'--',
+            contact:'charles@splendidandmore.com',
+            team:'Charles Nshimiyimana',
+            category: 'Real Estate',logo: require('../src/assets/detLogo/sm.svg'),
+            link:'https://splendidandmore.com/'
+
         },
 
 

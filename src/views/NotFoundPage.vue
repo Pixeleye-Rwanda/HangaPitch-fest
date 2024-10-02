@@ -5,7 +5,7 @@
         <div class="md:mt-12 flex items-center justify-center">
             <div class="w-full md:max-w-2xl space-y-8">
                 <div>
-                    <p class="text-[270px] leading-tight font-rockinsoda text-tangerine text-center">404</p>
+                    <p class="text-[96px] md:text-[270px] leading-tight font-rockinsoda text-tangerine text-center">404</p>
                 </div>
                 <div>
                     <p class="text-gray-600 font-gramatika text-lg md:text-md text-center uppercase font-medium">Ooop!
