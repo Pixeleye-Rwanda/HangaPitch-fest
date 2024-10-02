@@ -164,7 +164,7 @@ export default{
 
                     //startups 2023....................
                     { name: 'Abasare', category: 'Other', year: 2023, logo: require('../assets/2023/abasare.svg') },
-                    { name: 'Agri Nest', category: 'Agriculture', year: 2023, logo: require('../assets/2023/agri-nest.svg') },
+                    { name: 'Agrinet Rwanda Ltd', category: 'Agriculture', year: 2023, logo: require('../assets/2023/agri-nest.svg') },
                     { name: 'Agri-Research Unguka', category: 'Agriculture', year: 2023, logo: require('../assets/2023/agriresearch-unguka.svg') },
                     { name: 'Agrithink Tank', category: 'Agriculture', year: 2023, logo: require('../assets/2023/agrithink-tank.svg') },
                     { name: 'Beyi Group', category: 'Other', year: 2023, logo: require('../assets/2023/beyi-group.svg') },
@@ -188,10 +188,10 @@ export default{
                     { name: 'Jenga Mo', category: 'Other', year: 2023, logo: require('../assets/2023/jenga-mo.svg') },
                     { name: 'Kaaz App', category: 'Other', year: 2023, logo: require('../assets/2023/kaaz-app.svg') },
                     { name: 'Kivu Health', category: 'Health', year: 2023, logo: require('../assets/2023/kivu-health.svg') },
-                    { name: 'Kuza', category: 'Other', year: 2023, logo: require('../assets/2023/kuza.svg') },
+                    { name: 'Kuza Africa', category: 'Other', year: 2023, logo: require('../assets/2023/kuza.svg') },
                     { name: 'Lin Idea', category: 'Fintech', year: 2023, logo: require('../assets/2023/linidea.svg') },
                     { name: 'Loopa', category: 'Agriculture', year: 2023, logo: require('../assets/2023/loopa.svg') },
-                    { name: 'Medixr', category: 'Education', year: 2023, logo: require('../assets/2023/medixr.svg') },
+                    { name: 'Medixr', category: 'Health', year: 2023, logo: require('../assets/2023/medixr.svg') },
                     { name: 'Mizero Care', category: 'Health', year: 2023, logo: require('../assets/2023/mizero-care.svg') },
                     { name: 'My Kibo', category: 'Agriculture', year: 2023, logo: require('../assets/2023/my-kibo.svg') },
                     { name: 'Opina', category: 'Agriculture', year: 2023, logo: require('../assets/2023/opina.svg') },

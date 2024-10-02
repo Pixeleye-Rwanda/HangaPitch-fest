@@ -531,6 +531,123 @@
             link:''
 
         },
+        {   name: 'Farmoja',
+            description:'Farmoja uses IoT and embedded systems to help farmers collect real-time soil data such as soil moisture content and temperature, control irrigation systems, and apply precision farming.\n\n Farmoja leverages the data collected to provide recommendations and insights to farmers on the good practices they need to make in their farms to increase the quality and quantity of their crop yield.',
+            founded:2022,
+            contact:'bruce.mutangana@farmoja.rw',
+            team:'Bruce Mutangana' ,
+            category: 'Agriculture',logo: require('../src/assets/detLogo/digitalhealth-line.svg'),
+            link:'https://www.linkedin.com/company/farmoja/about/'
+
+        },
+        {   name: 'Abasare',
+            description:'Abasare App is a trusted on-demand driving solution. With Abasare App, you can easily connect with experienced and trained drivers who will drive your car safely and responsibly, taking you wherever you need to go.\n\n Say goodbye to worries, drunk driving and unnecessary accidents while providing job opportunities for drivers with valid permits. – our reliable drivers ensure your safety while you relax or focus on other tasks.',
+            founded:2022,
+            contact:'gustavemurenzi@gmail.com',
+            team:'Gustave Murenzi',
+            category: 'Transport',logo: require('../src/assets/detLogo/abasare.svg'),
+            link:'https://www.linkedin.com/in/abasare-11b7b0292/?originalSubdomain=rw'
+
+        },
+        {   name: 'Medixr',
+            description:'Through innovative VR technology, MediXR improves healthcare education by offering an immersive and interactive platform for medical training.',
+            founded:2022,
+            contact:'wendy.medixr@gmail.com',
+            team:'Wendy Ornella',
+            category: 'Health',logo: require('../src/assets/detLogo/medixr.svg'),
+            link:'https://www.medixr.org/'
+
+        },
+        {   name: 'Eazi plug',
+            description:'Eaziplug is a comprehensive city exploration platform integrated with a booking, ordering and payment system that seamlessly connects users with businesses(hotels, restaurants, gyms, spas, etc.), attractions, and events, enhancing the local experience for residents and tourists alike.',
+            founded:2022,
+            contact:'rosekalera@gmail.com',
+            team:'Rose Kalera',
+            category: 'Hospitality',logo: require('../src/assets/detLogo/eaziplug.svg'),
+            link:'https://www.eaziplug.io/'
+
+        },
+        {   name: 'Opina',
+            description:'Opina Ltd are an agricultural focused tech and investment company.',
+            founded:2019,
+            contact:'christianscaleup@gmail.com',
+            team:'Christian Rurangwa',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/Opina.svg'),
+            link:'https://www.eaziplug.io/'
+
+        },
+        {   name: 'Lin Idea',
+            description:'LinIdea makes it easy to collect, analyze, and visualize your data, so you can make informed decisions that lead to growth and profitability',
+            founded:2021,
+            contact:'+25078920777',
+            team:'Niyibizi Hirwa',
+            category: 'Fintech',logo: require('../src/assets/detLogo/linidea.svg'),
+            link:'https://www.linkedin.com/company/linidea/about/'
+
+        },
+        {   name: 'Kuza Africa',
+            description:'Kuza Africa is a design and garment production hub serving as an end-to-end solution for innovators in the fashion industry in Rwanda.',
+            founded:2022,
+            contact:'kuzafrica@gmail.com',
+            team:'Laurin Mungai',
+            category: 'Fashion',logo: require('../src/assets/detLogo/kuza.svg'),
+            link:'https://kuzafrica.com/'
+
+        },
+        {   name: 'Quarks Group',
+            description:'QUARKS GROUP Ltd is a Rwandan based software company that designs, develops and scales innovative mobile, web and desktop tech solutions that continuously propel its clients in the digital future.\n\nWe provide expedited payment gateway solutions tailored for developers in Rwanda, alongside user-friendly integration and comprehensive software development services.',
+            founded:2022,
+            contact:'irdestin2@gmail.com',
+            team:'Iraguha Destin',
+            category: 'Software Development',logo: require('../src/assets/detLogo/kuza.svg'),
+            link:'https://quarksgroup.rw/'
+
+        },
+        {   name: 'Quarks Group',
+            description:'QUARKS GROUP Ltd is a Rwandan based software company that designs, develops and scales innovative mobile, web and desktop tech solutions that continuously propel its clients in the digital future.\n\nWe provide expedited payment gateway solutions tailored for developers in Rwanda, alongside user-friendly integration and comprehensive software development services.',
+            founded:2022,
+            contact:'irdestin2@gmail.com',
+            team:'Iraguha Destin',
+            category: 'Software Development',logo: require('../src/assets/detLogo/kuza.svg'),
+            link:'https://quarksgroup.rw/'
+
+        },
+        {   name: 'Dope',
+            description:'Dope Initiatives educate on Sexual and reproductive health using a game-based online quiz',
+            founded:2023,
+            contact:'+250789294922',
+            team:'Gaelle Abi Gisubizo',
+            category: 'Health',logo: require('../src/assets/detLogo/dope.svg'),
+            link:'https://www.dopeinitiatives.rw/'
+
+        },
+        {   name: 'Tekafrica ltd',
+            description:'TEKAFRIKA is a cutting-edge IT company headquartered in Rwanda, is steadfast in its mission to revolutionize the tech landscape in Africa, with our hallmark creation, Fana. FOOTBALL, a dynamic fantasy football game, not only unites fervent sports enthusiasts but also stands as a catalyst for the advancement of African football, promising an immersive and exhilarating experience that will elevate the continents football ecosystem',
+            founded:2016,
+            contact:'yannvladimirbajeneza@gmail.com',
+            team:'Yann Vladimir Bajeneza',
+            category: 'Gaming, Sports and entertainment',logo: require('../src/assets/detLogo/fana.svg'),
+            link:'https://fana.football/'
+
+        },
+        {   name: 'Agrinet Rwanda Ltd',
+            description:'Our company, AGRINET RWANDA Ltd, specializes in developing and deploying agricultural drones for precision spraying of pesticides, insecticides, and liquid fertilizers, revolutionizing pest control and optimizing farming practices, it is also equipped with spectral cameras to enhance pest control, disease detection, and crop monitoring for large scale farms',
+            founded:'--',
+            contact:'dukespatient@gmail.com',
+            team:'DUKESHIMANA Patient',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/Agrinet.svg'),
+            link:'https://x.com/AgrinetRwanda'
+
+        },
+        {   name: 'Splendid More',
+            description:'Splendid and more is a 3D visualization firm that focuses on delivering virtual reality architectural experiences and 3D rendering services.Our team creates virtual property experiences. 3D, AR, and VR for faster off-the-plan sales. From 3D visualization to project marketing, and real estate development. Together, we create innovative solutions customized to each clients unique needs.\n\nWe utilize our vertically integrated ecosystem of services for seamless project, Timeline, and budget management. We create marketing collaterals and creative assets guided by our unique creative process and collective industry insights to ensure targeted audience capture and appeal.',
+            founded:'--',
+            contact:'charles@splendidandmore.com',
+            team:'Charles Nshimiyimana',
+            category: 'Real Estate',logo: require('../src/assets/detLogo/sm.svg'),
+            link:'https://splendidandmore.com/'
+
+        },
 
 
 
