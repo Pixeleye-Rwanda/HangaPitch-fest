@@ -52,25 +52,25 @@
     </transition>
 
     <!-- Navbar for Larger Screens -->
-    <div class="hidden md:flex items-center p-4 bg-transparent mt-6">
+    <div  :class="navBg ? 'bg-white hidden md:flex items-center p-6 bg-white ' : 'bg-transparent hidden md:flex items-center p-6 bg-transparent '" >
       <router-link to="/" class="ml-16">
-        <img src="../assets/logo.svg" class="h-8 md:h-10" alt="Logo">
+        <img :src="navBg ? whiteLogo : blackLogo" class="h-8 md:h-10" alt="Logo">
       </router-link>
 
       <ul class="flex mx-auto items-center space-x-6">
-        <li class="text-white font-gramatika font-semibold underline-animation">
+        <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'" >
           <router-link to="/about-us">About Us</router-link>
         </li>
-        <li class="text-white font-gramatika font-semibold underline-animation">
+        <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <router-link to="/network">Our Network</router-link>
         </li>
-        <li class="text-white font-gramatika font-semibold underline-animation">
+        <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <router-link to="/pitch"> Pitch at Hanga </router-link>
         </li>
 
 
         <div class=" relative flex items-center">
-          <button id="dropdownInit" @click="toogleDropdownInit" class="text-white font-gramatika font-semibold">
+          <button id="dropdownInit" @click="toogleNavBg"  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
 
             Initiative <i class="fa fa-chevron-down" aria-hidden="true"></i>
 
@@ -84,19 +84,19 @@
         </div>
 
 
-        <li class="text-white font-gramatika font-semibold underline-animation">
+        <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <router-link to="/timeline"> Timeline</router-link>
         </li>
       </ul>
 
       <button
-        class="mr-4 p-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
+        :class="navBg?'mr-4 p-4 px-6 font-gramatika bg-tangerine text-white font-semibold hover:bg-black hover:text-white' :'mr-4 p-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white'">
         Apply Now
       </button>
 
       <div class="relative inline-block mr-24 text-left">
         <button id="dropdownButton" @click="toggleDropdown"
-          class="p-2 px-4 border font-gramatika text-white font-semibold hover:bg-tangerine hover:text-white">
+          :class="navBg ? 'p-2 px-4 border border-tangerine font-gramatika text-tangerine font-semibold hover:bg-tangerine hover:text-white':'p-2 px-4 border font-gramatika text-white font-semibold hover:bg-tangerine hover:text-white'">
           <div class="flex items-center">
             <p>EN</p>
             <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -110,7 +110,10 @@
           <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">French</a></li>
         </ul>
       </div>
+      <hr :class="navBg?'w-auto border-t-10 border-tangerine ':'hidden'">
+      <div class=""></div>
     </div>
+  
   </div>
 </template>
 
@@ -121,7 +124,10 @@ export default {
     return {
       isDropdownVisible: false,
       isMenuOpen: false,
-      isDropdownInitVisible: false
+      isDropdownInitVisible: false,
+      whiteLogo: require('@/assets/hanga.svg'), 
+      blackLogo: require('@/assets/logo.svg'), 
+      navBg: false,
     };
   },
   methods: {
@@ -131,6 +137,11 @@ export default {
 
     toogleDropdownInit() {
       this.isDropdownInitVisible = !this.isDropdownInitVisible;
+    },
+
+    toogleNavBg(){
+    this.navBg =! this.navBg
+
     },
 
     toggleMenu() {
