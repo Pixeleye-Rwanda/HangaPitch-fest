@@ -346,6 +346,166 @@
             link:'https://innovahyper.com/'
 
         },
+        { name: 'Hinia',
+            description:'HiNia creates a safe and practical environment to help parents raise financially responsible children who are well-equipped to excel in the realm of personal finance.',
+            founded:2022,
+            contact:'nkurayijah@gmail.com',
+            team:'Jean Hubert, Nkurayija Ishimwe',
+            category: 'Finance' ,logo: require('../src/assets/detLogo/hinia.svg'),
+            link:'https://linktr.ee/hinia_app'
+
+        }, 
+        
+        {   name: 'Jenga Mo',
+            description:'Jenga Mo Ltd enable lower and middle income earners in Rwanda to own or rent decent homes by building quality and affordable houses that can be owned or rented affordably.',
+            founded:2022,
+            contact:'hello@jengamo.com',
+            team:'Bisa Hubert',
+            category: 'Construction and real estate',logo: require('../src/assets/detLogo/Jenga-mo.svg'),
+            link:'https://www.linkedin.com/company/jenga-mo/about/'
+
+        },
+
+        {   name: 'Payws ltd',
+            description:'My company PayWS Ltd provides a cross-border multicurrency wallet that helps travelers across African countries, move with their local currency and cash out locally in any African country via a WhatsApp chatbot at low fees.',
+            founded:2023,
+            contact:'akah@aftawallet.com',
+            team:'Harvey Akah',
+            category: 'Finance',logo: require('../src/assets/detLogo/PayWS-Ltd.svg'),
+            link:'https://www.f6s.com/company/payws-ltd#about'
+
+        },
+        {   name: 'Technika',
+            description:'Techinika company provides free and accessible technology education through an online platform while offering personalized training services to empower individuals and transform communities.',
+            founded:2023,
+            contact:'songachillethe1her@gmail.com',
+            team:'Cishahayo Songa Achille',
+            category: 'Education',logo: require('../src/assets/detLogo/technika.svg'),
+            link:'https://techinika.co.rw/'
+
+        },
+        {   name: 'Dropawave',
+            description:'Do not Drink and Drive, Dropawave is an app that users get and request a driver to get them to destination in their own vehicle when sipped alcohol.',
+            founded:2022,
+            contact:'serge@dropawave.com',
+            team:'Victor Ngabo',
+            category: 'Mobility and Logistics',logo: require('../src/assets/detLogo/Dropawave.svg'),
+            link:''
+
+        },
+        {   name: 'Tubimenye',
+            description:'Tubimenye Medi hub is an online hub that is founded by health care professionals with vision to promote high school students health though provision of essential health care,This is done by addressing issues with mental and reproductive health as well as other diseases through the use of smart classrooms and phones.',
+            founded:2022,
+            contact:'mutarambirwarenauvat@gmail.com',
+            team:'MUTARAMBIRWA Renauvat',
+            category: 'Health',logo: require('../src/assets/detLogo/tubimenye.svg'),
+            link:'https://tubimenye.rw/'
+
+        },
+        {   name: 'Yarn',
+            description:'The primary focus of Yarn Ltd is the development, manufacturing, and deployment of cutting-edge agricultural automation machines. These machines are designed to improve farming practices in Rwanda by automating tasks such as data collection, weed removal, and precise pesticide spraying.\n\n Our goal is to enhance agricultural efficiency and crop yields while promoting sustainable and technology-driven farming methods within the region.',
+            founded:2022,
+            contact:'yarnltd1@gmail.com',
+            team:'Nadine Usanase',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/Yarn-ltd.svg'),
+            link:''
+
+        },
+        {   name: 'Urungano',
+            description:'Urungano Initiative provides digitalised ,reliable and evidence-based sexual and reproductive health information and services to adolescents including those living with disabilities.',
+            founded:2022,
+            contact:'urunganoinitiative@gmail.com',
+            team:'NIYOYITA Bonaventure',
+            category: 'Health',logo: require('../src/assets/detLogo/Urungano-Initiative.svg'),
+            link:'https://urungano.rw/home/'
+
+        },
+
+        {   name: 'Tuzaride',
+            description:'TUZAride is an on demand personal driver hailing platform. Uniquely positioned to serve both business-to-business(B2B) and business-to-customer needs(B2C).',
+            founded:2023,
+            contact:'mary@tuzaride.com',
+            team:'Mary Bakamurera',
+            category: 'Mobility',logo: require('../src/assets/detLogo/tuzaride.svg'),
+            link:'https://www.tuzaride.com/'
+
+        },
+        {   name: 'Kaaz app',
+            description:'We connect low income professional skilled workers to potential clients',
+            founded:2022,
+            contact:'charl.mutabazi@gmail.com',
+            team:'Mutabazi Charles',
+            category: 'HR',logo: require('../src/assets/detLogo/Kaaz-app.svg'),
+            link:'https://play.google.com/store/apps/details?id=com.mootalabs.kaaz&hl=en_US&pli=1'
+
+        },
+        {   name: 'Bunga Bunga',
+            description:'We provide ploughing services with tractors and tractor operators.',
+            founded:2019,
+            contact:'gates.matthew@gmail.com',
+            team:'Mathew Gates',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/bungabunga.svg'),
+            link:'http://ubutaka.co/'
+
+        },
+        {   name: 'Smart Class',
+            description:'SmartClass Ltd company offers an e-learning platform that facilitates collaborative learning among high school students from various schools.',
+            founded:2022,
+            contact:'niyabdul18@gmail.com',
+            team:'Abdulrahman Niyonizeye',
+            category: 'Education',logo: require('../src/assets/detLogo/Smart-class.svg'),
+            link:'https://www.smartclass.rw/'
+
+        },
+        {   name: 'Iraady',
+            description:'Iraady Ltd is a platform that enables non-profits and social enterprises to access the latest technologies on a grant basis or exclusive discounts, hence enabling productivity and amplifying their impact while Transforming lives in society',
+            founded:2022,
+            contact:'irankundaadolphe@gmail.com',
+            team:'Irankunda Adolphe',
+            category: 'Social Impact',logo: require('../src/assets/detLogo/iraady.svg'),
+            link:'https://iraady.com/'
+
+        },
+        {   name: 'Bountiful Farmers',
+            description:'Bountiful Farmers is an Agritech company that produces Irish potato seeds using sand-ponic system in a screenhouse.',
+            founded:2022,
+            contact:'bountifulfarmers@gmail.com',
+            team:'Rugero Stanley,Uwase Christella',
+            category: 'Social Impact',logo: require('../src/assets/detLogo/bounty.svg'),
+            link:'https://www.linkedin.com/in/bountiful-farmers-13bbb8289/?originalSubdomain=rw'
+
+        },
+
+        {   name: 'Loopa',
+            description:'In a world where a looped food system is critical for the circular economy, Loopa is leveraging IoT technology to optimize the transformation of food waste and other agricultural byproducts into nutrients-rich organic fertilizer, with an end goal to help farmers transition from inorganic to organic fertilizer, affordably yet with more yield.',
+            founded:2023,
+            contact:'cynthia.umutoniwabo@jasirifellow.org',
+            team:'Cynthia Umutoniwabo',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/loopa.svg'),
+            link:'https://www.linkedin.com/company/loopafrica/about/'
+
+        },
+        {   name: 'Care Connect',
+            description:'Care Connect is a non-medical healthtech company with a digital platform dedicated to improving the healing process of patients by digitally linking skilled nurses with patients. It leverages technology to offer efficient caregiving services to in-patients and out-patients.',
+            founded:2022,
+            contact:'abajanet01@gmail.com',
+            team:'Abatesi Janet',
+            category: 'Health',logo: require('../src/assets/detLogo/care-connect.svg'),
+            link:'https://careconnect.rw/'
+
+        },
+        {   name: 'Mizero Care',
+            description:'Mizero Care Ltd connects individuals in need with mental health professionals to enhance a global tele-mental health quality service delivery to fight the stigmatization of mental health disorders and promote mental health literacy by leveraging technology.',
+            founded:2022,
+            contact:'presmizerocare@gmail.com',
+            team:'Irene Mizero',
+            category: 'Health',logo: require('../src/assets/detLogo/mizero.svg'),
+            link:'https://mizerocare.org/'
+
+        },
+
+
+
 
       
 
