@@ -648,6 +648,177 @@
             link:'https://splendidandmore.com/'
 
         },
+        {   name: 'Augmented Future',
+            description:'Augmented reality SaaS platform and products helping publishers unlock revenue from textbooks and help students to learn.',
+            founded:'2020',
+            contact:'+250787883861',
+            team:'Izabayo Jean Yves',
+            category: 'Gaming',logo: require('../src/assets/detLogo/Augumented-future.svg'),
+            link:'http://www.augmented-future.com/'
+
+        },
+        {   name: 'Bag',
+            description:'BAG is an innovative online platform designed to translate employer processes into bite-sized cases, allowing students to experience real-life scenarios and balance their theoretical knowledge with practical experience.\n\n By providing access to real-world challenges faced by employers, BAG helps students develop critical skills, enhance their employability, and gain a deeper understanding of their chosen fields. Their mission is to bridge the gap between academia and industry, ensuring students are better prepared for the workforce through hands-on learning opportunities.',
+            founded:'2021',
+            contact:'+250781282604',
+            team:'Yussouf Ntwali',
+            category: 'Software Development',logo: require('../src/assets/detLogo/BAG.svg'),
+            link:'https://app.bag.work/'
+
+        },
+        {   name: 'Bookly Africa',
+            description:'Bookly Africa is Rwanda’s and Africa’s first one-stop-shop for all tourism and hospitality services. Our digitalized booking engine offers exceptional value to business operators by increasing web traffic and global reach, while providing travelers with the best deals, widest choices, and unbeatable prices. Additionally, our platform creates short- and long-term employment opportunities for I-Workers, enhancing their skills and connecting them with a global market.',
+            founded:'2020',
+            contact:'info@bookly.africa',
+            team:'Niyigena Amina',
+            category: 'Hospitality',logo: require('../src/assets/detLogo/bookly.svg'),
+            link:'https://bookly.africa/'
+
+        },
+        {   name: 'Doctor-Ai',
+            description:'Doctor Ai is a cutting-edge startup offering a comprehensive suite of digital health solutions. Our platform provides a range of services, including Tele-Consultation, Tele-Pharmacy, AI-Assisted Models, Tele-Screening, Tele-Health Education, Pill-Reminder, Healthy Maps, and Medical Notes. \n\n Doctor Ai aims to make healthcare more accessible, efficient, and personalized by leveraging advanced technology. Whether you need a virtual consultation, medication management, or health education, Doctor Ai is there to support your health and well-being with innovative solutions.',
+            founded:'2019',
+            contact:'+250780348088',
+            team:'Prince Rebero, \n\n Kevin Muragijimana',
+            category: 'Health',logo: require('../src/assets/detLogo/doctor-ai.svg'),
+            link:'https://doctoraicompany.com/'
+
+        },
+        {   name: 'Enlightenment-Lab',
+            description:'ENLIGNEMENT Labs is a pioneering startup dedicated to enhancing kitchen safety through advanced technology. Their innovative circuits detect gas leaks, automatically close gas valves, activate exhaust fans, control kitchen lighting, and send alerts via email and SMS. \n\n Additionally, they monitor kitchen temperature and gas levels, activating cooling systems and providing real-time data to the cloud for remote access and further analysis. With ENLIGNEMENT Labs, kitchens become safer and smarter, preventing accidents and ensuring peace of mind.',
+            founded:'2019',
+            contact:'+250786135953',
+            team:'Abayo Himbaza Enock',
+            category: 'Software Development',logo: require('../src/assets/detLogo/Enlightenment-lab.svg'),
+            link:'https://www.enlabs.rw/'
+
+        },
+        {   name: 'Ewawe',
+            description:'Ewawe is an innovative analytical tool designed to help property owners boost their revenue and make informed decisions. Our platform offers powerful automation tools that efficiently handle recurring tasks, allowing you to focus on more strategic aspects of your business.\n\n With their integrated, best-in-class automated accounting systems, repetitive tasks are eliminated, ensuring your business runs smoothly and efficiently. Our revenue management tools are specifically crafted to help you do less and earn more, providing you with the insights needed to make well-informed decisions.',
+            founded:'2017',
+            contact:'info@ewawe.com',
+            team:'Irasubiza Patrick',
+            category: 'Financial Services',logo: require('../src/assets/detLogo/ewawe.svg'),
+            link:'https://ewawe.com/'
+
+        },
+        {   name: 'Explore',
+            description:'Explore.rw is a dynamic platform dedicated to cultural education and the promotion of Rwandan products. It offers a range of services, including comprehensive Kinyarwanda online courses with multimedia content, a phrasebook app featuring games, flashcards, and quizzes in multiple languages, and personalized coaching by cultural facilitators.\n\n In addition, Explore.rw will feature a curated selection of products, including books by Rwandan authors, traditional arts and crafts, and other cultural, artistic, and handmade items',
+            founded:'2021',
+            contact:'hello@explore.rw',
+            team:'Fredy Bazatsinda',
+            category: 'Education',logo: require('../src/assets/detLogo/Explore.svg'),
+            link:'https://kinyarwanda.explore.rw/'
+
+        },
+        {   name: 'Go Virtual',
+            description:'GO Virtual is a cutting-edge platform designed for entrepreneurs, photographers, real estate agents, brokers, car dealers, and sales teams to create world-class 360° virtual tours quickly and effectively. Their robust solution enables clients to add, embed, and publish virtual tours directly to their websites or blogs, and present them across various devices including VR headsets, mobiles, tablets, and PCs.\n\n With over 20 advanced features such as room preloading, navigation markers, points of interest (POIs), and more, GO Virtual enhances user engagement and interactivity. Their platform also supports passcode protection, advertisements, live sessions, web VR, analytics, and reports, ensuring a comprehensive virtual tour experience.',
+            founded:'2015',
+            contact:'info@dsvdigital.com',
+            team:'Cheruby B., Karla A.',
+            category: 'Software Development',logo: require('../src/assets/detLogo/Govitual-reality.svg'),
+            link:'https://govirtuals.com/contact-us/'
+
+        },
+        {   name: 'Afia Pharma',
+            description:'Afiapharma is a pharmaceutical e-commerce platform dedicated to providing patients with affordable medications right at their doorstep. With just a few clicks, customers can enjoy a 20% discount on their prescriptions, ensuring both convenience and savings.\n\n Recognized as an Online Pharmacy by the Rwanda FDA, Afiapharma is on a mission to make quality medications affordable, easily accessible, and available to billions of people across Africa. Join us in our commitment to improving healthcare access and affordability for everyone.',
+            founded:'2020',
+            contact:'info@afiapharma.com',
+            team:'Bucyana Patrice',
+            category: 'Health',logo: require('../src/assets/detLogo/Afia.svg'),
+            link:'https://www.afiapharma.com/'
+
+        },
+        {   name: 'Afriduino',
+            description:'Afriduino is revolutionizing smart-home technology in Rwanda by addressing the unique needs of Rwandan households. Recognizing that many homes lack traditional internet connectivity but have access to smartphones, Afriduino has developed innovative smart light bulbs that can be controlled without a tethered connection.\n\n With a smartphone in hand, users can effortlessly turn their lights on or off from the comfort of their bed or couch. Their  smart light bulbs also feature dimming capabilities, allowing users to adjust the brightness to their preference, thereby enhancing comfort and reducing electricity bills. Afriduino is committed to making smart-home technology accessible and beneficial for every Rwandan household.',
+            founded:'2016',
+            contact:'info@afriduino.io',
+            team:'Diane Cyuzuzo',
+            category: 'Electronics',logo: require('../src/assets/detLogo/Afroduino.svg'),
+            link:'https://afriduino.io/'
+
+        },
+        {   name: 'Greenalytic',
+            description:'Greenalytics Ltd is at the forefront of environmental innovation with the Greenvehicle system. Their advanced electronic devices and software platform are designed to monitor and control vehicle emission gases, specifically exhaust emissions. \n\n By integrating cutting-edge technology, they help reduce environmental impact and promote cleaner, more efficient vehicle operations.',
+            founded:'2022',
+            contact:'+250 3 8376 6284',
+            team:'Emmanuel TUYIZERE, Isidole NIYIGIRIMPUHWE',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/Greenalytic.svg'),
+            link:'https://www.greenalytic.rw/index.html'
+
+        },
+        {   name: 'Haraka Meds',
+            description:'HaraMeds is on a mission to build a digital platform that democratizes access to pharmaceutical products across Africa. By leveraging technology, HaraMeds aims to make quality medications more affordable, easily accessible, and widely available. \n\n The  platform connects patients, healthcare providers, and suppliers, ensuring seamless and efficient access to essential medicines.',
+            founded:'2018',
+            contact:'+250 785 187 855',
+            team:'Rene U. Ishimwe, Olivier Habimana',
+            category: 'Health',logo: require('../src/assets/detLogo/Haraka.svg'),
+            link:'https://harakameds.com/'
+
+        },
+        {   name: 'Hatch-Plus',
+            description:'Smart Eggs Incubator is at the forefront of poultry innovation with the advanced digital machine designed to incubate and hatch up to 30,000 eggs into chicks within 21 days. Their pre-programmed system ensures precise control and optimal conditions for successful hatching . Smart Eggs Incubator is set to transform poultry farming with efficiency and scale.',
+            founded:'2018',
+            contact:'0785 138 342',
+            team:'IMANI BORA',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/Hatch-plus.svg'),
+            link:'http://www.hatchplus.rw/'
+
+        },
+        {   name: 'Hview',
+            description:'Since 2015, we have provided premium software development services to over 10+ companies in  East Africa. We have completed a wide range of development projects in tourism, transport,  finance, entertainment, education, e-commerce and retail sectors.\n\n This industry experience, combined with our expertise in the latest technologies, enables us to  successfully adapt to our clients \n\n diverse needs and makes HviewTech Group the best choice for  software development.',
+            founded:'2015',
+            contact:'hviewtech.ltd@gmail.com',
+            team:'Mr.Patrice Nostalgie',
+            category: 'Software Development',logo: require('../src/assets/detLogo/Hview.svg'),
+            link:'https://hviewtech.com/'
+
+        },
+        {   name: 'Insightiv',
+            description:'Insightiv addresses the critical shortage of radiologists in Rwanda with its advanced teleradiology platform. Their solution enables remote diagnosis, AI-assisted triage, and precise anomaly detection, improving diagnostic efficiency and accuracy. Validated by local radiologists and supported by letters of intent from hospitals and interest from the Ministry of Health, Insightiv is poised to transform radiology services in Rwanda and beyond.',
+            founded:'2019',
+            contact:'+1-857-288-9534',
+            team:'Audace ',
+            category: 'Software Development',logo: require('../src/assets/detLogo/Insightiv.svg'),
+            link:'https://insightiv.ai/'
+
+        },
+        {   name: 'Ironji',
+            description:'Ironji leverages smart processes and advanced technology to enable traders, manufacturing industries, agribusinesses, and construction firms to move their goods seamlessly. By providing a network of professional drivers and a variety of reliable trucks, Ironji ensures efficient and dependable transportation solutions.\n\n The company is building a distributed platform that connects drivers and customers, predicts and optimizes trip prices using Machine Learning, and enables real-time monitoring of transport schedules. These innovative technologies and smart processes make Ironji s service unique and highly competitive in the market.',
+            founded:'2018',
+            contact:'ironji.sales@gmail.com',
+            team:'Mugabo Shyaka Cedric, Alexendre Nkurunziza',
+            category: 'Logistics',logo: require('../src/assets/detLogo/Ironji.svg'),
+            link:'https://www.ironji.com/'
+
+        },
+        {   name: 'Ishema',
+            description:'Our solution, COPA, is an innovative digital solution to free up cooperative to focus its efforts on important matters, such as  marketing, and to improve productivity for members. COPA also offer cooperative and members better prospects of securing  bank loans and contracts from big aggregators, since cooperative using COPA can easily show that they are reliable and  profitable.\n\n COPA, is a solution based on the automation and integration of cooperative societies. Post this automation and integration, it  provides consolidated reports. Functions are facilitated by core (centralized online real-time) management tools for the  primary cooperatives, federations, and confederations.',
+            founded:'-',
+            contact:'-',
+            team:'-',
+            category: 'Health',logo: require('../src/assets/detLogo/Ishema.svg'),
+            link:'-'
+
+        },
+        {   name: 'Ironji',
+            description:'Ironji leverages smart processes and advanced technology to enable traders, manufacturing industries, agribusinesses, and construction firms to move their goods seamlessly. By providing a network of professional drivers and a variety of reliable trucks, Ironji ensures efficient and dependable transportation solutions.\n\n The company is building a distributed platform that connects drivers and customers, predicts and optimizes trip prices using Machine Learning, and enables real-time monitoring of transport schedules. These innovative technologies and smart processes make Ironji s service unique and highly competitive in the market.',
+            founded:'2018',
+            contact:'ironji.sales@gmail.com',
+            team:'Mugabo Shyaka Cedric, Alexendre Nkurunziza',
+            category: 'Logistics',logo: require('../src/assets/detLogo/Ironji.svg'),
+            link:'https://www.ironji.com/'
+
+        },
+        {   name: 'Keya-Health',
+            description:'Keya Health is revolutionizing healthcare with the innovative approach to telehealth services. Through our online platform keya.rw, clients can easily arrange home-based medical consultations, health screenings, and nursing care services with our skilled clinicians.\n\n What sets Keya Health apart is our proactive approach—we do bt wait for people to become sick. Instead, they reach out to ensure disease prevention, early detection, and timely treatment, prioritizing the well-being and comfort of our clients.',
+            founded:'2023',
+            contact:'healthkeya@gmail.com',
+            team:'Welcome Olivier',
+            category: 'Health',logo: require('../src/assets/detLogo/keya.svg'),
+            link:'https://keya.rw/'
+
+        }
 
 
 

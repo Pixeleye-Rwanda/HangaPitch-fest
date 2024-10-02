@@ -46,15 +46,9 @@
         </div>
         </div>
 
-<<<<<<< HEAD
-        <div class="space-y-8 ">
-        <div class=" p-4 border border-descColor p-36 flex flex-shrink-0 h-[350px] ">
-            <img :src="startup.logo" class="h-60 w-60  -mt-16 object-contain ">
-=======
-        <div class="space-y-8 mt-32 ">
-        <div class=" p-4 border border-descColor p-36 flex flex-shrink-0 h-[350px] ">
+        <div class="space-y-8 mt-32">
+        <div class=" p-4 border border-descColor p-32 flex flex-shrink-0 h-[350px] ">
             <img :src="startup.logo" class="h-60 w-60 -mt-20 object-contain ">
->>>>>>> ef934defd8e9e9c3719acf2d727f7db5dac000f3
         </div>
         <div class="flex items-center justify-center ">
         <a :href="startup.link" target="_blank" class="font-gramatika text-white text-center border border-linkColor rounded-3xl p-2 px-4"> Visit website </a>
