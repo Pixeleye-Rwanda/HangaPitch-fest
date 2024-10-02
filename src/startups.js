@@ -3,7 +3,7 @@
 
        
 
-        // 2022 startups.................
+        //  startups descriptions.................
         { name: 'Mulika Farms',
             description:'At Mulika farms we are creating a direct and transparent channel for sourcing agricultural produce directly from the farmer to market traders.We strive \n\n to improve farmers living standards by shortening the supply chain so that every farmer receives a fair market value for their crops.We have registered over 3,000 farmers. \n\n Our farmers have a 13% higher income compared to those who have not begun working with us.We have 50 buyers in our portfolio. Our Market Buyers have been able to save an average of 11% compared to non-Mulika platform buyers.We have moved over 140 tons of produce totaling to about 62,000 USD in transactions in just over 9 months, mostly potatoes and livestock (pigs).',
              founded:'2002',
@@ -501,6 +501,34 @@
             team:'Irene Mizero',
             category: 'Health',logo: require('../src/assets/detLogo/mizero.svg'),
             link:'https://mizerocare.org/'
+
+        },
+
+        {   name: 'Agrithink Tank',
+            description:'Agrithink tank is addressing waste management and sustainable agricultural input by utilizing black soldier flies to create ONGERA Compost and IHAZE Feed supplement, supported by the IHURIRO Platform for waste collection and input distribution, ultimately enhancing agricultural productivity and improving farmers livelihoods.',
+            founded:2022,
+            contact:'karorerosylvestre5@gmail.com',
+            team:'Karorero Sylvestre',
+            category: 'Agriculture',logo: require('../src/assets/detLogo/agrithink.svg'),
+            link:''
+
+        },
+        {   name: 'Kivu Health',
+            description:'We link patients with therapist.',
+            founded:2022,
+            contact:'ruhumjustin@gmail.com',
+            team:'Justin Ruhumuriza',
+            category: 'Health',logo: require('../src/assets/detLogo/Kivu-health.svg'),
+            link:''
+
+        },
+        {   name: 'Digital health line',
+            description:'Digital Healthline Solution (DHS) is a comprehensive digital platform that empowers individuals living with non-communicable diseases (NCDs) to manage their health effectively. We offer personalized treatment plans, medication reminders, teleconsultation with healthcare professionals.\n\n DHS aims to enhance medication adherence, provide remote medical guidance and patient engagement, ultimately improving health outcomes and quality of life.',
+            founded:2021,
+            contact:'vanmaceineza@gmail.com',
+            team:'Vainqueur INEZA HABYARIMANA',
+            category: 'Health',logo: require('../src/assets/detLogo/digitalhealth-line.svg'),
+            link:''
 
         },
 
