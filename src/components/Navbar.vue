@@ -52,7 +52,7 @@
     </transition>
 
     <!-- Navbar for Larger Screens -->
-    <div  :class="navBg ? 'bg-white hidden md:flex items-center p-6 bg-navbg ' : 'bg-transparent hidden md:flex items-center p-6 bg-transparent '" >
+    <div  :class="navBg ? 'bg-navbg hidden md:flex items-center p-6 bg-navbg ' : 'bg-transparent hidden md:flex items-center p-6 bg-transparent '" >
       <router-link to="/" class="ml-16">
         <img :src="navBg ? whiteLogo : blackLogo" class="h-8 md:h-10" alt="Logo">
       </router-link>
