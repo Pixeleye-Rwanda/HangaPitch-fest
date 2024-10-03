@@ -9,6 +9,9 @@ import PitchHanga from "./views/PitchHanga.vue";
 import TimelinePage from "./views/TimelinePage.vue";
 import ContactUsPage from "./views/ContactUsPage.vue"; 
 import FilteredStarups from "./components/FilteredStarups.vue";
+import HangaHub from "./views/HangaHub.vue";
+import HangaAgritech from "./views/HangaAgritech.vue";
+import HangSrh from "./views/HangSrh.vue";
 
 import { createRouter,createWebHistory } from "vue-router";
 
@@ -78,7 +81,23 @@ const routes=[
         name:'ContactUsPage',
         component:ContactUsPage,
         path:'/contact'
-    }
+    },
+    {
+        name:'HangHub',
+        component:HangaHub,
+        path:'/hub'
+    },
+
+    {
+        name:'HangAgritech',
+        component:HangaAgritech,
+        path:'/agritech'
+    },
+    {
+        name:'HangSrh',
+        component:HangSrh,
+        path:'/srh'
+    },
 
 
 

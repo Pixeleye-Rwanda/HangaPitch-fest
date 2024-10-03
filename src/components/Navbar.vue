@@ -52,7 +52,7 @@
     </transition>
 
     <!-- Navbar for Larger Screens -->
-    <div  :class="navBg ? 'bg-white hidden md:flex items-center p-6 bg-white ' : 'bg-transparent hidden md:flex items-center p-6 bg-transparent '" >
+    <div  :class="navBg ? 'bg-white hidden md:flex items-center p-6 bg-navbg ' : 'bg-transparent hidden md:flex items-center p-6 bg-transparent '" >
       <router-link to="/" class="ml-16">
         <img :src="navBg ? whiteLogo : blackLogo" class="h-8 md:h-10" alt="Logo">
       </router-link>
@@ -87,16 +87,18 @@
         <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <router-link to="/timeline"> Timeline</router-link>
           <!-- Dropdown -->
-        <div v-if="navBg" class="absolute z-50 left-0 w-full bg-white mt-4 shadow-lg" >
+        <div v-if="navBg" class="absolute z-50 left-0 w-full bg-navbg mt-4 shadow-lg" >
         <hr class="w-auto border-gray-200 border-t-2 mt-8">
         <ul class="w-full flex ml-4 space-x-12">
           <div class="w-[70vh] p-4 mt-4 ">
             <div class="space-y-8">
               <p class="font-rockinsoda text-navy text-2xl">HANGA SEXUAL REPRODUCTIVE HEALTH</p>
               <p class="font-gramatika">Championing tech-enabled startups solving key issues in SRH.</p>
+              <router-link to="/srh">
               <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
                 Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button> 
+            </router-link>
             </div>
 
           </div>
@@ -106,9 +108,11 @@
             <div class="space-y-2">
               <p class="font-rockinsoda text-navy text-2xl">HANGA HUB</p>
               <p class="font-gramatika">Tech-enabled innovation & incubation hubs shaping digital employment in Rwanda, led by MINICT, The European Union (EU) and RISA.</p>
+              <router-link to="/hub">
               <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
                 Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button> 
+            </router-link>
             </div>
           </div>
           <div class="border-l-2 border-gray-200 h-auto"></div>
@@ -117,9 +121,11 @@
             <div class="space-y-8">
               <p class="font-rockinsoda text-navy text-2xl" >HANGA AGRITECH</p>
               <p class="font-gramatika">Driving financial and technical support to  technology enabled startups in agriculture.</p>
+              <router-link to="/agritech">
               <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
                 Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button> 
+            </router-link>
             </div>
           </div>
         </ul>
@@ -156,8 +162,10 @@
 </template>
 
 <script>
+
 export default {
   name: "NavBar",
+  
   data() {
     return {
       isDropdownVisible: false,

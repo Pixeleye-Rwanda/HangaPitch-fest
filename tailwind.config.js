@@ -26,7 +26,9 @@ module.exports = {
        linkColor: '#1F2A5B',
        darkGray: '#404040',
        newsClr:' #132060',
-       greenlime: '#E1FEF7'
+       greenlime: '#E1FEF7',
+       navbg:'#FFFBF9'
+
 
 
    
