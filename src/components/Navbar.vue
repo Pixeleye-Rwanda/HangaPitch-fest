@@ -89,7 +89,7 @@
           <!-- Dropdown -->
         <div v-if="navBg" class="absolute z-50 left-0 w-full bg-navbg mt-4 shadow-lg" >
         <hr class="w-auto border-gray-200 border-t-2 mt-8">
-        <ul class="w-full flex ml-4 space-x-12">
+        <ul class="w-full flex ml-24 space-x-12">
           <div class="w-[70vh] p-4 mt-4 ">
             <div class="space-y-10">
               <p class="font-rockinsoda text-navy text-2xl">HANGA SEXUAL REPRODUCTIVE HEALTH</p>

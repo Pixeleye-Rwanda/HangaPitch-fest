@@ -1,9 +1,13 @@
 <template>
-<h1>hanga srh</h1>
+<NavInit/>
 </template>
 <script>
+import NavInit from '@/components/NavInit.vue';
 export default{
-    name:"HangaSrh"
+    name:"HangaSrh",
+    components:{
+        NavInit
+    }
 }
 </script>
 
