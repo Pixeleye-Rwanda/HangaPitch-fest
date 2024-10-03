@@ -86,11 +86,49 @@
 
         <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <router-link to="/timeline"> Timeline</router-link>
+          <!-- Dropdown -->
+        <div v-if="navBg" class="absolute z-50 left-0 w-full bg-white mt-4 shadow-lg" >
+        <hr class="w-auto border-gray-200 border-t-2 mt-8">
+        <ul class="w-full flex ml-4 space-x-12">
+          <div class="w-[70vh] p-4 mt-4 ">
+            <div class="space-y-8">
+              <p class="font-rockinsoda text-navy text-2xl">HANGA SEXUAL REPRODUCTIVE HEALTH</p>
+              <p class="font-gramatika">Championing tech-enabled startups solving key issues in SRH.</p>
+              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+                Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button> 
+            </div>
+
+          </div>
+          <div class="border-l-2 border-gray-200 h-auto"></div>
+
+          <div class="w-[70vh] p-4 mt-4">
+            <div class="space-y-2">
+              <p class="font-rockinsoda text-navy text-2xl">HANGA HUB</p>
+              <p class="font-gramatika">Tech-enabled innovation & incubation hubs shaping digital employment in Rwanda, led by MINICT, The European Union (EU) and RISA.</p>
+              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+                Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button> 
+            </div>
+          </div>
+          <div class="border-l-2 border-gray-200 h-auto"></div>
+
+          <div class="w-[70vh] p-4 mt-4 mr-10">
+            <div class="space-y-8">
+              <p class="font-rockinsoda text-navy text-2xl" >HANGA AGRITECH</p>
+              <p class="font-gramatika">Driving financial and technical support to  technology enabled startups in agriculture.</p>
+              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+                Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button> 
+            </div>
+          </div>
+        </ul>
+      </div>
         </li>
       </ul>
 
       <button
-        :class="navBg?'mr-4 p-4 px-6 font-gramatika bg-tangerine text-white font-semibold hover:bg-black hover:text-white' :'mr-4 p-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white'">
+        :class="navBg?'mr-4 p-4 px-6 font-gramatika bg-tangerine text-white font-semibold hover:bg-tangerine hover:text-white' :'mr-4 p-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white'">
         Apply Now
       </button>
 
@@ -148,6 +186,7 @@ export default {
       this.isMenuOpen = !this.isMenuOpen;
     }
   },
+  
 
 
 }
@@ -157,6 +196,19 @@ export default {
 .rotate-45 {
   transform: rotate(45deg);
 }
+.zoom-in {
+  transform: scale(0.95);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 0.90s ease-in-out;
+}
+.button-hover {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-hover:hover {
+  transform: scale(1.05); 
+}
+
 
 .rotate-0 {
   transform: rotate(0deg);
