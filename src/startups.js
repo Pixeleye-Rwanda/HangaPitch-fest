@@ -93,7 +93,7 @@
 
   
         },
-        { name: 'Vitaway',
+        { name: 'Vitaway E-clinic',
             description:'Vitaway E-Clinic is an integrated care pathway that combines a digital healthcare platform, smart self-monitoring tools, and digitized services to provide non-communicable diseases victims with the evidence-based personalized healthcare they need to achieve their full well-being throughout life while in the comfort of their home and work with offer dedicated support from professional health coach.\n\nOur virtual–first, integrated care programs on both mobile and web healthcare platforms help people make lasting health changes that truly change their lives for lower cost and better outcomes. By using some approaches like proper nutrition, monitoring progress, and lifestyle change, This approach helps our clients to save 45% on medical health costs, the time they spend on medical follow-up, and the economy of clients’ families will increase because the productivity of the family members will increase.',
             founded:2021,
             contact:'+250782718957',
@@ -565,6 +565,33 @@
             team:'Rose Kalera',
             category: 'Hospitality',logo: require('../src/assets/detLogo/eaziplug.svg'),
             link:'https://www.eaziplug.io/'
+
+        },
+        {   name: 'E-Mentor',
+            description:'e-Mentor is a virtual reality device aimed at revolutionizing the teaching of STEM subjects in sub-Saharan African secondary schools.',
+            founded:2020,
+            contact:'abongdohtitus5@gmail.com',
+            team:'Maluyane Titus Abongdoh',
+            category: 'Education',
+            link:'-'
+
+        },
+        {   name: 'Green Transport',
+            description:'Green Transport is creating an affordable electric scooter aimed at reducing the trips expenses by utilizing renewable energy sources (electricity).',
+            founded:2020,
+            contact:'ngisaac04@gmail.com',
+            team:'Isaac NGENDAHIMANA',
+            category: 'Transport',
+            link:'-'
+
+        },
+        {   name: 'Huza Farmers',
+            description:'Huza Farmers connects Rwandan smallholder farmers with markets and essential agricultural resources through an integrated platform offering inputs, extension services, and an online marketplace',
+            founded:2020,
+            contact:'ashimweannenatacha@gmail.com',
+            team:'Ashimwe Anne Natacha ',
+            category: 'Agriculture',
+            link:'https://www.linkedin.com/in/huza-farmers-hf-1884a627b/'
 
         },
         {   name: 'Opina',
