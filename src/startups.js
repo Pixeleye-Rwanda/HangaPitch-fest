@@ -104,7 +104,7 @@
   
         },
         { name: 'Laina',
-            description:'Vitaway E-Clinic is an integrated care pathway that combines a digital healthcare platform, smart self-monitoring tools, and digitized services to provide non-communicable diseases victims with the evidence-based personalized healthcare they need to achieve their full well-being throughout life while in the comfort of their home and work with offer dedicated support from professional health coach.\n\nOur virtual–first, integrated care programs on both mobile and web healthcare platforms help people make lasting health changes that truly change their lives for lower cost and better outcomes. By using some approaches like proper nutrition, monitoring progress, and lifestyle change, This approach helps our clients to save 45% on medical health costs, the time they spend on medical follow-up, and the economy of clients’ families will increase because the productivity of the family members will increase.',
+            description:'Laina Finance is a digital financial service provider, committed to delivering affordable and accessible financial services to underserved populations in developing countries. Dedicated to dismantling market challenges, they firmly believe in universal access to financial services. \n\nTheir extensive offerings encompass insurance premium finance, device finance, TV subscription, cash loans, overdraft, and agro financing. Laina’s Service Platform engages a broad spectrum of partners, including mobile network operators, banks, insurance companies, and credit information providers. They aim to empower credit-based payment for any purchase, with a core mission of enhancing financial service accessibility and affordability.',
             founded:2018,
             contact:'tonny.missokia@lainafinance.com',
             team:'Tony Missokia',
@@ -192,7 +192,7 @@
 
   
         },
-        { name: 'Magis',
+        { name: 'Magis Let',
             description:'Providing affordability and accessibility of electronic devices, electrical solutions and other related services. Increasing exports and decreasing imports in electronic field while promoting the made in Rwanda campaign Creating employment solutions to many people in all possible demographics.',
             founded:2017,
             contact:'+250787410498',
@@ -684,7 +684,7 @@
             link:'https://doctoraicompany.com/'
 
         },
-        {   name: 'Enlightenment-Lab',
+        {   name: 'Enlightenment Labs',
             description:'ENLIGNEMENT Labs is a pioneering startup dedicated to enhancing kitchen safety through advanced technology. Their innovative circuits detect gas leaks, automatically close gas valves, activate exhaust fans, control kitchen lighting, and send alerts via email and SMS. \n\n Additionally, they monitor kitchen temperature and gas levels, activating cooling systems and providing real-time data to the cloud for remote access and further analysis. With ENLIGNEMENT Labs, kitchens become safer and smarter, preventing accidents and ensuring peace of mind.',
             founded:'2019',
             contact:'+250786135953',
@@ -738,7 +738,7 @@
             link:'https://afriduino.io/'
 
         },
-        {   name: 'Greenalytic',
+        {   name: 'Greenalytic Ltd',
             description:'Greenalytics Ltd is at the forefront of environmental innovation with the Greenvehicle system. Their advanced electronic devices and software platform are designed to monitor and control vehicle emission gases, specifically exhaust emissions. \n\n By integrating cutting-edge technology, they help reduce environmental impact and promote cleaner, more efficient vehicle operations.',
             founded:'2022',
             contact:'+250 3 8376 6284',
@@ -747,7 +747,7 @@
             link:'https://www.greenalytic.rw/index.html'
 
         },
-        {   name: 'Haraka Meds',
+        {   name: 'Haraka Meds Ltd',
             description:'HaraMeds is on a mission to build a digital platform that democratizes access to pharmaceutical products across Africa. By leveraging technology, HaraMeds aims to make quality medications more affordable, easily accessible, and widely available. \n\n The  platform connects patients, healthcare providers, and suppliers, ensuring seamless and efficient access to essential medicines.',
             founded:'2018',
             contact:'+250 785 187 855',
@@ -818,7 +818,144 @@
             category: 'Health',logo: require('../src/assets/detLogo/keya.svg'),
             link:'https://keya.rw/'
 
+        },
+        {   name: 'The Happynes',
+            description:'The HappyNes is a social enterprise which designs and produces premium leather products such as bags , shoes , and other leather accessories with the humaterian vision of empowering women to have decent living through entrepreneurship and employment in the leather value chain while being ecologically responsible.',
+            founded:'2018',
+            contact:'0784069067',
+            team:'Aline (Kanimba) Uwase, Jean de Dieu SIKUBWABO ',
+            category: 'Fashion',logo: require('../src/assets/detLogo/happynes.svg'),
+            link:'https://www.shop.thehappynes.com/'
+
+        },
+        {   name: 'RCGF',
+            description:'RCGF Rwanda Ltd is based in Kigali-Kimironko and specializes in manufacturing precast lightweight reinforced concrete garden furniture, ping pong (table tennis) tables, and concrete art made from 75% amakoro. Their innovative approach aims to reduce and eventually eliminate the use of timber, plastics, and metals in garden furniture, thus preserving trees and promoting sustainability.\n\n At RCGF, we offer a broad assortment of high-quality precast concrete products designed to meet global standards. Their spacious and comfortable garden furniture and concrete art pieces are perfect for parks, lawns, and gardens, adding aesthetic appeal and durability. By combining professionalism with creativity, RCGF provides environmentally friendly solutions that enhance outdoor spaces.',
+            founded:'2017',
+            contact:'rcgfrwanda@gmail.com',
+            team:'SIMBI Aime Jules',
+            category: 'Concrete Contractor',logo: require('../src/assets/detLogo/rcgf.svg'),
+            link:'https://web.facebook.com/RCGFRwandaCompany/?_rdc=1&_rdr'
+
+        },
+        {   name: 'Rurarera',
+            description:'RURARERA is a comprehensive directory website designed to consolidate local information and guide tourists to various destinations in Kigali. By promoting local businesses, their platform helps visitors discover hotels, restaurants, beauty salons, places of worship, movie theaters, lodges, healthcare facilities, clinics, and more. As the only homegrown solution addressing the lack of comprehensive information in Kigalis hospitality industry, RURARERA aims to attract more tourists and boost tourism in the city.',
+            founded:'2018',
+            contact:'rurarerainc@gmail.com',
+            team:'Freddy Mwizerwa',
+            category: 'Software Development',logo: require('../src/assets/detLogo/Rurarera.svg'),
+            link:'http://www.rurarerainc.rw/'
+
+        },
+        {   name: 'Sangapesh',
+            description:'SANGAPESH creates a comprehensive marketplace for business activities in Rwanda, providing a unified payment platform that supports both local and international transactions. This increases access for local consumers, the Rwandan diaspora, and international buyers interested in Made-in-Rwanda products.\n\n With outstanding marketing strategies, SANGAPESH leverages digital marketing (Google paid ads), affiliate marketing, social media influencers, and strategic partnerships across various countries. We actively participate in international exhibitions, trade conferences, and Made-in-Rwanda campaigns, working closely with government bodies like RDB, MINICOM, RWANDAIR, NAEB, and the ICT Chamber, along with recognized logistics companies for seamless shipping and delivery services.',
+            founded:'2020',
+            contact:'sangapesh@gmail.com',
+            team:'Umunyana Shanitah, Kamugisha Habib ',
+            category: 'Business Intelligence Platforms',logo: require('../src/assets/detLogo/sangapesh.svg'),
+            link:'https://sangapesh.com/'
+
+        },
+        {   name: 'Second Life Storage',
+            description:'A startup building energy storage systems from batteries salvaged from e-waste or retired from electric vehicles. SLS focuses on extending the usable life of lithium iron phosphate battery cells, an innovation that not only enhances reliability and affordability but also significantly reduces electronic waste and the environmental impact of energy storage. \n\n The company sources retired batteries from Enviroserve Rwanda Green Park, an electronic waste management company, to repurpose them for a new lease of life.',
+            founded:'-',
+            contact:'-',
+            team:'Leandre (Prince) MUHIRWA',
+            category: 'Energy',logo: require('../src/assets/detLogo/SLS.svg'),
+            link:'https://secondlifestorage.com/index.php'
+
+        },
+        {   name: 'Tori',
+            description:'TORI is revolutionizing the freelancing market in Rwanda by empowering early-stage creatives. Their system captures all aspects of creativity in a project, minimizing errors and ensuring affordability and timely completion. By breaking the imaginary glass ceiling, TORI supports creatives in delivering high-quality projects efficiently and cost-effectively, fostering growth and innovation in Rwandas creative industry.',
+            founded:'2019',
+            contact:'toribranding.com',
+            team:'Nnadozie Ebere, Alice Lambert',
+            category: 'Advertising Services',logo: require('../src/assets/detLogo/tori.svg'),
+            link:'https://createwithtori.com/'
+
+        },
+        {   name: 'Twis',
+            description:'TWIS offers age-appropriate and culturally relevant stories in Kinyarwanda to equip users with essential literacy skills. Each story includes a tailored quiz to assess comprehension, ensuring users fully understand the material. Accessible both online and offline, TWIS provides a convenient platform for learning at home and at school',
+            founded:'2018',
+            contact:'+250788375117',
+            team:'Cliff Richard',
+            category: 'E-Learning Providers',logo: require('../src/assets/detLogo/twis.svg'),
+            link:'https://twis.co.rw/'
+
+        },
+        {   name: 'Vehisec',
+            description:'Vehisec is dedicated to improving road safety through innovative technology. Their solution involves installing an SDS device in vehicles that monitors driver sobriety by analyzing their breath. If alcohol levels exceed the safe limit, the device automatically cuts off the engine and sends real-time notifications to a platform and via SMS. The notification includes the cars location and alcohol level status, ensuring timely intervention and enhanced safety on the roads.',
+            founded:'2018',
+            contact:'vehisecgroup@gmail.com',
+            team:'-',
+            category: 'Motor vehicle company',logo: require('../src/assets/detLogo/vehisec.svg'),
+            link:'https://web.facebook.com/vehisecgroup/?_rdc=1&_rdr'
+
+        },
+        {   name: 'VubaVuba Africa',
+            description:'Vuba Vuba Africa LTD is a "Made in Rwanda" food and on-demand delivery company that allows residents of Kigali City, Musanze, and Rubavu districts to order meals from their favorite restaurants, as well as essentials from markets, supermarkets, electronics shops, pharmacies, and beverage stores. \n\n Through a user-friendly mobile app and web interface, Vuba Vuba Africa LTD ensures that customers receive their orders at their homes or offices in less than an hour. The company plans to expand its services to other districts of Rwanda soon, providing fast, reliable delivery solutions across the country.',
+            founded:'2020',
+            contact:'info@vubavuba.rw',
+            team:'Albert Munyabugingo, Leandre CYIZA',
+            category: 'Food & beverage',logo: require('../src/assets/detLogo/VubaVuba.svg'),
+            link:'https://www.vubavuba.rw/'
+
+        },
+        {   name: 'Xtra-Tech',
+            description:'-',
+            founded:'-',
+            contact:'-',
+            team:'-',
+            category: '-',logo: require('../src/assets/detLogo/Extra-tech.svg'),
+            link:'-'
+
+        },
+        {   name: 'Aurrica Tech',
+            description:'Aurrica is a technology startup founded and based in Kigali, Rwanda, with a mission to transform the African logistics industry and make a positive impact on businesses and economies. Aurica is a company setup by African entrepreneurs and tech experts with wide industry and tech experiences across Africa, Middle East and the US. \n\n Aurrica provides a two in one platform that does fleet management to locate fleets in real time with fuel and service monitoring capability using GPS powered devices and freight marketplace that matches those carriers to shippers for efficient monitored delivery. ',
+            founded:'2020',
+            contact:'info@aurrica.com',
+            team:'Teta Lissa',
+            category: 'Transportation, Logistics, Supply Chain and Storage',logo: require('../src/assets/detLogo/aurrica.svg'),
+            link:'https://aurrica.com/index.html'
+
+        },
+        {   name: 'Shuri Bus',
+            description:'Shuri Bus provides fast, reliable, and affordable on-demand school bus services. Their system uses smart technology to trace routes and manage buses efficiently, reducing wait times. With real-time updates and estimated arrival times, parents and students can easily track the bus and plan their day. Shuri Bus makes school transportation simple and dependable for everyone.',
+            founded:'2020',
+            contact:'-',
+            team:'-',
+            category: 'Education',logo: require('../src/assets/detLogo/shuri-bus.svg'),
+            link:'https://apps.apple.com/sa/app/shuri-bus/id1569817308'
+
+        },
+        {   name: 'D-Travela Ltd',
+            description:'Dtravela is a one-stop booking portal, offering comprehensive services for hotels, car rentals, and tour packages. It provides accurate and detailed content on touristic sites, available in five different languages to cater to a diverse audience.\n\n The platform delivers personalized deals for hotels, tours, and transport bookings, ensuring you get the best value for your travel needs. Additionally, Dtravela offers dedicated management portals for hotels, car rental services, and tour operators, streamlining operations and enhancing efficiency.',
+            founded:'2019',
+            contact:'0788 810 924',
+            team:'-',
+            category: 'Travel',logo: require('../src/assets/detLogo/Extra-tech.svg'),
+            link:'https://web.facebook.com/dTravela/'
+
+        },
+        {   name: 'E-shuri',
+            description:'Giraict is an innovative platform offering a comprehensive suite of educational services designed to enhance learning experiences. Users can connect with on-demand tutors, receive performance analytics, and gain valuable learning insights for a tailored educational journey.\n\nGiraict also provides automated assessments and a wide range of online and extra-curricular courses, ensuring a holistic approach to learning. This platform empowers students with personalized learning tools and resources, making education more effective and engaging.',
+            founded:'2022',
+            contact:'-',
+            team:'Digne NURUKUNDO, Nadia Uwamahoro',
+            category: 'Education',logo: require('../src/assets/detLogo/e-shuri.svg'),
+            link:'https://eshuri.org/en#landing-section'
+
+        },
+        {   name: 'Habayeho',
+            description:'Habayeho is a digital platform dedicated to preserving and showcasing Rwandas rich historical and cultural heritage. Their innovative solutions include easy search and fast access to information, conversion of hardcopy files into long-term preservation formats, and enhanced reader interactions through automatic suggestions and curated quizzes.\n\nHabayeho also offers seamless data management, tracks user activities for optimized data use, and provides translated articles in both Kinyarwanda and English. Their platform ensures that Rwanda’s past and present are preserved and made accessible for future generations.',
+            founded:'2020',
+            contact:'-',
+            team:'Ines Isimbi',
+            category: '-',logo: require('../src/assets/detLogo/Extra-tech.svg'),
+            link:'-'
+
         }
+
+
 
 
 
