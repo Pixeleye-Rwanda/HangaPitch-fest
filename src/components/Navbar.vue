@@ -91,7 +91,7 @@
         <hr class="w-auto border-gray-200 border-t-2 mt-8">
         <ul class="w-full flex ml-4 space-x-12">
           <div class="w-[70vh] p-4 mt-4 ">
-            <div class="space-y-8">
+            <div class="space-y-10">
               <p class="font-rockinsoda text-navy text-2xl">HANGA SEXUAL REPRODUCTIVE HEALTH</p>
               <p class="font-gramatika">Championing tech-enabled startups solving key issues in SRH.</p>
               <router-link to="/srh">
@@ -118,7 +118,7 @@
           <div class="border-l-2 border-gray-200 h-auto"></div>
 
           <div class="w-[70vh] p-4 mt-4 mr-10">
-            <div class="space-y-8">
+            <div class="space-y-10">
               <p class="font-rockinsoda text-navy text-2xl" >HANGA AGRITECH</p>
               <p class="font-gramatika">Driving financial and technical support to  technology enabled startups in agriculture.</p>
               <router-link to="/agritech">
