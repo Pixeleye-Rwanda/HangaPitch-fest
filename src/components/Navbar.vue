@@ -52,25 +52,25 @@
     </transition>
 
     <!-- Navbar for Larger Screens -->
-    <div class="hidden md:flex items-center p-4 bg-transparent mt-6">
+    <div  :class="navBg ? 'bg-white hidden md:flex items-center p-6 bg-navbg ' : 'bg-transparent hidden md:flex items-center p-6 bg-transparent '" >
       <router-link to="/" class="ml-16">
-        <img src="../assets/logo.svg" class="h-8 md:h-10" alt="Logo">
+        <img :src="navBg ? whiteLogo : blackLogo" class="h-8 md:h-10" alt="Logo">
       </router-link>
 
       <ul class="flex mx-auto items-center space-x-6">
-        <li class="text-white font-gramatika font-semibold underline-animation">
+        <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'" >
           <router-link to="/about-us">About Us</router-link>
         </li>
-        <li class="text-white font-gramatika font-semibold underline-animation">
+        <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <router-link to="/network">Our Network</router-link>
         </li>
-        <li class="text-white font-gramatika font-semibold underline-animation">
+        <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <router-link to="/pitch"> Pitch at Hanga </router-link>
         </li>
 
 
         <div class=" relative flex items-center">
-          <button id="dropdownInit" @click="toogleDropdownInit" class="text-white font-gramatika font-semibold">
+          <button id="dropdownInit" @click="toogleNavBg"  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
 
             Initiative <i class="fa fa-chevron-down" aria-hidden="true"></i>
 
@@ -84,19 +84,63 @@
         </div>
 
 
-        <li class="text-white font-gramatika font-semibold underline-animation">
+        <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <router-link to="/timeline"> Timeline</router-link>
+          <!-- Dropdown -->
+        <div v-if="navBg" class="absolute z-50 left-0 w-full bg-navbg mt-4 shadow-lg" >
+        <hr class="w-auto border-gray-200 border-t-2 mt-8">
+        <ul class="w-full flex ml-4 space-x-12">
+          <div class="w-[70vh] p-4 mt-4 ">
+            <div class="space-y-10">
+              <p class="font-rockinsoda text-navy text-2xl">HANGA SEXUAL REPRODUCTIVE HEALTH</p>
+              <p class="font-gramatika">Championing tech-enabled startups solving key issues in SRH.</p>
+              <router-link to="/srh">
+              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+                Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button> 
+            </router-link>
+            </div>
+
+          </div>
+          <div class="border-l-2 border-gray-200 h-auto"></div>
+
+          <div class="w-[70vh] p-4 mt-4">
+            <div class="space-y-2">
+              <p class="font-rockinsoda text-navy text-2xl">HANGA HUB</p>
+              <p class="font-gramatika">Tech-enabled innovation & incubation hubs shaping digital employment in Rwanda, led by MINICT, The European Union (EU) and RISA.</p>
+              <router-link to="/hub">
+              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+                Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button> 
+            </router-link>
+            </div>
+          </div>
+          <div class="border-l-2 border-gray-200 h-auto"></div>
+
+          <div class="w-[70vh] p-4 mt-4 mr-10">
+            <div class="space-y-10">
+              <p class="font-rockinsoda text-navy text-2xl" >HANGA AGRITECH</p>
+              <p class="font-gramatika">Driving financial and technical support to  technology enabled startups in agriculture.</p>
+              <router-link to="/agritech">
+              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+                Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button> 
+            </router-link>
+            </div>
+          </div>
+        </ul>
+      </div>
         </li>
       </ul>
 
       <button
-        class="mr-4 p-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
+        :class="navBg?'mr-4 p-4 px-6 font-gramatika bg-tangerine text-white font-semibold hover:bg-tangerine hover:text-white' :'mr-4 p-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white'">
         Apply Now
       </button>
 
       <div class="relative inline-block mr-24 text-left">
         <button id="dropdownButton" @click="toggleDropdown"
-          class="p-2 px-4 border font-gramatika text-white font-semibold hover:bg-tangerine hover:text-white">
+          :class="navBg ? 'p-2 px-4 border border-tangerine font-gramatika text-tangerine font-semibold hover:bg-tangerine hover:text-white':'p-2 px-4 border font-gramatika text-white font-semibold hover:bg-tangerine hover:text-white'">
           <div class="flex items-center">
             <p>EN</p>
             <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -110,18 +154,26 @@
           <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">French</a></li>
         </ul>
       </div>
+      <hr :class="navBg?'w-auto border-t-10 border-tangerine ':'hidden'">
+      <div class=""></div>
     </div>
+  
   </div>
 </template>
 
 <script>
+
 export default {
   name: "NavBar",
+  
   data() {
     return {
       isDropdownVisible: false,
       isMenuOpen: false,
-      isDropdownInitVisible: false
+      isDropdownInitVisible: false,
+      whiteLogo: require('@/assets/hanga.svg'), 
+      blackLogo: require('@/assets/logo.svg'), 
+      navBg: false,
     };
   },
   methods: {
@@ -133,10 +185,16 @@ export default {
       this.isDropdownInitVisible = !this.isDropdownInitVisible;
     },
 
+    toogleNavBg(){
+    this.navBg =! this.navBg
+
+    },
+
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     }
   },
+  
 
 
 }
@@ -146,6 +204,19 @@ export default {
 .rotate-45 {
   transform: rotate(45deg);
 }
+.zoom-in {
+  transform: scale(0.95);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 0.90s ease-in-out;
+}
+.button-hover {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-hover:hover {
+  transform: scale(1.05); 
+}
+
 
 .rotate-0 {
   transform: rotate(0deg);

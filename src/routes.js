@@ -9,9 +9,15 @@ import PitchHanga from "./views/PitchHanga.vue";
 import TimelinePage from "./views/TimelinePage.vue";
 import ContactUsPage from "./views/ContactUsPage.vue"; 
 import FilteredStarups from "./components/FilteredStarups.vue";
+<<<<<<< HEAD
 import WaitlistPage from "./views/WaitlistPage.vue";
 import WaitlistResultPage from "./views/WaitlistResultPage.vue";
 import NotFoundPage from "./views/NotFoundPage.vue";
+=======
+import HangaHub from "./views/HangaHub.vue";
+import HangaAgritech from "./views/HangaAgritech.vue";
+import HangSrh from "./views/HangSrh.vue";
+>>>>>>> 9b8a480a2795921e0a70db01e48842e62d62d37f
 
 import { createRouter,createWebHistory } from "vue-router";
 
@@ -80,6 +86,7 @@ const routes=[
         component:ContactUsPage,
         path:'/contact'
     },
+<<<<<<< HEAD
 
     {
         name:'WaitlistPage',
@@ -96,6 +103,24 @@ const routes=[
         component:NotFoundPage,
         path:'/404'
     }
+=======
+    {
+        name:'HangHub',
+        component:HangaHub,
+        path:'/hub'
+    },
+
+    {
+        name:'HangAgritech',
+        component:HangaAgritech,
+        path:'/agritech'
+    },
+    {
+        name:'HangSrh',
+        component:HangSrh,
+        path:'/srh'
+    },
+>>>>>>> 9b8a480a2795921e0a70db01e48842e62d62d37f
 
 
      
