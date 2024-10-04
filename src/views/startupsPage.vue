@@ -6,19 +6,19 @@
             <div class="flex flex-col md:flex-row ">
               <!-- Left Section with Main Image and Text -->
               <div class="w-full md:w-2/3 mb-4 md:mb-0 px-4">
-                <img src="../assets/speaker1.jpg" alt="Students" class="w-full h-auto  zoom-in" ref="leftContent">
-                <p class="font-gramatika mt-8 text-darknavy text-lg sm:text-xl zoom-in" ref="text1">
+                <img src="../assets/speaker1.jpg" alt="Students" class="w-full h-auto  " ref="leftContent">
+                <p class="font-gramatika mt-8 text-darknavy text-lg sm:text-xl " ref="text1">
                     The largest in-person technology event in Rwanda designed to ignite &                  
                     inspire innovation, Hanga Pitchfest is returning for its fourth edition.</p>               
-                <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold zoom-in button-hover" ref="button">
+                <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold button-hover" ref="button">
                   Pitch at hanga <i class="fa fa-chevron-right" aria-hidden="true"></i>
                 </button>          
               </div>
           
               <!-- Right Side with Vertically Stacked Images -->
               <div class="w-full md:w-1/3 space-y-4 px-4 lg:mr-12 sm:mr-0">
-                <img src="../assets/speaker2.jpg" alt="Speaker" class="w-full h-auto zoom-in" ref="image1">
-                <img src="../assets/audience.jpg" alt="Audience" class="w-full h-auto zoom-in" ref="image2">
+                <img src="../assets/speaker2.jpg" alt="Speaker" class="w-full h-auto " ref="image1">
+                <img src="../assets/audience.jpg" alt="Audience" class="w-full h-auto " ref="image2">
               </div>
             </div>
 
@@ -211,6 +211,7 @@
             const items = [this.$refs.item1, this.$refs.item2, this.$refs.item3];
             items.forEach(item => {
                 observer.observe(item);
+                
             });
             }
             

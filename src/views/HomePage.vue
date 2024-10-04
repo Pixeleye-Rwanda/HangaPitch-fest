@@ -38,22 +38,22 @@
         <div class="flex flex-col md:flex-row mt-20">
           <!-- Left Section with Main Image and Text -->
           <div class="w-full md:w-2/3 mb-4 md:mb-0 px-4">
-            <img src="../assets/students.jpg" alt="Students" class="w-full h-auto  zoom-in" ref="leftContent">
-            <p class="font-gramatika mt-8 text-darknavy text-lg sm:text-xl zoom-in" ref="text1">
+            <img src="../assets/students.jpg" alt="Students" class="w-full h-auto " ref="leftContent">
+            <p class="font-gramatika mt-8 text-darknavy text-lg sm:text-xl " ref="text1">
               We believe in empowering innovators solving some of the dire
             </p>
-            <p class="font-gramatika text-darknavy text-lg sm:text-xl zoom-in" ref="text2">
+            <p class="font-gramatika text-darknavy text-lg sm:text-xl " ref="text2">
               challenges in the Rwandan community and abroad
             </p>
-            <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold zoom-in button-hover" ref="button">
+            <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold  button-hover" ref="button">
               Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
             </button>          
           </div>
       
           <!-- Right Side with Vertically Stacked Images -->
           <div class="w-full md:w-1/3 space-y-4 px-4 lg:mr-28 sm:mr-0">
-            <img src="../assets/speaker.png" alt="Speaker" class="w-full h-auto zoom-in" ref="image1">
-            <img src="../assets/audience.jpg" alt="Audience" class="w-full h-auto zoom-in" ref="image2">
+            <img src="../assets/speaker.png" alt="Speaker" class="w-full h-auto " ref="image1">
+            <img src="../assets/audience.jpg" alt="Audience" class="w-full h-auto " ref="image2">
           </div>
         </div>
       </div>
@@ -426,7 +426,7 @@ export default {
     NewsLetter
   },
 
- mounted() {
+  mounted() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -437,9 +437,9 @@ export default {
           entry.target.classList.add('slide-up-visible-animation');
 
 
- 
+
         }
-      });
+      },{ threshold: 0.5 });
     });
 
       
@@ -466,7 +466,6 @@ export default {
 
 
   },
-
   data() {
     return {
       individuals: [
@@ -494,9 +493,12 @@ export default {
 }
 
 
+
 </script>
 
 <style>
+
+
   .slide-up {
     transform: translateY(20px);
     opacity: 0;
@@ -507,11 +509,7 @@ export default {
     transform: translateY(0);
     opacity: 1;
   }
-  .zoom-in {
-    transform: scale(0.95);
-    opacity: 0;
-    transition: transform 1s ease-in-out, opacity 0.90s ease-in-out;
-  }
+ 
 
   .zoom-in-visible {
     transform: scale(1);
