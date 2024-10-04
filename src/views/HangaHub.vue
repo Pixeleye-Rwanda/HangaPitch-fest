@@ -1,6 +1,6 @@
 <template>
     <div class="w-full min-h-screen absolute">
-        <Navbar />
+        <NavInit/>
 
         <div class="font-rockinsoda text-navy text-8xl mr-8" ref="text">
             <p>ADDRESSING</p>
@@ -28,11 +28,11 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue';
+import NavInit from '@/components/NavInit.vue';
 export default {
     name: "HangaHub",
     components: {
-        Navbar
+        NavInit
     }
 }
 </script>
