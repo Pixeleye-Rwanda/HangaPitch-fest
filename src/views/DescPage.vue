@@ -1,68 +1,53 @@
 <template>
-    <div class="w-full min-h-screen absolute"  style="background: linear-gradient(319.89deg, #030C37 5.13%, #22348A 99.13%)">
-       
-      <div  v-if="startup" class="flex -mt-6 items-center justify-center p-10 space-x-20 ">
-   
-        <div class="w-[90vh] space-y-12">
-
-          
-            
-            <router-link :to="{ path: '/network', hash: '#startupDiv', query: { category: $route.query.category, year: $route.query.year }
-          }">
-          <div class="flex space-x-6 mt-16">
-          <img src="../assets/Group 22.png" alt="">
-            <a href="" @click="goBackToFilteredList" class="text-white font-gramatika mt-4">back to startups</a>
+  <div class="w-full min-h-screen absolute" style="background: linear-gradient(319.89deg, #030C37 5.13%, #22348A 99.13%)">
+    <div v-if="startup" class=" -mt-6 flex flex-col lg:flex-row items-center justify-center p-4 lg:p-10 space-y-10 lg:space-y-0 lg:space-x-20">
+      <div class="w-full lg:w-[90vh] space-y-8 lg:space-y-12">
+        <router-link :to="{ path: '/network', hash: '#startupDiv', query: { category: $route.query.category, year: $route.query.year } }">
+          <div class="flex space-x-4 mt-16 items-center justify-center lg:justify-start">
+            <img src="../assets/Group 22.png" alt="Back to startups" class="h-8 w-8 lg:h-12 lg:w-12" />
+            <a href="#" @click="goBackToFilteredList" class="text-white font-gramatika -mt-4 text-sm lg:text-lg">Back to startups</a>
           </div>
-           </router-link>
-           
+        </router-link>
 
-            <!-- <p class=" font-gramatika text-white text-lg " >{{startup.description }}</p> -->
-            <p class="font-gramatika text-white text-lg" v-html="startup.description.replace(/\n/g, '<br>')"></p>
+        <p class="font-gramatika text-white text-sm lg:text-lg" v-html="startup.description.replace(/\n/g, '<br>')"></p>
 
-            <div class="space-y-4">
-
-              <div class="flex justify-between">
-            <p class=" font-gramatika text-gray-400  text-md">Founded</p>
-            <p class="font-gramatika text-white justify-end ">{{startup.founded}}</p>
+        <div class="space-y-4">
+          <div class="flex justify-between">
+            <p class="font-gramatika text-gray-400 text-sm lg:text-md">Founded</p>
+            <p class="font-gramatika text-white justify-end">{{ startup.founded }}</p>
           </div>
-            <hr class="w-auto border-t-2 border-descColor">
-            <div class="flex justify-between">
-            <p class=" font-gramatika text-gray-400   text-md ">Category:</p>
-            <p class="font-gramatika text-white justify-end ">{{startup.category}}</p>
+          <hr class="w-auto border-t-2 border-descColor" />
+          <div class="flex justify-between">
+            <p class="font-gramatika text-gray-400 text-sm lg:text-md">Category:</p>
+            <p class="font-gramatika text-white justify-end">{{ startup.category }}</p>
           </div>
-            <hr class="w-auto border-t-2 border-descColor">
-
-             <div class="flex justify-between">
-            <p class=" font-gramatika text-gray-400   text-md ">Contact info :</p>
-            <p class="font-gramatika text-white  ">{{startup.contact}}</p>
-
+          <hr class="w-auto border-t-2 border-descColor" />
+          <div class="flex justify-between">
+            <p class="font-gramatika text-gray-400 text-sm lg:text-md">Contact info:</p>
+            <p class="font-gramatika text-white">{{ startup.contact }}</p>
           </div>
-            <hr class="w-auto border-t-2 border-descColor">
-            <div class="flex justify-between">
-            <p class=" font-gramatika text-gray-400  text-md ">Team Members:</p>
-            <p class="font-gramatika text-white  ">{{startup.team}}</p>
-
+          <hr class="w-auto border-t-2 border-descColor" />
+          <div class="flex justify-between">
+            <p class="font-gramatika text-gray-400 text-sm lg:text-md">Team Members:</p>
+            <p class="font-gramatika text-white">{{ startup.team }}</p>
           </div>
         </div>
-        </div>
-
-        <div class="space-y-8 mt-32 ">
-        <div class=" border border-descColor p-36 flex flex-shrink-0 h-[350px] ">
-            <img :src="startup.logo" class="h-60 w-60 -mt-20 object-contain ">
-        </div>
-        <div class="flex items-center justify-center ">
-        <a :href="startup.link" target="_blank" class="font-gramatika text-white text-center border border-linkColor rounded-3xl p-2 px-4"> Visit website </a>
-         </div>
-         </div>
-      
-    </div>
-      <div v-else class="flex items-center justify-center  mt-48">
-        <p class="text-white  font-rockinsoda text-6xl">Startup details not found</p>
       </div>
 
-
+      <div class="space-y-8 mt-10 lg:mt-0">
+        <div class="border border-descColor p-8 lg:p-36 flex flex-shrink-0 h-[350px] justify-center items-center">
+          <img :src="startup.logo" class="h-32 w-32 lg:h-60 lg:w-60 object-contain" />
+        </div>
+        <div class="flex items-center justify-center">
+          <a :href="startup.link" target="_blank" class="font-gramatika text-white text-center border border-linkColor rounded-3xl p-2 px-4 text-sm lg:text-base">Visit website</a>
+        </div>
+      </div>
     </div>
-    
+
+    <div v-else class="flex items-center justify-center mt-48">
+      <p class="text-white font-rockinsoda text-6xl">Startup details not found</p>
+    </div>
+  </div>
 </template>
 
 <script>

@@ -181,7 +181,7 @@
 
 
             <!-- section 8------ -->
-            <div class="ml-12 mt-24">
+            <div class="ml-0 lg:ml-12 mt-24">
               <div>
                 <h1 class="font-rockinsoda text-navy text-5xl">EVENT HIGHLIGHTS</h1>
                 <p class="font-gramatika text-navy text-xl mt-4">Watch our past thrilling events highlights</p>

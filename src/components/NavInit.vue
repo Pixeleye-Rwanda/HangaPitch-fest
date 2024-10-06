@@ -52,22 +52,22 @@
       </transition>
   
       <!-- Navbar for Larger Screens -->
-      <div class="bg-transparent hidden md:flex items-center p-6 justify-between bg-transparent  " >
+      <div :class="navBg ? 'bg-navy' : 'bg-transparent'" class="hidden md:flex items-center p-4 justify-between">
         <div class="">
-        <router-link to="/" class="ml-24">
-          <img :src="navBg ? whiteLogo : blackLogo" class="h-8 md:h-10" alt="Logo">
+        <router-link to="/" class="ml-24 ">
+          <img :src="navBg ? whiteLogo : blackLogo" class="h-8 md:h-12" alt="Logo">
         </router-link>
     </div>
     <div class="mr-12">
         <ul class="flex mx-auto items-center space-x-6">
-          <li  :class="navBg ? 'text-navy' : 'text-navy font-gramatika font-semibold underline-animation'" >
+          <li  :class="navBg ? 'text-white' : 'text-navy font-gramatika font-semibold underline-animation'" >
             <router-link to="/about-us">Hanga Pitch</router-link>
           </li>
-          <li  :class="navBg ? 'text-navy' : 'text-navy font-gramatika font-semibold underline-animation'">
-            <router-link to="/network">FAQ</router-link>
+          <li  :class="navBg ? 'text-white' : 'text-navy font-gramatika font-semibold underline-animation'">
+            <router-link to="/faq">FAQ</router-link>
           </li> 
           <button
-          class="mr-4 p-4 px-6 font-gramatika bg-white text-navy font-semibold ">
+          :class="[navBg?'text-white':'text-navy','mr-4 p-4 px-6 font-gramatika text-navy text-md font-semibold ']">
           Apply Now
         </button>
           
@@ -88,11 +88,19 @@
         isDropdownVisible: false,
         isMenuOpen: false,
         isDropdownInitVisible: false,
-        whiteLogo: require('@/assets/hanga.svg'), 
         blackLogo: require('@/assets/SRH.svg'), 
+        whiteLogo: require('@/assets/SRH (1).svg'), 
         navBg: false,
       };
     },
+    mounted() {
+    this.checkNavBg();
+  },
+    watch: {
+      $route() {
+      this.checkNavBg();
+    }
+  },
     methods: {
       toggleDropdown() {
         this.isDropdownVisible = !this.isDropdownVisible;
@@ -102,16 +110,18 @@
         this.isDropdownInitVisible = !this.isDropdownInitVisible;
       },
   
-      toogleNavBg(){
-      this.navBg =! this.navBg
-  
-      },
-  
       toggleMenu() {
         this.isMenuOpen = !this.isMenuOpen;
-      }
+      },
+
+      checkNavBg() {
+      if (this.$route.path === '/faq') {
+        this.navBg = true;
+      } else {
+        this.navBg = false; 
+    }
     },
-    
+  }
   
   
   }

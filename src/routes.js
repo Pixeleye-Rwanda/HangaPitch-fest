@@ -13,6 +13,7 @@ import HangaHub from "./views/HangaHub.vue";
 import HangaAgritech from "./views/HangaAgritech.vue";
 import HangSrh from "./views/HangSrh.vue";
 import NavInit from "./components/NavInit.vue";
+import FaqPage from "./views/FaqPage.vue";
 import { createRouter,createWebHistory } from "vue-router";
 
 const routes=[
@@ -101,6 +102,11 @@ const routes=[
         name:'NavInit',
         component:NavInit,
         path:'/navinit'
+    },
+    {
+        name:'FaqPage',
+        component:FaqPage,
+        path:'/faq'
     },
 
 
