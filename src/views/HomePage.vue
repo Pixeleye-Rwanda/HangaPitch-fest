@@ -17,7 +17,7 @@
         <div class="absolute top-2/3 left-4 sm:left-12 lg:left-20  xl:left-26 ">
           <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0">
             <button class="p-3 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
-              Apply Now
+             <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank">Apply Now</a> 
             </button>
             <button class="p-3 px-6 font-gramatika border text-white font-semibold hover:bg-tangerine hover:text-black flex items-center space-x-2">
               <span>Impact video</span>
@@ -224,8 +224,10 @@
                   <p class="text-white font-rockinsoda text-3xl sm:text-5xl">HANGA SRH</p>
                   <div class="mt-2">
                     <p class="text-white font-gramatika">Revolutionizing Sexual and Reproductive Health in Africa.</p>
-                    
-                    <a href="" class="text-white font-gramatika underline">learn more</a>
+                    <router-link to="/srh">
+                      <a href="" class="text-white font-gramatika underline">learn more</a>
+
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -248,7 +250,7 @@
             </div>
             <div class="w-full md:w-1/3 lg:w-1/4 flex justify-start md:justify-end">
               <button class="font-gramatika  text-white  text-xl border rounded-full px-8 py-2 hover:bg-tangerine transition duration-300">
-                Apply now
+                <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank"> Apply Now</a>
               </button>
             </div>
           </div>
