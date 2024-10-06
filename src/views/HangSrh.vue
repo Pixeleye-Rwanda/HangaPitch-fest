@@ -189,80 +189,135 @@
   </div>
 
   <!-- our timeline section -->
-   <div class="ml-10 mt-60">
-    <p class="text-2xl sm:text-3xl lg:text-5xl font-rockinsoda text-navy">Our Timeline</p>
+   <div class="ml-10 mt-60 ">
+    <p class=" text-center lg:text-left text-6xl sm:text-3xl lg:text-5xl font-rockinsoda text-navy">Our Timeline</p>
    </div>
-   <div class="space-y-4 relative mt-20 flex items-center w-full ml-10 ">
-    <div class="w-10/12">
-        <div class="flex space-x-10">
+   <div class="relative mt-20 w-full px-4 lg:px-2 flex flex-col lg:flex-row justify-between items-start">
+    <div class="w-full px-4 lg:px-10">
+        <div class="flex flex-col lg:flex-row lg:space-x-10">
+            <!-- OCTOBER 20TH -->
             <div class="space-y-4">
-                <p class="text-navy text-gramatika font-medium">09 SEPT - 23 OCT</p>
-
-                <div class="flex space-x-4">
+                <p class="text-navy text-gramatika font-medium text-center lg:text-left">OCTOBER 20TH</p>
+                <div class="flex justify-center lg:justify-start space-x-4">
                     <img src="../assets/Ellipse 11.svg" alt="">
                     <img src="../assets/navyline.svg" alt="">
                 </div>
-                <div class="bg-timelinebg flex items-center pl-8 pr-20 py-4 rounded-md">
+                <div class="bg-timelinebg flex items-center justify-center lg:justify-start pl-8 pr-10 py-4 rounded-md">
                     <img src="../assets/srh-rocket.svg" alt="">
-                    <p class="text-navy text-md font-medium font-gramatika ">Application</p>
+                    <p class="text-navy text-md font-medium font-gramatika">Applications Open</p>
                 </div>
-
             </div>
 
-            <div class="space-y-4">
-                <p class="text-navy text-gramatika font-medium">09 SEPT - 23 OCT</p>
-
-                <div class="flex space-x-4">
-                  <img src="../assets/Ellipse 11.svg" alt="">
-                  <img src="../assets/navyline.svg" alt="">
-                </div>
-                <div class="bg-bg-timelinebg flex items-center pl-8 pr-20 py-4 rounded-md">
-                    <img src="../assets/srh-rocket.svg" alt="">
-                    <p class="text-navy text-md font-medium font-gramatika ">Application</p>
-                </div>
-
-            </div>
-            <div class="space-y-4">
-                <p class="text-navy text-gramatika font-medium">09 SEPT - 23 OCT</p>
-
-                <div class="flex space-x-4">
-                  <img src="../assets/Ellipse 11.svg" alt="">
-                  <img src="../assets/navyline.svg" alt="">
-                </div>
-                <div class="bg-timelinebg flex items-center pl-8 pr-20 py-4 rounded-md">
-                    <img src="../assets/srh-rocket.svg" alt="">
-                    <p class="text-navy text-md font-medium font-gramatika ">Application</p>
-                </div>
-
-            </div>
-            <div class="space-y-4">
-                <p class="text-navy text-gramatika font-medium">09 SEPT - 23 OCT</p>
-
-                <div class="flex space-x-4">
-                  <img src="../assets/Ellipse 11.svg" alt="">
+            <!-- OCTOBER 31ST -->
+            <div class="space-y-4 mt-6 lg:mt-0">
+                <p class="text-navy text-gramatika font-medium text-center lg:text-left">OCTOBER 31ST</p>
+                <div class="flex justify-center lg:justify-start space-x-4">
+                    <img src="../assets/Ellipse 11.svg" alt="">
                     <img src="../assets/navyline.svg" alt="">
                 </div>
-                <div class="bg-timelinebg flex items-center pl-8 pr-20 py-4 rounded-md">
-                    <img src="../assets/srh-rocket.svg" alt="">
-                    <p class="text-navy text-md font-medium font-gramatika ">Application</p>
+                <div class="bg-timelinebg flex items-center justify-center lg:justify-start pl-8 pr-10 py-4 rounded-md">
+                    <img src="../assets/info.svg" alt="">
+                    <p class="text-navy text-md font-medium font-gramatika">Info Session</p>
                 </div>
+            </div>
 
+            <!-- NOVEMBER 15TH -->
+            <div class="space-y-4 mt-6 lg:mt-0">
+                <p class="text-navy text-gramatika font-medium text-center lg:text-left">NOVEMBER 15TH</p>
+                <div class="flex justify-center lg:justify-start space-x-4">
+                    <img src="../assets/Ellipse 11.svg" alt="">
+                    <img src="../assets/navyline.svg" alt="">
+                </div>
+                <div class="bg-timelinebg flex items-center justify-center lg:justify-start pl-8 pr-10 py-4 rounded-md">
+                    <img src="../assets/close.svg" alt="">
+                    <p class="text-navy text-md font-medium font-gramatika">Applications Close</p>
+                </div>
+            </div>
+
+            <!-- NOVEMBER 20TH - 21ST -->
+            <div class="space-y-4 mt-6 lg:mt-0">
+                <p class="text-navy text-gramatika font-medium text-center lg:text-left">NOVEMBER 20TH - 21ST</p>
+                <div class="flex justify-center lg:justify-start space-x-4">
+                    <img src="../assets/Ellipse 11.svg" alt="">
+                    <img src="../assets/navyline.svg" alt="">
+                </div>
+                <div class="bg-timelinebg flex items-center justify-center lg:justify-start pl-8 pr-10 py-4 rounded-md">
+                    <img src="../assets/virtual.svg" alt="">
+                    <p class="text-navy text-md font-medium font-gramatika">Virtual Pitching</p>
+                </div>
             </div>
         </div>
-       
-       
-
     </div>
 </div>
+<!-- send in your application -->
+<div class="flex items-center justify-center w-full mt-16 lg:mt-32 px-4">
+  <div class="text-center w-full lg:w-2/3 space-y-6">
+      <div>
+          <p class="font-rockinsoda text-navy text-4xl lg:text-7xl leading-tight">SEND IN YOUR</p>
+          <p class="font-rockinsoda text-navy text-4xl lg:text-7xl leading-tight">APPLICATIONS</p>
+      </div>
+      <div>
+          <p class="text-gray-500 text-base lg:text-xl font-gramatika leading-relaxed">
+              We know that this is not the full extent of themes which constitute improving SRH outcomes, and would love to hear from innovators with ideas beyond the mentioned themes.
+          </p>
+      </div>
+      <button class="p-2 px-4 font-gramatika bg-tangerine text-white hover:bg-tangerine-dark transition-all">
+          <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" class="mt-6">
+              Start Your Application
+          </a>
+      </button>
   </div>
+</div>
+
+<div class="mt-20 w-full space-y-10 p-10 ">
+  <div class="bg-lightTangerine p-8 flex justify-between">
+    <p class="font-rockinsoda text-navy text-4xl"> ELIGIBILITY</p>
+    <i class=" text-navy fa fa-arrow-right  fa-3x" aria-hidden="true"></i>
+
+  </div>
+
+  <div class=" space-x-4 lg:space-x-0 bg-lightTangerine p-8 flex justify-between">
+    <p class="font-rockinsoda text-navy text-4xl"> SELECTION CRITERIA</p>
+    <i class=" text-navy fa fa-arrow-right  fa-3x" aria-hidden="true"></i>
+
+  </div>
+
+</div>
+
+<div class="w-full flex flex-col lg:flex-row justify-between mt-16 p-4 lg:p-10 mb-10">
+  <div class="space-y-4 text-center lg:text-left">
+    <p class="font-rockinsoda text-navy text-2xl sm:text-3xl">HAVE A QUESTION ABOUT THE</p>
+    <p class="font-rockinsoda text-navy text-2xl sm:text-3xl">PROGRAM?</p>
+    <button class="font-gramatika text-xl sm:text-2xl text-navy transition-all" ref="button">
+      <div class="flex justify-center lg:justify-start space-x-4">
+        <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank">Join info session</a>
+        <img src="../assets/Arrow 1.svg" alt="Arrow Icon">
+      </div>
+    </button>
+  </div>
+
+  <div class="space-y-4 mt-8 mr-0 lg:mr-20 lg:mt-0 text-center lg:text-left">
+    <p class="font-gramatika text-navy text-lg sm:text-xl">Email us at:</p>
+    <p class="font-gramatika text-navy text-lg sm:text-xl underline">srhprogram@hangapitchfest.rw</p>
+    <p class="font-gramatika text-navy text-lg sm:text-xl">visit:</p>
+    <a href="" class="font-gramatika text-navy text-lg sm:text-xl">Hanga SRH FAQ</a>
+  </div>
+</div>
+
+<FooterPage/>
+
+ </div>
+
 
   </template>
   <script>
   import NavInit from '@/components/NavInit.vue';
+import FooterPage from '@/components/footerPage.vue';
   export default{
       name:"HangaSrh",
       components:{
-          NavInit
+          NavInit,
+          FooterPage
       },
       mounted() {
                   const observer = new IntersectionObserver((entries) => {
