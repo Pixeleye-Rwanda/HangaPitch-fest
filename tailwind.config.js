@@ -27,7 +27,8 @@ module.exports = {
        darkGray: '#404040',
        newsClr:' #132060',
        greenlime: '#E1FEF7',
-       navbg:'#FFFBF9'
+       navbg:'#FFFBF9',
+       jade:'#01979A'
 
 
 
