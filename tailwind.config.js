@@ -28,12 +28,9 @@ module.exports = {
        newsClr:' #132060',
        greenlime: '#E1FEF7',
        navbg:'#FFFBF9',
-<<<<<<< HEAD
-       jade:'#01979A'
-=======
+       jade:'#01979A',
        timelinebg:'#FFF8F4'
 
->>>>>>> 4eecc51c3e31337772663f8441809575954b563d
 
 
 

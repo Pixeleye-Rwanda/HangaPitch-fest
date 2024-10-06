@@ -52,28 +52,336 @@
         </div>
 
         <!-- Boy Section -->
-        <div class="mt-12 flex space-x-4 w-full">
-            <div class="w-2/4">
+        <div class="mt-12 ml-4 flex space-x-16 w-full">
+            <div class="w-2/4 ml-16 h-[700px]">
                 <img src="../assets/hanga-boy.jpg" class="w-full h-full object-cover">
             </div>
             <div class="mt-8 w-2/4">
                 <div>
-                    <div>
-                        <p class="text-navy text-lg md:text-2xl font-gramatika font-bold">Program stages </p>
+                    <div class="mb-16">
+                        <p
+                            class="text-navy text-lg md:text-2xl font-gramatika font-bold text-3xl lg:text-6xl font-rockinsoda text-navy">
+                            Program stages </p>
                     </div>
-                    <div>
-                        <p class="text-navy font-gramatika">
-                            4-6 weeks boot camp targeting up to 30 individual participants selected using a highly competitive
+                    <div class="text-justify mt-4 lg:mt-0 space-y-8 w-full">
+                        <p class="text-navy font-bold text-2xl lg:text-4xl font-rockinsoda text-navy uppercase">Ideation
+                        </p>
+                        <p class="text-base lg:text-lg font-gramatika text-navy mr-24 text-3xl lg:text-6xl">
+                            .4-6 weeks boot camp targeting up to 30 individual participants selected using a highly
+                            competitive
                             process.</p>
-        
-                           <p  class="text-navy font-gramatika">Open to youths above 18 years, with a desire to learn how to ideate, validate, prototype, and create
-                            a start-up, and willing to complete a 9-month fully fledged innovation program on full-time basis.</p> 
-                            <p  class="text-navy font-gramatika">Fellows who cannot find compelling opportunity cases or high potential ideas will be dropped out of
-                                the program, or they may follow available exit support mechanism or re-entry routes.</p>
+
+                        <p class="text-base lg:text-lg font-gramatika text-navy mr-24">.Open to youths above 18 years,
+                            with a desire to learn how to ideate, validate, prototype, and create
+                            a start-up, and willing to complete a 9-month fully fledged innovation program on full-time
+                            basis.</p>
+                        <p class="text-base lg:text-lg font-gramatika text-navy mr-24">.Fellows who cannot find
+                            compelling opportunity cases or high potential ideas will be dropped out of
+                            the program, or they may follow available exit support mechanism or re-entry routes.</p>
+                    </div>
+                </div>
+                <!-- Scroll Buttons -->
+                <div class="float-left space-x-2 mt-24 mr-8">
+                    <button @click="scrollLeft"
+                        class=" top-1/2 right-0 transform -translate-y-1/2 z-10 border-2  rounded-full p-4 bg-white text-navy focus:outline-none hover:bg-navy hover:text-white transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <button @click="scrollRight"
+                        class=" top-1/2 left-0 transform -translate-y-1/2 z-10 border-2  rounded-full p-4 bg-white text-navy focus:outline-none hover:bg-navy hover:text-white transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:text-left w-2/4 space-y-2 ml-16 mt-24">
+            <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">BY THE</p>
+            <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">NUMBERS</p>
+        </div>
+
+        <div
+            class="flex flex-wrap justify-center  lg:mr-4 sm:mr-0 lg:justify-between gap-y-20 gap-x-8 lg:gap-x-20  px-4 lg:px-10 mt-24 lg:mt-32">
+            <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4 text-center lg:text-left">
+                <img src="../assets/1line.png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
+                <hr class="border-t border-gray-300">
+                <div class="space-y-2">
+                    <p class="font-rockinsoda text-5xl text-navy">FUNDING</p>
+
+
+                    <p class="text-lightblue  text-lg font-gramatika mt-4 text-justify">Grant funding valued at
+                        <b>$10,000 USD</b> with the scope to increase up to <b>$30,000 USD</b>
+                        for the highest performing start-ups in the program
+                    </p>
+
+
+                </div>
+
+            </div>
+
+            <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4 text-center lg:text-left" ref="item2">
+                <img src="../assets/2line.png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
+                <hr class="border-t border-gray-300">
+                <div class="space-y-2">
+                    <p class="font-rockinsoda text-5xl text-navy">LEARNING</p>
+
+                    <p class="text-lightblue text-lg font-gramatika mt-4"> <b>A 3 month</b>, cohort-based learning
+                        curriculum, covering entrepreneurship, evidence and SRH</p>
+
+                </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 lg:w-1/3 space-y-4 text-center lg:text-left" ref="item3">
+                <img src="../assets/3line.png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
+                <hr class="border-t border-gray-300">
+                <div class="space-y-2 ">
+                    <p class="font-rockinsoda text-5xl text-navy">BESPOKE SUPPORT</p>
+
+
+                    <p class="text-lightblue text-lg font-gramatika"> <b>Tailored support</b> from venture-building and
+                        SRH experts over a period of 9 months for eligible start-ups.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Community -->
+        <div class="flex items-center justify-center mt-24">
+            <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">OUR COMMUNITY</p>
+        </div>
+        <div class="px-4 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
+            <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+                <!-- First Card -->
+                <div class="relative h-[400px] w-full md:w-1/4 flex-shrink-0">
+                    <img src="../assets/stad.jpg" class="w-full h-full object-cover">
+                    <div class="absolute inset-0"
+                        style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                        <div class="p-4 sm:p-6 md:p-8 h-full flex flex-col justify-between">
+                            <button
+                                class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 w-fit">STARTUPS</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Card -->
+                <div class="relative h-[400px] w-full md:w-1/4 flex-shrink-0">
+                    <img src="../assets/stad.jpg" class="w-full h-full object-cover">
+                    <div class="absolute inset-0"
+                        style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                        <div class="p-4 sm:p-6 md:p-8 h-full flex flex-col justify-between">
+                            <button
+                                class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 w-fit">STARTUPS</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third Card -->
+                <div class="relative h-[400px] w-full md:w-1/4 flex-shrink-0">
+                    <img src="../assets/stad.jpg" class="w-full h-full object-cover">
+                    <div class="absolute inset-0"
+                        style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                        <div class="p-4 sm:p-6 md:p-8 h-full flex flex-col justify-between">
+                            <button
+                                class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 w-fit">STARTUPS</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth Card -->
+                <div class="relative h-[400px] w-full md:w-1/4 flex-shrink-0">
+                    <img src="../assets/stad.jpg" class="w-full h-full object-cover">
+                    <div class="absolute inset-0"
+                        style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                        <div class="p-4 sm:p-6 md:p-8 h-full flex flex-col justify-between">
+                            <button
+                                class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 w-fit">STARTUPS</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Selection process -->
+        <div class="relative h-auto min-h-[600px]">
+            <div class="mt-20 py-16  sm:mt-32 bg-cover h-full"
+                :style="{ backgroundImage: `url(${require('@/assets/notched.svg')})` }">
+                <div class="lg:text-left w-2/4 space-y-2 ml-16 mt-24">
+                    <p class="text-2xl lg:text-2xl font-rockinsoda text-white">OUR SELECTION PROCESS</p>
+                </div>
+
+                <div class="px-4 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
+                    <!-- First row -->
+                    <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+                        <div class="w-full md:w-1/3 flex-shrink-0">
+                            <img src="../assets/hub-icon-1.svg" alt="">
+                            <p class="text-xl lg:text-xl font-gramatika text-white">Attend the Information <br> Desk
+                                Workshop</p>
+                            <p clas="text-white">Before call for applications, an info session
+                                will be held interested candidates to learn more about the Hanga Hub programs.</p>
+                        </div>
+                        <div class="w-full md:w-1/3 flex-shrink-0">
+                            <img src="../assets/hub-icon-1.svg" alt="">
+                            <p class="text-xl lg:text-xl font-gramatika text-white">Attend the Information <br> Desk
+                                Workshop</p>
+                            <p clas="text-white font-bold font-gramatika">Before call for applications, an info session
+                                will be held interested candidates to learn more about the Hanga Hub programs.</p>
+                        </div>
+                        <div class="w-full md:w-1/3 flex-shrink-0">
+                            <img src="../assets/hub-icon-1.svg" alt="">
+                            <p class="text-xl lg:text-xl font-gramatika text-white">Attend the Information <br> Desk
+                                Workshop</p>
+                            <p clas="text-white font-bold font-gramatika">Before call for applications, an info session
+                                will be held interested candidates to learn more about the Hanga Hub programs.</p>
+                        </div>
+                    </div>
+                    <!-- Second row -->
+                    <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+                        <div class="w-full md:w-1/3 flex-shrink-0">
+                            <img src="../assets/hub-icon-1.svg" alt="">
+                            <p class="text-xl lg:text-xl font-gramatika text-white">Attend the Information <br> Desk
+                                Workshop</p>
+                            <p clas="text-white font-bold font-gramatika">Before call for applications, an info session
+                                will be held interested candidates to learn more about the Hanga Hub programs.</p>
+                        </div>
+                        <div class="w-full md:w-1/3 flex-shrink-0">
+                            <img src="../assets/hub-icon-1.svg" alt="">
+                            <p class="text-xl lg:text-xl font-gramatika text-white">Attend the Information <br> Desk
+                                Workshop</p>
+                            <p clas="text-white font-bold font-gramatika">Before call for applications, an info session
+                                will be held interested candidates to learn more about the Hanga Hub programs.</p>
+                        </div>
+                     
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+          <!-- Program Gallery --->
+          <div class="mt-12  pl-4 md:pl-12 pr-4 w-full">
+            <div>
+              <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">PROGRAM GALLERY</h1>
+            </div>
+            <div class="mt-8 space-y-4 md:space-y-0">
+              <!-- First row of images -->
+              <div class="flex flex-wrap justify-start w-full">
+                <div class="h-[180px] md:h-[215px] w-1/2  md:w-1/5">
+                  <img src="../assets/1.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/2.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/3.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/4.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px]  w-1/2  md:w-1/5">
+                  <img src="../assets/5.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:hidden w-1/2 md:w-1/5">
+                  <img src="../assets/3.jpg" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <!-- Second row of images -->
+              <div class="flex flex-wrap justify-start w-full">
+                <div class="h-[180px] md:h-[215px]  w-1/2 md:w-1/5">
+                  <img src="../assets/6.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/7.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/8.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/9.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/10.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:hidden w-1/2 md:w-1/5">
+                  <img src="../assets/8.jpg" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <!-- Third row of images -->
+              <div class="flex flex-wrap justify-start w-full">
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/11.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/12.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/13.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/14.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/15.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:hidden w-1/2 md:w-1/5">
+                  <img src="../assets/12.jpg" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <!-- Fourth row of images -->
+              <div class="flex flex-wrap justify-start w-full">
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/17.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/18.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/19.png" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/20.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/21.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:hidden w-1/2 md:w-1/5">
+                  <img src="../assets/18.jpg" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <!-- Fifth row of images -->
+              <div class="flex flex-wrap justify-start w-full">
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/22.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/23.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/24.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/14.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
+                  <img src="../assets/26.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-[180px]  md:hidden  w-1/2 md:w-1/5">
+                  <img src="../assets/23.jpg" class="w-full h-full object-cover">
+                </div>
+              </div>
+          
+              <!-- Follow button -->
+              <div class="flex items-center justify-center mt-2">
+                <button class="font-gramatika text-black text-md bg-white  absolute p-2 rounded-md py-2 px-4 shadow-md">Follow us on Instagram</button>
+              </div>
+            </div>
+          </div>
+
     </div>
 
 

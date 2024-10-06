@@ -9,11 +9,13 @@ import PitchHanga from "./views/PitchHanga.vue";
 import TimelinePage from "./views/TimelinePage.vue";
 import ContactUsPage from "./views/ContactUsPage.vue"; 
 import FilteredStarups from "./components/FilteredStarups.vue";
+import WaitlistPage from "./views/WaitlistPage.vue";
 import HangaHub from "./views/HangaHub.vue";
 import HangaAgritech from "./views/HangaAgritech.vue";
 import HangSrh from "./views/HangSrh.vue";
 import NavInit from "./components/NavInit.vue";
 import FaqPage from "./views/FaqPage.vue";
+import ContactHubsPage from "./views/ContactHubsPage.vue";
 import { createRouter,createWebHistory } from "vue-router";
 
 const routes=[
@@ -82,6 +84,11 @@ const routes=[
         path:'/contact'
     },
     {
+        name:'WaitlistPage',
+        component:WaitlistPage,
+        path:'/waitlist'
+    },
+    {
         name:'HangHub',
         component:HangaHub,
         path:'/hub'
@@ -107,6 +114,11 @@ const routes=[
         name:'FaqPage',
         component:FaqPage,
         path:'/faq'
+    },
+    {
+        name:'ContactHubsPage',
+        component:ContactHubsPage,
+        path:'/contact-hubs'
     },
 
 

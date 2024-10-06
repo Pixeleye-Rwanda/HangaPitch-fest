@@ -29,8 +29,8 @@
               Network</router-link></li>
           <li><router-link to="/pitch-at-hanga" class="text-white block hover:text-gray-300" @click="toggleMenu">Pitch
               at Hanga</router-link></li>
-          <li><router-link to="/timeline" class="text-white block hover:text-gray-300"
-              @click="toggleMenu">Timeline</router-link></li>
+          <!-- <li><router-link to="/timeline" class="text-white block hover:text-gray-300"
+              @click="toggleMenu">Timeline</router-link></li> -->
           <li><button class="text-white font-semibold">Initiatives</button></li>
           <li>
             <button id="dropdownButton" @click="toggleDropdown" class="text-white font-semibold">
@@ -84,8 +84,8 @@
         </div>
 
 
-        <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
-          <router-link to="/timeline"> Timeline</router-link>
+      <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+          <!-- <router-link to="/timeline"> Timeline</router-link>  -->
           <!-- Dropdown -->
         <div v-if="navBg" class="absolute z-50 left-0 w-full bg-navbg mt-4 shadow-lg" >
         <hr class="w-auto border-gray-200 border-t-2 mt-8">
