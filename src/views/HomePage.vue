@@ -311,17 +311,26 @@
       </div>
 
       <!--------- section nine ---------->
-      <div class="lg:-mb-10  ">
+      <div class="lg:-mb-10">
         <div class="mt-24 ml-8 space-x-2">
-          <h1 class="font-rockinsoda text-6xl text-navy ">2023</h1>
-        <h1 class="font-rockinsoda text-6xl text-navy">NOTABLE SPEAKERS</h1>
+          <h1 class="font-rockinsoda text-6xl text-navy">2023</h1>
+          <h1 class="font-rockinsoda text-6xl text-navy">NOTABLE SPEAKERS</h1>
         </div>
-        <div class="relative overflow-hidden mt-16 ml-12" style="height: 800px;">
-          <div class="flex animate-scroll absolute" :style="{ width: `${individuals.length * 800}px` }">
-            <template v-for="(_, loopIndex) in 1">
-              <div v-for="(individual, index) in individuals" :key="`${loopIndex}-${index}`" 
-              class="relative h-[100vh] w-[80vh] flex-shrink-0">
-                <img :src="individual.image" class="w-full h-full object-cover">
+        <div
+          class="relative overflow-x-auto whitespace-nowrap scrollbar-hide mt-16 ml-0 lg:ml-12"
+          ref="scrollContainer"
+          style="height: 800px;"
+          @touchstart="handleTouchStart"
+          @touchmove="handleTouchMove"
+        >
+          <div class="flex" :style="{ width: `${individuals.length * 800}px` }">
+            <template v-for="(_, loopIndex) in 2">
+              <div
+                v-for="(individual, index) in individuals"
+                :key="`${loopIndex}-${index}`"
+                class="relative h-[100vh] w-[80vh] inline-block"
+              >
+                <img :src="individual.image" class="w-full h-full object-cover" />
                 <div class="absolute inset-0" :style="{ background: individual.gradient }"></div>
                 <div class="text-5xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
                   <div class="space-y-4">
@@ -332,12 +341,11 @@
                       <p class="text-white font-gramatika text-2xl text-center" v-html="individual.title"></p>
                     </div>
                   </div>
-                </div> 
+                </div>
               </div>
             </template>
           </div>
         </div>
-        
       </div>
 
     <!--------- section 10 -------->
@@ -464,6 +472,20 @@ export default {
     observer.observe(this.$refs.img2);
 
 
+      // For mouse support (if you want to implement it)
+      const handleMouseMove = (event) => {
+      if (event.buttons) {
+        this.$refs.scrollContainer.scrollLeft -= event.movementX; // Adjust scroll based on mouse movement
+      }
+    };
+    
+    this.$refs.scrollContainer.addEventListener('mousemove', handleMouseMove);
+    
+    // Cleanup
+    this.$refs.scrollContainer.addEventListener('mouseleave', () => {
+      this.$refs.scrollContainer.removeEventListener('mousemove', handleMouseMove);
+    });
+
 
   },
   data() {
@@ -487,9 +509,27 @@ export default {
           image: require('@/assets/ceo.jpg'),
           gradient: 'linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%)'
         }
-      ]
+      ],
+      startX: 0,
+
     };
+  },
+
+  methods: {
+    handleTouchStart(event) {
+      this.startX = event.touches[0].clientX;
+    },
+    handleTouchMove(event) {
+      const distance = this.startX - event.touches[0].clientX;
+      this.$refs.scrollContainer.scrollLeft += distance;
+      this.startX = event.touches[0].clientX;
+    },
+  },
+
+  beforeUnmount() {
+    this.$refs.scrollContainer.removeEventListener('mousemove', this.handleMouseMove);
   }
+
 }
 
 
@@ -497,7 +537,12 @@ export default {
 </script>
 
 <style>
-
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
 
   .slide-up {
     transform: translateY(20px);

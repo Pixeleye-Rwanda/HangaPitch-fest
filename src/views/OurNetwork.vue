@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden">
-    <div class="h-screen -mb-48 lg:mb-0 relative">
+    <div class="h-screen sm:-mb-10  md:-mb-48 lg:mb-0 relative">
       <div class="relative h-screen min-h-[400px] max-h-[670px] sm:max-h-[800px] lg:max-h-[900px] xl:max-h-[1000px]">
         <div class="absolute inset-0 bg-black opacity-30"></div>
         <img :src="currentBgImage" alt="Background" class="h-full w-full object-cover">
@@ -33,9 +33,9 @@
 
         <!-- Navbar network   -->
     <div  ref="stickyDiv"
-    :class="[  'h-[9vh] bg-tangerine transition-all duration-800 ease-in-out  w-full', isSticky ? 'fixed top-0 left-0 w-full z-50 shadow-md' : 'absolute'
+    :class="[  'h-[9vh] bg-tangerine transition-all duration-800 ease-in-out  w-full', isSticky ? 'fixed top-0 left-0 w-full z-50 shadow-md' : 'absolute' ,
     ]">
-      <div class="flex  ">
+      <div class="flex ">
         <div class="ml-2 lg:ml-12 text-md lg:text-xl">
           <h1 class="font-gramatika font-bold text-white mt-8 lg:mt-4 ">OUR NETWORK</h1>
         </div>
