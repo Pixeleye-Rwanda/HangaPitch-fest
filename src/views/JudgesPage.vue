@@ -29,9 +29,15 @@
       <hr class="w-[20px] border border-black mt-4 ">
       <p class="font-gramatika text-lg" >2023</p>
      </div>
-  
-      <div class="flex ml-12  mt-10">
-        <div class="relative h-[582px] w-[400px] flex-shrink-0">
+    
+
+     <div
+     class="relative overflow-x-auto flex  whitespace-nowrap scrollbar-hide mt-10 ml-0 -mb-44 lg:ml-12"
+     ref="scrollContainer"
+     style="height: 800px;"
+     @touchstart="handleTouchStart"
+     @touchmove="handleTouchMove"
+   >        <div class="relative h-[582px] w-[400px] flex-shrink-0">
           <img src="../assets/alice.jpg" class="w-full h-full object-cover">
           <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
           <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
@@ -97,7 +103,7 @@
         </div>
   
         <div class="relative h-[582px] w-[400px] flex-shrink-0">
-          <img src="../assets/eleni.jpg" class="w-full h-full object-cover">
+          <img src="../assets/nicole.jpg" class="w-full h-full object-cover">
           <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 28, 0.02) 0%, rgba(1, 9, 28, 0.15) 30%, rgba(1, 9, 28, 0.8) 100%);"></div>
           <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
             <div class="space-y-4 ">
@@ -129,8 +135,13 @@
         <p class="font-gramatika text-lg" >2022</p>
        </div>
     
-        <div class="flex ml-12  mt-10">
-          <div class="relative h-[582px] w-[400px] flex-shrink-0">
+       <div
+       class="relative overflow-x-auto flex  whitespace-nowrap scrollbar-hide mt-10 ml-0 -mb-44 lg:ml-12"
+       ref="scrollContainer"
+       style="height: 800px;"
+       @touchstart="handleTouchStart"
+       @touchmove="handleTouchMove"
+     >          <div class="relative h-[582px] w-[400px] flex-shrink-0">
             <img src="../assets/obina.jpg" class="w-full h-full object-cover">
             <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
             <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
@@ -227,8 +238,13 @@
          </div>
       
                  
-             <div class="flex ml-12  mt-10">
-            <div class="relative h-[582px] w-[400px] flex-shrink-0">
+         <div
+         class="relative overflow-x-auto flex  whitespace-nowrap scrollbar-hide mt-10 ml-0 -mb-44 lg:ml-12"
+         ref="scrollContainer"
+         style="height: 800px;"
+         @touchstart="handleTouchStart"
+         @touchmove="handleTouchMove"
+       >            <div class="relative h-[582px] w-[400px] flex-shrink-0">
               <img src="../assets/clarisse.jpg" class="w-full h-full object-cover">
               <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
               <div class="text-4xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
@@ -371,6 +387,47 @@
   
   <script>
   export default{
-      name:'JudgesPage'
+      name:'JudgesPage',
+
+      mounted(){
+
+      const handleMouseMove = (event) => {
+      if (event.buttons) {
+        this.$refs.scrollContainer.scrollLeft -= event.movementX; 
+      }
+    };
+    
+    this.$refs.scrollContainer.addEventListener('mousemove', handleMouseMove);
+    
+    // Cleanup
+    this.$refs.scrollContainer.addEventListener('mouseleave', () => {
+      this.$refs.scrollContainer.removeEventListener('mousemove', handleMouseMove);
+    });
+
+      },
+
+      methods: {
+    handleTouchStart(event) {
+      this.startX = event.touches[0].clientX;
+    },
+    handleTouchMove(event) {
+      const distance = this.startX - event.touches[0].clientX;
+      this.$refs.scrollContainer.scrollLeft += distance;
+      this.startX = event.touches[0].clientX;
+    },
+  },
+
+  beforeUnmount() {
+    this.$refs.scrollContainer.removeEventListener('mousemove', this.handleMouseMove);
+  }
   }
   </script>
+
+<style>
+  .scrollbar-hide {
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; 
+  }
+</style>
