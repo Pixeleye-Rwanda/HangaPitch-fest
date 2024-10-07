@@ -11,7 +11,11 @@ module.exports = {
       fontFamily: {
         gramatika: ['Gramatika', 'sans-serif'],
         rockinsoda: ['Rockinsoda', 'serif'],
+        
+        futura :['Futura','sans-serif'],
+      
     },
+
     colors: {
       tangerine: '#F45001',
       navy:'#243163',
