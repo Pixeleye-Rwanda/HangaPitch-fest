@@ -61,14 +61,14 @@
     <div class="mr-12">
         <ul class="flex mx-auto items-center space-x-6">
           <li  :class="navBg ? 'text-white' : 'text-navy font-gramatika font-semibold underline-animation'" >
-            <router-link to="/about-us">Hanga Pitch</router-link>
+            <router-link to="/">Hanga Pitch</router-link>
           </li>
           <li  :class="navBg ? 'text-white' : 'text-navy font-gramatika font-semibold underline-animation'">
             <router-link to="/faq">FAQ</router-link>
           </li> 
           <button
           :class="[navBg?'text-white':'text-navy','mr-4 p-4 px-6 font-gramatika text-navy text-md font-semibold ']">
-          Apply Now
+          <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank"  >Apply Now</a>
         </button>
           
         </ul>

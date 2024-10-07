@@ -7,9 +7,9 @@
       <!-- Text Content -->
       <div class="space-y-6 lg:space-y-10 text-center lg:text-left">
         <div class="space-y-4">
-          <p class="text-3xl lg:text-6xl xl:text-8xl font-rockinsoda text-navy">ADDRESSING</p>
-          <p class="text-3xl lg:text-6xl xl:text-8xl font-rockinsoda text-navy">THE OBSTACLES & GAPS</p>
-          <p class="text-3xl lg:text-6xl xl:text-8xl font-rockinsoda text-navy">LIMITING EARLY-STAGE STARTUPS.</p>
+          <p class="text-3xl lg:text-6xl xl:text-8xl font-futura text-navy">ADDRESSING</p>
+          <p class="text-3xl lg:text-6xl xl:text-8xl font-futura text-navy">THE OBSTACLES & GAPS</p>
+          <p class="text-3xl lg:text-6xl xl:text-8xl font-futura text-navy">LIMITING EARLY-STAGE STARTUPS.</p>
         </div>
 
         <!-- Description and Button -->
@@ -46,9 +46,9 @@
     <div class="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-16 mt-24 lg:mt-32">
       <!-- Text Content -->
       <div class="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
-        <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">An Open Space for Young</p>
-        <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">Entrepreneurs and</p>
-        <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">Innovators.</p>
+        <p class="text-3xl lg:text-6xl font-futura text-navy">An Open Space for Young</p>
+        <p class="text-3xl lg:text-6xl font-futura text-navy">Entrepreneurs and</p>
+        <p class="text-3xl lg:text-6xl font-futura text-navy">Innovators.</p>
       </div>
       <!-- Description -->
       <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
@@ -69,9 +69,9 @@
       </div>
       <!-- Content -->
       <div class="w-full lg:w-1/2 space-y-16 lg:mt-16">
-        <h2 class="text-3xl lg:text-6xl font-rockinsoda text-navy">Program Stages</h2>
+        <h2 class="text-3xl lg:text-6xl font-futura text-navy">Program Stages</h2>
         <div class="space-y-12">
-          <h3 class="text-2xl lg:text-4xl font-rockinsoda text-navy uppercase">Ideation</h3>
+          <h3 class="text-2xl lg:text-4xl font-futura text-navy uppercase">Ideation</h3>
           <p class="text-base lg:text-lg font-gramatika text-navy">
             .4-6 weeks boot camp targeting up to 30 individual participants selected through a highly
             competitive process.
@@ -109,8 +109,8 @@
     </div>
 
     <div class="lg:text-left w-2/4 space-y-2 ml-16 mt-24">
-      <p class="text-4xl lg:text-8xl font-rockinsoda text-navy">BY THE</p>
-      <p class="text-4xl lg:text-8xl font-rockinsoda text-navy">NUMBERS</p>
+      <p class="text-4xl lg:text-8xl font-futura text-navy">BY THE</p>
+      <p class="text-4xl lg:text-8xl font-futura text-navy">NUMBERS</p>
     </div>
 
     <div
@@ -120,7 +120,7 @@
         <img src="../assets/user.svg" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
         <hr class="border-t border-gray-300">
         <div class="space-y-2">
-          <p class="font-rockinsoda text-8xl text-navy">1000+</p>
+          <p class="font-futura text-8xl text-navy">1000+</p>
           <p class="text-lightblue text-lg font-gramatika mt-4">Youths trained</p>
 
         </div>
@@ -130,7 +130,7 @@
         <img src="../assets/stairs.svg" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
         <hr class="border-t border-gray-300">
         <div class="space-y-2 ">
-          <p class="font-rockinsoda text-8xl text-navy">192</p>
+          <p class="font-futura text-8xl text-navy">192</p>
           <p class="text-lightblue text-lg font-gramatika mt-4">Supported Start-ups</p>
 
         </div>
@@ -140,7 +140,7 @@
         <img src="../assets/bag.svg" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
         <hr class="border-t border-gray-300">
         <div class="space-y-2">
-          <p class="font-rockinsoda text-8xl text-navy">768</p>
+          <p class="font-futura text-8xl text-navy">768</p>
           <p class="text-lightblue text-lg font-gramatika mt-4">Direct-jobs created</p>
         </div>
 
@@ -150,7 +150,7 @@
 
     <!-- Community -->
     <div class="flex items-center justify-center mt-24">
-      <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">OUR COMMUNITY</p>
+      <p class="text-3xl lg:text-6xl font-futura text-navy">OUR COMMUNITY</p>
     </div>
     <div class="px-4 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
       <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
@@ -206,7 +206,7 @@
       <div class="mt-20 py-16  sm:mt-32 bg-cover h-full"
         :style="{ backgroundImage: `url(${require('@/assets/hanga-bg.svg')})` }">
         <div class="lg:text-left w-2/4 space-y-2 ml-16 mt-24">
-          <p class="text-3xl lg:text-4xl font-rockinsoda text-white">OUR SELECTION PROCESS</p>
+          <p class="text-3xl lg:text-4xl font-futura text-white">OUR SELECTION PROCESS</p>
         </div>
 
         <div class="px-4 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16 flex flex-col space-y-16 mb-16">
@@ -260,7 +260,7 @@
     <!-- Program Gallery --->
     <div class="mt-32  pl-4 md:pl-12 pr-4 w-full">
       <div>
-        <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl mb-16">PROGRAM GALLERY</h1>
+        <h1 class="font-futura text-navy text-4xl md:text-5xl mb-16">PROGRAM GALLERY</h1>
       </div>
       <div class="mt-8 space-y-4 md:space-y-0">
         <!-- First row of images -->
@@ -356,12 +356,13 @@
         </div>
 
         <!-- Follow button -->
-        <div class="flex items-center justify-center mt-2">
+        <div class="flex  items-center justify-center">
           <button class="font-gramatika text-black text-md bg-white p-2 rounded-md py-2 px-4 shadow-md">Follow us on
             Instagram</button>
         </div>
       </div>
     </div>
+    <FooterPage class="mt-24"/>
 
   </div>
 
@@ -374,10 +375,12 @@
 
 <script>
 import NavHubs from '@/components/NavHubs.vue';
+import FooterPage from '@/components/footerPage.vue';
 export default {
   name: "HangaHub",
   components: {
-    NavHubs
+    NavHubs,
+    FooterPage
   }
 }
 </script>
