@@ -10,12 +10,12 @@
         </button>
   
         <router-link to="/" class="mx-auto">
-          <img src="../assets/SRH.svg" class="w-24 h-auto" alt="Logo">
+          <img src="../assets/SRH (1).svg" class="w-24 h-auto" alt="Logo">
         </router-link>
       </div>
   
       <transition name="slide-fade" @before-enter="beforeEnter" @enter="enter" @leave="leave">
-        <div v-show="isMenuOpen" class="fixed h-[340px] w-full bg-tangerine p-4 z-40">
+        <div v-show="isMenuOpen" class="fixed h-[200px] w-full bg-tangerine p-4 z-40">
           <button @click="toggleMenu" class="absolute top-4 right-4 text-white text-3xl">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -23,30 +23,13 @@
           </button>
   
           <ul class="mt-16 space-y-4">
-            <li><router-link to="/about-us" class="text-white block hover:text-gray-300" @click="toggleMenu">About
-                Us</router-link></li>
-            <li><router-link to="/network" class="text-white block hover:text-gray-300" @click="toggleMenu">Our
-                Network</router-link></li>
-            <li><router-link to="/pitch-at-hanga" class="text-white block hover:text-gray-300" @click="toggleMenu">Pitch
-                at Hanga</router-link></li>
-            <li><router-link to="/timeline" class="text-white block hover:text-gray-300"
-                @click="toggleMenu">Timeline</router-link></li>
-            <li><button class="text-white font-semibold">Initiatives</button></li>
-            <li>
-              <button id="dropdownButton" @click="toggleDropdown" class="text-white font-semibold">
-                <div class="flex items-center">
-                  <p>EN</p>
-                  <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </div>
-              </button>
-              <ul v-show="isDropdownVisible" class="mt-2 w-30 shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kinyarwanda</a></li>
-                <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">French</a></li>
-              </ul>
-            </li>
+            <li><router-link to="/" class="text-white block hover:text-gray-300" @click="toggleMenu">Hanga Pitch</router-link></li>
+            <li><router-link to="/faq" class="text-white block hover:text-gray-300" @click="toggleMenu">FAQ</router-link></li>
+            <li>  <button
+              :class="[navBg?'text-white':'text-navy',' font-gramatika text-white text-md font-semibold ']">
+              <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank"  >Apply Now</a>
+            </button>
+              </li>
           </ul>
         </div>
       </transition>

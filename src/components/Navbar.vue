@@ -27,11 +27,74 @@
               Us</router-link></li>
           <li><router-link to="/network" class="text-white block hover:text-gray-300" @click="toggleMenu">Our
               Network</router-link></li>
-          <li><router-link to="/pitch-at-hanga" class="text-white block hover:text-gray-300" @click="toggleMenu">Pitch
+          <li><router-link to="/pitch" class="text-white block hover:text-gray-300" @click="toggleMenu">Pitch
               at Hanga</router-link></li>
           <!-- <li><router-link to="/timeline" class="text-white block hover:text-gray-300"
               @click="toggleMenu">Timeline</router-link></li> -->
-          <li><button class="text-white font-semibold">Initiatives</button></li>
+                <button id="dropdownInit" @click="toogleNavBg"  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+      
+                  Initiative <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      
+                </button>
+      
+      
+                <div v-show="isDropdownInitVisible" class="absolute flex  shadow-lg bg-white ">
+      
+                </div>
+      
+              
+              <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+                <!-- Dropdown -->
+                <div v-if="navBg" class="absolute  -mt- z-50 left-0 w-full bg-navbg mt-4 shadow-lg max-h-[60vh] overflow-y-auto">
+                  <ul class="w-full flex flex-col lg:flex-row ml-2 lg:ml-24 space-y-4 lg:space-y-0 lg:space-x-12">
+                    <!-- First Section -->
+                    <div class="w-full lg:w-[40vh] p-4  ">
+                      <div class="space-y-6 lg:space-y-10">
+                        <p class="font-rockinsoda text-navy text-xl lg:text-2xl">HANGA SEXUAL REPRODUCTIVE HEALTH</p>
+                        <p class="font-gramatika text-sm lg:text-base">Championing tech-enabled startups solving key issues in SRH.</p>
+                        <router-link to="/srh">
+                          <button class="mr-4 lg:mr-8 mt-4 lg:mt-6 p-2 px-6 lg:px-8 font-gramatika bg-tangerine text-white font-semibold">
+                            Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </button>
+                        </router-link>
+                      </div>
+                    </div>
+              
+                    <!-- Divider -->
+                    <div class="hidden lg:block border-l-2 border-gray-200 h-auto"></div>
+              
+                    <!-- Second Section -->
+                    <div class="w-full lg:w-[40vh] p-4 mt-4">
+                      <div class="space-y-6 lg:space-y-10">
+                        <p class="font-rockinsoda text-navy text-xl lg:text-2xl">HANGA HUB</p>
+                        <p class="font-gramatika text-sm lg:text-base">Tech-enabled innovation & incubation hubs shaping digital employment in Rwanda, led by MINICT, The European Union (EU), and RISA.</p>
+                        <router-link to="/hub">
+                          <button class="mr-4 lg:mr-8 mt-4 lg:mt-6 p-2 px-6 lg:px-8 font-gramatika bg-tangerine text-white font-semibold">
+                            Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </button>
+                        </router-link>
+                      </div>
+                    </div>
+              
+                    <!-- Divider -->
+                    <div class="hidden lg:block border-l-2 border-gray-200 h-auto"></div>
+              
+                    <!-- Third Section -->
+                    <div class="w-full lg:w-[40vh] p-4 mt-4 lg:mr-10">
+                      <div class="space-y-6 lg:space-y-10">
+                        <p class="font-rockinsoda text-navy text-xl lg:text-2xl">HANGA AGRITECH</p>
+                        <p class="font-gramatika text-sm lg:text-base">Driving financial and technical support to technology-enabled startups in agriculture.</p>
+                        <router-link to="/agritech">
+                          <button class="mr-4 lg:mr-8 mt-4 lg:mt-6 p-2 px-6 lg:px-8 font-gramatika bg-tangerine text-white font-semibold">
+                            Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </button>
+                        </router-link>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </li>
+
           <li>
             <button id="dropdownButton" @click="toggleDropdown" class="text-white font-semibold">
               <div class="flex items-center">
@@ -87,9 +150,9 @@
       <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <!-- <router-link to="/timeline"> Timeline</router-link>  -->
           <!-- Dropdown -->
-        <div v-if="navBg" class="absolute z-50 left-0 w-full bg-navbg mt-4 shadow-lg" >
+        <div v-if="navBg" class="absolute z-50 left-0 w-full bg-navbg mt-10 shadow-lg" >
         <hr class="w-auto border-gray-200 border-t-2 mt-8">
-        <ul class="w-full flex ml-24 space-x-12">
+        <ul class="w-full flex px-20 space-x-12">
           <div class="w-[70vh] p-4 mt-4 ">
             <div class="space-y-10">
               <p class="font-rockinsoda text-navy text-2xl">HANGA SEXUAL REPRODUCTIVE HEALTH</p>
