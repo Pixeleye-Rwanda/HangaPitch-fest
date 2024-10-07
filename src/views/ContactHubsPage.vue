@@ -1,6 +1,6 @@
 <template>
     <div class="w-full min-h-screen absolute" style="background-color: #ffffff;">
-        <NavInit />
+        <NavHubs />
     
         <div
         class="ml-8 mr-16 xl:mt-4 2xl:-mt-12 mlg:mr-10 md:ml-12 flex flex-col md:flex-row lg:space-x-16 items-start justify-between">
@@ -58,7 +58,7 @@
   
   
                 <button
-                  class=" w-full mt-4 font-gramatika shadow bg-tangerine focus:shadow-outline focus:outline-none text-white font-medium py-4 px-6 rounded"
+                  class=" w-full mt-4 font-gramatika shadow bg-jade focus:shadow-outline focus:outline-none text-white font-medium py-4 px-6 rounded"
                   type="button">
                   SEND MESSAGE
                 </button>
@@ -85,7 +85,7 @@
       </div>
   
       <div class="relative w-full h-20">
-        <img src="../assets/patterns.svg" alt="" class="absolute bottom-0 left-0 w-full">
+        <img src="../assets/patterns-2.svg" alt="" class="absolute bottom-0 left-0 w-full">
       </div>
    
     </div>
@@ -95,11 +95,11 @@
   </template>
   
   <script>
-  import NavInit from '@/components/NavInit.vue';
+  import NavHubs from '@/components/NavHubs.vue';
   export default {
     name: "TimelinePage",
     components: {
-      NavInit,
+      NavHubs,
     }
   }
   
