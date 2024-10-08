@@ -7,97 +7,76 @@
         
         <NavBar class="absolute top-0 left-0 w-full" />
       
-        <div class="font-rockinsoda absolute text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-1/3 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:top-1/4 text-center sm:text-left" ref="text">
-          <p>THE LARGEST IN-PERSON</p>
-          <p>TECHNOLOGY EVENT IN</p>
-          <p>RWANDA</p>
+        <div class="font-rockinsoda absolute text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-1/3 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:top-1/4 text-center sm:text-left">
+          <h1 v-for="(line, index) in heroText" :key="index" class="hero-text" :style="{ animationDelay: `${index * 0.5}s` }">
+            {{ line }}
+          </h1>
         </div>
 
-
-        <div class="absolute top-2/3 left-4 sm:left-12 lg:left-20  xl:left-26 ">
+        <div class="absolute top-2/3 left-4 sm:left-12 lg:left-20 xl:left-26">
           <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0">
-            <button class="p-3 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
+            <button class="hero-button p-3 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white transition-all duration-300">
              <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank">Apply Now</a> 
             </button>
-            <button class="p-3 px-6 font-gramatika border text-white font-semibold hover:bg-tangerine hover:text-black flex items-center space-x-2">
+            <button class="hero-button p-3 px-6 font-gramatika border text-white font-semibold hover:bg-tangerine hover:text-black flex items-center space-x-2 transition-all duration-300">
               <span>Impact video</span>
               <i class="fa fa-play-circle" aria-hidden="true"></i>
             </button>
           </div>
-          <img src="../assets/gvticons.svg" class="mt-8 max-w-full xl:mt-12" alt="Government Icons">
+          <img src="../assets/gvticons.svg" class="mt-8 max-w-full xl:mt-12 hero-image" alt="Government Icons">
         </div>
       </div>  
 
-      <div class="w-full bg-white lg:ml-16 sm:ml-0  ">
-
-        <div class="w-full px-4  mt-32 ">
+      <div class="w-full bg-white lg:ml-16 sm:ml-0">
+        <div class="w-full px-4 mt-32 fade-in">
           <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">IGNITING AND INSPIRING</p>
           <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">INNOVATION</p>
         </div>
 
         <div class="flex flex-col md:flex-row mt-20">
-          <!-- Left Section with Main Image and Text -->
           <div class="w-full md:w-2/3 mb-4 md:mb-0 px-4">
-            <img src="../assets/students.jpg" alt="Students" class="w-full h-auto " ref="leftContent">
-            <p class="font-gramatika mt-8 text-darknavy text-lg sm:text-xl " ref="text1">
-              We believe in empowering innovators solving some of the dire
-            </p>
-            <p class="font-gramatika text-darknavy text-lg sm:text-xl " ref="text2">
-              challenges in the Rwandan community and abroad
-            </p>
-            <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold  button-hover" ref="button">
-              Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </button>          
+            <img src="../assets/students.jpg" alt="Students" class="w-full h-auto fade-in">
+            <div class="fade-in">
+              <p class="font-gramatika mt-8 text-darknavy text-lg sm:text-xl">
+                We believe in empowering innovators solving some of the dire
+              </p>
+              <p class="font-gramatika text-darknavy text-lg sm:text-xl">
+                challenges in the Rwandan community and abroad
+              </p>
+              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold transition-all duration-300 hover:scale-105">
+                Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
           </div>
       
-          <!-- Right Side with Vertically Stacked Images -->
           <div class="w-full md:w-1/3 space-y-4 px-4 lg:mr-28 sm:mr-0">
-            <img src="../assets/speaker.png" alt="Speaker" class="w-full h-auto " ref="image1">
-            <img src="../assets/audience.jpg" alt="Audience" class="w-full h-auto " ref="image2">
+            <img src="../assets/speaker.png" alt="Speaker" class="w-full h-auto fade-in">
+            <img src="../assets/audience.jpg" alt="Audience" class="w-full h-auto fade-in">
           </div>
         </div>
       </div>
       
-      
-
-      <div class="flex flex-wrap justify-center  lg:mr-4 sm:mr-0 lg:justify-between gap-y-12 gap-x-8 lg:gap-x-16 px-4 lg:px-20 mt-48">
-        <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item1">
-          <img src="../assets/Component 1.png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
-          <hr class="border-t border-gray-300  mx-auto lg:mx-0">
+      <div class="flex flex-wrap justify-center lg:mr-4 sm:mr-0 lg:justify-between gap-y-12 gap-x-8 lg:gap-x-16 px-4 lg:px-20 mt-48">
+        <div v-for="(item, index) in statsItems" :key="index" class="w-full sm:w-1/2 lg:w-1/4 space-y-4 text-center lg:text-left fade-in">
+          <img :src="item.image" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
+          <hr class="border-t border-gray-300 mx-auto lg:mx-0">
           <div>
-            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-navy">130+</p>
-            <p class="text-lightblue font-gramatika text-xl sm:text-2xl">Startups</p>
-          </div>
-        </div>
-      
-        <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item2">
-          <img src="../assets/Component 1 (1).png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
-          <hr class="border-t border-gray-300  mx-auto lg:mx-0">
-          <div>
-            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-navy">10,000+</p>
-            <p class="text-lightblue font-gramatika text-xl sm:text-2xl">Attendees</p>
-          </div>
-        </div>
-      
-        <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item3">
-          <img src="../assets/Component 1 (2).png" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
-          <hr class="border-t border-gray-300  mx-auto lg:mx-0">
-          <div>
-            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-navy">RWF600M</p>
-            <p class="text-lightblue font-gramatika text-xl sm:text-2xl">Invested in tech startups</p>
+            <p class="font-rockinsoda text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-navy">
+              <span ref="countUp">{{ item.currentValue }}</span>{{ item.suffix }}
+            </p>
+            <p class="text-lightblue font-gramatika text-xl sm:text-2xl">{{ item.description }}</p>
           </div>
         </div>
       </div>
 
-
-      
-      <!-- Fourth section -->
-      <div class="relative h-auto min-h-[600px]"> 
-        <div class="mt-20 py-16  sm:mt-32 bg-cover h-full" :style="{ backgroundImage: `url(${require('@/assets/notched.svg')})`}">
+      <!-- Rest of the sections... -->
+      <div class="relative h-auto min-h-[600px]">
+        <div class="mt-20 py-16 sm:mt-32 bg-cover h-full" :style="{ backgroundImage: `url(${require('@/assets/notched.svg')})`}">
           <div class="flex flex-col-reverse lg:flex-row items-center lg:items-start lg:justify-between">
-            <!-- Text Section -->
-            <div class="space-y-8 sm:space-y-10 lg:space-y-16 mt-20 sm:mt-32 lg:mt-26 ml-4 sm:ml-8 md:ml-12 p-4 sm:p-6 md:p-8 w-full lg:w-7/12 text-left">
-              <div class="slide-up" ref="texty">
+            
+            <!-- Text Section with fade-in animation -->
+            <div class="space-y-8 sm:space-y-10 lg:space-y-16 mt-20 sm:mt-32 lg:mt-26 ml-4 sm:ml-8 md:ml-12 p-4 sm:p-6 md:p-8 w-full lg:w-7/12 text-left animate-fadeIn">
+              <div>
                 <h2 class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 3xl:text-8xl text-white font-rockinsoda mb-4">
                   Pitch Your Idea for
                 </h2>
@@ -105,22 +84,25 @@
                   Funding
                 </h2>
               </div>
-              <div class="slide-up" ref="texts">
+              <div>
                 <p class="text-xl sm:text-2xl md:text-3xl lg:text-2xl text-white font-gramatika">
                   The largest in-person technology event in Rwanda designed to ignite & inspire innovation, Hanga Pitchfest is returning for its fourth edition.
                 </p>
               </div>
-              <button class="bg-tangerine text-white text-md sm:text-xl py-3 sm:py-4 px-8 sm:px-12 hover:bg-orange-500 slide-up button-hover" ref="button3">
+              <button class="bg-tangerine text-white text-md sm:text-xl py-3 sm:py-4 px-8 sm:px-12 hover:bg-orange-500 hover:scale-105 transition-all duration-300 ease-in-out">
                 Learn more <i class="fa fa-chevron-right h-2 w-2" aria-hidden="true"></i>
               </button>
             </div>
-            <!-- Image Section -->
-            <div class="text-white mt-12 p-4 sm:p-6 md:p-8  lg:justify-end lg:flex-shrink-0 w-full lg:w-auto lg:max-w-[40%] flex justify-center">
-              <img src="../assets/Vector 6.png" class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none h-auto object-contain slide-up" ref="img2">
+      
+            <!-- Image Section with slide-in animation -->
+            <div class="text-white mt-12 p-4 sm:p-6 md:p-8 lg:justify-end lg:flex-shrink-0 w-full lg:w-auto lg:max-w-[40%] flex justify-center animate-slideInRight">
+              <img src="../assets/Vector 6.png" class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none h-auto object-contain">
             </div>
           </div>
         </div>
       </div>
+      
+      
       
       
       <!-- Fifth section -->
@@ -407,27 +389,20 @@
         <img src="../assets/Frame 320.png" >
       </div>
 
-        <!-- Newsletter signup section -->
+       
 
       <NewsLetter/>
     
-      <!-- Footer section -->
-      
-    
       <FooterPage/>
-
-      </div>
-      </div>
-
-
-    
-  
+    </div>
+  </div>
 </template>
 
 <script>
 import NavBar from '@/components/Navbar.vue';
 import FooterPage from '@/components/footerPage.vue';
 import NewsLetter from '@/components/NewsLetter.vue';
+
 export default {
   name: 'HomePage',
   components: {
@@ -435,63 +410,13 @@ export default {
     FooterPage,
     NewsLetter
   },
-
-  mounted() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('slide-up-visible');
-          entry.target.classList.add('zoom-in-visible');
-          entry.target.classList.add('fade-in-visible');
-          entry.target.classList.add('fade-in-visible-animation');
-          entry.target.classList.add('slide-up-visible-animation');
-
-
-
-        }
-      },{ threshold: 0.5 });
-    });
-
-      
-    // Observe all elements with the zoom-in class
-    const elements = this.$refs;
-    for (let key in elements) {
-      if (elements[key]) {
-        observer.observe(elements[key]);
-      }
-    }
-     // Observe all elements with the fade-in class
-    const items = [this.$refs.item1, this.$refs.item2, this.$refs.item3];
-    items.forEach(item => {
-      observer.observe(item);
-    });
-
-    // Observe both the text and button elements
-    observer.observe(this.$refs.text);
-    observer.observe(this.$refs.texty);
-
-    observer.observe(this.$refs.texts);
-    observer.observe(this.$refs.img2);
-
-
-      // For mouse support (if you want to implement it)
-      const handleMouseMove = (event) => {
-      if (event.buttons) {
-        this.$refs.scrollContainer.scrollLeft -= event.movementX; // Adjust scroll based on mouse movement
-      }
-    };
-    
-    this.$refs.scrollContainer.addEventListener('mousemove', handleMouseMove);
-    
-    // Cleanup
-    this.$refs.scrollContainer.addEventListener('mouseleave', () => {
-      this.$refs.scrollContainer.removeEventListener('mousemove', handleMouseMove);
-    });
-
-
-  },
   data() {
     return {
+      heroText: [
+        'THE LARGEST IN-PERSON',
+        'TECHNOLOGY EVENT IN',
+        'RWANDA'
+      ],
       individuals: [
         {
           name: 'Paul Kagame',
@@ -513,10 +438,18 @@ export default {
         }
       ],
       startX: 0,
-
+      statsItems: [
+        { image: require('@/assets/Component 1.png'), finalValue: 130, currentValue: 0, suffix: '+', description: 'Startups' },
+        { image: require('@/assets/Component 1 (1).png'), finalValue: 10000, currentValue: 0, suffix: '+', description: 'Attendees' },
+        { image: require('@/assets/Component 1 (2).png'), finalValue: 600, currentValue: 0, suffix: 'MRWF', description: 'Invested in tech startups' },
+      ]
     };
   },
-
+  mounted() {
+    this.initScrollAnimations();
+    this.initCountUpAnimation();
+  
+  },
   methods: {
     handleTouchStart(event) {
       this.startX = event.touches[0].clientX;
@@ -526,16 +459,48 @@ export default {
       this.$refs.scrollContainer.scrollLeft += distance;
       this.startX = event.touches[0].clientX;
     },
-  },
+    initScrollAnimations() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-visible');
+          }
+        });
+      }, { threshold: 0.1 });
 
-  beforeUnmount() {
-    this.$refs.scrollContainer.removeEventListener('mousemove', this.handleMouseMove);
+      fadeElements.forEach(el => observer.observe(el));
+    },
+    initCountUpAnimation() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            this.animateValue(entry.target, 0, parseInt(entry.target.dataset.value), 2000);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      this.$refs.countUp.forEach((el, index) => {
+        el.dataset.value = this.statsItems[index].finalValue;
+        observer.observe(el);
+      });
+    },
+    animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const currentValue = Math.floor(progress * (end - start) + start);
+        obj.innerHTML = currentValue;
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
   }
-
 }
-
-
-
 </script>
 
 <style>
@@ -546,100 +511,49 @@ export default {
   display: none; 
 }
 
-  .slide-up {
-    transform: translateY(20px);
-    opacity: 0;
-    transition: all 2s ease-in-out;
-  }
+  
 
-  .slide-up-visible {
-    transform: translateY(0);
-    opacity: 1;
-  }
- 
+.hero-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
 
-  .zoom-in-visible {
-    transform: scale(1);
-    opacity: 1;
-  }
+.hero-button {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 1.5s;
+}
 
-  .button-hover {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
+.hero-image {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 2s;
+}
 
-  .button-hover:hover {
-    transform: scale(1.05); 
-  }
-
-  .fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-
-  .fade-in-visible {
-    opacity: 1;
-  }
-
-  .fade-in:nth-child(1) {
-    transition-delay: 0.3s;
-  }
-
-  .fade-in:nth-child(2) {
-    transition-delay: 0.6s;
-  }
-
-  .fade-in:nth-child(3) {
-    transition-delay: 0.9s;
-  }
-
-  .fade-in-animation {
-    opacity: 0;
-    transition: opacity 1.2s ease-in-out;
-  }
-
-  .fade-in-visible-animation {
-    opacity: 1;
-  }
-
-  .slide-up-animation {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  }
-
-  .slide-up-visible-animation {
+@keyframes fadeInUp {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
+}
 
-  .hover-image {
-    position: relative;
-    overflow: hidden;
-  }
 
-  .hover-image img {
-    transition: transform 0.5s ease;
-  }
 
-  .hover-image:hover img {
-    transform: scale(1.05);
-  }
+.button-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  .hover-overlay {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
 
-  .hover-image:hover .hover-overlay {
-    opacity: 1;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+  100% {
+    transform: translateX(-50%);
   }
+}
 </style>

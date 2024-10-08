@@ -40,14 +40,12 @@
         </div>
         
         
-        
-
-
+      
         <!-- section 3 -->
          
         <div class="container min-h-screen   mx-auto px-4 lg:px-12  xl:max-w-none">
           <div class="relative absolute  w-full pt-32 lg:pt-60 ">
-            <div class="flex flex-col absolute lg:flex-row lg:justify-between space-y-24 lg:space-y-0 lg:space-x-8">
+            <div class="flex flex-col absolute lg:flex-row lg:justify-between  mb-20 space-y-24 lg:space-y-0 lg:space-x-8">
 
               <div class="w-full absolute  lg:w-1/4 space-y-4 relative">
                 <img src="../assets/one.svg" class="absolute -top-16 left-0 h-16 w-16">
@@ -89,22 +87,29 @@
         <div class=" relative mt-96 lg:mt-60 2xl:mt-24">
           <div class="">
             <p class="text-navy font-rockinsoda text-5xl ml-12  "> Past winners </p>
+            <select v-model="selectedYear" class=" float-right mr-20 w-30 bg-white ring-1 ring-lightTangerine outline-none p-2 px-4">
+
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+          </select>
           </div>
            
          
         
         <!-- Year Dropdown -9-->
-        <div class=" ">
+        
 
-        <select v-model="selectedYear" class=" float-right mr-20 w-30 bg-white ring-1 ring-lightTangerine outline-none p-2 px-4">
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-            <option value="2021">2021</option>
-        </select>
-        </div>
+       
+        
 
-
-        <div class="flex  mt-16 mb-10">
+          <div
+          class="relative overflow-x-auto flex  whitespace-nowrap scrollbar-hide mt-16 ml-0 -mb-44 "
+          ref="scrollContainer"
+          style="height: 800px;"
+          @touchstart="handleTouchStart"
+          @touchmove="handleTouchMove"
+         > 
           <div v-for="winner in filteredWinners" :key="winner.name" class="relative h-[582px] w-[400px] flex-shrink-0  " :class="winner.class ">
             <img :src="winner.image" class="w-full h-full object-contain">
             <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);"></div>
@@ -285,9 +290,37 @@ export default{
                 observer.observe(elements[key]);
             }
             }
+
+      const handleMouseMove = (event) => {
+      if (event.buttons) {
+        this.$refs.scrollContainer.scrollLeft -= event.movementX; 
+      }
+    };
+    
+    this.$refs.scrollContainer.addEventListener('mousemove', handleMouseMove);
+    
+    // Cleanup
+    this.$refs.scrollContainer.addEventListener('mouseleave', () => {
+      this.$refs.scrollContainer.removeEventListener('mousemove', handleMouseMove);
+    });
             
      
-        }
+  },
+
+  methods: {
+    handleTouchStart(event) {
+      this.startX = event.touches[0].clientX;
+    },
+    handleTouchMove(event) {
+      const distance = this.startX - event.touches[0].clientX;
+      this.$refs.scrollContainer.scrollLeft += distance;
+      this.startX = event.touches[0].clientX;
+    },
+  },
+
+  beforeUnmount() {
+    this.$refs.scrollContainer.removeEventListener('mousemove', this.handleMouseMove);
+  }
 
         
       
