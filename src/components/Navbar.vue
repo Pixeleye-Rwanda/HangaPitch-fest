@@ -33,7 +33,7 @@
               @click="toggleMenu">Timeline</router-link></li> -->
                 <button id="dropdownInit" @click="toogleNavBg"  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
       
-                  Initiative <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                  Initiatives <i class="fa fa-chevron-down" aria-hidden="true"></i>
       
                 </button>
       
@@ -135,7 +135,7 @@
         <div class=" relative flex items-center">
           <button id="dropdownInit" @click="toogleNavBg"  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
 
-            Initiative <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            Initiatives <i class="fa fa-chevron-down" aria-hidden="true"></i>
 
           </button>
 
@@ -150,7 +150,7 @@
       <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <!-- <router-link to="/timeline"> Timeline</router-link>  -->
           <!-- Dropdown -->
-        <div v-if="navBg" class="absolute z-50 left-0 w-full bg-navbg mt-10 shadow-lg" >
+        <div v-if="navBg" class="absolute z-50 left-0 w-full bg-navbg mt-10 mb-16 shadow-lg" >
         <hr class="w-auto border-gray-200 border-t-2 mt-8">
         <ul class="w-full flex px-20 space-x-12">
           <div class="w-[70vh] p-4 mt-4 ">
@@ -158,7 +158,7 @@
               <p class="font-rockinsoda text-navy text-2xl">HANGA SEXUAL REPRODUCTIVE HEALTH</p>
               <p class="font-gramatika">Championing tech-enabled startups solving key issues in SRH.</p>
               <router-link to="/srh">
-              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+              <button class="mr-8 mt-6 py-4 px-10 font-gramatika bg-tangerine text-white font-semibold ">
                 Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button> 
             </router-link>
@@ -172,7 +172,7 @@
               <p class="font-rockinsoda text-navy text-2xl">HANGA HUB</p>
               <p class="font-gramatika">Tech-enabled innovation & incubation hubs shaping digital employment in Rwanda, led by MINICT, The European Union (EU) and RISA.</p>
               <router-link to="/hub">
-              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+              <button class="mr-8 mt-6 py-4 px-10 font-gramatika bg-tangerine text-white font-semibold ">
                 Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button> 
             </router-link>
@@ -185,7 +185,7 @@
               <p class="font-rockinsoda text-navy text-2xl" >HANGA AGRITECH</p>
               <p class="font-gramatika">Driving financial and technical support to  technology enabled startups in agriculture.</p>
               <router-link to="/agritech">
-              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+              <button class="mr-8 mt-6 py-4 px-10 font-gramatika bg-tangerine text-white font-semibold ">
                 Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button> 
             </router-link>
