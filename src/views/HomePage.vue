@@ -75,7 +75,7 @@
           <div class="flex flex-col-reverse lg:flex-row items-center lg:items-start lg:justify-between">
             
             <!-- Text Section with fade-in animation -->
-            <div class="space-y-8 sm:space-y-10 lg:space-y-16 mt-20 sm:mt-32 lg:mt-26 ml-4 sm:ml-8 md:ml-12 p-4 sm:p-6 md:p-8 w-full lg:w-7/12 text-left animate-fadeIn">
+            <div class="space-y-8 sm:space-y-10 lg:space-y-16 mt-20 sm:mt-32 lg:mt-26 ml-4 sm:ml-8 md:ml-12 p-4 sm:p-6 md:p-8 w-full lg:w-7/12 text-left fade-in">
               <div>
                 <h2 class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 3xl:text-8xl text-white font-rockinsoda mb-4">
                   Pitch Your Idea for
@@ -94,13 +94,15 @@
               </button>
             </div>
       
-            <!-- Image Section with slide-in animation -->
-            <div class="text-white mt-12 p-4 sm:p-6 md:p-8 lg:justify-end lg:flex-shrink-0 w-full lg:w-auto lg:max-w-[40%] flex justify-center animate-slideInRight">
-              <img src="../assets/Vector 6.png" class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none h-auto object-contain">
-            </div>
+          <!-- Image Section with slide-in animation -->
+<div class="text-white mt-12 p-4 sm:p-6 md:p-8 lg:justify-end lg:flex-shrink-0 w-full lg:w-auto lg:max-w-[40%] flex  fade-in slide-in-visible">
+  <img src="../assets/Vector 6.png" class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none h-auto object-contain">
+</div>
+
           </div>
         </div>
       </div>
+      
       
       
       
@@ -453,6 +455,8 @@ export default {
   mounted() {
     this.initScrollAnimations();
     this.initCountUpAnimation();
+    this.initPitchAnimations();
+
   
   },
   methods: {
@@ -503,7 +507,30 @@ export default {
         }
       };
       window.requestAnimationFrame(step);
-    }
+    },
+    initPitchAnimations() {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const slideElements = document.querySelectorAll('.slide-in-right');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains('fade-in')) {
+            entry.target.classList.add('fade-in-visible');
+          }
+          if (entry.target.classList.contains('fade-in')) {
+            entry.target.classList.add('slide-in-visible');
+          }
+        
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => observer.observe(el));
+    slideElements.forEach(el => observer.observe(el));
+  },
+
+  
   },
 }
 </script>
@@ -560,5 +587,40 @@ export default {
   100% {
     transform: translateX(-50%);
   }
+
+  
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+}
+
+
+.slide-in-right {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: -webkit-transform 1s ease-in-out, opacity 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.slide-in-visible {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-in-right {
+  z-index: 50;
+}
+
+
+
+
+
 </style>
