@@ -7,7 +7,7 @@
         
         <NavBar class="absolute top-0 left-0 w-full" />
       
-        <div class="font-rockinsoda absolute text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-1/3 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:top-1/4 text-center sm:text-left" ref="text">
+        <div class="font-rockinsoda absolute text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl top-1/3 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:top-1/4 text-center sm:text-left" ref="text">
           <p>THE LARGEST IN-PERSON</p>
           <p>TECHNOLOGY EVENT IN</p>
           <p>RWANDA</p>
@@ -16,7 +16,7 @@
 
         <div class="absolute top-2/3 left-4 sm:left-12 lg:left-20  xl:left-26 ">
           <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0">
-            <button class="p-3 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
+            <button class="py-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white">
              <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank">Apply Now</a> 
             </button>
             <button class="p-3 px-6 font-gramatika border text-white font-semibold hover:bg-tangerine hover:text-black flex items-center space-x-2">
@@ -42,11 +42,13 @@
             <p class="font-gramatika mt-8 text-darknavy text-lg sm:text-xl " ref="text1">
               We believe in empowering innovators solving some of the dire
             </p>
-            <p class="font-gramatika text-darknavy text-lg sm:text-xl " ref="text2">
+            <p class="font-gramatika text-darknavy text-lg sm:text-xl" ref="text2">
               challenges in the Rwandan community and abroad
             </p>
-            <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold  button-hover" ref="button">
-              Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            <button class="mr-8 mt-6 py-4 px-10 font-gramatika bg-tangerine text-white font-semibold  button-hover" ref="button">
+              <router-link to="/about-us">
+                <a href="" class="text-white font-gramatika"> Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+              </router-link>
             </button>          
           </div>
       
@@ -111,7 +113,9 @@
                 </p>
               </div>
               <button class="bg-tangerine text-white text-md sm:text-xl py-3 sm:py-4 px-8 sm:px-12 hover:bg-orange-500 slide-up button-hover" ref="button3">
-                Learn more <i class="fa fa-chevron-right h-2 w-2" aria-hidden="true"></i>
+                <router-link to="/about-us">
+                  <a href="" class="text-white font-gramatika"> Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </router-link>
               </button>
             </div>
             <!-- Image Section -->
@@ -125,8 +129,8 @@
       
       <!-- Fifth section -->
       <div class="ml-4 mr-4 sm:ml-6  mt-32 ">
-        <h1 class="font-rockinsoda text-navy text-6xl">WHERE LEADERS INSPIRE</h1>
-        <h1 class="font-rockinsoda text-navy text-6xl">YOUR NEXT BIG LEAP</h1>
+        <h1 class="font-rockinsoda text-navy text-7xl">WHERE LEADERS INSPIRE</h1>
+        <h1 class="font-rockinsoda text-navy text-7xl">YOUR NEXT BIG LEAP</h1>
       
         <div class="flex flex-col lg:flex-row gap-6 mb-20 mt-20">
 
@@ -199,7 +203,7 @@
           <div class="mb-8 lg:mt-44 sm:mt-20 lg:mb-0 lg:w-1/3">
             <h1 class="font-rockinsoda text-3xl sm:text-6xl text-navy">CHECK OUR INITIATIVES</h1>
             <p class="font-gramatika text-lg sm:text-2xl text-navy mt-2">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+              Hanga drives innovation in Rwanda and beyond through strategic initiatives.
             </p>
           </div>
           
@@ -209,9 +213,11 @@
               <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
                 <div class="absolute bottom-8 left-8">
                   <p class="text-white font-rockinsoda text-4xl sm:text-5xl">HANGA HUBS</p>
-                  <div class="mt-2">
+                  <div class="mt-4">
                     <p class="text-white font-gramatika text-lg">Addressing the obstacles & gaps limiting early-stage startups.</p>
-                    <a href="" class="text-white font-gramatika underline">learn more</a>
+                    <router-link to="/hub">
+                      <a href="" class="text-white font-gramatika underline"> Learn more </a>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -222,11 +228,10 @@
               <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
                 <div class="absolute bottom-8 left-8">
                   <p class="text-white font-rockinsoda text-3xl sm:text-5xl">HANGA SRH</p>
-                  <div class="mt-2">
+                  <div class="mt-4">
                     <p class="text-white font-gramatika">Revolutionizing Sexual and Reproductive Health in Africa.</p>
                     <router-link to="/srh">
-                      <a href="" class="text-white font-gramatika underline">learn more</a>
-
+                      <a href="" class="text-white font-gramatika underline">Learn more</a>
                     </router-link>
                   </div>
                 </div>
@@ -244,12 +249,12 @@
           <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-8">
             <div class="w-full md:w-2/3 lg:w-3/4">
               <p class="text-white font-gramatika text-base md:text-lg lg:text-2xl">
-                The largest in-person technology event in Rwanda designed to ignite & inspire innovation, 
-                Hanga Pitch Fest is returning for its fourth edition
+                The largest in-person technology event in Rwanda <br> designed to ignite & inspire innovation, 
+                Hanga Pitch <br> Fest is returning for its fourth edition
               </p>
             </div>
             <div class="w-full md:w-1/3 lg:w-1/4 flex justify-start md:justify-end">
-              <button class="font-gramatika  text-white  text-xl border rounded-full px-8 py-2 hover:bg-tangerine transition duration-300">
+              <button class="font-gramatika  text-white  text-xl border rounded-full px-8 py-4 hover:bg-tangerine transition duration-300">
                 <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank"> Apply Now</a>
               </button>
             </div>
@@ -261,13 +266,15 @@
       <div class="space-y-12 mt-32">
         <div class="px-4 mb-20 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
           <div class="relative">
-            <h1 class="font-rockinsoda text-3xl sm:text-4xl md:text-6xl text-navy mb-4">LATEST ON OUR BLOG</h1>
+            <h1 class="font-rockinsoda text-4xl sm:text-5xl md:text-7xl text-navy mb-4">LATEST ON OUR BLOG</h1>
             <div class="font-gramatika text-base sm:text-lg md:text-2xl text-lightblue mb-6 md:mb-0">
               <p>Get updates on the latest stories within Rwanda's</p>
               <p>flourishing tech innovation ecosystem.</p>
             </div>
-            <button class="bg-tangerine text-white text-xl mt-16 px-8 p-2 hover:bg-orange-500 transition duration-300 w-full sm:w-auto md:absolute md:top-0 md:right-0">
-              read more <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
+            <button class="bg-tangerine text-white text-xl mt-16 px-8 py-4 hover:bg-orange-500 transition duration-300 w-full sm:w-auto md:absolute md:top-0 md:right-0">
+              <router-link to="/blogs">
+                <a href="" class="text-white font-gramatika"> Read more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+              </router-link>
             </button>
           </div>
         </div>
@@ -315,8 +322,8 @@
       <!--------- section nine ---------->
       <div class="lg:-mb-10">
         <div class="mt-24 ml-8 space-x-2">
-          <h1 class="font-rockinsoda text-6xl text-navy">2023</h1>
-          <h1 class="font-rockinsoda text-6xl text-navy">NOTABLE SPEAKERS</h1>
+          <h1 class="font-rockinsoda text-7xl text-navy">2023</h1>
+          <h1 class="font-rockinsoda text-7xl text-navy">NOTABLE SPEAKERS</h1>
         </div>
         <div
           class="relative overflow-x-auto whitespace-nowrap scrollbar-hide mt-16 ml-0 lg:ml-12"
@@ -326,7 +333,7 @@
           @touchmove="handleTouchMove"
         >
           <div class="flex" :style="{ width: `${individuals.length * 800}px` }">
-            <template v-for="(_, loopIndex) in 2">
+            <template v-for="(_, loopIndex) in 1">
               <div
                 v-for="(individual, index) in individuals"
                 :key="`${loopIndex}-${index}`"
@@ -353,7 +360,7 @@
     <!--------- section 10 -------->
     <div class="ml-4 mr-4 sm:ml-8 sm:mr-8  lg:ml-8 lg:mr-8">
       <div class="mt-16 sm:mt-24 lg:mt-32">
-        <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-6xl text-navy">
+        <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-7xl text-navy">
           HANGA ON INSTAGRAM
         </h1>
       </div>

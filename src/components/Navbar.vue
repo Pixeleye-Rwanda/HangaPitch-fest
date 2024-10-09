@@ -33,7 +33,7 @@
               @click="toggleMenu">Timeline</router-link></li> -->
           <li><button class="text-white font-semibold">Initiatives</button></li>
           <li>
-            <button id="dropdownButton" @click="toggleDropdown" class="text-white font-semibold">
+            <button id="dropdownButton" @click="toggleDropdown" class="text-white font-semibold py-4">
               <div class="flex items-center">
                 <p>EN</p>
                 <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -134,14 +134,14 @@
       </ul>
 
       <button
-        :class="navBg?'mr-4 p-4 px-6 font-gramatika bg-tangerine text-white font-semibold hover:bg-tangerine hover:text-white' :'mr-4 p-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white'">
+        :class="navBg?'mr-4 font-gramatika bg-tangerine text-white font-semibold hover:bg-tangerine hover:text-white' :'mr-4 py-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white text-center'">
         <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank">Apply Now</a>
       </button>
 
       <div class="relative inline-block mr-24 text-left">
         <button id="dropdownButton" @click="toggleDropdown"
           :class="navBg ? 'p-2 px-4 border border-tangerine font-gramatika text-tangerine font-semibold hover:bg-tangerine hover:text-white':'p-2 px-4 border font-gramatika text-white font-semibold hover:bg-tangerine hover:text-white'">
-          <div class="flex items-center">
+          <div class="flex items-center py-2 px-2">
             <p>EN</p>
             <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">

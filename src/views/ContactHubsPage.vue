@@ -97,7 +97,7 @@
   <script>
   import NavHubs from '@/components/NavHubs.vue';
   export default {
-    name: "TimelinePage",
+    name: "NavHubsPage",
     components: {
       NavHubs,
     }
