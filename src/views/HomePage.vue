@@ -75,7 +75,7 @@
           <div class="flex flex-col-reverse lg:flex-row items-center lg:items-start lg:justify-between">
             
             <!-- Text Section with fade-in animation -->
-            <div class="space-y-8 sm:space-y-10 lg:space-y-16 mt-20 sm:mt-32 lg:mt-26 ml-4 sm:ml-8 md:ml-12 p-4 sm:p-6 md:p-8 w-full lg:w-7/12 text-left animate-fadeIn">
+            <div class="space-y-8 sm:space-y-10 lg:space-y-16 mt-20 sm:mt-32 lg:mt-26 ml-4 sm:ml-8 md:ml-12 p-4 sm:p-6 md:p-8 w-full lg:w-7/12 text-left fade-in">
               <div>
                 <h2 class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 3xl:text-8xl text-white font-rockinsoda mb-4">
                   Pitch Your Idea for
@@ -94,10 +94,11 @@
               </button>
             </div>
       
-            <!-- Image Section with slide-in animation -->
-            <div class="text-white mt-12 p-4 sm:p-6 md:p-8 lg:justify-end lg:flex-shrink-0 w-full lg:w-auto lg:max-w-[40%] flex justify-center animate-slideInRight">
-              <img src="../assets/Vector 6.png" class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none h-auto object-contain">
-            </div>
+          <!-- Image Section with slide-in animation -->
+<div class="text-white mt-12 p-4 sm:p-6 md:p-8 lg:justify-end lg:flex-shrink-0 w-full lg:w-auto lg:max-w-[40%] flex  fade-in slide-in-visible">
+  <img src="../assets/Vector 6.png" class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none h-auto object-contain">
+</div>
+
           </div>
         </div>
       </div>
@@ -105,24 +106,24 @@
       
       
       
+      
       <!-- Fifth section -->
-      <div class="ml-4 mr-4 sm:ml-6  mt-32 ">
-        <h1 class="font-rockinsoda text-navy text-6xl">WHERE LEADERS INSPIRE</h1>
-        <h1 class="font-rockinsoda text-navy text-6xl">YOUR NEXT BIG LEAP</h1>
+      <div class="ml-4 mr-4 sm:ml-6 mt-32">
+        <h1 class="font-rockinsoda text-navy text-6xl fade-in">WHERE LEADERS INSPIRE</h1>
+        <h1 class="font-rockinsoda text-navy text-6xl fade-in">YOUR NEXT BIG LEAP</h1>
       
         <div class="flex flex-col lg:flex-row gap-6 mb-20 mt-20">
-
-          <div class="flex-1 md:w-1/2 lg:flex-[1.3] space-y-6"> 
-          
-            <div class="relative aspect-w-16 h-[60vh] aspect-h-10"> 
+      
+          <div class="flex-1 md:w-1/2 lg:flex-[1.3] space-y-6">
+            
+            <!-- First Image Block -->
+            <div class="relative aspect-w-16 h-[60vh] aspect-h-10 ">
               <img src="../assets/mrspeaker.jpg" class="w-full h-full object-cover">
-              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">         
-                   <div class="absolute bottom-0 inset-x-0 p-4 text-center">
-                  <p class="text-white text-lg text-justify  font-gramatika p-2">
+              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                <div class="absolute bottom-0 inset-x-0 p-4 text-center fade-in">
+                  <p class="text-white text-lg text-justify font-gramatika p-2">
                     <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
-
-                    Hanga Pitchfest a two-fold approach. We are nurturing the rich talents and innovation of our young people,
-                    while recognizing the contributions of talented innovators to socio-economic development.
+                    Hanga Pitchfest a two-fold approach. We are nurturing the rich talents and innovation of our young people, while recognizing the contributions of talented innovators to socio-economic development.
                   </p>
                   <div class="flex space-x-2 ml-2">
                     <hr class="w-[50px] border-2 mt-2">
@@ -131,17 +132,15 @@
                 </div>
               </div>
             </div>
-      
+            
             <!-- Second Image Block -->
-            <div class="relative aspect-w-16 h-[60vh] aspect-h-10"> <!-- Increase aspect ratio -->
+            <div class="relative aspect-w-16 h-[60vh] aspect-h-10 ">
               <img src="../assets/whiteman.jpg" class="w-full h-full object-cover">
-              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">       
-                         <div class="absolute bottom-0 inset-x-0 p-4 ">
+              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                <div class="absolute bottom-0 inset-x-0 p-4 text-center fade-in">
                   <p class="text-white text-lg text-justify font-gramatika p-2">
                     <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
-
-                    There have been, in my opinion, too much talking. We need to act now, 
-                    but I believe it is very important to invest in young people here. The time is now.”
+                    There have been, in my opinion, too much talking. We need to act now, but I believe it is very important to invest in young people here. The time is now.”
                   </p>
                   <div class="flex space-x-2 ml-2">
                     <hr class="w-[50px] border-2 mt-2">
@@ -150,18 +149,17 @@
                 </div>
               </div>
             </div>
+      
           </div>
       
           <!-- Right Column (Single Large Image) -->
-          <div class="relative md:w-full lg:w-3/4 flex-1 lg:flex-[2] aspect-w-16 aspect-h-10 lg:h-auto"> <!-- Increase flex size for this section -->
-            <img src="../assets/paula.jpg" class="w-full h-full min-h-[400px]  object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">       
-              <div class="absolute bottom-0 inset-x-0 p-4 text-center">
-                
+          <div class="relative md:w-full lg:w-3/4 flex-1 lg:flex-[2] aspect-w-16 aspect-h-10 lg:h-auto ">
+            <img src="../assets/paula.jpg" class="w-full h-full min-h-[400px] object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+              <div class="absolute bottom-0 inset-x-0 p-4 text-center fade-in">
                 <p class="text-white text-justify text-xl font-gramatika p-2">
                   <span class="font-rockinsoda text-tangerine text-5xl ml-2">"</span>
-                  Today is a celebration of talent, ambitions and the boundless opportunities that arise 
-                  when passion, creativity, determination and the resolve to be self-reliant converge to push the boundaries of innovation.
+                  Today is a celebration of talent, ambitions and the boundless opportunities that arise when passion, creativity, determination and the resolve to be self-reliant converge to push the boundaries of innovation.
                 </p>
                 <div class="flex space-x-2 ml-2">
                   <hr class="w-[50px] border-2 mt-2">
@@ -170,6 +168,7 @@
               </div>
             </div>
           </div>
+      
         </div>
       </div>
       
@@ -453,6 +452,8 @@ export default {
   mounted() {
     this.initScrollAnimations();
     this.initCountUpAnimation();
+    this.initPitchAnimations();
+
   
   },
   methods: {
@@ -503,7 +504,30 @@ export default {
         }
       };
       window.requestAnimationFrame(step);
-    }
+    },
+    initPitchAnimations() {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const slideElements = document.querySelectorAll('.slide-in-right');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains('fade-in')) {
+            entry.target.classList.add('fade-in-visible');
+          }
+          if (entry.target.classList.contains('fade-in')) {
+            entry.target.classList.add('slide-in-visible');
+          }
+        
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => observer.observe(el));
+    slideElements.forEach(el => observer.observe(el));
+  },
+
+  
   },
 }
 </script>
@@ -560,5 +584,40 @@ export default {
   100% {
     transform: translateX(-50%);
   }
+
+  
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+}
+
+
+.slide-in-right {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: -webkit-transform 1s ease-in-out, opacity 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.slide-in-visible {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-in-right {
+  z-index: 50;
+}
+
+
+
+
+
 </style>

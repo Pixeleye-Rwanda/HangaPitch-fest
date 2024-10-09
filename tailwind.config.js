@@ -40,7 +40,20 @@ module.exports = {
         'partners': "url('@/assets/networkbg.jpg')",
       },
      
-      animation: ['motion-safe', 'motion-reduce'],
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideInRight: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 1.5s ease-out forwards',
+        slideInRight: 'slideInRight 1.2s ease-out forwards',
+      },
 
     },
   },
