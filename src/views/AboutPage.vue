@@ -71,8 +71,8 @@
              <div class="ml-4 mr-4 xl:mt-4 2xl:-mt-12 mlg:mr-10 md:ml-12 flex flex-col md:flex-row lg:space-x-16 items-start justify-between">
               <div class="flex-1  mt-12 xl:mt-2 2xl:mt-60 md:mt-8 max-w-full md:max-w-[50%]">
                 <div class="space-y-2  md:mt-28 ">
-                  <p class="text-4xl md:text-7xl font-rockinsoda text-navy">HEAR FROM OUR </p>
-                  <p class="text-4xl md:text-7xl font-rockinsoda text-navy">SPONSORS</p>
+                  <p class="text-4xl md:text-8xl font-rockinsoda text-navy">HEAR FROM OUR </p>
+                  <p class="text-4xl md:text-8xl font-rockinsoda text-navy">SPONSORS</p>
                 </div>
             
                 <div class="mt-10">
@@ -136,17 +136,17 @@
       
                          <div class="text-justify space-y-4">
                           <p class="font-gramatika text-7xl" >130+</p>
-                          <p>Startups</p>
+                          <p class="font-gramatika">Startups</p>
                          </div>
       
                          <div class="text-justify space-y-4">
                         <p class="font-gramatika  text-7xl" > 20+ </p>
-                        <p>Hanga SRH</p>
+                        <p class="font-gramatika">Hanga SRH</p>
                         </div>
       
                          <div class="text-justify space-y-4">
                           <p class="font-gramatika text-7xl">190+</p>
-                          <p>Hanga hubs</p>
+                          <p class="font-gramatika">Hanga hubs</p>
       
                          </div>
                         </div>
@@ -159,8 +159,8 @@
 
             <!-- section 7 -->
             <div class="mt-24 md:mt-36 pl-4 md:pl-12 pr-4 w-full">
-              <h1 class="font-rockinsoda text-navy text-6xl md:text-7xl">HANGA IS</h1>
-              <h1 class="font-rockinsoda text-navy text-6xl md:text-7xl">ORGANIZED BY</h1>
+              <h1 class="font-rockinsoda text-navy text-5xl md:text-8xl">HANGA IS</h1>
+              <h1 class="font-rockinsoda text-navy text-5xl md:text-8xl">ORGANIZED BY</h1>
             
               <div class="flex flex-wrap mt-12 md:mt-16 w-full">
                 <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
@@ -183,7 +183,7 @@
             <!-- section 8------ -->
             <div class="ml-0 lg:ml-12 mt-24">
               <div>
-                <h1 class="font-rockinsoda text-navy text-7xl">EVENT HIGHLIGHTS</h1>
+                <h1 class="font-rockinsoda text-navy text-5xl md:text-8xl">EVENT HIGHLIGHTS</h1>
                 <p class="font-gramatika text-navy text-xl mt-4">Watch our past thrilling events highlights</p>
               </div>
           
@@ -270,7 +270,7 @@
              <!-- section 9 --->
              <div class="mt-12  pl-4 md:pl-12 pr-4 w-full">
               <div>
-                <h1 class="font-rockinsoda text-navy text-5xl md:text-7xl">EVENT GALLERY</h1>
+                <h1 class="font-rockinsoda text-navy text-5xl md:text-8xl">EVENT GALLERY</h1>
               </div>
               <div class="mt-8 space-y-4 md:space-y-0">
                 <!-- First row of images -->
