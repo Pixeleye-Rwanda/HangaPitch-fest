@@ -33,7 +33,7 @@
               @click="toggleMenu">Timeline</router-link></li> -->
                 <button id="dropdownInit" @click="toogleNavBg"  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
       
-                  Initiative <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                  Initiatives <i class="fa fa-chevron-down" aria-hidden="true"></i>
       
                 </button>
       
@@ -150,7 +150,7 @@
       <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <!-- <router-link to="/timeline"> Timeline</router-link>  -->
           <!-- Dropdown -->
-        <div v-if="navBg" class="absolute z-50 left-0 w-full bg-navbg mt-10 shadow-lg" >
+        <div v-if="navBg" class="absolute z-50 left-0 w-full bg-navbg mt-10 mb-16 shadow-lg" >
         <hr class="w-auto border-gray-200 border-t-2 mt-8">
         <ul class="w-full flex px-20 space-x-12">
           <div class="w-[70vh] p-4 mt-4 ">
