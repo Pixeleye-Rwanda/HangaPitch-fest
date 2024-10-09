@@ -7,7 +7,7 @@
         
         <NavBar class="absolute top-0 left-0 w-full" />
       
-        <div class="font-rockinsoda absolute text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl top-1/3 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:top-1/4 text-center sm:text-left" ref="text">
+        <div class="font-rockinsoda absolute text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl top-1/3 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:top-1/4 sm:text-left" ref="text">
           <p>THE LARGEST IN-PERSON</p>
           <p>TECHNOLOGY EVENT IN</p>
           <p>RWANDA</p>
@@ -129,8 +129,8 @@
       
       <!-- Fifth section -->
       <div class="ml-4 mr-4 sm:ml-6  mt-32 ">
-        <h1 class="font-rockinsoda text-navy text-7xl">WHERE LEADERS INSPIRE</h1>
-        <h1 class="font-rockinsoda text-navy text-7xl">YOUR NEXT BIG LEAP</h1>
+        <h1 class="font-rockinsoda text-navy text-3xl sm:text-4xl lg:text-7xl">WHERE LEADERS INSPIRE</h1>
+        <h1 class="font-rockinsoda text-navy text-3xl sm:text-4xl lg:text-7xl">YOUR NEXT BIG LEAP</h1>
       
         <div class="flex flex-col lg:flex-row gap-6 mb-20 mt-20">
 
@@ -322,8 +322,8 @@
       <!--------- section nine ---------->
       <div class="lg:-mb-10">
         <div class="mt-24 ml-8 space-x-2">
-          <h1 class="font-rockinsoda text-7xl text-navy">2023</h1>
-          <h1 class="font-rockinsoda text-7xl text-navy">NOTABLE SPEAKERS</h1>
+          <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-8xl text-navy">2023</h1>
+          <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-8xl text-navy">NOTABLE SPEAKERS</h1>
         </div>
         <div
           class="relative overflow-x-auto whitespace-nowrap scrollbar-hide mt-16 ml-0 lg:ml-12"

@@ -8,16 +8,16 @@
           
           <Navbar class="absolute top-0 left-0 w-full"/>
         
-          <div class="font-rockinsoda absolute  text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-2/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left" ref="text">
+          <div class="font-rockinsoda absolute text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl top-2/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 sm:text-left" ref="text">
             <p>LEADING INNOVATION</p>
-              <p>AT THE FOREFRONT</p>
+            <p>AT THE FOREFRONT</p>
           </div>
 
-          <div class="absolute top-3/4   left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left">
+          <div class="absolute top-3/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 sm:text-left">
            
                 
          <p class="font-gramatika text-white text-2xl">Our mission is to discover and nurture Rwanda's most </p>
-            <p class="font-gramatika text-white text-2xl"> innovative tech-enabled startups</p>
+          <p class="font-gramatika text-white text-2xl"> innovative tech-enabled startups</p>
              
           </div>
 
@@ -39,8 +39,8 @@
            <!-- third section  -->
            <div className="flex flex-col lg:mr-4 lg:ml-12 lg:flex-row sm:mt-12 lg:mt-24 w-full px-4 lg:px-8 xl:px-8 py-12  mx-auto">
             <div className="lg:w-1/3 space-y-4 lg:mt-16 mb-8 lg:mb-0 lg:pr-8 self-start">
-              <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rockinsoda text-navy">FUELING</p>
-              <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rockinsoda text-navy">INNOVATION</p>
+              <p className="text-3xl md:text-4xl lg:text-7xl xl:text-8xl font-rockinsoda text-navy">FUELING</p>
+              <p className="text-3xl md:text-4xl lg:text-7xl xl:text-8xl font-rockinsoda text-navy">INNOVATION</p>
             </div>
             <div className="lg:w-3/5 space-y-8 self-start">
               <p className="text-navy text-justify font-gramatika text-sm md:text-base lg:text-xl 2xl:text-2xl">
@@ -127,7 +127,7 @@
                     <div class="text-white mt-40 p-4 sm:p-6 md:p-8  lg:justify-end lg:flex-shrink-0 w-full lg:w-auto lg:max-w-[50%] flex justify-center">
                       <div class="absolute w-full left-0 w-1/3 h-auto left-[60%]">
                         <div class="space-y-4 text-justify ">
-                          <p class="font-gramatika text-7xl font-bold ">Rwf 600 M</p>
+                          <p class="font-gramatika text-8xl font-bold ">Rwf 600 M</p>
                           <p class="font-gramatika text-lg font-normal ">In investments</p>
                         </div>
                         <hr class="w-[500px] border-lineColor mt-8 mb-8 ">
@@ -135,17 +135,17 @@
                         <div class="flex space-x-16">
       
                          <div class="text-justify space-y-4">
-                          <p class="font-gramatika text-6xl" >130+</p>
+                          <p class="font-gramatika text-7xl" >130+</p>
                           <p>Startups</p>
                          </div>
       
                          <div class="text-justify space-y-4">
-                        <p class="font-gramatika  text-6xl" > 20+ </p>
+                        <p class="font-gramatika  text-7xl" > 20+ </p>
                         <p>Hanga SRH</p>
                         </div>
       
                          <div class="text-justify space-y-4">
-                          <p class="font-gramatika text-6xl">190+</p>
+                          <p class="font-gramatika text-7xl">190+</p>
                           <p>Hanga hubs</p>
       
                          </div>
@@ -159,18 +159,18 @@
 
             <!-- section 7 -->
             <div class="mt-24 md:mt-36 pl-4 md:pl-12 pr-4 w-full">
-              <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">HANGA IS</h1>
-              <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">ORGANIZED BY</h1>
+              <h1 class="font-rockinsoda text-navy text-6xl md:text-7xl">HANGA IS</h1>
+              <h1 class="font-rockinsoda text-navy text-6xl md:text-7xl">ORGANIZED BY</h1>
             
               <div class="flex flex-wrap mt-12 md:mt-16 w-full">
                 <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
-                  <img src="../assets/coat.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
+                  <a href="https://www.minict.gov.rw/" target="_blank"><img src="../assets/coat.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10"></a>
                 </div>
                 <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
-                  <img src="../assets/flag.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
+                 <a href="https://rdb.rw/" target="_blank"><img src="../assets/flag.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10"></a> 
                 </div>
                 <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
-                  <img src="../assets/undp.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
+                  <a href="https://www.undp.org/" target="_blank"><img src="../assets/undp.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10"></a>                  
                 </div>
               </div>
             </div>
@@ -183,7 +183,7 @@
             <!-- section 8------ -->
             <div class="ml-0 lg:ml-12 mt-24">
               <div>
-                <h1 class="font-rockinsoda text-navy text-5xl">EVENT HIGHLIGHTS</h1>
+                <h1 class="font-rockinsoda text-navy text-7xl">EVENT HIGHLIGHTS</h1>
                 <p class="font-gramatika text-navy text-xl mt-4">Watch our past thrilling events highlights</p>
               </div>
           
@@ -270,7 +270,7 @@
              <!-- section 9 --->
              <div class="mt-12  pl-4 md:pl-12 pr-4 w-full">
               <div>
-                <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">EVENT GALLERY</h1>
+                <h1 class="font-rockinsoda text-navy text-5xl md:text-7xl">EVENT GALLERY</h1>
               </div>
               <div class="mt-8 space-y-4 md:space-y-0">
                 <!-- First row of images -->
@@ -378,10 +378,10 @@
                     <img src="../assets/23.jpg" class="w-full h-full object-cover">
                   </div>
                 </div>
-            
+                
                 <!-- Follow button -->
                 <div class="flex items-center justify-center mt-2">
-                  <button class="font-gramatika text-black text-md bg-white  absolute p-2 rounded-md py-2 px-4 shadow-md">Follow us on Instagram</button>
+                  <button class="font-gramatika text-black text-md bg-white  absolute p-2 rounded-md py-2 px-4 shadow-md"><a href="https://www.instagram.com/hangapitchfest/" target="_blank">Follow us on Instagram</a></button>
                 </div>
               </div>
             </div>
