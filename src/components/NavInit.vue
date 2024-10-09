@@ -67,7 +67,7 @@
             <router-link to="/faq">FAQ</router-link>
           </li> 
           <button
-          :class="[navBg?'text-white':'text-navy','mr-4 p-4 px-6 font-gramatika text-navy text-md font-semibold ']">
+          :class="[navBg?'text-white':'text-navy','mr-4 py-4 px-6 font-gramatika text-navy text-md font-semibold ']">
           <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank"  >Apply Now</a>
         </button>
           

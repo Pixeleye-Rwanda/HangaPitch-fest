@@ -2,7 +2,7 @@
 
     <div class="ml-0 lg:ml-12">
 
-      <div class=" font-rockinsoda text-navy text-5xl mt-32 text-center lg:text-left lg:text-6xl">
+      <div class=" font-rockinsoda text-navy text-5xl mt-32 text-center lg:text-left lg:text-7xl">
         <p>HANGA</p>
         <p>IS ORGANIZED BY</p>
         </div>
@@ -11,7 +11,7 @@
  
 
     <!-- first section -->
-    <div class="flex flex-wrap justify-center  lg:mr-4 sm:mr-0 lg:justify-between gap-y-12 gap-x-8 lg:gap-x-16 px-4 lg:px-2 mt-36">
+    <div class="flex flex-wrap justify-center  lg:mr-4 sm:mr-0 lg:justify-between gap-y-12 gap-x-8 lg:gap-x-16 px-4 lg:px-2 mt-24">
       <div class="w-full sm:w-1/2 lg:w-1/4 fade-in space-y-4 text-center lg:text-left" ref="item1">
         <img src="../assets/coat.svg" class="max-w-[150px] sm:max-w-[180px] lg:max-w-[200px] mx-auto lg:mx-0">
         <hr class="border-t border-gray-300  mx-auto lg:mx-0">
@@ -70,7 +70,7 @@
      
      <!-- partnernship page  -->
      <div class="">
-      <div class=" font-rockinsoda text-navy text-5xl mt-32 text-center lg:text-left lg:text-5xl">
+      <div class=" font-rockinsoda text-navy text-5xl mt-32 text-center lg:text-left lg:text-6xl">
         <p>ALL PARTNERSHIPS</p>
         </div>
 

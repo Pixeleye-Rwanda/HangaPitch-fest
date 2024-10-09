@@ -13,9 +13,9 @@
               <input
                 type="email"
                 placeholder="Your email address"
-                class="flex-grow bg-navy text-white font-gramatika placeholder-gray-400 focus:outline-none px-6 py-6 rounded-l text-md sm:text-xl lg:text-xl"
+                class="flex-grow bg-navy text-white font-gramatika placeholder-gray-400 focus:outline-none px-6 py-5 rounded-l text-md sm:text-xl lg:text-xl"
               />
-              <button class="bg-tangerine hover:bg-orange-700 text-white px-8 py-6 rounded-r">
+              <button class="bg-tangerine hover:bg-orange-700 text-white px-8 py-5 rounded-r">
                 <i class="fas fa-chevron-right"></i>
               </button>
             </div>

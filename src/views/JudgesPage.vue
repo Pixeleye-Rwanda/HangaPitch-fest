@@ -3,8 +3,8 @@
   <div class="flex flex-col lg:flex-row  mt-24 lg:mt-12 lg:mt-32 px-6 w-full lg:space-x-4 ">
     <!-- Text Section -->
     <div class="lg:text-left  space-y-4 w-3/5">
-      <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">FUELING</p>
-      <p class="text-3xl lg:text-6xl font-rockinsoda text-navy"> INNOVATION</p>
+      <p class="text-3xl lg:text-7xl font-rockinsoda text-navy">FUELING</p>
+      <p class="text-3xl lg:text-7xl font-rockinsoda text-navy"> INNOVATION</p>
 
 
     </div>
