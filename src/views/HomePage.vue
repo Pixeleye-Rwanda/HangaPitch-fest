@@ -8,7 +8,7 @@
         <NavBar class="absolute top-0 left-0 w-full" />
       
         <div class="font-rockinsoda absolute text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-1/3 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:top-1/4 text-center sm:text-left">
-          <h1 v-for="(line, index) in heroText" :key="index" class="hero-text" :style="{ animationDelay: `${index * 0.5}s` }">
+          <h1 v-for="(line, index) in heroText" :key="index" class="hero-text" :style="{ animationDelay: `${index * 0.8}s` }">
             {{ line }}
           </h1>
         </div>
@@ -402,9 +402,14 @@
 import NavBar from '@/components/Navbar.vue';
 import FooterPage from '@/components/footerPage.vue';
 import NewsLetter from '@/components/NewsLetter.vue';
+import { anime } from 'vue-anime'
+
 
 export default {
   name: 'HomePage',
+  directives: {
+    anime
+  },
   components: {
     NavBar,
     FooterPage,
@@ -499,7 +504,7 @@ export default {
       };
       window.requestAnimationFrame(step);
     }
-  }
+  },
 }
 </script>
 

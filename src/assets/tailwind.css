@@ -1,5 +1,9 @@
 
-
+  /* Tailwind CSS base, components, and utilities */
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
 /* Regular */
 @font-face {
     font-family: 'Gramatika';
@@ -99,9 +103,4 @@
   .clip-custom {
     clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
-  
-  /* Tailwind CSS base, components, and utilities */
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
   
