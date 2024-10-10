@@ -3,7 +3,7 @@
     <NavHubs />
 
     <!-- Hero Section -->
-    <div class="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-16 mt-12 lg:mt-32">
+    <div class="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-16 mt-32 lg:mt-32">
       <!-- Text Content -->
       <div class="space-y-6 lg:space-y-10 text-center lg:text-left">
         <div class="space-y-4">

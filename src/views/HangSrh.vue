@@ -2,7 +2,7 @@
       <div class="h-screen overflow-x-hidden ">
   <NavInit/>
 
-  <div class=" ml-8 flex flex-col lg:flex-row mt-12 lg:mt-32 px-6 w-full lg:space-x-10 ">
+  <div class=" ml-2 lg:ml-8 flex flex-col lg:flex-row mt-32 lg:mt-32 px-6 w-full lg:space-x-10 ">
       <!-- Text Section -->
       <div class="space-y-10">
       <div class="lg:text-left  space-y-4 w-2/3">
@@ -25,13 +25,13 @@
   </div>
     </div>
 
-  <div class="relative w-full flex-shrink-0 mt-20 p-10">
+  <div class="relative w-full flex-shrink-0 mt-20  p-4 lg:p-10">
     <img src="../assets/Group 169.jpg"  class="w-full max-h-[800px] h-[60vh] sm:h-[100px] lg:h-[600px] object-cover">
   </div>
 
-  <div class=" ml-10  flex flex-col lg:flex-row  w-full mt-24 lg:mt-12 lg:mt-32 px-2 p-2 w-full lg:space-x-4 ">
+  <div class=" ml-2 lg:ml-10  flex flex-col lg:flex-row  w-full mt-12 lg:mt-12 lg:mt-32 px-2 p-0  lg:p-2 w-full lg:space-x-4 ">
     <!-- Text Section -->
-    <div class="lg:text-left w-2/4 space-y-4 mt-20 ">
+    <div class="lg:text-left w-full lg:w-2/4 space-y- mt-12 lg:mt-20 ">
       <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">FUNDING 20 TECH-ENABLED HEALTH STARTUPS. </p>
   
 
@@ -40,7 +40,7 @@
 
     <!-- Description and Button Section -->
     <div class="text-justify mt-4 lg:mt-0 space-y-8 w-full lg:w-2/4">
-      <p class="text-base lg:text-lg font-gramatika text-navy mr-24">
+      <p class="text-base lg:text-lg font-gramatika text-navy mr-6 lg:mr-24">
         The Hanga Sexual & Reproductive Health (SRH) Program was conceived by the Government of Rwanda in 2022 through HangaPitchFest to explore the opportunity that exists for technology enabled startups to solve key issues in SRH to accelerate better outcomes.
     This year, we are excited to work with key partners to scout, select, and provide technical and business support to 20 startups in Sub-Saharan Africa working on innovative tech-enabled solutions that are addressing challenges in ways that break the mold in SRH.
       </p>
