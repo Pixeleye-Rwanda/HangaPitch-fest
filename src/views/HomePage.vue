@@ -175,129 +175,170 @@
     
 
       <!---------- section six------------ -->
-      <div class="px-4  ml-2 sm:px-6 lg:px-12 py-12 lg:py-24">
-        <div class="flex flex-col lg:flex-row lg:space-x-8">
-          <div class="mb-8 lg:mt-44 sm:mt-20 lg:mb-0 lg:w-1/3">
-            <h1 class="font-rockinsoda text-3xl sm:text-6xl text-navy">CHECK OUR INITIATIVES</h1>
-            <p class="font-gramatika text-lg sm:text-2xl text-navy mt-2">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-            </p>
-          </div>
-          
-          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 lg:w-2/3">
-            <div class="relative w-full sm:w-1/2 h-[50vh] sm:h-[60vh] lg:h-[85vh]">
-              <img src="../assets/hubs.jpg" class="w-full h-full object-cover">
-              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-                <div class="absolute bottom-8 left-8">
-                  <p class="text-white font-rockinsoda text-4xl sm:text-5xl">HANGA HUBS</p>
-                  <div class="mt-2">
-                    <p class="text-white font-gramatika text-lg">Addressing the obstacles & gaps limiting early-stage startups.</p>
-                    <a href="" class="text-white font-gramatika underline">learn more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="relative w-full sm:w-1/2 h-[50vh] sm:h-[60vh] lg:h-[85vh]">
-              <img src="../assets/srs.jpg" class="w-full h-full object-cover">
-              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
-                <div class="absolute bottom-8 left-8">
-                  <p class="text-white font-rockinsoda text-3xl sm:text-5xl">HANGA SRH</p>
-                  <div class="mt-2">
-                    <p class="text-white font-gramatika">Revolutionizing Sexual and Reproductive Health in Africa.</p>
-                    <router-link to="/srh">
-                      <a href="" class="text-white font-gramatika underline">learn more</a>
-
-                    </router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="px-4 ml-2 sm:px-6 lg:px-12 py-12 lg:py-24" ref="observerElement">
+    <div  v-if="isVisible" class="flex flex-col lg:flex-row lg:space-x-8">
+      <Transition appear name="slide-up">
+        <div class="mb-8 lg:mt-44 sm:mt-20 lg:mb-0 lg:w-1/3">
+          <h1 class="font-rockinsoda text-3xl sm:text-6xl text-navy">CHECK OUR INITIATIVES</h1>
+          <p class="font-gramatika text-lg sm:text-2xl text-navy mt-2">
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+          </p>
         </div>
+      </Transition>
+      
+      <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 lg:w-2/3">
+        <Transition appear name="slide-left">
+          <div class="relative w-full sm:w-1/2 h-[50vh] sm:h-[60vh] lg:h-[85vh]">
+            <img src="../assets/hubs.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+              <div class="absolute bottom-8 left-8">
+                <p class="text-white font-rockinsoda text-4xl sm:text-5xl">HANGA HUBS</p>
+                <div class="mt-2">
+                  <p class="text-white font-gramatika text-lg">Addressing the obstacles & gaps limiting early-stage startups.</p>
+                  <a href="" class="text-white font-gramatika underline">learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Transition>
+        
+        <Transition appear name="slide-right">
+          <div class="relative w-full sm:w-1/2 h-[50vh] sm:h-[60vh] lg:h-[85vh]">
+            <img src="../assets/srs.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+              <div class="absolute bottom-8 left-8">
+                <p class="text-white font-rockinsoda text-3xl sm:text-5xl">HANGA SRH</p>
+                <div class="mt-2">
+                  <p class="text-white font-gramatika">Revolutionizing Sexual and Reproductive Health in Africa.</p>
+                  <router-link to="/srh">
+                    <a href="" class="text-white font-gramatika underline">learn more</a>
+                  </router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Transition>
       </div>
+    </div>
+  </div>
 
       <!--------section seven------->
-      <div class="relative w-full mt-8 md:mt-16 lg:mt-8 mb-3">
-        <img src="../assets/Group .jpg" alt="" class="w-full h-[350px] md:h-80 lg:h-[800px] object-cover">
-        <div class="absolute inset-0 flex flex-col mt-32 justify-center px-4 md:px-8 lg:px-12">
-          <p class="font-rockinsoda text-white text-3xl md:text-4xl lg:text-7xl mb-4">DON'T MISS OUT</p>
-          <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-8">
-            <div class="w-full md:w-2/3 lg:w-3/4">
-              <p class="text-white font-gramatika text-base md:text-lg lg:text-2xl">
-                The largest in-person technology event in Rwanda designed to ignite & inspire innovation, 
-                Hanga Pitch Fest is returning for its fourth edition
-              </p>
-            </div>
-            <div class="w-full md:w-1/3 lg:w-1/4 flex justify-start md:justify-end">
-              <button class="font-gramatika  text-white  text-xl border rounded-full px-8 py-2 hover:bg-tangerine transition duration-300">
-                <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank"> Apply Now</a>
-              </button>
+      <div ref="observerElement1">
+      
+          <div v-if="isVisible1" class="relative w-full mt-8 md:mt-16 lg:mt-8 mb-3">
+            <img src="../assets/Group .jpg" alt="" class="w-full h-[350px] md:h-80 lg:h-[800px] object-cover">
+            <div class="absolute inset-0 flex flex-col mt-32 justify-center px-4 md:px-8 lg:px-12">
+              <Transition  appear name="slide-left">
+              <p class="font-rockinsoda text-white text-3xl md:text-4xl lg:text-7xl mb-4 ">DON'T MISS OUT</p>
+              </Transition>
+              <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-8">
+                <Transition  appear name="slide-left">
+                <div class="w-full md:w-2/3 lg:w-3/4">
+                  <p class="text-white font-gramatika text-base md:text-lg lg:text-2xl">
+                    The largest in-person technology event in Rwanda designed to ignite & inspire innovation, 
+                    Hanga Pitch Fest is returning for its fourth 
+                  </p>
+                </div>
+              </Transition>
+              
+                <div class="w-full md:w-1/3 lg:w-1/4 flex justify-start md:justify-end">
+                  <Transition  appear name="slide-right">
+                  <button class="font-gramatika text-white text-xl border rounded-full px-8 py-2 hover:bg-tangerine transition duration-300">
+                    <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank"> Apply Now</a>
+                  </button>
+                </Transition>
+                </div>
+               
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+       
+    </div>
       
       <!------ section eight ------->
-      <div class="space-y-12 mt-32">
-        <div class="px-4 mb-20 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
-          <div class="relative">
-            <h1 class="font-rockinsoda text-3xl sm:text-4xl md:text-6xl text-navy mb-4">LATEST ON OUR BLOG</h1>
-            <div class="font-gramatika text-base sm:text-lg md:text-2xl text-lightblue mb-6 md:mb-0">
-              <p>Get updates on the latest stories within Rwanda's</p>
-              <p>flourishing tech innovation ecosystem.</p>
-            </div>
-            <button class="bg-tangerine text-white text-xl mt-16 px-8 p-2 hover:bg-orange-500 transition duration-300 w-full sm:w-auto md:absolute md:top-0 md:right-0">
-              read more <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
-
-
-        <div class="px-4 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
-          <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
-            <!-- First Card -->
-            <div class="relative h-[400px] sm:h-[450px] md:h-[600px] w-full md:w-1/2 flex-shrink-0">
-              <img src="../assets/stad.jpg" class="w-full h-full object-cover">
-              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">                <div class="p-4 sm:p-6 md:p-8 h-full flex flex-col justify-between">
-                  <button class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 w-fit">STARTUPS</button>
-                  <div>
-                    <h2 class="text-white font-rockinsoda text-3xl sm:text-3xl md:text-4xl">BK ARENA TO BE USED FOR<br>HANGA 2024</h2>
-                    <p class="text-white font-gramatika text-md sm:text-base mt-2">The largest in-person technology event in Rwanda designed to ignite & inspire innovation.</p>
-                    <p class="text-white font-rockinsoda text-md sm:text-base mt-4">Oct 24 . Hanga team, Becky</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Second Card -->
-            <div class="relative h-[400px] sm:h-[450px] md:h-[600px] w-full md:w-1/2 flex-shrink-0">
-              <img src="../assets/vr.jpg" class="w-full h-full object-cover">
-              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">                <div class="p-4 sm:p-6 md:p-8 h-full flex flex-col justify-between">
-                  <div>
-                    <button class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 mr-2 mb-2 w-fit">STARTUPS</button>
-                    <button class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 sm:px-4 w-fit">INVESTMENT</button>
-                  </div>
-                  <div>
-                    <h2 class="text-white font-rockinsoda text-3xl sm:text-3xl md:text-4xl">BK ARENA TO BE USED FOR<br>HANGA 2024</h2>
-                    <p class="text-white font-gramatika text-md sm:text-base mt-2">The largest in-person technology event in Rwanda designed to ignite & inspire innovation.</p>
-                    <p class="text-white font-rockinsoda text-md sm:text-base mt-4">Oct 24 . Hanga team, Becky</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
+      <transition
+  name="fade-slide" 
+  appear
+  mode="out-in"
+>
+      <div ref="observerElement2">
+        <div class="space-y-12 mt-32" v-if="isVisible2">
+          <div class="px-4 mb-20 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
+            <div class="relative">
+              <!-- Title with sliding and fade-in effect -->
+              <transition name="fade-slide-up" appear>
+                <h1 class="font-rockinsoda text-3xl sm:text-4xl md:text-6xl text-navy mb-4">LATEST ON OUR BLOG</h1>
+              </transition>
       
-
+              <!-- Text with sliding from left and fade-in effect -->
+              <transition name="fade-slide-left" appear>
+                <div class="font-gramatika text-base sm:text-lg md:text-2xl text-lightblue mb-6 md:mb-0">
+                  <p>Get updates on the latest stories within Rwanda's</p>
+                  <p>flourishing tech innovation ecosyste</p>
+                </div>
+              </transition>
+      
+              <!-- Button with a zoom-in effect -->
+              <transition name="fade-slide-right" appear>
+                <button class="bg-tangerine text-white text-xl mt-16 px-8 p-2 hover:bg-orange-500 transition duration-300 w-full sm:w-auto md:absolute md:top-0 md:right-0">
+                  read more <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
+                </button>
+              </transition>
+            </div>
+          </div>
+      
+          <div class="px-4 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
+            <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+              <!-- First Card with sliding up and fade-in effect -->
+              <transition name="fade-slide-up" appear>
+                <div class="relative h-[400px] sm:h-[450px] md:h-[600px] w-full md:w-1/2 flex-shrink-0">
+                  <img src="../assets/stad.jpg" class="w-full h-full object-cover">
+                  <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                    <div class="p-4 sm:p-6 md:p-8 h-full flex flex-col justify-between">
+                      <button class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 w-fit">STARTUPS</button>
+                      <div>
+                       <transition name="slide-up" appear>
+                        <h2 class="text-white font-rockinsoda text-3xl sm:text-3xl md:text-4xl " >BK ARENA TO BE USED FOR<br>HANGA 2024</h2>
+                      </transition>
+                        <p class="text-white font-gramatika text-md sm:text-base mt-2">The largest in-person technology event in Rwanda designed to ignite & inspire innovation.</p>
+                        <p class="text-white font-rockinsoda text-md sm:text-base mt-4">Oct 24 . Hanga team, Becky</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </transition>
+      
+              <!-- Second Card with sliding from right and fade-in effect -->
+              <transition name="fade-slide-up" appear>
+                <div class="relative h-[400px] sm:h-[450px] md:h-[600px] w-full md:w-1/2 flex-shrink-0">
+                  <img src="../assets/vr.jpg" class="w-full h-full object-cover">
+                  <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1, 9, 48, 0.76) 0%, rgba(1, 9, 48, 0.76) 30%, rgba(1, 9, 48, 0.2) 70%);">
+                    <div class="p-4 sm:p-6 md:p-8 h-full flex flex-col justify-between">
+                      <div>
+                        <button class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 mr-2 mb-2 w-fit">STARTUPS</button>
+                        <button class="text-black bg-white font-gramatika text-lg p-1 sm:p-2 px-6 sm:px-6 sm:px-4 w-fit">INVESTMENT</button>
+                      </div>
+                      <div>
+                        <h2 class="text-white font-rockinsoda text-3xl sm:text-3xl md:text-4xl">BK ARENA TO BE USED FOR<br>HANGA 2024</h2>
+                        <p class="text-white font-gramatika text-md sm:text-base mt-2">The largest in-person technology event in Rwanda designed to ignite & inspire innovation.</p>
+                        <p class="text-white font-rockinsoda text-md sm:text-base mt-4">Oct 24 . Hanga team, Becky</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </transition>
+            </div>
+          </div>
+        </div>
       </div>
+      </transition>
+      
 
       <!--------- section nine ---------->
       <div class="lg:-mb-10">
         <div class="mt-24 ml-8 space-x-2">
           <h1 class="font-rockinsoda text-6xl text-navy">2023</h1>
-          <h1 class="font-rockinsoda text-6xl text-navy">NOTABLE SPEAKERS</h1>
+          <h1 class="font-rockinsoda text-6xl text-navy">NOTABL SPEAKERS</h1>
         </div>
         <div
           class="relative overflow-x-auto whitespace-nowrap scrollbar-hide mt-16 ml-0 lg:ml-12"
@@ -401,8 +442,7 @@
 import NavBar from '@/components/Navbar.vue';
 import FooterPage from '@/components/footerPage.vue';
 import NewsLetter from '@/components/NewsLetter.vue';
-import { anime } from 'vue-anime'
-
+import { anime } from 'vue-anime';
 
 export default {
   name: 'HomePage',
@@ -414,6 +454,8 @@ export default {
     FooterPage,
     NewsLetter
   },
+
+
   data() {
     return {
       heroText: [
@@ -442,6 +484,9 @@ export default {
         }
       ],
       startX: 0,
+      isVisible:false,
+      isVisible1:false,
+      isVisible2:false,
       statsItems: [
         { image: require('@/assets/Component 1.png'), finalValue: 130, currentValue: 0, suffix: '+', description: 'Startups' },
         { image: require('@/assets/Component 1 (1).png'), finalValue: 10000, currentValue: 0, suffix: '+', description: 'Attendees' },
@@ -453,9 +498,13 @@ export default {
     this.initScrollAnimations();
     this.initCountUpAnimation();
     this.initPitchAnimations();
+    this.initiativeAnimations();
+    this.missoutAnimations();
+    this.blogAnimations();
 
   
   },
+
   methods: {
     handleTouchStart(event) {
       this.startX = event.touches[0].clientX;
@@ -527,8 +576,53 @@ export default {
     slideElements.forEach(el => observer.observe(el));
   },
 
+  initiativeAnimations() {
   
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.isVisible = true;
+        }
+      });
+    });
+
+    observer.observe(this.$refs.observerElement);
   },
+  missoutAnimations(){
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.isVisible1 = true;
+        }
+      });
+    });
+
+    observer.observe(this.$refs.observerElement1);
+  },
+
+  blogAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log('Element is now visible');
+        this.isVisible2 = true;  // Trigger the animation when visible
+      } else {
+        console.log('Element is no longer visible');
+        this.isVisible2 = false;  // Reset to trigger animation again when it reappears
+      }
+    });
+  }, {
+    threshold: 0.1  // Adjust threshold as needed
+  });
+
+  observer.observe(this.$refs.observerElement2);
+}
+
+
+
+  },
+
+
 }
 </script>
 
@@ -597,24 +691,129 @@ export default {
   opacity: 1;
 }
 
+.slide-up-enter-active,
+.slide-left-enter-active,
+.slide-right-enter-active {
+  transition: all 0.7s ease-out;
+}
 
-.slide-in-right {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+.slide-up-enter-from {
   opacity: 0;
-  transition: -webkit-transform 1s ease-in-out, opacity 1s ease-in-out;
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transform: translateY(50px);
 }
 
-.slide-in-visible {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+.slide-up-enter-to {
   opacity: 1;
+  transform: translateY(0); /* Ensure Y-axis is reset to 0 */
 }
 
-.slide-in-right {
-  z-index: 50;
+.slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(-50px);
 }
+
+.slide-left-enter-to {
+  opacity: 1;
+  transform: translateX(0); /* Reset X-axis */
+}
+
+.slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.slide-right-enter-to {
+  opacity: 1;
+  transform: translateX(0); /* Reset X-axis */
+}
+/* General Fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.6s ease-in-out;
+}
+.fade-enter, 
+.fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+
+/* Fade and Slide Up */
+.fade-slide-up-enter-active {
+  transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.fade-slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fade-slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade and Slide Left */
+.fade-slide-left-enter-active {
+  transition: all 0.9s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.fade-slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+.fade-slide-left-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade and Slide Right */
+.fade-slide-right-enter-active {
+  transition: all 0.9s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.fade-slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(50px);
+}
+.fade-slide-right-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom In */
+.zoom-enter-active {
+  transition: all 0.7s ease;
+}
+.zoom-enter-from {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.zoom-enter-to {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-slide-up-enter-active,
+.fade-slide-up-leave-active {
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.fade-slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(70px); 
+}
+
+.fade-slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-up-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+
 
 
 
