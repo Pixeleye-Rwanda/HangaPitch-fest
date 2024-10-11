@@ -256,14 +256,10 @@
     </div>
       
       <!------ section eight ------->
-      <transition
-  name="fade-slide" 
-  appear
-  mode="out-in"
->
+
       <div ref="observerElement2">
-        <div class="space-y-12 mt-32" v-if="isVisible2">
-          <div class="px-4 mb-20 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
+        <div class="space-y-12 mt-32" >
+          <div class="px-4 mb-20 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16" v-if="isVisible2">
             <div class="relative">
               <!-- Title with sliding and fade-in effect -->
               <transition name="fade-slide-up" appear>
@@ -271,7 +267,7 @@
               </transition>
       
               <!-- Text with sliding from left and fade-in effect -->
-              <transition name="fade-slide-left" appear>
+              <transition name="fade-in" appear>
                 <div class="font-gramatika text-base sm:text-lg md:text-2xl text-lightblue mb-6 md:mb-0">
                   <p>Get updates on the latest stories within Rwanda's</p>
                   <p>flourishing tech innovation ecosyste</p>
@@ -287,7 +283,7 @@
             </div>
           </div>
       
-          <div class="px-4 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16">
+          <div class="px-4 sm:px-6 md:px-8 lg:px-12 mt-8 md:mt-12 lg:mt-16" v-if="isVisible2">
             <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
               <!-- First Card with sliding up and fade-in effect -->
               <transition name="fade-slide-up" appear>
@@ -331,15 +327,16 @@
           </div>
         </div>
       </div>
-      </transition>
       
 
       <!--------- section nine ---------->
-      <div class="lg:-mb-10">
+      <div class="lg:-mb-10" ref="observerElement5">
+        <transition name="slide-up" appear v-if="isVisible5" >
         <div class="mt-24 ml-8 space-x-2">
           <h1 class="font-rockinsoda text-6xl text-navy">2023</h1>
-          <h1 class="font-rockinsoda text-6xl text-navy">NOTABL SPEAKERS</h1>
+          <h1 class="font-rockinsoda text-6xl text-navy">NOTABLE SPEAKERS</h1>
         </div>
+        </transition>
         <div
           class="relative overflow-x-auto whitespace-nowrap scrollbar-hide mt-16 ml-0 lg:ml-12"
           ref="scrollContainer"
@@ -358,12 +355,19 @@
                 <div class="absolute inset-0" :style="{ background: individual.gradient }"></div>
                 <div class="text-5xl font-rockinsoda text-white absolute inset-0 flex items-center justify-center">
                   <div class="space-y-4">
+                    <transition name="slide-up" appear v-if="isVisible5" >
+
                     <div class="mt-96">
                       <p class="text-center">{{ individual.name }}</p>
                     </div>
+                    </transition>
+
+                    <transition name="fade-slide-up" appear v-if="isVisible5"  >
+
                     <div>
                       <p class="text-white font-gramatika text-2xl text-center" v-html="individual.title"></p>
                     </div>
+                    </transition>
                   </div>
                 </div>
               </div>
@@ -373,62 +377,86 @@
       </div>
 
     <!--------- section 10 -------->
-    <div class="ml-4 mr-4 sm:ml-8 sm:mr-8  lg:ml-8 lg:mr-8">
+    <div ref="observerElement3">
+    <div class="ml-4 mr-4 sm:ml-8 sm:mr-8 lg:ml-8 lg:mr-8" v-if="isVisible3">
+
+      <transition name="fade-slide-up" v-if="isVisible3" appear>
+
       <div class="mt-16 sm:mt-24 lg:mt-32">
         <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-6xl text-navy">
           HANGA ON INSTAGRAM
         </h1>
       </div>
-      <div class="mt-8 sm:mt-12">
-        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-2">
-          <!-- Column 1 -->
-          <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
-            <div class="h-[400px] sm:h-[300px] lg:h-[400px]">
-              <img src="../assets/insta1.jpg" class="w-full h-full object-cover">
+
+      </transition>
+        <div class="mt-8 sm:mt-12" >
+          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-2">
+            <!-- Column 1 -->
+            <transition name="fade-slide-left" v-if="isVisible3" appear>
+
+            <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
+              <div class="h-[400px] sm:h-[300px] lg:h-[400px]">
+                <img src="../assets/insta1.jpg" class="w-full h-full object-cover">
+              </div>
+              <div class="h-[300px] sm:h-[350px] lg:h-[300px]">
+                <img src="../assets/insta2.jpg" class="w-full h-full object-cover">
+              </div>
+            </div> 
+          </transition>
+  
+            <!-- Column 2 -->
+            <transition name="fade-slide-left" v-if="isVisible3" appear>
+
+            <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
+              <div class="h-[400px] sm:h-[325px] lg:h-[400px]">
+                <img src="../assets/insta4.jpg" class="w-full h-full object-cover">
+              </div>
+              <div class="h-[200px] sm:h-[150px] lg:h-[200px]">
+                <img src="../assets/insta5.jpg" class="w-full h-full object-cover">
+              </div>
             </div>
-            <div class="h-[300px] sm:h-[350px] lg:h-[300px]">
-              <img src="../assets/insta2.jpg" class="w-full h-full object-cover">
+          </transition>
+            <!-- Column 3 -->
+            <transition name="fade-slide-right" v-if="isVisible3" appear>
+
+            <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
+              <div class="h-[400px] sm:h-[425px] lg:h-[400px]">
+                <img src="../assets/mrspeaker.jpg" class="w-full h-full object-cover">
+              </div>
+              <div class="h-[300px] sm:h-[350px] lg:h-[300px]">
+                <img src="../assets/bghome.jpg" class="w-full h-full object-cover">
+              </div>
             </div>
-          </div>
-          
-          <!-- Column 2 -->
-          <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
-            <div class="h-[400px] sm:h-[325px] lg:h-[400px]">
-              <img src="../assets/insta4.jpg" class="w-full h-full object-cover">
+            </transition>
+  
+            <!-- Column 4 -->
+            <transition name="fade-slide-right" v-if="isVisible3" appear>
+
+            <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
+              <div class="h-[300px] sm:h-[225px] lg:h-[300px]">
+                <img src="../assets/insta3.jpg" class="w-full h-full object-cover">
+              </div>
+              <div class="h-[300px] sm:h-[250px] lg:h-[300px]">
+                <img src="../assets/vr.jpg" class="w-full h-full object-cover">
+              </div>
             </div>
-            <div class="h-[200px] sm:h-[150px] lg:h-[200px]">
-              <img src="../assets/insta5.jpg" class="w-full h-full object-cover">
-            </div>
-          </div>
-          
-          <!-- Column 3 -->
-          <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
-            <div class="h-[400px] sm:h-[425px] lg:h-[400px]">
-              <img src="../assets/mrspeaker.jpg" class="w-full h-full object-cover">
-            </div>
-            <div class="h-[300px] sm:h-[350px] lg:h-[300px]">
-              <img src="../assets/bghome.jpg" class="w-full h-full object-cover">
-            </div>
-          </div>
-          
-          <!-- Column 4 -->
-          <div class="w-full sm:w-1/2 lg:w-1/4 space-y-4">
-            <div class="h-[300px] sm:h-[225px] lg:h-[300px]">
-              <img src="../assets/insta3.jpg" class="w-full h-full object-cover">
-            </div>
-            <div class="h-[300px] sm:h-[250px] lg:h-[300px]">
-              <img src="../assets/vr.jpg" class="w-full h-full object-cover">
-            </div>
+            </transition>
           </div>
         </div>
-      </div>
+     
     </div>
+  </div>
 
       <!-----section 11------>
+      <div ref="observerElement4">
+     
       <div class="mt-24 flex items-center justify-center ">
+        <transition name="fade-slide-up" appear v-if="isVisible4">
         <img src="../assets/Frame 320.png" >
-      </div>
+      </transition>
 
+      </div>
+    </div>
        
 
       <NewsLetter/>
@@ -487,6 +515,11 @@ export default {
       isVisible:false,
       isVisible1:false,
       isVisible2:false,
+      isVisible3:false,
+      isVisible4:false,
+      isVisible5:false,
+
+
       statsItems: [
         { image: require('@/assets/Component 1.png'), finalValue: 130, currentValue: 0, suffix: '+', description: 'Startups' },
         { image: require('@/assets/Component 1 (1).png'), finalValue: 10000, currentValue: 0, suffix: '+', description: 'Attendees' },
@@ -501,8 +534,11 @@ export default {
     this.initiativeAnimations();
     this.missoutAnimations();
     this.blogAnimations();
+    this.galleryAnimations();
+    this.iconsAnimations();
+    this.notableAnimations();
 
-  
+
   },
 
   methods: {
@@ -604,19 +640,58 @@ export default {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log('Element is now visible');
-        this.isVisible2 = true;  // Trigger the animation when visible
-      } else {
-        console.log('Element is no longer visible');
-        this.isVisible2 = false;  // Reset to trigger animation again when it reappears
+        this.isVisible2 = true; 
       }
     });
   }, {
-    threshold: 0.1  // Adjust threshold as needed
+    threshold: 0.5  
   });
 
   observer.observe(this.$refs.observerElement2);
-}
+},
+
+galleryAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible3 = true; 
+      }
+    });
+  }, {
+    threshold: 0.5  
+  });
+
+  observer.observe(this.$refs.observerElement3);
+},
+
+iconsAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible4 = true; 
+      }
+    });
+  }, {
+    threshold: 0.5  
+  });
+
+  observer.observe(this.$refs.observerElement4);
+},
+
+notableAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible5 = true; 
+      }
+    });
+  }, {
+    threshold: 0.5  
+  });
+
+  observer.observe(this.$refs.observerElement5);
+},
+
 
 
 
@@ -790,12 +865,12 @@ export default {
 
 .fade-slide-up-enter-active,
 .fade-slide-up-leave-active {
-  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+  transition: opacity 1.1s ease-in-out, transform 1.1s ease-in-out;
 }
 
 .fade-slide-up-enter-from {
   opacity: 0;
-  transform: translateY(70px); 
+  transform: translateY(50px);
 }
 
 .fade-slide-up-enter-to {
@@ -812,6 +887,7 @@ export default {
   opacity: 0;
   transform: translateY(80px);
 }
+
 
 
 
