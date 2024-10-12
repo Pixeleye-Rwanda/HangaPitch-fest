@@ -9,15 +9,18 @@
           <Navbar class="absolute top-0 left-0 w-full"/>
         
           <div class="font-rockinsoda absolute  text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-2/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left" ref="text">
-            <p>LEADING INNOVATION</p>
-              <p>AT THE FOREFRONT</p>
+            <p v-for="(line, index) in heroText" :key="index" class="hero-text" :style="{ animationDelay: `${index * 0.8}s` }">
+              {{ line }}
+            </p>
           </div>
 
           <div class="absolute top-3/4   left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left">
            
-                
-         <p class="font-gramatika text-white text-2xl">Our mission is to discover and nurture Rwanda's most </p>
-            <p class="font-gramatika text-white text-2xl"> innovative tech-enabled startups</p>
+            <p v-for="(line, index) in baseText" :key="index" class="hero-text font-gramatika text-white text-2xl" :style="{ animationDelay: `${index * 0.8}s` }" >
+              {{ line }}
+            </p>
+        
+         
              
           </div>
 
@@ -26,40 +29,57 @@
         </div>
 
           <!-- second section -->
+           <div ref="observerElement">
           <div class="ml-4 sm:ml-8 md:ml-12 lg:ml-12 xl:ml-20 mt-10 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20">
-            <p class="text-darknavy font-gramatika text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+            <p class="text-darknavy font-gramatika text-sm sm:text-base md:text-lg lg:text-xl fade-in xl:text-2xl">
               Empowerment is central to Hanga's mission, focusing on enabling
             </p>
-            <p class="text-darknavy font-gramatika text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+          
+            <p class="text-darknavy font-gramatika text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl fade-in">
               individuals and communities.
             </p>
+          </div>
           </div>
           
 
            <!-- third section  -->
+            <div ref="observerElement1">
            <div className="flex flex-col lg:mr-4 lg:ml-12 lg:flex-row sm:mt-12 lg:mt-24 w-full px-4 lg:px-8 xl:px-8 py-12  mx-auto">
+            <transition name="fade-slide-left" appear v-if="isVisible1">
             <div className="lg:w-1/3 space-y-4 lg:mt-16 mb-8 lg:mb-0 lg:pr-8 self-start">
               <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rockinsoda text-navy">FUELING</p>
               <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rockinsoda text-navy">INNOVATION</p>
             </div>
+          </transition>
             <div className="lg:w-3/5 space-y-8 self-start">
+
+              <transition name="fade-slide-up" v-if="isVisible1" appear >
               <p className="text-navy text-justify font-gramatika text-sm md:text-base lg:text-xl 2xl:text-2xl">
                 Hanga PitchFest offers a platform for tech-entrepreneurs to present 
                 their groundbreaking work to a wide audience, including potential investors, 
                 technology company founders, and private sector business leaders.
               </p>
+            </transition>
+             <transition name="fade-slide-up" v-if="isVisible1" appear >
+
               <p className="text-navy text-justify font-gramatika text-sm md:text-base lg:text-xl 2xl:text-2xl">
                 Selected startups have the opportunity to connect with Angel investors, 
                 venture capitalists, and other key stakeholders who can provide 
                 the necessary funding and support to scale their businesses.
               </p>
+              </transition>
+
+             <transition name="fade-slide-up" v-if="isVisible1" appear >
+
               <p className="text-navy text-justify  font-gramatika text-sm md:text-base lg:text-xl 2xl:text-2xl">
                 Our all-day event includes innovators' showcases, masterclasses for 
                 entrepreneurs, live music performances, and a live pitching competition 
                 for the top 5 startups.
               </p>
+              </transition>
             </div>
           </div>
+        </div>
 
             <!-- section four  -->
             <div class="relative w-full flex-shrink-0 mt-20">
@@ -68,14 +88,18 @@
             </div>
 
              <!-- section five  -->
+              <div ref="observerElement2">
              <div class="ml-4 mr-4 xl:mt-4 2xl:-mt-12 mlg:mr-10 md:ml-12 flex flex-col md:flex-row lg:space-x-16 items-start justify-between">
               <div class="flex-1  mt-12 xl:mt-2 2xl:mt-60 md:mt-8 max-w-full md:max-w-[50%]">
+                <transition name="fade-slide-up" appear v-if="isVisible2">
                 <div class="space-y-2  md:mt-28 ">
                   <p class="text-4xl md:text-7xl font-rockinsoda text-navy">HEAR FROM OUR </p>
                   <p class="text-4xl md:text-7xl font-rockinsoda text-navy">SPONSORS</p>
                 </div>
+              </transition>
             
                 <div class="mt-10">
+                  <transition name="fade-slide-left" appear  v-if="isVisible2">
                   <div class="text-justify space-y-12 w-full">
                     <p class="text-navy font-gramatika text-lg md:text-md">
                       "We are delighted, as Jasiri, to be part of Hanga Pitchfest. We believe in the power of entrepreneurship to transform our society, and Hanga Pitchfest calls for action for those seeking to challenge the status quo and build solutions that will improve the lives of many." 
@@ -90,14 +114,16 @@
                       "Partnership with Hanga PitchFest is a must, as it is the only way to support young upcoming entrepreneurs. Having an entrepreneurial mindset is the only way to solve problems worldwide. This will help the youth to move from a survival mentality to thriving and building their country, continent, and the world at large!" - Choose Kigali
                     </p>
                   </div>
+                </transition>
                 </div>
               </div>
-            
+             <transition name="fade-slide-right" appear v-if="isVisible2">
               <div class="flex-1 h-[300px] sm:mt-10 md:h-auto  md:mt-32 xl:mt-36 2xl:mt-52 max-w-full md:max-w-[50%]">
                 <img src="../assets/speakerP.jpg" class="w-full mt-10 h-full  object-cover">
               </div>
+            </transition>
             </div>
-            
+          </div>
             
 
               <!-- section six  -->
@@ -125,33 +151,32 @@
                     </div>
                     <!-- Image Section -->
                     <div class="text-white mt-40 p-4 sm:p-6 md:p-8  lg:justify-end lg:flex-shrink-0 w-full lg:w-auto lg:max-w-[50%] flex justify-center">
-                      <div class="absolute w-full left-0 w-1/3 h-auto left-[60%]">
-                        <div class="space-y-4 text-justify ">
+                      <div class="absolute w-full left-0 w-1/3 h-auto left-[60%] mr-20">
+                        
+                        <div class="space-y-4 text-justify " >
                           <p class="font-gramatika text-7xl font-bold ">Rwf 600 M</p>
                           <p class="font-gramatika text-lg font-normal ">In investments</p>
                         </div>
+                      
                         <hr class="w-[500px] border-lineColor mt-8 mb-8 ">
+                          <div class="flex space-x-16 ">
+                        <div class=""  v-for="(item, index) in statsItems" :key="index">
       
-                        <div class="flex space-x-16">
-      
-                         <div class="text-justify space-y-4">
-                          <p class="font-gramatika text-6xl" >130+</p>
-                          <p>Startups</p>
-                         </div>
-      
-                         <div class="text-justify space-y-4">
-                        <p class="font-gramatika  text-6xl" > 20+ </p>
-                        <p>Hanga SRH</p>
+                         <div class="text-justify space-y-4  ">
+                          <div class="flex space-x-2">
+                          <p ref="countUp" class="font-gramatika text-6xl">{{ item.currentValue }} </p>
+                          <p class="text-6xl">{{ item.suffix }}</p>
                         </div>
-      
-                         <div class="text-justify space-y-4">
-                          <p class="font-gramatika text-6xl">190+</p>
-                          <p>Hanga hubs</p>
-      
-                         </div>
+                          <p>{{ item.description }}</p>
                         </div>
+                      </div>
+      
+                        
+                        </div>
+                     
       
                       </div>
+
                     </div>
                   </div>
                 </div>
@@ -413,16 +438,160 @@ export default{
             NewsLetter
         },
 
+        data(){
+
+          return{
+            heroText: [
+        'LEADING INNOVATION',
+        'AT THE FOREFRONT',
+        
+      ],
+
+      baseText:[
+          'Our mission is to discover and nurture Rwandas most ',
+        'innovative tech-enabled startups'
+      ],
+
+      statsItems: [
+        {  finalValue: 130, currentValue: 0, suffix: '+', description: 'Startups' },
+        {  finalValue: 20, currentValue: 0, suffix: '+', description: 'Hanga SRH' },
+        { finalValue: 190, currentValue: 0, suffix: '+', description: 'Hanga Hubs' },
+      ],
+      startX: 0,
+
+      isVisible:false,
+      isVisible1:false,
+      isVisible2:false,
+      isVisible3:false,
+      isVisible4:false,
+          }
+
+        },
+
         methods: {
     scrollLeft() {
       this.$refs.videoWrapper.scrollBy({ left: -500, behavior: 'smooth' });
     },
     scrollRight() {
       this.$refs.videoWrapper.scrollBy({ left: 500, behavior: 'smooth' });
+    },
+
+    initiativeAnimations() {
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible = true;
+      }
+    });
+  });
+
+  observer.observe(this.$refs.observerElement);
+},
+missoutAnimations(){
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible1 = true;
+      }
+    });
+  });
+
+  observer.observe(this.$refs.observerElement1);
+},
+initScrollAnimations() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      fadeElements.forEach(el => observer.observe(el));
+    },
+
+blogAnimations() {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      this.isVisible2 = true; 
     }
+  });
+}, {
+  threshold: 0.5  
+});
+
+observer.observe(this.$refs.observerElement2);
+},
+initCountUpAnimation() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            this.animateValue(entry.target, 0, parseInt(entry.target.dataset.value), 2000);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      this.$refs.countUp.forEach((el, index) => {
+        el.dataset.value = this.statsItems[index].finalValue;
+        observer.observe(el);
+      });
+    },
+
+    animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const currentValue = Math.floor(progress * (end - start) + start);
+        obj.innerHTML = currentValue;
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    },
+
+// galleryAnimations() {
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       this.isVisible3 = true; 
+//     }
+//   });
+// }, {
+//   threshold: 0.5  
+// });
+
+// observer.observe(this.$refs.observerElement3);
+// },
+
+// iconsAnimations() {
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       this.isVisible4 = true; 
+//     }
+//   });
+// }, {
+//   threshold: 0.5  
+// });
+
+// observer.observe(this.$refs.observerElement4);
+// },
   },
 
   mounted() {
+    this.initiativeAnimations();
+    this.missoutAnimations();
+    this.initScrollAnimations();
+    this.initCountUpAnimation();
+    this.blogAnimations();
+    // this.galleryAnimations();
+    // this.iconsAnimations();
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -439,17 +608,12 @@ export default{
     });
 
       
-    // Observe all elements with the zoom-in class
-    const elements = this.$refs;
-    for (let key in elements) {
-      if (elements[key]) {
-        observer.observe(elements[key]);
-      }
-    }
+ 
   
     // Observe both the text and button elements
     observer.observe(this.$refs.text);
     observer.observe(this.$refs.texty);
+    observer.observe(this.$refs.texts);
 
 
 
@@ -477,4 +641,185 @@ export default{
 .button-hover:hover {
   transform: scale(1.05); 
 }
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
+
+  
+
+.hero-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-button {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 1.5s;
+}
+
+.hero-image {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+
+  
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+}
+
+.slide-up-enter-active,
+.slide-left-enter-active,
+.slide-right-enter-active {
+  transition: all 0.7s ease-out;
+}
+
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0); /* Ensure Y-axis is reset to 0 */
+}
+
+.slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.slide-left-enter-to {
+  opacity: 1;
+  transform: translateX(0); /* Reset X-axis */
+}
+
+.slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.slide-right-enter-to {
+  opacity: 1;
+  transform: translateX(0); /* Reset X-axis */
+}
+/* General Fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.6s ease-in-out;
+}
+.fade-enter, 
+.fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+
+/* Fade and Slide Up */
+.fade-slide-up-enter-active {
+  transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.fade-slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fade-slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade and Slide Left */
+.fade-slide-left-enter-active {
+  transition: all 0.9s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.fade-slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+.fade-slide-left-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade and Slide Right */
+.fade-slide-right-enter-active {
+  transition: all 0.9s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.fade-slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(50px);
+}
+.fade-slide-right-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom In */
+.zoom-enter-active {
+  transition: all 0.7s ease;
+}
+.zoom-enter-from {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.zoom-enter-to {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-slide-up-enter-active,
+.fade-slide-up-leave-active {
+  transition: opacity 1.1s ease-in-out, transform 1.1s ease-in-out;
+}
+
+.fade-slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.fade-slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-up-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+
 </style>
