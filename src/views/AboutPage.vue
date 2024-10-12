@@ -117,7 +117,7 @@
                 </transition>
                 </div>
               </div>
-             <transition name="fade-slide-right" appear v-if="isVisible2">
+             <transition name="fade-slide-up" appear v-if="isVisible2">
               <div class="flex-1 h-[300px] sm:mt-10 md:h-auto  md:mt-32 xl:mt-36 2xl:mt-52 max-w-full md:max-w-[50%]">
                 <img src="../assets/speakerP.jpg" class="w-full mt-10 h-full  object-cover">
               </div>
@@ -183,22 +183,37 @@
               </div>
 
             <!-- section 7 -->
+             <div ref="observerElement3">
             <div class="mt-24 md:mt-36 pl-4 md:pl-12 pr-4 w-full">
-              <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">HANGA IS</h1>
+              <transition name="fade-slide-left" appear v-if="isVisible3">
+                <div>
+              <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl" >HANGA IS</h1>
               <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">ORGANIZED BY</h1>
-            
+            </div>
+            </transition>
               <div class="flex flex-wrap mt-12 md:mt-16 w-full">
-                <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
+                <transition appear name="fade-slide-up" v-if="isVisible3">
+                <div class="h-[180px] md:h-[230px] w-full md:w-1/3 ">
                   <img src="../assets/coat.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
                 </div>
+              </transition>
+
+              <transition appear name="fade-slide-up" v-if="isVisible3">
+
                 <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
                   <img src="../assets/flag.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
                 </div>
+                </transition>
+
+                <transition appear name="fade-slide-up" v-if="isVisible3">
+
                 <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
                   <img src="../assets/undp.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
                 </div>
+                </transition>
               </div>
             </div>
+          </div>
             
             
             
@@ -208,8 +223,9 @@
             <!-- section 8------ -->
             <div class="ml-0 lg:ml-12 mt-24">
               <div>
-                <h1 class="font-rockinsoda text-navy text-5xl">EVENT HIGHLIGHTS</h1>
-                <p class="font-gramatika text-navy text-xl mt-4">Watch our past thrilling events highlights</p>
+                
+                <h1 class="font-rockinsoda text-navy text-5xl fade-in ">EVENT HIGHLIGHTS</h1>
+                <p class="font-gramatika text-navy text-xl mt-4 fade-in">Watch our past thrilling events highlights</p>
               </div>
           
               <!-- Scrollable Videos Section -->
@@ -230,8 +246,8 @@
                       </iframe>
                     </div>
                     <div class="space-y-2">
-                      <p class="font-rockinsoda text-black text-5xl">Hanga 2023</p>
-                      <p class="font-rockinsoda text-black text-3xl">Oct 23</p>
+                      <p class="font-rockinsoda text-black text-5xl fade-in">Hanga 2023</p>
+                      <p class="font-rockinsoda text-black text-3xl fade-in">Oct 23</p>
                     </div>
                   </div>
           
@@ -248,8 +264,8 @@
                       </iframe>
                     </div>
                     <div class="space-y-2">
-                      <p class="font-rockinsoda text-black text-5xl">Hanga 2022</p>
-                      <p class="font-rockinsoda text-black text-3xl">Oct 22</p>
+                      <p class="font-rockinsoda text-black text-5xl fade-in">Hanga 2022</p>
+                      <p class="font-rockinsoda text-black text-3xl fade-in">Oct 22</p>
                     </div>
                   </div>
           
@@ -266,8 +282,8 @@
                       </iframe>
                     </div>
                     <div class="space-y-2">
-                      <p class="font-rockinsoda text-black text-5xl">Hanga 2021</p>
-                      <p class="font-rockinsoda text-black text-3xl">Oct 21</p>
+                      <p class="font-rockinsoda text-black text-5xl fade-in">Hanga 2021</p>
+                      <p class="font-rockinsoda text-black text-3xl fae-in ">Oct 21</p>
                     </div>
                   </div>
                 </div>
@@ -293,12 +309,18 @@
             </div>
 
              <!-- section 9 --->
-             <div class="mt-12  pl-4 md:pl-12 pr-4 w-full">
-              <div>
+              <div ref="observerElement4">
+             <div class="mt-20  pl-4 md:pl-12 pr-4 w-full" v-if="isVisible4" >
+              
+                <transition appear name="fade-slide-up">
+                  <div>
                 <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">EVENT GALLERY</h1>
-              </div>
+                </div>
+              </transition>
+              
               <div class="mt-8 space-y-4 md:space-y-0">
                 <!-- First row of images -->
+                 <transition name="slide-left" appear v-if="isVisible4">
                 <div class="flex flex-wrap justify-start w-full">
                   <div class="h-[180px] md:h-[215px] w-1/2  md:w-1/5">
                     <img src="../assets/1.jpg" class="w-full h-full object-cover">
@@ -319,7 +341,10 @@
                     <img src="../assets/3.jpg" class="w-full h-full object-cover">
                   </div>
                 </div>
+              </transition>
                 <!-- Second row of images -->
+                <transition name="slide-right" appear v-if="isVisible4">
+
                 <div class="flex flex-wrap justify-start w-full">
                   <div class="h-[180px] md:h-[215px]  w-1/2 md:w-1/5">
                     <img src="../assets/6.jpg" class="w-full h-full object-cover">
@@ -340,7 +365,11 @@
                     <img src="../assets/8.jpg" class="w-full h-full object-cover">
                   </div>
                 </div>
+                </transition>
+
                 <!-- Third row of images -->
+                <transition name="slide-left" appear v-if="isVisible4">
+
                 <div class="flex flex-wrap justify-start w-full">
                   <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/11.jpg" class="w-full h-full object-cover">
@@ -361,7 +390,10 @@
                     <img src="../assets/12.jpg" class="w-full h-full object-cover">
                   </div>
                 </div>
+                </transition>
                 <!-- Fourth row of images -->
+                <transition name="slide-right" appear v-if="isVisible4">
+
                 <div class="flex flex-wrap justify-start w-full">
                   <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/17.jpg" class="w-full h-full object-cover">
@@ -382,7 +414,10 @@
                     <img src="../assets/18.jpg" class="w-full h-full object-cover">
                   </div>
                 </div>
+                </transition>
                 <!-- Fifth row of images -->
+                <transition name="slide-left" appear v-if="isVisible4">
+
                 <div class="flex flex-wrap justify-start w-full">
                   <div class="h-[180px] md:h-[215px] w-1/2 md:w-1/5">
                     <img src="../assets/22.jpg" class="w-full h-full object-cover">
@@ -403,13 +438,19 @@
                     <img src="../assets/23.jpg" class="w-full h-full object-cover">
                   </div>
                 </div>
+                </transition>
             
                 <!-- Follow button -->
+                <transition name="fade-slide-up" appear v-if="isVisible4">
+
                 <div class="flex items-center justify-center mt-2">
                   <button class="font-gramatika text-black text-md bg-white  absolute p-2 rounded-md py-2 px-4 shadow-md">Follow us on Instagram</button>
                 </div>
+                </transition>
               </div>
+            
             </div>
+          </div>
             
 
             <!-- Newsletter signup section -->
@@ -555,33 +596,33 @@ initCountUpAnimation() {
       window.requestAnimationFrame(step);
     },
 
-// galleryAnimations() {
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       this.isVisible3 = true; 
-//     }
-//   });
-// }, {
-//   threshold: 0.5  
-// });
+galleryAnimations() {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      this.isVisible3 = true; 
+    }
+  });
+}, {
+  threshold: 0.5  
+});
 
-// observer.observe(this.$refs.observerElement3);
-// },
+observer.observe(this.$refs.observerElement3);
+},
 
-// iconsAnimations() {
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       this.isVisible4 = true; 
-//     }
-//   });
-// }, {
-//   threshold: 0.5  
-// });
+iconsAnimations() {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      this.isVisible4 = true; 
+    }
+  });
+}, {
+  threshold: 0.5  
+});
 
-// observer.observe(this.$refs.observerElement4);
-// },
+observer.observe(this.$refs.observerElement4);
+},
   },
 
   mounted() {
@@ -590,8 +631,8 @@ initCountUpAnimation() {
     this.initScrollAnimations();
     this.initCountUpAnimation();
     this.blogAnimations();
-    // this.galleryAnimations();
-    // this.iconsAnimations();
+    this.galleryAnimations();
+    this.iconsAnimations();
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
