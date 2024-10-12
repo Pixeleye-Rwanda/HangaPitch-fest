@@ -787,8 +787,8 @@ observer.observe(this.$refs.observerElement4);
 
 /* Fade and Slide Up */
 .fade-slide-up-enter-active {
-  transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
-}
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);}
+
 .fade-slide-up-enter-from {
   opacity: 0;
   transform: translateY(50px);
@@ -800,11 +800,11 @@ observer.observe(this.$refs.observerElement4);
 
 /* Fade and Slide Left */
 .fade-slide-left-enter-active {
-  transition: all 0.9s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1); /* Even slower and more natural */
 }
 .fade-slide-left-enter-from {
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateX(-80px);
 }
 .fade-slide-left-enter-to {
   opacity: 1;
@@ -813,11 +813,11 @@ observer.observe(this.$refs.observerElement4);
 
 /* Fade and Slide Right */
 .fade-slide-right-enter-active {
-  transition: all 0.9s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1); /* Even slower and more natural */
 }
 .fade-slide-right-enter-from {
   opacity: 0;
-  transform: translateX(50px);
+  transform: translateX(80px);
 }
 .fade-slide-right-enter-to {
   opacity: 1;

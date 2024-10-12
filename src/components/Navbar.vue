@@ -130,6 +130,7 @@
         <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <router-link to="/network" class="hover:text-white transition-colors duration-300" >Our Network</router-link>
         </li>
+        
         <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
           <router-link to="/pitch" class="hover:text-white transition-colors duration-300" > Pitch at Hanga </router-link>
         </li>

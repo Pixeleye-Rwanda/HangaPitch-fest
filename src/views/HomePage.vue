@@ -108,10 +108,14 @@
       
       
       <!-- Fifth section -->
+       <div ref="observerElement6">
       <div class="ml-4 mr-4 sm:ml-6 mt-32">
-        <h1 class="font-rockinsoda text-navy text-6xl fade-in">WHERE LEADERS INSPIRE</h1>
-        <h1 class="font-rockinsoda text-navy text-6xl fade-in">YOUR NEXT BIG LEAP</h1>
-      
+        <transition name="fade-slide-up" appear v-if="isVisible6" >
+        <div>
+        <h1 class="font-rockinsoda text-navy text-6xl ">WHERE LEADERS INSPIRE</h1>
+        <h1 class="font-rockinsoda text-navy text-6xl ">YOUR NEXT BIG LEAP</h1>
+      </div>
+    </transition>
         <div class="flex flex-col lg:flex-row gap-6 mb-20 mt-20">
       
           <div class="flex-1 md:w-1/2 lg:flex-[1.3] space-y-6">
@@ -171,7 +175,7 @@
       
         </div>
       </div>
-      
+    </div>
     
 
       <!---------- section six------------ -->
@@ -518,6 +522,8 @@ export default {
       isVisible3:false,
       isVisible4:false,
       isVisible5:false,
+      isVisible6:false,
+
 
 
       statsItems: [
@@ -537,6 +543,7 @@ export default {
     this.galleryAnimations();
     this.iconsAnimations();
     this.notableAnimations();
+    this.leapAnimations();
 
 
   },
@@ -692,6 +699,20 @@ notableAnimations() {
   observer.observe(this.$refs.observerElement5);
 },
 
+leapAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible6 = true; 
+      }
+    });
+  }, {
+    threshold: 0.5  
+  });
+
+  observer.observe(this.$refs.observerElement6);
+},
+
 
 
 
@@ -813,11 +834,10 @@ notableAnimations() {
 
 /* Fade and Slide Up */
 .fade-slide-up-enter-active {
-  transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
-}
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);}
 .fade-slide-up-enter-from {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(80px);
 }
 .fade-slide-up-enter-to {
   opacity: 1;
@@ -826,11 +846,11 @@ notableAnimations() {
 
 /* Fade and Slide Left */
 .fade-slide-left-enter-active {
-  transition: all 0.9s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1); /* Even slower and more natural */
 }
 .fade-slide-left-enter-from {
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateX(-80px);
 }
 .fade-slide-left-enter-to {
   opacity: 1;
@@ -839,11 +859,11 @@ notableAnimations() {
 
 /* Fade and Slide Right */
 .fade-slide-right-enter-active {
-  transition: all 0.9s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1); /* Even slower and more natural */
 }
 .fade-slide-right-enter-from {
   opacity: 0;
-  transform: translateX(50px);
+  transform: translateX(80px);
 }
 .fade-slide-right-enter-to {
   opacity: 1;
