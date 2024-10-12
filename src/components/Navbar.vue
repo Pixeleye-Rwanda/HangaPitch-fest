@@ -121,14 +121,17 @@
       </router-link>
 
       <ul class="flex mx-auto items-center space-x-6">
-        <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'" >
-          <router-link to="/about-us">About Us</router-link>
+        <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+          <router-link to="/about-us" class="hover:text-white transition-colors duration-300">
+            About Us
+          </router-link>
+        </li>
+        
+        <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+          <router-link to="/network" class="hover:text-white transition-colors duration-300" >Our Network</router-link>
         </li>
         <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
-          <router-link to="/network">Our Network</router-link>
-        </li>
-        <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
-          <router-link to="/pitch"> Pitch at Hanga </router-link>
+          <router-link to="/pitch" class="hover:text-white transition-colors duration-300" > Pitch at Hanga </router-link>
         </li>
 
 
@@ -311,4 +314,27 @@ export default {
 .text-gray-300:hover {
   color: #e2e8f0;
 }
+.underline-animation {
+  position: relative;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+.router-link-active::after {
+  width: 100%;
+}
+
 </style>
