@@ -9,8 +9,10 @@
       <NavBar class="absolute top-0 left-0 w-full" />
     
       <div class="font-rockinsoda absolute  text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-2/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left" ref="text">
-        <p>READY TO PITCH YOUR</p>
-        <p>TECH-ENABLED IDEA?</p>
+        <p v-for="(line, index) in baseText" :key="index" class="hero-text font-rockinsoda text-white text-7xl" :style="{ animationDelay: `${index * 0.8}s` }" >
+          {{ line }}
+        </p>
+    
       </div>
 
 
@@ -18,31 +20,44 @@
 
         <!-- next section -->
 
+        <div ref="observerElement">
         <div class="flex flex-col lg:flex-row mt-12 lg:mt-20 px-6 w-full lg:space-x-10 ">
           <!-- Text Section -->
+         <transition appear name="fade-slide-up" v-if="isVisible">
+
           <div class="lg:text-left  space-y-4 w-3/5">
             <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">THE LARGEST IN-PERSON TECHNOLOGY EVENT IN RWANDA</p>
-      
           </div>
+
+        </transition>
         
           <!-- Description and Button Section -->
           <div class="text-justify mt-4 lg:mt-0 space-y-8 w-full lg:w-10/12">
+            <transition name="fade-slide-right" appear v-if="isVisible">
             <p class="text-base lg:text-2xl font-gramatika text-navy">
               Do you believe you've got what it takes? You are only 4 steps closer to being part of the most exciting tech event in Rwanda. Make sure you have all the necessary documents and information ready to submit your application.
             </p>
+          </transition>
+
+          <transition name="fade-slide-up" appear v-if="isVisible">
             <div class="flex  lg:justify-start">
               <button class="p-2 px-4 font-gramatika bg-tangerine text-white hover:bg-tangerine-dark transition-all" ref="button">
                 <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" class="mt-6">Apply Now</a>
                 <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
               </button>
             </div>
+         </transition>
           </div>
         </div>
+      </div>
         
         
       
         <!-- section 3 -->
-         
+        <div ref="observerElement1">
+
+          <transition name="fade-slide-right"  appear v-if="isVisible1">
+
         <div class="container min-h-screen   mx-auto px-4 lg:px-12  xl:max-w-none">
           <div class="relative absolute  w-full pt-32 lg:pt-60 ">
             <div class="flex flex-col absolute lg:flex-row lg:justify-between  mb-20 space-y-24 lg:space-y-0 lg:space-x-8">
@@ -80,29 +95,29 @@
             </div>
           </div>
         </div>
+      </transition>
+
+      </div>
 
 
         <!-- section 4 -->
-      
+        <div ref="observerElement2">
         <div class=" relative mt-96 lg:mt-60 2xl:mt-24">
-          <div class="">
+
+         
+            <transition name="fade-slide-up" v-if="isVisible2">
             <p class="text-navy font-rockinsoda text-5xl ml-12  "> Past winners </p>
+          </transition>
             <select v-model="selectedYear" class=" float-right mr-20 w-30 bg-white ring-1 ring-lightTangerine outline-none p-2 px-4">
 
               <option value="2023">2023</option>
               <option value="2022">2022</option>
               <option value="2021">2021</option>
           </select>
-          </div>
            
          
         
         <!-- Year Dropdown -9-->
-        
-
-       
-        
-
           <div
           class="relative overflow-x-auto flex  whitespace-nowrap scrollbar-hide mt-16 ml-0 -mb-44 "
           ref="scrollContainer"
@@ -129,6 +144,7 @@
             </div>                
             </div>
         </div>
+      </div>
 
 
       
@@ -206,7 +222,7 @@
   </div>
 </div>
 
-
+   <scrollButton/>
 
     <!-- next section -->
    <NewsLetter/>
@@ -222,12 +238,14 @@
 import NavBar from '@/components/Navbar.vue';
 import FooterPage from '@/components/footerPage.vue';
 import NewsLetter from '@/components/NewsLetter.vue';
+import scrollButton from '@/components/scrollButton.vue';
 export default{
   name:"PitchHanga",
   components:{
       NavBar,
       FooterPage,
-      NewsLetter
+      NewsLetter,
+      scrollButton
   },
 
   data(){
@@ -254,6 +272,16 @@ export default{
 
                 ],
                 selectedYear:'2023',
+                baseText:[
+        'READY TO PITCH YOUR ',
+        'TECH-ENABLED IDEA?'
+      ],  
+
+         isVisible:false,
+         isVisible1:false,
+         isVisible2:false,
+         isVisible3:false,
+
             };
             
             },
@@ -303,11 +331,15 @@ export default{
     this.$refs.scrollContainer.addEventListener('mouseleave', () => {
       this.$refs.scrollContainer.removeEventListener('mousemove', handleMouseMove);
     });
-            
+         
+   this.initiativeAnimations();
+   this.missoutAnimations();
+   this.blogAnimations();
      
   },
 
   methods: {
+
     handleTouchStart(event) {
       this.startX = event.touches[0].clientX;
     },
@@ -316,6 +348,60 @@ export default{
       this.$refs.scrollContainer.scrollLeft += distance;
       this.startX = event.touches[0].clientX;
     },
+
+    initiativeAnimations() {
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible = true;
+      }
+    });
+  });
+
+  observer.observe(this.$refs.observerElement);
+},
+
+blogAnimations() {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      this.isVisible2 = true; 
+    }
+  });
+}, {
+  threshold: 0.5  
+});
+
+observer.observe(this.$refs.observerElement2);
+},
+
+missoutAnimations(){
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible1 = true;
+      }
+    });
+  });
+
+  observer.observe(this.$refs.observerElement1);
+},
+
+initScrollAnimations() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      fadeElements.forEach(el => observer.observe(el));
+    },
+
+     
   },
 
   beforeUnmount() {
@@ -338,6 +424,138 @@ transition: all 2s ease-in-out;
 .slide-up-visible {
 transform: translateY(0);
 opacity: 1;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+}
+
+.slide-up-enter-active,
+.slide-left-enter-active,
+.slide-right-enter-active {
+  transition: all 0.7s ease-out;
+}
+
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0); /* Ensure Y-axis is reset to 0 */
+}
+
+.slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.slide-left-enter-to {
+  opacity: 1;
+  transform: translateX(0); /* Reset X-axis */
+}
+
+.slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.slide-right-enter-to {
+  opacity: 1;
+  transform: translateX(0); /* Reset X-axis */
+}
+/* General Fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.6s ease-in-out;
+}
+
+.fade-enter, 
+.fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+
+/* Fade and Slide Up */
+.fade-slide-up-enter-active {
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);}
+
+.fade-slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fade-slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade and Slide Left */
+.fade-slide-left-enter-active {
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1); /* Even slower and more natural */
+}
+.fade-slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(-80px);
+}
+.fade-slide-left-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade and Slide Right */
+.fade-slide-right-enter-active {
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1); /* Even slower and more natural */
+}
+.fade-slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(80px);
+}
+.fade-slide-right-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom In */
+.zoom-enter-active {
+  transition: all 0.7s ease;
+}
+.zoom-enter-from {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.zoom-enter-to {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-slide-up-enter-active,
+.fade-slide-up-leave-active {
+  transition: opacity 1.1s ease-in-out, transform 1.1s ease-in-out;
+}
+
+.fade-slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.fade-slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-up-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(80px);
 }
 
 </style>

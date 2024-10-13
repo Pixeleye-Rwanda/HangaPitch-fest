@@ -19,9 +19,7 @@
             <p v-for="(line, index) in baseText" :key="index" class="hero-text font-gramatika text-white text-2xl" :style="{ animationDelay: `${index * 0.8}s` }" >
               {{ line }}
             </p>
-        
-         
-             
+  
           </div>
 
     
@@ -454,6 +452,7 @@
             
 
             <!-- Newsletter signup section -->
+             <scrollButton/>
 
       <NewsLetter/>
     
@@ -471,12 +470,14 @@
 import Navbar from '@/components/Navbar.vue';
 import FooterPage from '@/components/footerPage.vue';
 import NewsLetter from '@/components/NewsLetter.vue';
+import scrollButton from '@/components/scrollButton.vue';
 export default{
     name:"AboutUs",
     components:{
             Navbar,
             FooterPage,
-            NewsLetter
+            NewsLetter,
+            scrollButton
         },
 
         data(){
@@ -517,7 +518,7 @@ export default{
       this.$refs.videoWrapper.scrollBy({ left: 500, behavior: 'smooth' });
     },
 
-    initiativeAnimations() {
+initiativeAnimations() {
   
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

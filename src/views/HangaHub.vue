@@ -362,6 +362,8 @@
         </div>
       </div>
     </div>
+    
+    <scrollButton/>
     <FooterPage class="mt-24"/>
 
   </div>
@@ -376,11 +378,14 @@
 <script>
 import NavHubs from '@/components/NavHubs.vue';
 import FooterPage from '@/components/footerPage.vue';
+import scrollButton from '@/components/scrollButton.vue';
+
 export default {
   name: "HangaHub",
   components: {
     NavHubs,
-    FooterPage
+    FooterPage,
+    scrollButton
   }
 }
 </script>

@@ -12,7 +12,7 @@
       <transition name="fade-slide-up" appear v-if="isVisible">
         <div class="font-rockinsoda absolute  text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-2/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left" ref="text">
           <p>{{ currentTitleLine1 }}</p>
-          <p>{{ currentTitleLgitine2 }}</p>     
+          <p>{{ currentTitleLine2 }}</p>     
         </div>
       </transition>
 
@@ -68,6 +68,7 @@
     <!-- Dynamic Content Section -->
     <component :is="currentComponent" class="mt-[9vh]" />
 
+    <scrollButton/>
     <NewsLetter />
     <FooterPage />
   </div>
@@ -80,6 +81,7 @@ import StartupsPage from '@/views/startupsPage.vue';
 import JudgesPage from '@/views/JudgesPage.vue';
 import PartnersPage from '@/views/PartnersPage.vue';
 import NewsLetter from '@/components/NewsLetter.vue';
+import scrollButton from '@/components/scrollButton.vue';
 
 export default {
   name: 'OurNetwork',
@@ -89,7 +91,8 @@ export default {
     StartupsPage,
     JudgesPage,
     PartnersPage,
-    NewsLetter
+    NewsLetter,
+    scrollButton
   },
   data() {
     return {

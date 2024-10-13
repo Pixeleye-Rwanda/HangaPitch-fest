@@ -31,7 +31,7 @@
               at Hanga</router-link></li>
           <!-- <li><router-link to="/timeline" class="text-white block hover:text-gray-300"
               @click="toggleMenu">Timeline</router-link></li> -->
-                <button id="dropdownInit" @click="toogleNavBg"  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+                <button id="dropdownInit"   :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
       
                   Initiative <i class="fa fa-chevron-down" aria-hidden="true"></i>
       
@@ -115,114 +115,104 @@
     </transition>
 
     <!-- Navbar for Larger Screens -->
-    <div  :class="navBg ? 'bg-navbg hidden md:flex items-center p-6 bg-navbg ' : 'bg-transparent hidden md:flex items-center p-6 bg-transparent '" >
-      <router-link to="/" class="ml-16">
-        <img :src="navBg ? whiteLogo : blackLogo" class="h-8 md:h-10" alt="Logo">
-      </router-link>
+    <div
+    :class="[
+      (navBg || isInitiativesClicked) ? 'bg-white fixed top-0 w-full z-50 shadow-lg' : 'bg-transparent absolute top-0 w-full',
+      'transition-all duration-600'
+    ]"
+  >      <div :class="navBg || isInitiativesClicked ? 'bg-navbg flex items-center p-6' : 'bg-transparent flex items-center p-6'">
+        <router-link to="/" class="ml-16">
+          <img :src="navBg || isInitiativesClicked ? whiteLogo : blackLogo" class="h-8 md:h-10" alt="Logo">
+        </router-link>
 
-      <ul class="flex mx-auto items-center space-x-6">
-        <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
-          <router-link to="/about-us" class="hover:text-white transition-colors duration-300">
-            About Us
-          </router-link>
-        </li>
-        
-        <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
-          <router-link to="/network" class="hover:text-white transition-colors duration-300" >Our Network</router-link>
-        </li>
-        
-        <li  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
-          <router-link to="/pitch" class="hover:text-white transition-colors duration-300" > Pitch at Hanga </router-link>
-        </li>
-
-
-        <div class=" relative flex items-center">
-          <button id="dropdownInit" @click="toogleNavBg"  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
-
-            Initiatives <i class="fa fa-chevron-down" aria-hidden="true"></i>
-
-          </button>
-
-
-          <div v-show="isDropdownInitVisible" class="absolute flex  shadow-lg bg-white ">
-
+        <!-- Navbar Links -->
+        <ul class="flex mx-auto items-center space-x-6">
+          <li :class="navBg || isInitiativesClicked ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+            <router-link to="/about-us" class="hover:text-white transition-colors duration-300">About Us</router-link>
+          </li>
+          <li :class="navBg || isInitiativesClicked ?'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+            <router-link to="/network" class="hover:text-white transition-colors duration-300">Our Network</router-link>
+          </li>
+          <li :class="navBg|| isInitiativesClicked  ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+            <router-link to="/pitch" class="hover:text-white transition-colors duration-300">Pitch at Hanga</router-link>
+          </li>
+          <!-- Dropdown Example -->
+          <div class="relative flex items-center">
+            <button @click="toggleInitiatives" :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+              Initiatives <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>
           </div>
 
+          <li :class="navBg || isInitiativesClicked ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+            <!-- <router-link to="/timeline"> Timeline</router-link>  -->
+            <!-- Dropdown -->
+          <div v-if="isInitiativesClicked" class="absolute z-50 left-0 w-full bg-navbg mt-10 shadow-lg" >
+          <hr class="w-auto border-gray-200 border-t-2 mt-8">
+          <ul class="w-full flex px-20 space-x-12">
+            <div class="w-[70vh] p-4 mt-4 ">
+              <div class="space-y-10">
+                <p class="font-rockinsoda text-navy text-2xl">HANGA SEXUAL REPRODUCTIVE HEALTH</p>
+                <p class="font-gramatika">Championing tech-enabled startups solving key issues in SRH.</p>
+                <router-link to="/srh">
+                <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+                  Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button> 
+              </router-link>
+              </div>
+  
+            </div>
+            <div class="border-l-2 border-gray-200 h-auto"></div>
+  
+            <div class="w-[70vh] p-4 mt-4">
+              <div class="space-y-2">
+                <p class="font-rockinsoda text-navy text-2xl">HANGA HUB</p>
+                <p class="font-gramatika">Tech-enabled innovation & incubation hubs shaping digital employment in Rwanda, led by MINICT, The European Union (EU) and RISA.</p>
+                <router-link to="/hub">
+                <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+                  Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button> 
+              </router-link>
+              </div>
+            </div>
+            <div class="border-l-2 border-gray-200 h-auto"></div>
+  
+            <div class="w-[70vh] p-4 mt-4 mr-10">
+              <div class="space-y-10">
+                <p class="font-rockinsoda text-navy text-2xl" >HANGA AGRITECH</p>
+                <p class="font-gramatika">Driving financial and technical support to  technology enabled startups in agriculture.</p>
+                <router-link to="/agritech">
+                <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+                  Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button> 
+              </router-link>
+              </div>
+            </div>
+          </ul>
         </div>
-
-
-      <li :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
-          <!-- <router-link to="/timeline"> Timeline</router-link>  -->
-          <!-- Dropdown -->
-        <div v-if="navBg" class="absolute z-50 left-0 w-full bg-navbg mt-10 shadow-lg" >
-        <hr class="w-auto border-gray-200 border-t-2 mt-8">
-        <ul class="w-full flex px-20 space-x-12">
-          <div class="w-[70vh] p-4 mt-4 ">
-            <div class="space-y-10">
-              <p class="font-rockinsoda text-navy text-2xl">HANGA SEXUAL REPRODUCTIVE HEALTH</p>
-              <p class="font-gramatika">Championing tech-enabled startups solving key issues in SRH.</p>
-              <router-link to="/srh">
-              <button class="mr-8 mt-6 py-4 px-10 font-gramatika bg-tangerine text-white font-semibold ">
-                Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
-              </button> 
-            </router-link>
-            </div>
-
-          </div>
-          <div class="border-l-2 border-gray-200 h-auto"></div>
-
-          <div class="w-[70vh] p-4 mt-4">
-            <div class="space-y-2">
-              <p class="font-rockinsoda text-navy text-2xl">HANGA HUB</p>
-              <p class="font-gramatika">Tech-enabled innovation & incubation hubs shaping digital employment in Rwanda, led by MINICT, The European Union (EU) and RISA.</p>
-              <router-link to="/hub">
-              <button class="mr-8 mt-6 py-4 px-10 font-gramatika bg-tangerine text-white font-semibold ">
-                Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
-              </button> 
-            </router-link>
-            </div>
-          </div>
-          <div class="border-l-2 border-gray-200 h-auto"></div>
-
-          <div class="w-[70vh] p-4 mt-4 mr-10">
-            <div class="space-y-10">
-              <p class="font-rockinsoda text-navy text-2xl" >HANGA AGRITECH</p>
-              <p class="font-gramatika">Driving financial and technical support to  technology enabled startups in agriculture.</p>
-              <router-link to="/agritech">
-              <button class="mr-8 mt-6 py-4 px-10 font-gramatika bg-tangerine text-white font-semibold ">
-                Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
-              </button> 
-            </router-link>
-            </div>
-          </div>
+          </li>
         </ul>
-      </div>
-        </li>
-      </ul>
 
-      <button
-        :class="navBg?'mr-4 p-4 px-6 font-gramatika bg-tangerine text-white font-semibold hover:bg-tangerine hover:text-white' :'mr-4 p-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white'">
-        <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank">Apply Now</a>
-      </button>
-
-      <div class="relative inline-block mr-24 text-left">
-        <button id="dropdownButton" @click="toggleDropdown"
-          :class="navBg ? 'p-2 px-4 border border-tangerine font-gramatika text-tangerine font-semibold hover:bg-tangerine hover:text-white':'p-2 px-4 border font-gramatika text-white font-semibold hover:bg-tangerine hover:text-white'">
-          <div class="flex items-center py-2">
-            <p>EN</p>
-            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </div>
+        <!-- Apply Now Button -->
+        <button :class="navBg|| isInitiativesClicked  ? 'mr-4 p-4 px-6 font-gramatika bg-tangerine text-white font-semibold hover:bg-tangerine hover:text-white' : 'mr-4 p-4 px-6 font-gramatika bg-white text-black font-semibold hover:bg-tangerine hover:text-white'">
+          <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank">Apply Now</a>
         </button>
-        <ul v-show="isDropdownVisible" class="absolute mt-2 w-30 shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-          <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kinyarwanda</a></li>
-          <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">French</a></li>
-        </ul>
+
+        <!-- Language Dropdown -->
+        <div class="relative inline-block mr-24 text-left">
+          <button id="dropdownButton" @click="toggleDropdown" :class="navBg ? 'p-2 px-4 border border-tangerine font-gramatika text-tangerine font-semibold hover:bg-tangerine hover:text-white' : 'p-2 px-4 border font-gramatika text-white font-semibold hover:bg-tangerine hover:text-white'">
+            <div class="flex items-center py-2">
+              <p>EN</p>
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </button>
+          <ul v-show="isDropdownVisible" class="absolute mt-2 w-30 shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+            <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kinyarwanda</a></li>
+            <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">French</a></li>
+          </ul>
+        </div>
       </div>
-      <hr :class="navBg?'w-auto border-t-10 border-tangerine ':'hidden'">
-      <div class=""></div>
     </div>
   
   </div>
@@ -241,8 +231,25 @@ export default {
       whiteLogo: require('@/assets/hanga.svg'), 
       blackLogo: require('@/assets/logo.svg'), 
       navBg: false,
+      isInitiativesClicked: false,
+      isLargeScreen: true,
     };
   },
+
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.closeDropdownOnScroll);
+    window.addEventListener('resize', this.handleResize);
+
+  },
+  beforeUnmount() {   
+     window.removeEventListener('scroll', this.handleScroll);
+     window.removeEventListener('scroll', this.closeDropdownOnScroll);
+     window.removeEventListener('resize', this.handleResize);
+
+
+  },
+  
   methods: {
     toggleDropdown() {
       this.isDropdownVisible = !this.isDropdownVisible;
@@ -257,9 +264,38 @@ export default {
 
     },
 
+    toggleInitiatives() {
+    this.isInitiativesClicked = !this.isInitiativesClicked;
+    if (this.isInitiativesClicked) {
+      this.navBg = true; 
+    }else{
+      this.navBg = false;
+    }
+  },
+
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+    },
+
+    handleScroll() {
+      if (this.isLargeScreen) {
+      if (window.scrollY >300) {
+      this.navBg = true;
+    } else if (!this.isInitiativesClicked) {
+      this.navBg = false;
     }
+    }
+  },
+  handleResize() {
+      this.isLargeScreen = window.innerWidth >= 768; 
+    },
+    
+    toggleInitiativesDropdown() {
+    this.isInitiativesDropdownVisible = !this.isInitiativesDropdownVisible;
+  },
+  closeDropdownOnScroll() {
+    this.isInitiativesDropdownVisible = false;
+  }
   },
   
 

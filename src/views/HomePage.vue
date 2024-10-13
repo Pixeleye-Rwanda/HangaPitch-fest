@@ -337,8 +337,8 @@
       <div class="lg:-mb-10" ref="observerElement5">
         <transition name="slide-up" appear v-if="isVisible5" >
         <div class="mt-24 ml-8 space-x-2">
-          <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-8xl text-navy">2023</h1>
-          <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-8xl text-navy">NOTABLE SPEAKERS</h1>
+          <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-6xl text-navy">2023</h1>
+          <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-6xl text-navy">NOTABLE SPEAKERS</h1>
         </div>
         </transition>
         <div
@@ -461,7 +461,8 @@
 
       </div>
     </div>
-       
+    
+     <ScrollButton/>
 
       <NewsLetter/>
     
@@ -475,6 +476,7 @@ import NavBar from '@/components/Navbar.vue';
 import FooterPage from '@/components/footerPage.vue';
 import NewsLetter from '@/components/NewsLetter.vue';
 import { anime } from 'vue-anime';
+import ScrollButton from '@/components/scrollButton.vue';
 
 export default {
   name: 'HomePage',
@@ -484,7 +486,8 @@ export default {
   components: {
     NavBar,
     FooterPage,
-    NewsLetter
+    NewsLetter,
+    ScrollButton
   },
 
 

@@ -304,6 +304,7 @@
   </div>
 </div>
 
+<scrollButton/>
 <FooterPage/>
 
  </div>
@@ -313,11 +314,13 @@
   <script>
   import NavInit from '@/components/NavInit.vue';
 import FooterPage from '@/components/footerPage.vue';
+import scrollButton from '@/components/scrollButton.vue';
   export default{
       name:"HangaSrh",
       components:{
           NavInit,
-          FooterPage
+          FooterPage,
+          scrollButton
       },
       mounted() {
                   const observer = new IntersectionObserver((entries) => {
