@@ -337,8 +337,8 @@
       <div class="lg:-mb-10" ref="observerElement5">
         <transition name="slide-up" appear v-if="isVisible5" >
         <div class="mt-24 ml-8 space-x-2">
-          <h1 class="font-rockinsoda text-6xl text-navy">2023</h1>
-          <h1 class="font-rockinsoda text-6xl text-navy">NOTABLE SPEAKERS</h1>
+          <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-8xl text-navy">2023</h1>
+          <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-8xl text-navy">NOTABLE SPEAKERS</h1>
         </div>
         </transition>
         <div
@@ -349,7 +349,7 @@
           @touchmove="handleTouchMove"
         >
           <div class="flex" :style="{ width: `${individuals.length * 800}px` }">
-            <template v-for="(_, loopIndex) in 2">
+            <template v-for="(_, loopIndex) in 1">
               <div
                 v-for="(individual, index) in individuals"
                 :key="`${loopIndex}-${index}`"
@@ -387,7 +387,7 @@
       <transition name="fade-slide-up" v-if="isVisible3" appear>
 
       <div class="mt-16 sm:mt-24 lg:mt-32">
-        <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-6xl text-navy">
+        <h1 class="font-rockinsoda text-3xl sm:text-4xl lg:text-7xl text-navy">
           HANGA ON INSTAGRAM
         </h1>
       </div>

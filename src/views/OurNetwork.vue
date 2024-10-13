@@ -30,55 +30,45 @@
 
         
 
-  
-  
       </div>
 
-      
-      
-      
-      
 
-        <!-- Navbar network   -->
-    <div  ref="stickyDiv"
-    :class="[  'h-[9vh] bg-tangerine transition-all duration-800 ease-in-out  w-full', isSticky ? 'fixed top-0 left-0 w-full z-50 shadow-md' : 'absolute' ,
-    ]">
-      <div class="flex ">
-        <div class="ml-2 lg:ml-12 text-md lg:text-xl">
-          <h1 class="font-gramatika font-bold text-white mt-8 lg:mt-4 ">OUR NETWORK</h1>
+
+
+      <!-- Navbar network   -->
+      <div ref="stickyDiv" :class="['h-[9vh] bg-tangerine transition-all duration-800 ease-in-out  w-full', isSticky ? 'fixed top-0 left-0 w-full z-50 shadow-md' : 'absolute',
+      ]">
+        <div class="flex ">
+          <div class="ml-2 lg:ml-12 text-md lg:text-xl">
+            <h1 class="font-gramatika font-bold text-white mt-8 lg:mt-4 ">OUR NETWORK</h1>
+          </div>
+
+          <ul class="flex  flex-wrap gap-2 lg:gap-10 ml-auto mt-8 lg:mt-4  mr-4  lg:mr-12">
+            <li class="font-gramatika text-white text-lg cursor-pointer"
+              :class="{ 'underline underline-offset-4 ': currentSection === 'startups' & currentComponent === 'StartupsPage', }"
+              @click="setContent('startups')">
+              Startups
+            </li>
+            <li class="font-gramatika text-white text-lg cursor-pointer"
+              :class="{ 'underline underline-offset-4 ': currentSection === 'judges' }" @click="setContent('judges')">
+              Judges
+            </li>
+            <li class="font-gramatika text-white text-lg cursor-pointer"
+              :class="{ 'underline underline-offset-4 ': currentSection === 'partners' }" @click="setContent('partners')">
+              Partners
+            </li>
+          </ul>
         </div>
-
-        <ul class="flex  flex-wrap gap-2 lg:gap-10 ml-auto mt-8 lg:mt-4  mr-4  lg:mr-12">
-          <li class="font-gramatika text-white text-lg cursor-pointer" 
-          :class="{'underline underline-offset-4 ': currentSection === 'startups'& currentComponent === 'StartupsPage',}"
-
-          @click="setContent('startups')">
-            Startups
-          </li>
-          <li class="font-gramatika text-white text-lg cursor-pointer" 
-          :class="{'underline underline-offset-4 ': currentSection === 'judges'}"
-
-          @click="setContent('judges')">
-            Judges
-          </li>
-          <li class="font-gramatika text-white text-lg cursor-pointer"
-          :class="{'underline underline-offset-4 ': currentSection === 'partners'}"
-
-           @click="setContent('partners')">
-            Partners
-          </li>
-        </ul>
       </div>
-    </div>
 
     </div>
 
-  
+
 
     <!-- Dynamic Content Section -->
     <component :is="currentComponent" class="mt-[9vh]" />
 
-    <NewsLetter/>
+    <NewsLetter />
     <FooterPage />
   </div>
 </template>
@@ -103,8 +93,8 @@ export default {
   },
   data() {
     return {
-      currentComponent: 'StartupsPage', 
-      currentBgImage: require('@/assets/networkbg.jpg'), 
+      currentComponent: 'StartupsPage',
+      currentBgImage: require('@/assets/networkbg.jpg'),
       currentTitleLine1: 'STARTUPS',
       currentTitleLine2: 'FUNDED BY HANGA',
       headline:'',
@@ -128,7 +118,7 @@ export default {
   },
   methods: {
     handleScroll() {
-    
+
       this.isSticky = window.scrollY > this.originalOffsetTop;
     },
     setContent(section) {
@@ -139,23 +129,23 @@ export default {
 
       if (section === 'startups') {
         this.currentComponent = 'StartupsPage';
-        this.currentBgImage = require('@/assets/networkbg.jpg'); 
+        this.currentBgImage = require('@/assets/networkbg.jpg');
         this.currentTitleLine1 = 'STARTUPS';
         this.currentTitleLine2 = 'FUNDED BY HANGA';
-        this.headline=''
+        this.headline = ''
       } else if (section === 'judges') {
         this.currentComponent = 'JudgesPage';
-        this.currentBgImage = require('@/assets/aboutus.jpg'); 
+        this.currentBgImage = require('@/assets/aboutus.jpg');
         this.currentTitleLine1 = 'EXPERTS AT';
         this.currentTitleLine2 = ' HANGA';
-        this.headline ="Our mission is to discover and nurture Rwanda's most innovative tech-enabled startups"
+        this.headline = "Our mission is to discover and nurture Rwanda's most innovative tech-enabled startups"
 
       } else if (section === 'partners') {
         this.currentComponent = 'PartnersPage';
-        this.currentBgImage = require('@/assets/partners.jpg'); 
+        this.currentBgImage = require('@/assets/partners.jpg');
         this.currentTitleLine1 = 'PARTERNSHIPS';
         this.currentTitleLine2 = ' WITH HANGA';
-        this.headline ="Our mission is to discover and nurture Rwanda's most innovative tech-enabled startups."
+        this.headline = "Our mission is to discover and nurture Rwanda's most innovative tech-enabled startups."
 
       }  this.isVisible = true; 
     }, 300); 

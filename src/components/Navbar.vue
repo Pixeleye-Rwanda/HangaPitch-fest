@@ -139,7 +139,7 @@
         <div class=" relative flex items-center">
           <button id="dropdownInit" @click="toogleNavBg"  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
 
-            Initiative <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            Initiatives <i class="fa fa-chevron-down" aria-hidden="true"></i>
 
           </button>
 
@@ -162,7 +162,7 @@
               <p class="font-rockinsoda text-navy text-2xl">HANGA SEXUAL REPRODUCTIVE HEALTH</p>
               <p class="font-gramatika">Championing tech-enabled startups solving key issues in SRH.</p>
               <router-link to="/srh">
-              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+              <button class="mr-8 mt-6 py-4 px-10 font-gramatika bg-tangerine text-white font-semibold ">
                 Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button> 
             </router-link>
@@ -176,7 +176,7 @@
               <p class="font-rockinsoda text-navy text-2xl">HANGA HUB</p>
               <p class="font-gramatika">Tech-enabled innovation & incubation hubs shaping digital employment in Rwanda, led by MINICT, The European Union (EU) and RISA.</p>
               <router-link to="/hub">
-              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+              <button class="mr-8 mt-6 py-4 px-10 font-gramatika bg-tangerine text-white font-semibold ">
                 Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button> 
             </router-link>
@@ -189,7 +189,7 @@
               <p class="font-rockinsoda text-navy text-2xl" >HANGA AGRITECH</p>
               <p class="font-gramatika">Driving financial and technical support to  technology enabled startups in agriculture.</p>
               <router-link to="/agritech">
-              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold ">
+              <button class="mr-8 mt-6 py-4 px-10 font-gramatika bg-tangerine text-white font-semibold ">
                 Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button> 
             </router-link>
@@ -208,7 +208,7 @@
       <div class="relative inline-block mr-24 text-left">
         <button id="dropdownButton" @click="toggleDropdown"
           :class="navBg ? 'p-2 px-4 border border-tangerine font-gramatika text-tangerine font-semibold hover:bg-tangerine hover:text-white':'p-2 px-4 border font-gramatika text-white font-semibold hover:bg-tangerine hover:text-white'">
-          <div class="flex items-center">
+          <div class="flex items-center py-2">
             <p>EN</p>
             <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">

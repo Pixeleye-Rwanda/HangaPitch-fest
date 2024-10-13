@@ -16,6 +16,9 @@ import HangSrh from "./views/HangSrh.vue";
 import NavInit from "./components/NavInit.vue";
 import FaqPage from "./views/FaqPage.vue";
 import ContactHubsPage from "./views/ContactHubsPage.vue";
+import BlogsPage from "./views/BlogsPage.vue";
+import NewsPage from "./views/NewsPage.vue";
+import PitchFaqPage from "./views/PitchFaqPage.vue";
 import { createRouter,createWebHistory } from "vue-router";
 
 const routes=[
@@ -120,7 +123,21 @@ const routes=[
         component:ContactHubsPage,
         path:'/contact-hubs'
     },
-
+    {
+        name:'BlogsPage',
+        component:BlogsPage,
+        path:'/blogs'
+    },
+    {
+        name:'NewsPage',
+        component:NewsPage,
+        path:'/news'
+    },
+    {
+        name:'PitchFaqPage',
+        component:PitchFaqPage,
+        path:'/pitch-faq'
+    },
 
      
 

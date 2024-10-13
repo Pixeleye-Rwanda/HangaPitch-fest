@@ -14,7 +14,7 @@
             </p>
           </div>
 
-          <div class="absolute top-3/4   left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left">
+          <div class="absolute top-3/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 sm:text-left">
            
             <p v-for="(line, index) in baseText" :key="index" class="hero-text font-gramatika text-white text-2xl" :style="{ animationDelay: `${index * 0.8}s` }" >
               {{ line }}
@@ -47,8 +47,8 @@
            <div className="flex flex-col lg:mr-4 lg:ml-12 lg:flex-row sm:mt-12 lg:mt-24 w-full px-4 lg:px-8 xl:px-8 py-12  mx-auto">
             <transition name="fade-slide-left" appear v-if="isVisible1">
             <div className="lg:w-1/3 space-y-4 lg:mt-16 mb-8 lg:mb-0 lg:pr-8 self-start">
-              <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rockinsoda text-navy">FUELING</p>
-              <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-rockinsoda text-navy">INNOVATION</p>
+              <p className="text-3xl md:text-4xl lg:text-7xl xl:text-8xl font-rockinsoda text-navy">FUELING</p>
+              <p className="text-3xl md:text-4xl lg:text-7xl xl:text-8xl font-rockinsoda text-navy">INNOVATION</p>
             </div>
           </transition>
             <div className="lg:w-3/5 space-y-8 self-start">
@@ -93,8 +93,8 @@
               <div class="flex-1  mt-12 xl:mt-2 2xl:mt-60 md:mt-8 max-w-full md:max-w-[50%]">
                 <transition name="fade-slide-up" appear v-if="isVisible2">
                 <div class="space-y-2  md:mt-28 ">
-                  <p class="text-4xl md:text-7xl font-rockinsoda text-navy">HEAR FROM OUR </p>
-                  <p class="text-4xl md:text-7xl font-rockinsoda text-navy">SPONSORS</p>
+                  <p class="text-4xl md:text-8xl font-rockinsoda text-navy">HEAR FROM OUR </p>
+                  <p class="text-4xl md:text-8xl font-rockinsoda text-navy">SPONSORS</p>
                 </div>
               </transition>
             
@@ -201,14 +201,14 @@
               <transition appear name="fade-slide-up" v-if="isVisible3">
 
                 <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
-                  <img src="../assets/flag.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
+                 <a href="https://rdb.rw/" target="_blank"><img src="../assets/flag.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10"></a> 
                 </div>
                 </transition>
 
                 <transition appear name="fade-slide-up" v-if="isVisible3">
 
                 <div class="h-[180px] md:h-[230px] w-full md:w-1/3">
-                  <img src="../assets/undp.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
+                  <a href="https://www.undp.org/" target="_blank"><img src="../assets/undp.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10"></a>                  
                 </div>
                 </transition>
               </div>
@@ -444,7 +444,7 @@
                 <transition name="fade-slide-up" appear v-if="isVisible4">
 
                 <div class="flex items-center justify-center mt-2">
-                  <button class="font-gramatika text-black text-md bg-white  absolute p-2 rounded-md py-2 px-4 shadow-md">Follow us on Instagram</button>
+                  <button class="font-gramatika text-black text-md bg-white  absolute p-2 rounded-md py-2 px-4 shadow-md"><a href="https://www.instagram.com/hangapitchfest/" target="_blank">Follow us on Instagram</a></button>
                 </div>
                 </transition>
               </div>
