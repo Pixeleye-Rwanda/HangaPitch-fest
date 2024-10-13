@@ -12,10 +12,10 @@
         <p v-for="(line, index) in baseText" :key="index" class="hero-text font-rockinsoda text-white text-7xl" :style="{ animationDelay: `${index * 0.8}s` }" >
           {{ line }}
         </p>
-    
+  
       </div>
-
-
+      
+     
     </div>
 
         <!-- next section -->
@@ -101,19 +101,24 @@
 
 
         <!-- section 4 -->
-        <div ref="observerElement2">
+      
         <div class=" relative mt-96 lg:mt-60 2xl:mt-24">
 
-         
-            <transition name="fade-slide-up" v-if="isVisible2">
+          <div ref="observerElement2">
+            <transition name="fade-slide-up" appear v-if="isVisible2">
+              <div>
             <p class="text-navy font-rockinsoda text-5xl ml-12  "> Past winners </p>
-          </transition>
+            
             <select v-model="selectedYear" class=" float-right mr-20 w-30 bg-white ring-1 ring-lightTangerine outline-none p-2 px-4">
 
               <option value="2023">2023</option>
               <option value="2022">2022</option>
               <option value="2021">2021</option>
           </select>
+        </div>
+        </transition>
+      </div>
+
            
          
         
@@ -144,7 +149,6 @@
             </div>                
             </div>
         </div>
-      </div>
 
 
       
@@ -195,14 +199,19 @@
 
 
    <!-- Responsive Section -->
-<div class="flex flex-col lg:flex-row mt-16 lg:mt-44  space-y-8 lg:space-y-0 lg:space-x-16 px-6 lg:px-12 w-full mb-16">
+    
+<div class="flex flex-col lg:flex-row mt-16 lg:mt-44  space-y-8 lg:space-y-0 lg:space-x-16 px-6 lg:px-12 w-full mb-16" ref="observerElement3">
   <!-- Text Section -->
+
   <div class="w-full lg:w-1/2 mt-16 lg:mt-16 2xl:mt-72">
+    <transition name="fade-slide-up" appear v-if="isVisible3">
     <div class="space-y-2">
       <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">CONNECT WITH LIKE-MINDED</p>
       <p class="text-3xl lg:text-6xl font-rockinsoda text-navy">ENTREPRENEURS AT HANGA HUBs</p>
     </div>
+  </transition>
 
+     <transition name="fade-slide-left" appear v-if="isVisible3">
     <div class="mt-8 text-justify space-y-12">
       <p class="text-navy font-gramatika text-lg lg:text-xl 2xl:text-2xl ">
         HANGA Hubs is an action funded by the European Commission and it is implemented by RISA. It operates in MUHANGA, NYAGATARE, RUBAVU, and RUSIZI. The action is part of the Rwanda Government’s and the European Union’s efforts to support private sector development and job creation in Rwanda through Innovation and Incubation hubs.
@@ -211,15 +220,19 @@
         Learn more <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
       </button>
     </div>
+  </transition>
   </div>
 
+
   <!-- Image Section -->
+   <transition name="fade-slide-left" appear v-if="isVisible3">
   <div class="flex-1  relative h-[30px] sm:mt-10 md:h-auto  md:mt-32 xl:mt-36  max-w-full md:max-w-[50%]">
     <img src="../assets/vr.jpg" class="w-full h-full object-cover">
     <div class="absolute inset-0" 
       style="background: linear-gradient(to bottom, rgba(1, 9, 48, 0.05) 0%, rgba(1, 9, 48, 0.2) 50%, rgba(1, 9, 48, 0.8) 100%);">
     </div>
   </div>
+</transition>
 </div>
 
    <scrollButton/>
@@ -335,6 +348,7 @@ export default{
    this.initiativeAnimations();
    this.missoutAnimations();
    this.blogAnimations();
+   this.galleryAnimations();
      
   },
 
@@ -387,6 +401,21 @@ missoutAnimations(){
 
   observer.observe(this.$refs.observerElement1);
 },
+
+galleryAnimations() {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      this.isVisible3 = true; 
+    }
+  });
+}, {
+  threshold: 0.5  
+});
+
+observer.observe(this.$refs.observerElement3);
+},
+
 
 initScrollAnimations() {
       const fadeElements = document.querySelectorAll('.fade-in');

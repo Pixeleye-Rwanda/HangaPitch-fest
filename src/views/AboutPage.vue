@@ -864,5 +864,4 @@ observer.observe(this.$refs.observerElement4);
   transform: translateY(80px);
 }
 
-
 </style>

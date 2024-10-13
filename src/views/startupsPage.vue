@@ -3,10 +3,15 @@
         <div class="w-full mt-28 ml-0 md:ml-6  ">
 
 
-          <div class="flex flex-col md:flex-row ">
+          <div class="flex flex-col md:flex-row " ref="observerElement">
             <!-- Left Section with Main Image and Text -->
             <div class="w-full md:w-2/3 mb-4 md:mb-0 px-4">
+              <transition name="fade-slide-up" appear v-if="isVisible" >
               <img src="../assets/speaker1.jpg" alt="Students" class="w-full h-auto  " ref="leftContent">
+              </transition>
+           
+              <transition name="fade-slide-up" appear v-if="isVisible">
+              <div>
               <p class="font-gramatika mt-12 text-darknavy text-lg sm:text-xl " ref="text1">
                 The largest in-person technology event in Rwanda designed to ignite &
                 inspire innovation, Hanga Pitchfest is returning for its fourth edition.</p>
@@ -14,12 +19,17 @@
                 Pitch at hanga <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button>
             </div>
+          </transition>
+            </div>
+
 
             <!-- Right Side with Vertically Stacked Images -->
+             <transition name="fade-slide-right" appear v-if="isVisible">
             <div class="w-full md:w-1/3 space-y-4 px-4 lg:mr-12 sm:mr-0">
               <img src="../assets/speaker2.jpg" alt="Speaker" class="w-full h-auto " ref="image1">
               <img src="../assets/audience.jpg" alt="Audience" class="w-full h-auto " ref="image2">
             </div>
+          </transition>
           </div>
 
         </div>
@@ -180,14 +190,43 @@ export default {
   components: {
     FilteredStarups
   },
+
+  data(){
+
+    return{
+      isVisible:false,
+      isVisible2:false,
+      isVisible3:false,
+    }
+
+  },
+
   methods: {
     scrollLeft() {
       this.$refs.videoWrapper.scrollBy({ left: -500, behavior: 'smooth' });
     },
     scrollRight() {
       this.$refs.videoWrapper.scrollBy({ left: 500, behavior: 'smooth' });
-    }
-  },
+    },
+
+
+    initiativeAnimations() {
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible = true;
+      }
+    });
+  });
+
+  observer.observe(this.$refs.observerElement);
+},
+
+
+
+
+},
 
 
 
@@ -224,6 +263,8 @@ export default {
       observer.observe(item);
 
     });
+
+    this.initiativeAnimations();
   }
 
 
@@ -282,4 +323,137 @@ export default {
 .fade-in:nth-child(3) {
   transition-delay: 0.9s;
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+}
+
+.slide-up-enter-active,
+.slide-left-enter-active,
+.slide-right-enter-active {
+  transition: all 0.7s ease-out;
+}
+
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0); /* Ensure Y-axis is reset to 0 */
+}
+
+.slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.slide-left-enter-to {
+  opacity: 1;
+  transform: translateX(0); /* Reset X-axis */
+}
+
+.slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.slide-right-enter-to {
+  opacity: 1;
+  transform: translateX(0); /* Reset X-axis */
+}
+/* General Fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.6s ease-in-out;
+}
+.fade-enter, 
+.fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+
+/* Fade and Slide Up */
+.fade-slide-up-enter-active {
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);}
+
+.fade-slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fade-slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade and Slide Left */
+.fade-slide-left-enter-active {
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1); /* Even slower and more natural */
+}
+.fade-slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(-80px);
+}
+.fade-slide-left-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade and Slide Right */
+.fade-slide-right-enter-active {
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1); /* Even slower and more natural */
+}
+.fade-slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(80px);
+}
+.fade-slide-right-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom In */
+.zoom-enter-active {
+  transition: all 0.7s ease;
+}
+.zoom-enter-from {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.zoom-enter-to {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-slide-up-enter-active,
+.fade-slide-up-leave-active {
+  transition: opacity 1.1s ease-in-out, transform 1.1s ease-in-out;
+}
+
+.fade-slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.fade-slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-up-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+
 </style>

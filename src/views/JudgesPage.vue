@@ -1,15 +1,19 @@
 <template>
   <!-- first section -->
-  <div class="flex flex-col lg:flex-row  mt-24 lg:mt-12 lg:mt-32 px-6 w-full lg:space-x-4 ">
+  <div class="flex flex-col lg:flex-row  mt-24 lg:mt-12 lg:mt-32 px-6 w-full lg:space-x-4 " ref="observerElement">
     <!-- Text Section -->
+     <transition  name="fade-slide-left" mode="out-in" appear v-if="isVisible">
     <div class="lg:text-left  space-y-4 w-3/5">
       <p class="text-3xl lg:text-7xl font-rockinsoda text-navy">FUELING</p>
       <p class="text-3xl lg:text-7xl font-rockinsoda text-navy"> INNOVATION</p>
 
 
     </div>
+  </transition>
   
     <!-- Description and Button Section -->
+    <transition  name="fade-slide-up" mode="out-in" appear v-if="isVisible">
+
     <div class="text-justify mt-4 lg:mt-0 space-y-8 w-full lg:w-10/12">
       <p class="text-base lg:text-2xl font-gramatika text-navy">
         Hanga Pitchfest brings the most influential experts together who help in selecting the best 
@@ -18,6 +22,7 @@
       </p>
      
     </div>
+    </transition>
   </div>
   
     <!-- 2023 judges -->
@@ -389,6 +394,14 @@
   export default{
       name:'JudgesPage',
 
+      data(){
+
+         return{
+          isVisible:false,
+          isVisible2:false,
+         }
+      },
+
       mounted(){
 
       const handleMouseMove = (event) => {
@@ -404,6 +417,8 @@
       this.$refs.scrollContainer.removeEventListener('mousemove', handleMouseMove);
     });
 
+    this.initiativeAnimations();
+
       },
 
       methods: {
@@ -415,6 +430,32 @@
       this.$refs.scrollContainer.scrollLeft += distance;
       this.startX = event.touches[0].clientX;
     },
+
+    missoutAnimations(){
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible1 = true;
+      }
+    });
+  });
+
+  observer.observe(this.$refs.observerElement1);
+},
+
+initiativeAnimations() {
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible = true;
+      }
+    });
+  });
+
+  observer.observe(this.$refs.observerElement);
+},
+
   },
 
   beforeUnmount() {
@@ -430,4 +471,137 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none; 
   }
+
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+}
+
+.slide-up-enter-active,
+.slide-left-enter-active,
+.slide-right-enter-active {
+  transition: all 0.7s ease-out;
+}
+
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0); /* Ensure Y-axis is reset to 0 */
+}
+
+.slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.slide-left-enter-to {
+  opacity: 1;
+  transform: translateX(0); /* Reset X-axis */
+}
+
+.slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.slide-right-enter-to {
+  opacity: 1;
+  transform: translateX(0); /* Reset X-axis */
+}
+/* General Fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.6s ease-in-out;
+}
+.fade-enter, 
+.fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+
+/* Fade and Slide Up */
+.fade-slide-up-enter-active {
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);}
+
+.fade-slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fade-slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade and Slide Left */
+.fade-slide-left-enter-active {
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1); /* Even slower and more natural */
+}
+.fade-slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(-80px);
+}
+.fade-slide-left-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade and Slide Right */
+.fade-slide-right-enter-active {
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1); /* Even slower and more natural */
+}
+.fade-slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(80px);
+}
+.fade-slide-right-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom In */
+.zoom-enter-active {
+  transition: all 0.7s ease;
+}
+.zoom-enter-from {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.zoom-enter-to {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-slide-up-enter-active,
+.fade-slide-up-leave-active {
+  transition: opacity 1.1s ease-in-out, transform 1.1s ease-in-out;
+}
+
+.fade-slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.fade-slide-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-up-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(80px);
+}
+
 </style>

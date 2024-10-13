@@ -1,12 +1,15 @@
 <template>
 
-    <div class="ml-0 lg:ml-12">
-
+    <div class="ml-0 lg:ml-12 mt-2 lg:mt-32">
+       
+      <div ref="observerElement">
+        <transition name="fade-slide-up" appear v-if="isVisible" >
       <div class=" font-rockinsoda text-navy text-5xl mt-32 text-center lg:text-left lg:text-7xl">
         <p>HANGA</p>
         <p>IS ORGANIZED BY</p>
         </div>
-       
+      </transition>
+      </div>
     
  
 
@@ -42,38 +45,55 @@
 
 
       <!-- second section -->
-      <div class="ml-4 mr-4 xl:mt-4 2xl:-mt-12 mlg:mr-10 md:ml-2 flex flex-col md:flex-row lg:space-x-16 items-start justify-between">
-        <div class="flex-1  mt-12 xl:mt-2 2xl:mt-60 md:mt-8 max-w-full md:max-w-[50%]">
+       <div ref="observerElement1">
+      <div class="ml-4 mr-4 xl:mt-4 2xl:-mt-12 mlg:mr-10 md:ml-2 flex flex-col md:flex-row lg:space-x-16 items-start justify-between"  >
+
+        <div class="flex-1  mt-12 xl:mt-2 2xl:mt-60 md:mt-8 max-w-full md:max-w-[50%]" >
+
           <div class="space-y-2  md:mt-48 ">
+            <transition  name="fade-slide-up" appear v-if="isVisible1" >
+              <div>
             <p class="text-4xl md:text-7xl font-rockinsoda text-navy">BUILDING RWANDA'S </p>
             <p class="text-4xl md:text-7xl font-rockinsoda text-navy">ECOSYSTEM</p>
+          </div>
+          </transition>
           </div>
       
           <div class="mt-10">
             <div class="text-justify space-y-12 w-full">
+              <transition   name="fade-slide-left" appear v-if="isVisible1">
               <p class="text-navy font-gramatika text-lg md:text-md">
                 "We are delighted, as Jasiri, to be part of Hanga Pitchfest, 
                 We believe in the power of entrepreneurship to transform our society and Hanga Pitchfest calls for action for
                  those seeking to challenge the status quo and build solutions that will improve the lives of many." 
                - Aline Kabanda, East Africa Regional Director, Jasiri.
               </p>
+            </transition>
       
             
             </div>
           </div>
         </div>
-      
+
+      <transition name="fade-slide-right" appear  v-if="isVisible1">
         <div class="flex-1 h-[300px] sm:mt-10 md:h-auto  md:mt-10 xl:mt-36 2xl:mt-52 max-w-full md:max-w-[50%]">
           <img src="../assets/rwanda .svg" class="w-full mt-10 h-full  object-cover">
         </div>
+      </transition>
       </div>
+      </div>
+    
      
-     <!-- partnernship page  -->
-     <div class="">
-      <div class=" font-rockinsoda text-navy text-5xl mt-32 text-center lg:text-left lg:text-6xl">
-        <p>ALL PARTNERSHIPS</p>
-        </div>
 
+     <!-- partnernship page  -->
+     <div ref="observerElement2">
+      
+      <div class=" font-rockinsoda text-navy text-5xl mt-32 text-center lg:text-left lg:text-6xl">
+        <transition name="fade-slide-up" appear v-if="isVisible2">
+        <p>ALL PARTNERSHIPS</p>
+      </transition>
+
+        </div>
      
      
       
@@ -83,8 +103,14 @@
           <div class="flex items-center justify-center">
           <li>
           
+          <transition name="fade-slide-up" appear v-if="isVisible2">
           <img :src="startup.logo" alt="Logo" class="w-full h-12 mt-6  mb-4" />
+        </transition>
+
+        <transition name="fade-slide-right" appear v-if="isVisible2">
           <h3 class="text-lg text-center font-gramatika text-navy text-lg mt-4 " >{{ startup.name }}</h3>
+        </transition>
+
       </li>
       </div>
 
@@ -94,6 +120,7 @@
       
       
   </div>
+
       <!-- next section -->
       <div class="ml-4 md:ml-12 mt-12 md:mt-32">
         <div class="mt-8 md:mt-12 md:ml-16 overflow-hidden">
@@ -170,6 +197,10 @@ export  default{
       observer.observe(item);
     }); 
 
+    this.initiativeAnimations();
+    this.missoutAnimations();
+    this.blogAnimations();
+
   },
 
   data(){
@@ -205,32 +236,13 @@ export  default{
                     { name: 'RDB', logo: require('../assets/partners/rdb.svg') },
                     { name: 'RSSB', logo: require('../assets/partners/rssb.svg') },
                     { name: 'UNDP', logo: require('../assets/partners/undp.svg') },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                    
 
                     ],
+
+                    isVisible:false,
+                    isVisible1:false,
+                    isVisible2:false
                   
                 };
                 
@@ -247,6 +259,49 @@ export  default{
                 }
                 
             },
+
+        methods:{
+  
+
+    missoutAnimations(){
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible1 = true;
+      }
+    });
+  });
+
+  observer.observe(this.$refs.observerElement1);
+},
+
+initiativeAnimations() {
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        this.isVisible = true;
+      }
+    });
+  });
+
+  observer.observe(this.$refs.observerElement);
+},
+blogAnimations() {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      this.isVisible2 =true; 
+    }
+  });
+}, {
+  threshold: 0.5  
+});
+
+observer.observe(this.$refs.observerElement2);
+},
+
+ }
 
 }
 </script>
