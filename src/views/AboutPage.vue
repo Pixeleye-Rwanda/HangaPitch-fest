@@ -667,13 +667,12 @@ observer.observe(this.$refs.observerElement4);
 </script>
 
 <style>
+
 .slide-up {
   transform: translateY(20px);
   opacity: 0;
   transition: all 2s ease-in-out;
 }
-
-
 
 .button-hover {
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -683,9 +682,11 @@ observer.observe(this.$refs.observerElement4);
   transform: scale(1.05); 
 }
 
+
 .scrollbar-hide {
   scrollbar-width: none;
 }
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none; 
 }
