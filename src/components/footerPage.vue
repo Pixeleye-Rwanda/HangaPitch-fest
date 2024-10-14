@@ -28,7 +28,7 @@
               <a href="" class="hover:underline font-gramatika text-lg">Blog</a>
             </router-link>           
             <router-link to="/contact">
-              <a href="" class="hover:underline font-gramatika text-lg">Contact Us</a>
+              <a href="" class="hover:underline font-gramatika text-lg" >Contact Us</a>
             </router-link> 
             <router-link to="/faq">
               <a href="" class="hover:underline font-gramatika text-lg">FAQ</a>

@@ -2,7 +2,7 @@
   <div class="w-full min-h-screen absolute" style="background-color: #FFFFFF;">
     <Navbar />
 
-    <div class="md:mt-12 flex items-center justify-center">
+    <div class="md:mt-48  flex items-center justify-center">
       <div class="w-full md:max-w-4xl space-y-8">
         <div class="font-rockinsoda text-navy text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl top-1/3">
           <p class="text-center">WHERE WE SHARE</p>

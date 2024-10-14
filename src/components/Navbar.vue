@@ -115,10 +115,10 @@
     </transition>
 
     <!-- Navbar for Larger Screens -->
-    <div
+    <div 
     :class="[
       (navBg || isInitiativesClicked) ? 'bg-white fixed top-0 w-full z-50 shadow-lg' : 'bg-transparent absolute top-0 w-full',
-      'transition-all duration-600'
+      'transition-all duration-600',navClass()
     ]"
   >      <div :class="navBg || isInitiativesClicked ? 'bg-navbg flex items-center p-6' : 'bg-transparent flex items-center p-6'">
         <router-link to="/" class="ml-16">
@@ -266,6 +266,8 @@ export default {
     };
   },
 
+
+
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('scroll', this.closeDropdownOnScroll);
@@ -282,6 +284,22 @@ export default {
   },
   
   methods: {
+
+
+    navClass() {
+      if (this.$route.path === '/contact') {
+        return this.navBg; 
+      } else {
+        return ''; 
+      }
+    },
+    linkClass(route) {
+      if (this.$route.path === route || this.$route.path === '/contact') {
+        return 'text-blue-500 font-bold'; // Active or clicked link color
+      } 
+      return 'text-black';
+    },
+
     toggleDropdown() {
       this.isDropdownVisible = !this.isDropdownVisible;
     },
@@ -318,8 +336,21 @@ export default {
     } else if (!this.isInitiativesClicked) {
       this.navBg = false;
     }
+
+if (
+      this.$route.path === '/contact' || 
+      this.$route.path === '/blogs' || 
+      this.$route.path === '/news'
+    ) {
+      this.navBg = true;
     }
-  },
+  }
+  
+  
+  
+  
+      },
+
   handleResize() {
       this.isLargeScreen = window.innerWidth >= 768; 
     },

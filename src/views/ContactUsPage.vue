@@ -1,8 +1,8 @@
 <template>
   <div class="w-full min-h-screen absolute" style="background-color: #FFF9F6;">
-    <Navbar />
+    <Navbar/>
     <div
-      class="ml-8 mr-16 xl:mt-4 2xl:-mt-12 mlg:mr-10 md:ml-12 flex flex-col md:flex-row lg:space-x-16 items-start justify-between">
+      class="ml-8 mr-16 xl:mt-32 2xl:-mt-12 mlg:mr-10 md:ml-12 flex flex-col md:flex-row lg:space-x-16 items-start justify-between">
       <div class="flex-1 mt-12 xl:mt-2 2xl:mt-60 md:mt-8 max-w-full md:max-w-[50%]">
         <div class="space-y-2 md:mt-12 ">
           <p class="text-4xl md:text-7xl mb-12 font-rockinsoda text-navy">CONTACT US</p>
