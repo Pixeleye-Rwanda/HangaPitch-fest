@@ -9,7 +9,6 @@
 
         <div class="flex flex-col mt-12  mr-12 space-y-2 lg:flex-row lg:justify-between">
             <!-- Category Buttons -->
-             <transition name="fade-slide-left"  appear v-if="isVisible" >
             <div id="startupDiv" class="flex flex-wrap justify-center gap-4  sm:gap-4">
                 <label>
                     <input type="radio" name="category" value="Fintech" class="hidden" v-model="selectedCategory" />
@@ -55,7 +54,6 @@
                     </span>
                 </label>
             </div>
-        </transition>
 
             <!-- Year Dropdown -9-->
             
