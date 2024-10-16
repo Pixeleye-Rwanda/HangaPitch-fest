@@ -7,7 +7,7 @@
         
         <NavBar class="absolute top-0 left-0 w-full" />
       
-        <div class="font-rockinsoda absolute text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-1/3 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:top-1/4 text-center sm:text-left">
+        <div class="font-rockinsoda absolute text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl top-1/3 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:top-1/4 text-center sm:text-left">
           <h1 v-for="(line, index) in heroText" :key="index" class="hero-text" :style="{ animationDelay: `${index * 0.8}s` }">
             {{ line }}
           </h1>
@@ -29,8 +29,8 @@
 
       <div class="w-full bg-white lg:ml-16 sm:ml-0">
         <div class="w-full px-4 mt-32 fade-in">
-          <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">IGNITING AND INSPIRING</p>
-          <p class="font-rockinsoda text-navy text-4xl sm:text-5xl md:text-7xl">INNOVATION</p>
+          <p class="font-rockinsoda text-navy text-5xl sm:text-6xl md:text-8xl">IGNITING AND INSPIRING</p>
+          <p class="font-rockinsoda text-navy text-5xl sm:text-6xl md:text-8xl">INNOVATION</p>
         </div>
 
         <div class="flex flex-col md:flex-row mt-20">
