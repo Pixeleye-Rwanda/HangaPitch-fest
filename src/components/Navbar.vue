@@ -148,7 +148,7 @@
           </div>
 
           <li :class="navBg || isInitiativesClicked ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
-            <!-- <router-link to="/timeline"> Timeline</router-link>  -->
+            <router-link to="/timeline"> Timeline</router-link> 
             <!-- Dropdown -->
            
             <div ref="observerElement">
@@ -342,7 +342,7 @@ export default {
     }
 
     // For specific routes
-    if (this.$route.path === '/contact' || this.$route.path === '/blogs' || this.$route.path === '/news') {
+    if (this.$route.path === '/contact' || this.$route.path === '/blogs' || this.$route.path === '/news' || this.$route.path === '/faq') {
       this.navBg = true;
     } else if (this.$route.path === '/network') {
       this.navBg = false;
