@@ -43,7 +43,7 @@
               <p class="font-gramatika text-darknavy text-lg sm:text-xl">
                 challenges in the Rwandan community and abroad
               </p>
-              <button class="mr-8 mt-6 p-2 px-8 font-gramatika bg-tangerine text-white font-semibold transition-all duration-300 hover:scale-105">
+              <button class="mr-8 mt-6 py-4 px-8 font-gramatika bg-tangerine text-white font-semibold transition-all duration-300 hover:scale-105">
                 Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </button>
             </div>
@@ -185,7 +185,7 @@
         <div class="mb-8 lg:mt-44 sm:mt-20 lg:mb-0 lg:w-1/3">
           <h1 class="font-rockinsoda text-3xl sm:text-6xl text-navy">CHECK OUR INITIATIVES</h1>
           <p class="font-gramatika text-lg sm:text-2xl text-navy mt-2">
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            Hanga drives innovation in Rwanda and beyond through strategic initiatives.
           </p>
         </div>
       </Transition>
@@ -199,7 +199,7 @@
                 <p class="text-white font-rockinsoda text-4xl sm:text-5xl">HANGA HUBS</p>
                 <div class="mt-2">
                   <p class="text-white font-gramatika text-lg">Addressing the obstacles & gaps limiting early-stage startups.</p>
-                  <a href="" class="text-white font-gramatika underline">learn more</a>
+                  <a href="" class="text-white font-gramatika underline">Learn more</a>
                 </div>
               </div>
             </div>
@@ -215,7 +215,7 @@
                 <div class="mt-2">
                   <p class="text-white font-gramatika">Revolutionizing Sexual and Reproductive Health in Africa.</p>
                   <router-link to="/srh">
-                    <a href="" class="text-white font-gramatika underline">learn more</a>
+                    <a href="" class="text-white font-gramatika underline">Learn more</a>
                   </router-link>
                 </div>
               </div>
@@ -280,8 +280,8 @@
       
               <!-- Button with a zoom-in effect -->
               <transition name="fade-slide-right" appear>
-                <button class="bg-tangerine text-white text-xl mt-16 px-8 p-2 hover:bg-orange-500 transition duration-300 w-full sm:w-auto md:absolute md:top-0 md:right-0">
-                  read more <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
+                <button class="bg-tangerine text-white text-xl mt-16 px-8 py-4 hover:bg-orange-500 transition duration-300 w-full sm:w-auto md:absolute md:top-0 md:right-0">
+                  Read more <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
                 </button>
               </transition>
             </div>

@@ -29,11 +29,13 @@
               Network</router-link></li>
           <li><router-link to="/pitch" class="text-white block hover:text-gray-300" @click="toggleMenu">Pitch
               at Hanga</router-link></li>
-          <li><router-link to="/timeline" class="text-white block hover:text-gray-300"
-              @click="toggleMenu">Timeline</router-link></li> 
-                <button id="dropdownInit"   :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+
+          <!-- <li><router-link to="/timeline" class="text-white block hover:text-gray-300"
+              @click="toggleMenu">Timeline</router-link></li> -->
+              
+                <button id="dropdownInit"  @click="toogleNavBg"  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
       
-                  Initiative <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                  Initiatives <i class="fa fa-chevron-down" aria-hidden="true"></i>
       
                 </button>
       
@@ -118,16 +120,18 @@
     <div 
     :class="[
       (navBg || isInitiativesClicked) ? 'bg-white fixed top-0 w-full z-50 shadow-lg' : 'bg-transparent absolute top-0 w-full',
-      'transition-all duration-600',navClass()
+      'transition-all duration-600', navClass(), 'hidden md:block'
     ]"
-  >      <div :class="navBg || isInitiativesClicked ? 'bg-navbg flex items-center p-6' : 'bg-transparent flex items-center p-6'">
+  >     
+  
+  <div :class="navBg || isInitiativesClicked ? 'bg-navbg flex items-center p-6' : 'bg-transparent flex items-center p-6'">
         <router-link to="/" class="ml-16">
           <img :src="navBg || isInitiativesClicked ? whiteLogo : blackLogo" class="h-8 md:h-10" alt="Logo">
         </router-link>
 
         <!-- Navbar Links -->
-        <ul class="flex mx-auto items-center space-x-6">
-          <li :class="navBg || isInitiativesClicked ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+        <ul class="flex mx-auto items-center space-x-6 ">
+          <li :class="navBg || isInitiativesClicked ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation '">
             <router-link to="/about-us" class="hover:text-tangerine transition-colors duration-300">About Us</router-link>
           </li>
           <li :class="navBg || isInitiativesClicked ?'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
@@ -148,7 +152,7 @@
             <!-- Dropdown -->
            
             <div ref="observerElement">
-          <div v-if="isInitiativesClicked" class="absolute z-50 left-0 w-full bg-navbg mt-10 shadow-lg" >
+          <div v-if="isInitiativesClicked" class="absolute z-50 left-0 w-full bg-navbg mt-10 mb-16 shadow-lg" >
           <hr class="w-auto border-gray-200 border-t-2 mt-8">
           <ul class="w-full flex px-20 space-x-12">
             <div class="w-[70vh] p-4 mt-4 ">
@@ -330,28 +334,33 @@ export default {
     },
 
     handleScroll() {
-      if (this.isLargeScreen) {
-      if (window.scrollY >300) {
+  if (this.isLargeScreen) {
+    if (window.scrollY > 300) {
       this.navBg = true;
     } else if (!this.isInitiativesClicked) {
       this.navBg = false;
     }
 
-if (this.$route.path === '/contact' || this.$route.path === '/blogs' ||  this.$route.path === '/news' ) {
+    // For specific routes
+    if (this.$route.path === '/contact' || this.$route.path === '/blogs' || this.$route.path === '/news') {
       this.navBg = true;
-    }else if(this.$route.path === '/network'){
+    } else if (this.$route.path === '/network') {
       this.navBg = false;
     }
   }
-  
-  
-  
-  
-      },
+  else {
+    this.navBg = false; 
+  }
+},
 
-  handleResize() {
-      this.isLargeScreen = window.innerWidth >= 768; 
-    },
+
+handleResize() {
+  this.isLargeScreen = window.innerWidth >= 768; 
+  if (!this.isLargeScreen) {
+    this.navBg = false; 
+  }
+},
+
     
     toggleInitiativesDropdown() {
     this.isInitiativesDropdownVisible = !this.isInitiativesDropdownVisible;
