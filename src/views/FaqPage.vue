@@ -3,7 +3,7 @@
     <Navbar />
     <div class="faq-container mt-16 lg:mt-32 px-4 md:px-8 lg:px-32">
       <!-- Responsive Header Section -->
-      <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 lg:space-x-72">
+      <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 lg:space-x-64">
         <div class="md:w-1/2">
           <h1 class="text-[36px] md:text-[48px] lg:text-[96px] font-rockinsoda text-navy">
             FAQ
@@ -11,9 +11,7 @@
         </div>
         <div class="md:w-1/2">
           <p class="text-gray-600 font-gramatika text-sm md:text-lg lg:text-md">
-            From Inquiries to Insights: Unpacking Your Hanga Queries.
-            <br />
-            Have more questions? Email us at hanga@email.com
+            From Inquiries to Insights: Unpacking Your Hanga Queries. Have more questions? Email us at hangahelp@minict.gov.rw
           </p>
         </div>
       </div>
