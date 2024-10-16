@@ -24,7 +24,7 @@
 
         <ul class="mt-16 space-y-4">
           <li><router-link to="/" class="text-white block hover:text-gray-300" @click="toggleMenu">Hanga Pitch</router-link></li>
-          <li><router-link to="/faq" class="text-white block hover:text-gray-300" @click="toggleMenu">FAQ</router-link></li>
+          <li><router-link to="/srh-faq" class="text-white block hover:text-gray-300" @click="toggleMenu">FAQ</router-link></li>
           <li>  <button
             :class="[navBg?'text-white':'text-navy',' font-gramatika text-white text-md font-semibold ']">
             <a href="https://hanga.acceleratorapp.co/application/new?program=hanga-pitchfest-" target="_blank"  >Apply Now</a>
@@ -47,7 +47,7 @@
           <router-link to="/">Hanga Pitch</router-link>
         </li>
         <li  :class="navBg ? 'text-white' : 'text-navy font-gramatika font-semibold underline-animation'">
-          <router-link to="/faq">FAQ</router-link>
+          <router-link to="/srh-faq">FAQ</router-link>
         </li> 
         <button
         :class="[navBg?'text-white':'text-navy','mr-4 p-4 px-6 font-gramatika text-navy text-md font-semibold ']">
@@ -98,7 +98,7 @@ export default {
     },
 
     checkNavBg() {
-    if (this.$route.path === '/faq') {
+    if (this.$route.path === '/srh-faq') {
       this.navBg = true;
     } else {
       this.navBg = false; 

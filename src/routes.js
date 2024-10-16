@@ -19,6 +19,7 @@ import ContactHubsPage from "./views/ContactHubsPage.vue";
 import BlogsPage from "./views/BlogsPage.vue";
 import NewsPage from "./views/NewsPage.vue";
 import PitchFaqPage from "./views/PitchFaqPage.vue";
+import SrhFaqPage from "./views/SrhFaqPage.vue";
 import { createRouter,createWebHistory } from "vue-router";
 
 const routes=[
@@ -106,6 +107,11 @@ const routes=[
         name:'HangSrh',
         component:HangSrh,
         path:'/srh'
+    },
+    {
+        name:'SrhFaqPage',
+        component:SrhFaqPage,
+        path:'/srh-faq'
     },
 
     {
