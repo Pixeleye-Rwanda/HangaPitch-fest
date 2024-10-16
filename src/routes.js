@@ -20,7 +20,7 @@ import BlogsPage from "./views/BlogsPage.vue";
 import NewsPage from "./views/NewsPage.vue";
 import PitchFaqPage from "./views/PitchFaqPage.vue";
 import SrhFaqPage from "./views/SrhFaqPage.vue";
-import { createRouter,createWebHistory } from "vue-router";
+import { createRouter,createWebHashHistory} from "vue-router";
 
 const routes=[
 
@@ -153,21 +153,20 @@ const routes=[
 
 
 
-const router = createRouter({history:createWebHistory(),routes,
-    scrollBehavior(to) { 
-        if (to.hash) {
-            return {
-                el: to.hash, 
-                behavior: 'auto',
-                top: 0 
-            };
-        }
-        return { left: 0, top: 0 }; 
+const router = createRouter({
+    history: createWebHashHistory(),
+    routes,
+    scrollBehavior(to) {
+      if (to.hash) {
+        return {
+          el: to.hash,
+          behavior: 'auto',
+          top: 0
+        };
+      }
+      return { left: 0, top: 0 };
     }
-
-
-
-})
+  })
 export default router;
 
   
