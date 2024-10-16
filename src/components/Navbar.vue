@@ -342,7 +342,7 @@ export default {
     }
 
     // For specific routes
-    if (this.$route.path === '/contact' || this.$route.path === '/blogs' || this.$route.path === '/news') {
+    if (this.$route.path === '/contact' || this.$route.path === '/blogs' || this.$route.path === '/news' ||this.$route.path === '/faq' ) {
       this.navBg = true;
     } else if (this.$route.path === '/network') {
       this.navBg = false;
