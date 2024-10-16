@@ -60,7 +60,7 @@ export default {
         },
         {
           question: "What are the application deadlines?",
-          answer: "The application process is open from September 5 - October 17,  2022.",
+          answer: "The application process is open from August 30 - September 30, 2024.",
           isOpen: false,
         },
         {
@@ -92,16 +92,6 @@ export default {
           isOpen: false,
         },
         {
-          question: "Can the top 45 startups from last year re-apply?",
-          answer: "Answer for Can the top 45 startups from last year re-apply.",
-          isOpen: false,
-        },
-        {
-          question: "Is it possible to view past winners’ pitches?",
-          answer: "Yes, you can find it here.",
-          isOpen: false,
-        },
-        {
           question: "What languages can I use to pitch?",
           answer: "English and Kinyarwanda",
           isOpen: false,
@@ -114,11 +104,6 @@ export default {
         {
           question: "What is the Bootcamp, and who should attend from the team?",
           answer: "The Bootcamp is a week-long entrepreneurship training for the Top 25 startups. The individual that applied on behalf of the team should attend the Bootcamp",
-          isOpen: false,
-        },
-        {
-          question: "What are the prizes this year?",
-          answer: "Answer for what are the prizes this year?",
           isOpen: false,
         },
       ],
