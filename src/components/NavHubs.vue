@@ -9,7 +9,7 @@
           </svg>
         </button>
   
-        <router-link to="/" class="mx-auto">
+        <router-link to="/hub" class="mx-auto">
           <img src="../assets/hanga-hubs-logo.png" class="w-24 h-auto" alt="Logo">
         </router-link>
       </div>
@@ -54,7 +54,7 @@
       <!-- Navbar for Larger Screens -->
       <div :class="navBg ? 'bg-navy' : 'bg-transparent'" class="hidden md:flex items-center p-4 justify-between">
         <div class="">
-        <router-link to="/" class="ml-24 ">
+        <router-link to="/hub" class="ml-24 ">
           <img :src="navBg ? whiteLogo : blackLogo" class="h-8 md:h-12" alt="Logo">
         </router-link>
     </div>
