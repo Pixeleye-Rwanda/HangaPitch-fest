@@ -8,7 +8,7 @@
           
           <Navbar class="absolute top-0 left-0 w-full"/>
         
-          <div class="font-rockinsoda absolute  text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl top-2/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left" ref="text">
+          <div class="font-rockinsoda absolute  text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl top-2/4 left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 xl:2/4 text-center sm:text-left" ref="text">
             <p v-for="(line, index) in heroText" :key="index" class="hero-text" :style="{ animationDelay: `${index * 0.8}s` }">
               {{ line }}
             </p>
@@ -185,14 +185,14 @@
             <div class="mt-24 md:mt-36 pl-4 md:pl-12 pr-4 w-full">
               <transition name="fade-slide-left" appear v-if="isVisible3">
                 <div>
-              <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl" >HANGA IS</h1>
-              <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">ORGANIZED BY</h1>
+              <h1 class="font-rockinsoda text-navy text-5xl md:text-7xl" >HANGA IS</h1>
+              <h1 class="font-rockinsoda text-navy text-5xl md:text-7xl">ORGANIZED BY</h1>
             </div>
             </transition>
               <div class="flex flex-wrap mt-12 md:mt-16 w-full">
                 <transition appear name="fade-slide-up" v-if="isVisible3">
                 <div class="h-[180px] md:h-[230px] w-full md:w-1/3 ">
-                  <img src="../assets/coat.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10">
+                  <a href="https://www.minict.gov.rw/" target="_blank"><img src="../assets/coat.svg" class="w-full h-full object-contain border border-tangerine p-4 md:p-10"></a>
                 </div>
               </transition>
 
@@ -218,11 +218,11 @@
             
 
 
-            <!-- section 8------ -->
+            <!-- section 8 -->
             <div class="ml-0 lg:ml-12 mt-24">
               <div>
                 
-                <h1 class="font-rockinsoda text-navy text-5xl fade-in ">EVENT HIGHLIGHTS</h1>
+                <h1 class="font-rockinsoda text-navy text-7xl fade-in ">EVENT HIGHLIGHTS</h1>
                 <p class="font-gramatika text-navy text-xl mt-4 fade-in">Watch our past thrilling events highlights</p>
               </div>
           
@@ -312,7 +312,7 @@
               
                 <transition appear name="fade-slide-up">
                   <div>
-                <h1 class="font-rockinsoda text-navy text-4xl md:text-5xl">EVENT GALLERY</h1>
+                <h1 class="font-rockinsoda text-navy text-5xl md:text-7xl">EVENT GALLERY</h1>
                 </div>
               </transition>
               

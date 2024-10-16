@@ -29,9 +29,11 @@
               Network</router-link></li>
           <li><router-link to="/pitch" class="text-white block hover:text-gray-300" @click="toggleMenu">Pitch
               at Hanga</router-link></li>
-          <li><router-link to="/timeline" class="text-white block hover:text-gray-300"
-              @click="toggleMenu">Timeline</router-link></li> 
-                <button id="dropdownInit"   :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
+
+          <!-- <li><router-link to="/timeline" class="text-white block hover:text-gray-300"
+              @click="toggleMenu">Timeline</router-link></li> -->
+              
+                <button id="dropdownInit"  @click="toogleNavBg"  :class="navBg ? 'text-navy' : 'text-white font-gramatika font-semibold underline-animation'">
       
                   Initiatives <i class="fa fa-chevron-down" aria-hidden="true"></i>
       

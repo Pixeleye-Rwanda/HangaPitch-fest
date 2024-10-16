@@ -9,7 +9,7 @@
         </svg>
       </button>
 
-      <router-link to="/" class="mx-auto">
+      <router-link to="/srh" class="mx-auto">
         <img src="../assets/SRH (1).svg" class="w-24 h-auto" alt="Logo">
       </router-link>
     </div>
@@ -35,9 +35,9 @@
     </transition>
 
     <!-- Navbar for Larger Screens -->
-    <div :class="navBg ? 'bg-navy' : 'bg-transparent'" class="hidden md:flex items-center p-4 justify-between">
+    <div :class="navBg ? 'bg-navy' : 'bg-transparent'" class="hidden md:flex items-center p-4 justify-between font-gramatika">
       <div class="">
-      <router-link to="/" class="ml-24 ">
+      <router-link to="/srh" class="ml-24 ">
         <img :src="navBg ? whiteLogo : blackLogo" class="h-8 md:h-12" alt="Logo">
       </router-link>
   </div>

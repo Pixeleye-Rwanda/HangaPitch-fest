@@ -6,8 +6,8 @@
           <div class="max-w-4xl">
             <transition name="fade-slide-up" appear v-if="isVisible">
             <div>
-            <h2 class="text-4xl sm:text-5xl lg:text-7xl text-white font-rockinsoda mb-2 sm:mb-4">NEVER MISS</h2>
-            <h2 class="text-4xl sm:text-5xl lg:text-7xl text-white font-rockinsoda mb-6">A HIGHLIGHT FROM HANGA</h2>
+            <h2 class="text-4xl sm:text-5xl lg:text-8xl text-white font-rockinsoda mb-2 sm:mb-4">NEVER MISS</h2>
+            <h2 class="text-4xl sm:text-5xl lg:text-8xl text-white font-rockinsoda mb-6">A HIGHLIGHT FROM HANGA</h2>
           </div>
           </transition>
 
