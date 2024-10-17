@@ -11,7 +11,7 @@
         </div>
         <div class="md:w-1/2">
           <p class="text-gray-600 font-gramatika text-sm md:text-lg lg:text-md">
-            From Inquiries to Insights: Unpacking Your Hanga Queries. Have more questions? Email us at hangahelp@minict.gov.rw
+            From Inquiries to Insights: Unpacking Your Hanga Queries. Have more questions? Email us at infos@hangapitchfest.rw
           </p>
         </div>
       </div>
@@ -78,7 +78,7 @@ export default {
         {
           question: "How will the winners be selected?",
           answer: 
-          "During the first round of evaluation, the top startups will be shortlisted by judges drawn from the startup and investor community scoring the startups based on a number of criteria.\n\n The second round of evaluation will involve physical pitching sessions to a round of judges in 5 locations around Rwanda.\n\n The top candidates will then be invited for a Bootcamp in Kigali whereby the top 5 companies will then be selected to pitch at the BK Arena on December 10, 2022.",
+          "During the first round of evaluation, the top startups will be shortlisted by judges drawn from the startup and investor community scoring the startups based on a number of criteria.\n\n The second round of evaluation will involve physical pitching sessions to a round of judges in 5 locations around Rwanda.\n\n The top candidates will then be invited for a Bootcamp in Kigali whereby the top 5 companies will then be selected to pitch at a venue that will be communicated later.",
           isOpen: false,
         },       
         {
